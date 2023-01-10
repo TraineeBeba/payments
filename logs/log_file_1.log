@@ -1,0 +1,9 @@
+2023-01-10 14:23:50 INFO  Main:25 - Start tracing MySQLUserDAO#getAllUsers
+2023-01-10 14:23:50 INFO  ConnectionPool:28 - Connection is successful
+2023-01-10 14:23:52 INFO  Main:63 - END tracing MySQLUserDAO#getAllUsers
+2023-01-10 14:35:01 TRACE Main:25 - Start tracing MySQLUserDAO#getAllUsers
+2023-01-10 14:35:01 INFO  ConnectionPool:28 - Connection is successful
+2023-01-10 14:35:03 INFO  Main:63 - END tracing MySQLUserDAO#getAllUsers
+2023-01-10 14:44:35 INFO  Main:24 - Start tracing "get" method
+2023-01-10 14:44:35 TRACE ConnectionPool:20 - Start tracing MySQLUserDAO#getAllUsers
+2023-01-10 14:44:35 TRACE ConnectionPool:27 - Connection is successful
