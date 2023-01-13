@@ -5,10 +5,7 @@ import com.epam.payments.db.dao.IUserDAO;
 import com.epam.payments.db.dto.UserDTO;
 import org.apache.log4j.Logger;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,7 +14,7 @@ public class UserDAO implements IUserDAO {
 
     @Override
     public List<UserDTO> getAllUsers() {
-        LOG.trace("Start tracing MySQLUserDAO#getAllUsers");
+        LOG.trace("Start tracing UserDAO#getAllUsers");
 
         List<UserDTO> users = new ArrayList<>();
         UserDTO user;
@@ -46,5 +43,66 @@ public class UserDAO implements IUserDAO {
         }
 
         return users;
+    }
+
+    @Override
+    public UserDTO createUser(String username, String password) {
+        LOG.trace("Start tracing UserDAO#createUser");
+        UserDTO user = null;
+        Long id = -1L;
+
+        try (Connection connection = ConnectionPool.getConnection()) {
+            if (connection != null) {
+                try (PreparedStatement statement = connection.prepareStatement(Query.CREATE_USER, Statement.RETURN_GENERATED_KEYS)) {
+                    connection.setAutoCommit(false);
+                    statement.setString(1, username);
+                    statement.setString(2, password);
+                    statement.executeUpdate();
+                    PreparedStatement stmt = connection.prepareStatement(Query.SELECT_LAST_USER_ID);
+                    stmt.execute();
+                    ResultSet resultSet = stmt.getResultSet();
+                    if (resultSet.next()) {
+                        id = resultSet.getLong("max(id)");
+                    }
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
+                }
+            }
+        } catch (SQLException ex) {
+            LOG.error(ex.getLocalizedMessage());
+        }
+        user = new UserDTO(id, 1L, 1L, username, password);
+        return user;
+    }
+
+    @Override
+    public boolean findByUsername(String username) {
+        LOG.trace("Start tracing MySQLUserDAO#findUserByLogin");
+        UserDTO user = null;
+        try (Connection connection = ConnectionPool.getConnection()) {
+            if (connection != null) {
+                try (PreparedStatement statement = connection.prepareStatement(Query.SELECT_USER_BY_LOGIN)) {
+                    connection.setAutoCommit(false);
+                    statement.setString(1, login);
+                    statement.execute();
+                    ResultSet resultSet = statement.getResultSet();
+                    if (resultSet.next()) {
+                        user = new UserDTO(resultSet.getInt("id_user"), resultSet.getString("login"),
+                                resultSet.getString("password"), resultSet.getString("email"),
+                                resultSet.getInt("id_role"), resultSet.getInt("id_state"));
+                    }
+                    resultSet.close();
+                    connection.commit();
+                } catch (SQLException e) {
+                    LOG.error(e.getLocalizedMessage());
+                    connection.rollback();
+                }
+            }
+        } catch (SQLException ex) {
+            LOG.error(ex.getLocalizedMessage());
+        }
+        return user;
     }
 }

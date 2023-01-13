@@ -6,4 +6,7 @@ import java.util.List;
 
 public interface IUserDAO {
     List<UserDTO> getAllUsers();
+    UserDTO createUser(String username, String password);
+
+    boolean findByUsername(String username);
 }

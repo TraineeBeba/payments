@@ -1,5 +1,8 @@
 package com.epam.payments.controller;
 
+import com.epam.payments.Path;
+import com.epam.payments.web.command.Command;
+import com.epam.payments.web.command.CommandContainer;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -26,10 +29,6 @@ public class Controller extends HttpServlet {
         process(request, response, "get");
     }
 
-    /**
-     * Main method of this controller.
-     */
-
     private void process(HttpServletRequest request,
                          HttpServletResponse response, String method) throws IOException, ServletException {
 
@@ -41,7 +40,6 @@ public class Controller extends HttpServlet {
 
         // obtain command object by its name
         Command command = CommandContainer.get(commandName);
-
         LOG.trace("Obtained command --> " + command);
 
         // execute command and get forward address
@@ -51,8 +49,8 @@ public class Controller extends HttpServlet {
         } catch (Exception ex) {
             request.setAttribute("errorMessage", ex.getMessage());
         }
-        LOG.trace("Forward address --> " + forward);
 
+        LOG.trace("Forward address --> " + forward);
         LOG.debug("Controller finished, now go to forward address --> " + forward);
 
         request.getRequestDispatcher(forward).forward(request, response);
