@@ -10,6 +10,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 
@@ -53,6 +54,8 @@ public class Controller extends HttpServlet {
 
             response.sendRedirect(toMove);
         } else if (method.equals("get")) {
+            HttpSession session = request.getSession();
+            LOG.trace("SESSION PARAMETR --> " + session.getAttribute("errorMsg"));
 
             LOG.trace("Forward address --> " + toMove);
             LOG.debug("Controller finished, now go to forward address --> " + toMove);

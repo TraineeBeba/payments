@@ -6499,3 +6499,1759 @@
 2023-01-15 15:08:17 INFO  LocaleTag:44 - Language is switched to UK
 2023-01-15 15:38:53 TRACE ContextListener:30 - Servlet context destruction starts
 2023-01-15 15:38:53 TRACE ContextListener:31 - Servlet context destruction finished
+2023-01-15 15:52:49 DEBUG ContextListener:39 - Log4j has been initialized
+2023-01-15 15:52:49 TRACE ContextListener:44 - Log4J initialization finished
+2023-01-15 15:52:49 TRACE ContextListener:26 - Servlet context initialization finished
+2023-01-15 15:52:54 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:52:54 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:52:54 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:52:54 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:52:54 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:52:54 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:52:54 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:52:54 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:52:54 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:52:54 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:52:54 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:52:54 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:52:54 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:52:54 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:52:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:52:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:52:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:52:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:52:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:52:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:52:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:53:00 TRACE Controller:28 - *****************GET*****************
+2023-01-15 15:53:00 DEBUG Controller:35 - Controller starts
+2023-01-15 15:53:00 TRACE Controller:38 - Request parameter: command --> goToRegisterCommand
+2023-01-15 15:53:00 DEBUG CommandFactory:30 - Command factory was successfully initialized
+2023-01-15 15:53:00 TRACE CommandFactory:31 - Number of commands --> 5
+2023-01-15 15:53:00 TRACE Controller:41 - Obtained command --> GoToRegisterCommand
+2023-01-15 15:53:00 TRACE GoToRegisterCommand:17 - Start tracing GoToLoginCommand
+2023-01-15 15:53:00 TRACE Controller:57 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 15:53:00 DEBUG Controller:58 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 15:53:02 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:53:02 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:53:02 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:53:02 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:53:02 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:53:02 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:53:02 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:53:14 TRACE Controller:23 - *****************POST*****************
+2023-01-15 15:53:14 DEBUG Controller:35 - Controller starts
+2023-01-15 15:53:14 TRACE Controller:38 - Request parameter: command --> registerCommand
+2023-01-15 15:53:14 TRACE Controller:41 - Obtained command --> RegisterCommand
+2023-01-15 15:53:14 TRACE RegisterCommand:26 - Start tracing RegisterCommand
+2023-01-15 15:53:14 TRACE ConnectionPool:82 - Start tracing MySQLUserDAO#findUserByLogin
+2023-01-15 15:53:14 TRACE ConnectionPool:27 - Connection is successful
+2023-01-15 15:53:15 INFO  ConnectionPool:94 - RES!!!!!!!!!!!!!!!!!!!! --> 0
+2023-01-15 15:53:15 TRACE Controller:51 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 15:53:15 DEBUG Controller:52 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 15:53:15 TRACE Controller:28 - *****************GET*****************
+2023-01-15 15:53:15 DEBUG Controller:35 - Controller starts
+2023-01-15 15:53:15 TRACE Controller:38 - Request parameter: command --> goToRegisterCommand
+2023-01-15 15:53:15 TRACE Controller:41 - Obtained command --> GoToRegisterCommand
+2023-01-15 15:53:15 TRACE GoToRegisterCommand:17 - Start tracing GoToLoginCommand
+2023-01-15 15:53:15 TRACE Controller:57 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 15:53:15 DEBUG Controller:58 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 15:53:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:53:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:53:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:53:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:53:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:53:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 15:53:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:20:43 TRACE ContextListener:30 - Servlet context destruction starts
+2023-01-15 16:20:43 TRACE ContextListener:31 - Servlet context destruction finished
+2023-01-15 16:21:36 DEBUG ContextListener:39 - Log4j has been initialized
+2023-01-15 16:21:36 TRACE ContextListener:44 - Log4J initialization finished
+2023-01-15 16:21:36 TRACE ContextListener:26 - Servlet context initialization finished
+2023-01-15 16:21:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:21:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:21:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:21:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:21:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:21:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:21:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:21:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:21:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:21:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:21:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:21:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:21:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:21:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:21:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:21:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:21:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:21:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:21:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:21:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:21:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:21:47 TRACE Controller:28 - *****************GET*****************
+2023-01-15 16:21:47 DEBUG Controller:35 - Controller starts
+2023-01-15 16:21:47 TRACE Controller:38 - Request parameter: command --> goToRegisterCommand
+2023-01-15 16:21:47 DEBUG CommandFactory:30 - Command factory was successfully initialized
+2023-01-15 16:21:47 TRACE CommandFactory:31 - Number of commands --> 5
+2023-01-15 16:21:47 TRACE Controller:41 - Obtained command --> GoToRegisterCommand
+2023-01-15 16:21:47 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 16:21:47 TRACE Controller:57 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:21:47 DEBUG Controller:58 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:21:49 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:21:49 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:21:49 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:21:49 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:21:49 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:21:49 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:21:49 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:22:08 TRACE Controller:23 - *****************POST*****************
+2023-01-15 16:22:08 DEBUG Controller:35 - Controller starts
+2023-01-15 16:22:08 TRACE Controller:38 - Request parameter: command --> registerCommand
+2023-01-15 16:22:08 TRACE Controller:41 - Obtained command --> RegisterCommand
+2023-01-15 16:22:08 TRACE RegisterCommand:26 - Start tracing RegisterCommand
+2023-01-15 16:22:08 TRACE Controller:51 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 16:22:08 DEBUG Controller:52 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 16:22:08 TRACE Controller:28 - *****************GET*****************
+2023-01-15 16:22:08 DEBUG Controller:35 - Controller starts
+2023-01-15 16:22:08 TRACE Controller:38 - Request parameter: command --> goToRegisterCommand
+2023-01-15 16:22:08 TRACE Controller:41 - Obtained command --> GoToRegisterCommand
+2023-01-15 16:22:08 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 16:22:08 TRACE Controller:57 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:22:08 DEBUG Controller:58 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:22:08 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:22:08 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:22:08 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:22:08 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:22:08 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:22:08 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:22:08 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:25:16 TRACE ContextListener:30 - Servlet context destruction starts
+2023-01-15 16:25:16 TRACE ContextListener:31 - Servlet context destruction finished
+2023-01-15 16:25:59 DEBUG ContextListener:39 - Log4j has been initialized
+2023-01-15 16:25:59 TRACE ContextListener:44 - Log4J initialization finished
+2023-01-15 16:25:59 TRACE ContextListener:26 - Servlet context initialization finished
+2023-01-15 16:26:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:08 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:08 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:08 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:08 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:08 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:08 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:08 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:11 TRACE Controller:28 - *****************GET*****************
+2023-01-15 16:26:11 DEBUG Controller:35 - Controller starts
+2023-01-15 16:26:11 TRACE Controller:38 - Request parameter: command --> goToRegisterCommand
+2023-01-15 16:26:11 DEBUG CommandFactory:30 - Command factory was successfully initialized
+2023-01-15 16:26:11 TRACE CommandFactory:31 - Number of commands --> 5
+2023-01-15 16:26:11 TRACE Controller:41 - Obtained command --> GoToRegisterCommand
+2023-01-15 16:26:11 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 16:26:11 TRACE Controller:57 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:26:11 DEBUG Controller:58 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:26:12 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:12 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:12 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:12 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:12 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:12 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:12 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:20 TRACE Controller:23 - *****************POST*****************
+2023-01-15 16:26:20 DEBUG Controller:35 - Controller starts
+2023-01-15 16:26:20 TRACE Controller:38 - Request parameter: command --> registerCommand
+2023-01-15 16:26:20 TRACE Controller:41 - Obtained command --> RegisterCommand
+2023-01-15 16:26:20 TRACE RegisterCommand:26 - Start tracing RegisterCommand
+2023-01-15 16:26:20 INFO  RegisterCommand:48 - RTGISTER CHECK -->Менше 6 символів в паролі
+2023-01-15 16:26:20 INFO  RegisterCommand:54 - ERROOOOOOOR
+2023-01-15 16:26:20 TRACE Controller:51 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 16:26:20 DEBUG Controller:52 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 16:26:20 TRACE Controller:28 - *****************GET*****************
+2023-01-15 16:26:20 DEBUG Controller:35 - Controller starts
+2023-01-15 16:26:20 TRACE Controller:38 - Request parameter: command --> goToRegisterCommand
+2023-01-15 16:26:20 TRACE Controller:41 - Obtained command --> GoToRegisterCommand
+2023-01-15 16:26:20 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 16:26:20 TRACE Controller:57 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:26:20 DEBUG Controller:58 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:26:20 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:20 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:20 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:20 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:20 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:20 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:26:20 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:31:17 TRACE ContextListener:30 - Servlet context destruction starts
+2023-01-15 16:31:17 TRACE ContextListener:31 - Servlet context destruction finished
+2023-01-15 16:32:01 DEBUG ContextListener:39 - Log4j has been initialized
+2023-01-15 16:32:01 TRACE ContextListener:44 - Log4J initialization finished
+2023-01-15 16:32:01 TRACE ContextListener:26 - Servlet context initialization finished
+2023-01-15 16:32:05 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:05 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:05 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:05 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:05 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:05 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:05 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:06 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:06 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:06 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:06 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:06 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:06 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:06 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:11 TRACE Controller:28 - *****************GET*****************
+2023-01-15 16:32:11 DEBUG Controller:35 - Controller starts
+2023-01-15 16:32:11 TRACE Controller:38 - Request parameter: command --> goToRegisterCommand
+2023-01-15 16:32:11 DEBUG CommandFactory:30 - Command factory was successfully initialized
+2023-01-15 16:32:11 TRACE CommandFactory:31 - Number of commands --> 5
+2023-01-15 16:32:11 TRACE Controller:41 - Obtained command --> GoToRegisterCommand
+2023-01-15 16:32:11 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 16:32:11 TRACE Controller:57 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:32:11 DEBUG Controller:58 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:32:12 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:12 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:12 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:12 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:12 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:12 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:12 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:21 TRACE Controller:23 - *****************POST*****************
+2023-01-15 16:32:21 DEBUG Controller:35 - Controller starts
+2023-01-15 16:32:21 TRACE Controller:38 - Request parameter: command --> registerCommand
+2023-01-15 16:32:21 TRACE Controller:41 - Obtained command --> RegisterCommand
+2023-01-15 16:32:21 TRACE RegisterCommand:26 - Start tracing RegisterCommand
+2023-01-15 16:32:21 INFO  RegisterCommand:48 - RTGISTER CHECK -->Less than 6 characters in password
+2023-01-15 16:32:21 INFO  RegisterCommand:54 - ERROOOOOOOR
+2023-01-15 16:32:21 TRACE Controller:51 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 16:32:21 DEBUG Controller:52 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 16:32:21 TRACE Controller:28 - *****************GET*****************
+2023-01-15 16:32:21 DEBUG Controller:35 - Controller starts
+2023-01-15 16:32:21 TRACE Controller:38 - Request parameter: command --> goToRegisterCommand
+2023-01-15 16:32:21 TRACE Controller:41 - Obtained command --> GoToRegisterCommand
+2023-01-15 16:32:21 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 16:32:21 TRACE Controller:57 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:32:21 DEBUG Controller:58 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:32:21 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:21 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:21 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:21 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:21 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:21 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:32:21 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:11 TRACE ContextListener:30 - Servlet context destruction starts
+2023-01-15 16:34:11 TRACE ContextListener:31 - Servlet context destruction finished
+2023-01-15 16:34:48 DEBUG ContextListener:39 - Log4j has been initialized
+2023-01-15 16:34:48 TRACE ContextListener:44 - Log4J initialization finished
+2023-01-15 16:34:48 TRACE ContextListener:26 - Servlet context initialization finished
+2023-01-15 16:34:52 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:52 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:52 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:52 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:52 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:52 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:52 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:52 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:52 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:52 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:52 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:52 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:52 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:52 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:53 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:53 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:53 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:53 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:53 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:53 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:53 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:57 TRACE Controller:28 - *****************GET*****************
+2023-01-15 16:34:57 DEBUG Controller:35 - Controller starts
+2023-01-15 16:34:57 TRACE Controller:38 - Request parameter: command --> goToRegisterCommand
+2023-01-15 16:34:57 DEBUG CommandFactory:30 - Command factory was successfully initialized
+2023-01-15 16:34:57 TRACE CommandFactory:31 - Number of commands --> 5
+2023-01-15 16:34:57 TRACE Controller:41 - Obtained command --> GoToRegisterCommand
+2023-01-15 16:34:57 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 16:34:57 TRACE Controller:57 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:34:57 DEBUG Controller:58 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:34:59 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:59 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:59 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:59 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:59 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:59 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:34:59 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:35:44 TRACE Controller:23 - *****************POST*****************
+2023-01-15 16:35:44 DEBUG Controller:35 - Controller starts
+2023-01-15 16:35:44 TRACE Controller:38 - Request parameter: command --> registerCommand
+2023-01-15 16:35:44 TRACE Controller:41 - Obtained command --> RegisterCommand
+2023-01-15 16:35:44 TRACE RegisterCommand:26 - Start tracing RegisterCommand
+2023-01-15 16:35:44 INFO  RegisterCommand:48 - RTGISTER CHECK -->Less than 6 characters in password
+2023-01-15 16:35:44 INFO  RegisterCommand:54 - ERROOOOOOOR
+2023-01-15 16:35:44 TRACE Controller:51 - Redirect address --> /controller?command=goToRegisterCommand&errorMsg=Less than 6 characters in password
+2023-01-15 16:35:44 DEBUG Controller:52 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand&errorMsg=Less than 6 characters in password
+2023-01-15 16:35:44 TRACE Controller:28 - *****************GET*****************
+2023-01-15 16:35:44 DEBUG Controller:35 - Controller starts
+2023-01-15 16:35:44 TRACE Controller:38 - Request parameter: command --> goToRegisterCommand
+2023-01-15 16:35:44 TRACE Controller:41 - Obtained command --> GoToRegisterCommand
+2023-01-15 16:35:44 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 16:35:44 TRACE Controller:57 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:35:44 DEBUG Controller:58 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:35:44 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:35:44 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:35:44 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:35:44 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:35:44 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:35:44 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:35:44 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:39:19 TRACE ContextListener:30 - Servlet context destruction starts
+2023-01-15 16:39:19 TRACE ContextListener:31 - Servlet context destruction finished
+2023-01-15 16:40:00 DEBUG ContextListener:39 - Log4j has been initialized
+2023-01-15 16:40:00 TRACE ContextListener:44 - Log4J initialization finished
+2023-01-15 16:40:00 TRACE ContextListener:26 - Servlet context initialization finished
+2023-01-15 16:40:06 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:06 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:06 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:06 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:06 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:06 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:06 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:06 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:06 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:06 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:06 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:06 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:06 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:06 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:09 TRACE Controller:28 - *****************GET*****************
+2023-01-15 16:40:09 DEBUG Controller:35 - Controller starts
+2023-01-15 16:40:09 TRACE Controller:38 - Request parameter: command --> goToRegisterCommand
+2023-01-15 16:40:09 DEBUG CommandFactory:30 - Command factory was successfully initialized
+2023-01-15 16:40:09 TRACE CommandFactory:31 - Number of commands --> 5
+2023-01-15 16:40:09 TRACE Controller:41 - Obtained command --> GoToRegisterCommand
+2023-01-15 16:40:09 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 16:40:09 INFO  Controller:56 - REQUEST PARAMETR --> null
+2023-01-15 16:40:09 TRACE Controller:58 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:40:09 DEBUG Controller:59 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:40:10 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:10 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:10 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:10 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:10 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:10 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:10 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:13 TRACE Controller:23 - *****************POST*****************
+2023-01-15 16:40:13 DEBUG Controller:35 - Controller starts
+2023-01-15 16:40:13 TRACE Controller:38 - Request parameter: command --> registerCommand
+2023-01-15 16:40:13 TRACE Controller:41 - Obtained command --> RegisterCommand
+2023-01-15 16:40:13 TRACE RegisterCommand:26 - Start tracing RegisterCommand
+2023-01-15 16:40:13 INFO  RegisterCommand:48 - RTGISTER CHECK -->Less than 6 characters in password
+2023-01-15 16:40:13 INFO  RegisterCommand:54 - ERROOOOOOOR
+2023-01-15 16:40:13 TRACE Controller:51 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 16:40:13 DEBUG Controller:52 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 16:40:13 TRACE Controller:28 - *****************GET*****************
+2023-01-15 16:40:13 DEBUG Controller:35 - Controller starts
+2023-01-15 16:40:13 TRACE Controller:38 - Request parameter: command --> goToRegisterCommand
+2023-01-15 16:40:13 TRACE Controller:41 - Obtained command --> GoToRegisterCommand
+2023-01-15 16:40:13 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 16:40:13 INFO  Controller:56 - REQUEST PARAMETR --> null
+2023-01-15 16:40:13 TRACE Controller:58 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:40:13 DEBUG Controller:59 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:40:13 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:13 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:13 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:13 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:13 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:13 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:40:13 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:46:31 TRACE ContextListener:30 - Servlet context destruction starts
+2023-01-15 16:46:31 TRACE ContextListener:31 - Servlet context destruction finished
+2023-01-15 16:47:33 DEBUG ContextListener:39 - Log4j has been initialized
+2023-01-15 16:47:33 TRACE ContextListener:44 - Log4J initialization finished
+2023-01-15 16:47:33 TRACE ContextListener:26 - Servlet context initialization finished
+2023-01-15 16:47:38 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:47:38 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:47:38 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:47:38 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:47:38 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:47:38 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:47:38 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:47:39 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:47:39 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:47:39 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:47:39 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:47:39 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:47:39 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:47:39 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:47:40 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:47:40 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:47:40 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:47:40 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:47:40 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:47:40 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:47:40 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:47:43 TRACE Controller:28 - *****************GET*****************
+2023-01-15 16:47:43 DEBUG Controller:35 - Controller starts
+2023-01-15 16:47:43 TRACE Controller:38 - Request parameter: command --> goToRegisterCommand
+2023-01-15 16:47:43 DEBUG CommandFactory:30 - Command factory was successfully initialized
+2023-01-15 16:47:43 TRACE CommandFactory:31 - Number of commands --> 5
+2023-01-15 16:47:43 TRACE Controller:41 - Obtained command --> GoToRegisterCommand
+2023-01-15 16:47:43 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 16:47:43 INFO  Controller:56 - REQUEST PARAMETR --> null
+2023-01-15 16:47:43 TRACE Controller:58 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:47:43 DEBUG Controller:59 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:47:46 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:47:46 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:47:46 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:47:46 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:47:46 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:47:46 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:47:46 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:48:01 TRACE Controller:23 - *****************POST*****************
+2023-01-15 16:48:01 DEBUG Controller:35 - Controller starts
+2023-01-15 16:48:01 TRACE Controller:38 - Request parameter: command --> registerCommand
+2023-01-15 16:48:01 TRACE Controller:41 - Obtained command --> RegisterCommand
+2023-01-15 16:48:01 TRACE RegisterCommand:26 - Start tracing RegisterCommand
+2023-01-15 16:48:01 INFO  RegisterCommand:48 - RTGISTER CHECK -->Less than 6 characters in password
+2023-01-15 16:48:01 INFO  RegisterCommand:54 - ERROOOOOOOR
+2023-01-15 16:48:01 TRACE Controller:51 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 16:48:01 DEBUG Controller:52 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 16:48:01 TRACE Controller:28 - *****************GET*****************
+2023-01-15 16:48:01 DEBUG Controller:35 - Controller starts
+2023-01-15 16:48:01 TRACE Controller:38 - Request parameter: command --> goToRegisterCommand
+2023-01-15 16:48:01 TRACE Controller:41 - Obtained command --> GoToRegisterCommand
+2023-01-15 16:48:01 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 16:48:01 INFO  Controller:56 - REQUEST PARAMETR --> null
+2023-01-15 16:48:01 TRACE Controller:58 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:48:01 DEBUG Controller:59 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:48:01 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:48:01 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:48:01 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:48:01 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:48:01 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:48:01 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:48:01 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:48:38 TRACE ContextListener:30 - Servlet context destruction starts
+2023-01-15 16:48:38 TRACE ContextListener:31 - Servlet context destruction finished
+2023-01-15 16:49:08 DEBUG ContextListener:39 - Log4j has been initialized
+2023-01-15 16:49:08 TRACE ContextListener:44 - Log4J initialization finished
+2023-01-15 16:49:08 TRACE ContextListener:26 - Servlet context initialization finished
+2023-01-15 16:49:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:20 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:20 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:20 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:20 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:20 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:20 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:20 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:23 TRACE Controller:28 - *****************GET*****************
+2023-01-15 16:49:23 DEBUG Controller:35 - Controller starts
+2023-01-15 16:49:23 TRACE Controller:38 - Request parameter: command --> goToRegisterCommand
+2023-01-15 16:49:23 DEBUG CommandFactory:30 - Command factory was successfully initialized
+2023-01-15 16:49:23 TRACE CommandFactory:31 - Number of commands --> 5
+2023-01-15 16:49:23 TRACE Controller:41 - Obtained command --> GoToRegisterCommand
+2023-01-15 16:49:23 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 16:49:23 INFO  Controller:56 - REQUEST PARAMETR --> null
+2023-01-15 16:49:23 TRACE Controller:58 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:49:23 DEBUG Controller:59 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:49:27 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:27 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:27 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:27 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:27 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:27 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:27 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:33 TRACE Controller:23 - *****************POST*****************
+2023-01-15 16:49:33 DEBUG Controller:35 - Controller starts
+2023-01-15 16:49:33 TRACE Controller:38 - Request parameter: command --> registerCommand
+2023-01-15 16:49:33 TRACE Controller:41 - Obtained command --> RegisterCommand
+2023-01-15 16:49:33 TRACE RegisterCommand:26 - Start tracing RegisterCommand
+2023-01-15 16:49:33 INFO  RegisterCommand:48 - RTGISTER CHECK -->Less than 6 characters in password
+2023-01-15 16:49:33 INFO  RegisterCommand:54 - ERROOOOOOOR
+2023-01-15 16:49:33 TRACE Controller:51 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 16:49:33 DEBUG Controller:52 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 16:49:33 TRACE Controller:28 - *****************GET*****************
+2023-01-15 16:49:33 DEBUG Controller:35 - Controller starts
+2023-01-15 16:49:33 TRACE Controller:38 - Request parameter: command --> goToRegisterCommand
+2023-01-15 16:49:33 TRACE Controller:41 - Obtained command --> GoToRegisterCommand
+2023-01-15 16:49:33 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 16:49:33 INFO  Controller:56 - REQUEST PARAMETR --> null
+2023-01-15 16:49:33 TRACE Controller:58 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:49:33 DEBUG Controller:59 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:49:33 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:33 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:33 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:33 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:33 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:33 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:49:33 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:50:09 TRACE ContextListener:30 - Servlet context destruction starts
+2023-01-15 16:50:09 TRACE ContextListener:31 - Servlet context destruction finished
+2023-01-15 16:50:37 DEBUG ContextListener:39 - Log4j has been initialized
+2023-01-15 16:50:37 TRACE ContextListener:44 - Log4J initialization finished
+2023-01-15 16:50:37 TRACE ContextListener:26 - Servlet context initialization finished
+2023-01-15 16:50:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:50:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:50:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:50:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:50:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:50:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:50:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:50:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:50:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:50:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:50:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:50:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:50:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:50:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:50:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:50:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:50:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:50:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:50:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:50:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:50:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:51:13 TRACE Controller:28 - *****************GET*****************
+2023-01-15 16:51:13 DEBUG Controller:35 - Controller starts
+2023-01-15 16:51:13 TRACE Controller:38 - Request parameter: command --> goToRegisterCommand
+2023-01-15 16:51:13 DEBUG CommandFactory:30 - Command factory was successfully initialized
+2023-01-15 16:51:13 TRACE CommandFactory:31 - Number of commands --> 5
+2023-01-15 16:51:13 TRACE Controller:41 - Obtained command --> GoToRegisterCommand
+2023-01-15 16:51:13 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 16:51:13 INFO  Controller:56 - REQUEST PARAMETR --> null
+2023-01-15 16:51:13 TRACE Controller:58 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:51:13 DEBUG Controller:59 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:51:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:51:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:51:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:51:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:51:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:51:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:51:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:51:18 TRACE Controller:23 - *****************POST*****************
+2023-01-15 16:51:18 DEBUG Controller:35 - Controller starts
+2023-01-15 16:51:18 TRACE Controller:38 - Request parameter: command --> registerCommand
+2023-01-15 16:51:18 TRACE Controller:41 - Obtained command --> RegisterCommand
+2023-01-15 16:51:18 TRACE RegisterCommand:26 - Start tracing RegisterCommand
+2023-01-15 16:51:18 INFO  RegisterCommand:48 - RTGISTER CHECK -->Less than 6 characters in password
+2023-01-15 16:51:18 INFO  RegisterCommand:54 - ERROOOOOOOR
+2023-01-15 16:51:18 TRACE Controller:51 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 16:51:18 DEBUG Controller:52 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 16:51:18 TRACE Controller:28 - *****************GET*****************
+2023-01-15 16:51:18 DEBUG Controller:35 - Controller starts
+2023-01-15 16:51:18 TRACE Controller:38 - Request parameter: command --> goToRegisterCommand
+2023-01-15 16:51:18 TRACE Controller:41 - Obtained command --> GoToRegisterCommand
+2023-01-15 16:51:18 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 16:51:18 INFO  Controller:56 - REQUEST PARAMETR --> null
+2023-01-15 16:51:18 TRACE Controller:58 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:51:18 DEBUG Controller:59 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:51:18 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:51:18 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:51:18 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:51:18 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:51:18 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:51:18 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:51:18 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:57:09 TRACE ContextListener:30 - Servlet context destruction starts
+2023-01-15 16:57:09 TRACE ContextListener:31 - Servlet context destruction finished
+2023-01-15 16:57:34 DEBUG ContextListener:39 - Log4j has been initialized
+2023-01-15 16:57:34 TRACE ContextListener:44 - Log4J initialization finished
+2023-01-15 16:57:34 TRACE ContextListener:26 - Servlet context initialization finished
+2023-01-15 16:57:39 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:57:39 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:57:39 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:57:39 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:57:39 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:57:39 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:57:39 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:57:39 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:57:39 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:57:39 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:57:39 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:57:39 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:57:39 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:57:39 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:57:40 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:57:40 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:57:40 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:57:40 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:57:40 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:57:40 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:57:40 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:12 TRACE Controller:29 - *****************GET*****************
+2023-01-15 16:58:12 DEBUG Controller:36 - Controller starts
+2023-01-15 16:58:12 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 16:58:12 DEBUG CommandFactory:30 - Command factory was successfully initialized
+2023-01-15 16:58:12 TRACE CommandFactory:31 - Number of commands --> 5
+2023-01-15 16:58:12 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 16:58:12 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 16:58:12 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 16:58:12 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:58:12 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:58:13 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:13 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:13 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:13 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:13 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:13 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:13 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:17 TRACE Controller:24 - *****************POST*****************
+2023-01-15 16:58:17 DEBUG Controller:36 - Controller starts
+2023-01-15 16:58:17 TRACE Controller:39 - Request parameter: command --> registerCommand
+2023-01-15 16:58:17 TRACE Controller:42 - Obtained command --> RegisterCommand
+2023-01-15 16:58:17 TRACE RegisterCommand:26 - Start tracing RegisterCommand
+2023-01-15 16:58:17 INFO  RegisterCommand:48 - RTGISTER CHECK -->Less than 6 characters in password
+2023-01-15 16:58:17 INFO  RegisterCommand:54 - ERROOOOOOOR
+2023-01-15 16:58:17 TRACE Controller:52 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 16:58:17 DEBUG Controller:53 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 16:58:17 TRACE Controller:29 - *****************GET*****************
+2023-01-15 16:58:17 DEBUG Controller:36 - Controller starts
+2023-01-15 16:58:17 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 16:58:17 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 16:58:17 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 16:58:17 TRACE Controller:58 - SESSION PARAMETR --> Less than 6 characters in password
+2023-01-15 16:58:17 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:58:17 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:58:17 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:17 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:17 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:17 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:17 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:17 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:17 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:30 TRACE Controller:29 - *****************GET*****************
+2023-01-15 16:58:30 DEBUG Controller:36 - Controller starts
+2023-01-15 16:58:30 TRACE Controller:39 - Request parameter: command --> goToLoginCommand
+2023-01-15 16:58:30 TRACE Controller:42 - Obtained command --> GoToLoginCommand
+2023-01-15 16:58:30 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-15 16:58:30 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 16:58:30 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-15 16:58:30 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-15 16:58:30 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:30 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:30 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:30 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:30 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:30 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:30 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:58 TRACE Controller:29 - *****************GET*****************
+2023-01-15 16:58:58 DEBUG Controller:36 - Controller starts
+2023-01-15 16:58:58 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 16:58:58 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 16:58:58 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 16:58:58 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 16:58:58 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:58:58 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:58:58 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:58 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:58 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:58 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:58 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:58 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:58:58 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:59:07 TRACE Controller:24 - *****************POST*****************
+2023-01-15 16:59:07 DEBUG Controller:36 - Controller starts
+2023-01-15 16:59:07 TRACE Controller:39 - Request parameter: command --> registerCommand
+2023-01-15 16:59:07 TRACE Controller:42 - Obtained command --> RegisterCommand
+2023-01-15 16:59:07 TRACE RegisterCommand:26 - Start tracing RegisterCommand
+2023-01-15 16:59:07 INFO  RegisterCommand:48 - RTGISTER CHECK -->Less than 6 characters in password
+2023-01-15 16:59:07 INFO  RegisterCommand:54 - ERROOOOOOOR
+2023-01-15 16:59:07 TRACE Controller:52 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 16:59:07 DEBUG Controller:53 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 16:59:07 TRACE Controller:29 - *****************GET*****************
+2023-01-15 16:59:07 DEBUG Controller:36 - Controller starts
+2023-01-15 16:59:07 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 16:59:07 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 16:59:07 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 16:59:07 TRACE Controller:58 - SESSION PARAMETR --> Less than 6 characters in password
+2023-01-15 16:59:07 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:59:07 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 16:59:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:59:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:59:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:59:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:59:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:59:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 16:59:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:00:55 TRACE ContextListener:30 - Servlet context destruction starts
+2023-01-15 17:00:55 TRACE ContextListener:31 - Servlet context destruction finished
+2023-01-15 17:01:25 DEBUG ContextListener:39 - Log4j has been initialized
+2023-01-15 17:01:25 TRACE ContextListener:44 - Log4J initialization finished
+2023-01-15 17:01:25 TRACE ContextListener:26 - Servlet context initialization finished
+2023-01-15 17:01:29 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:29 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:29 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:29 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:29 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:29 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:29 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:29 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:29 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:29 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:29 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:29 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:29 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:29 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:30 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:30 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:30 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:30 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:30 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:30 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:30 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:34 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:01:34 DEBUG Controller:36 - Controller starts
+2023-01-15 17:01:34 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:01:35 DEBUG CommandFactory:30 - Command factory was successfully initialized
+2023-01-15 17:01:35 TRACE CommandFactory:31 - Number of commands --> 5
+2023-01-15 17:01:35 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:01:35 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:01:35 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:01:35 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:01:35 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:01:37 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:37 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:37 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:37 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:37 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:37 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:37 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:41 TRACE Controller:24 - *****************POST*****************
+2023-01-15 17:01:41 DEBUG Controller:36 - Controller starts
+2023-01-15 17:01:41 TRACE Controller:39 - Request parameter: command --> registerCommand
+2023-01-15 17:01:41 TRACE Controller:42 - Obtained command --> RegisterCommand
+2023-01-15 17:01:41 TRACE RegisterCommand:26 - Start tracing RegisterCommand
+2023-01-15 17:01:41 INFO  RegisterCommand:48 - RTGISTER CHECK -->Less than 6 characters in password
+2023-01-15 17:01:41 INFO  RegisterCommand:54 - ERROOOOOOOR
+2023-01-15 17:01:41 TRACE Controller:52 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 17:01:41 DEBUG Controller:53 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 17:01:41 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:01:41 DEBUG Controller:36 - Controller starts
+2023-01-15 17:01:41 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:01:41 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:01:41 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:01:41 TRACE Controller:58 - SESSION PARAMETR --> Less than 6 characters in password
+2023-01-15 17:01:41 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:01:41 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:01:41 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:41 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:41 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:41 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:41 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:41 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:01:41 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:05:26 TRACE ContextListener:30 - Servlet context destruction starts
+2023-01-15 17:05:26 TRACE ContextListener:31 - Servlet context destruction finished
+2023-01-15 17:06:02 DEBUG ContextListener:39 - Log4j has been initialized
+2023-01-15 17:06:02 TRACE ContextListener:44 - Log4J initialization finished
+2023-01-15 17:06:02 TRACE ContextListener:26 - Servlet context initialization finished
+2023-01-15 17:06:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:06:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:06:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:06:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:06:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:06:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:06:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:06:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:06:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:06:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:06:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:06:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:06:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:06:07 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:06:08 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:06:08 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:06:08 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:06:08 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:06:08 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:06:08 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:06:08 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:06:52 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:06:52 DEBUG Controller:36 - Controller starts
+2023-01-15 17:06:52 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:06:52 DEBUG CommandFactory:30 - Command factory was successfully initialized
+2023-01-15 17:06:52 TRACE CommandFactory:31 - Number of commands --> 5
+2023-01-15 17:06:52 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:06:52 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:06:52 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:06:52 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:06:52 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:13:51 TRACE ContextListener:30 - Servlet context destruction starts
+2023-01-15 17:13:51 TRACE ContextListener:31 - Servlet context destruction finished
+2023-01-15 17:14:27 DEBUG ContextListener:39 - Log4j has been initialized
+2023-01-15 17:14:27 TRACE ContextListener:44 - Log4J initialization finished
+2023-01-15 17:14:27 TRACE ContextListener:26 - Servlet context initialization finished
+2023-01-15 17:14:32 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:14:32 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:14:32 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:14:32 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:14:32 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:14:32 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:14:32 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:14:32 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:14:32 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:14:32 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:14:32 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:14:32 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:14:32 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:14:32 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:14:33 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:14:33 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:14:33 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:14:33 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:14:33 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:14:33 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:14:33 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:14:36 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:14:36 DEBUG Controller:36 - Controller starts
+2023-01-15 17:14:36 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:14:36 DEBUG CommandFactory:30 - Command factory was successfully initialized
+2023-01-15 17:14:36 TRACE CommandFactory:31 - Number of commands --> 5
+2023-01-15 17:14:36 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:14:36 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:14:36 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:14:36 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:14:36 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:14:37 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:14:37 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:14:37 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:14:37 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:14:37 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:14:37 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:14:37 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:15:31 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:15:31 DEBUG Controller:36 - Controller starts
+2023-01-15 17:15:31 TRACE Controller:39 - Request parameter: command --> goToLoginCommand
+2023-01-15 17:15:31 TRACE Controller:42 - Obtained command --> GoToLoginCommand
+2023-01-15 17:15:31 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-15 17:15:31 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:15:31 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-15 17:15:31 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-15 17:15:31 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:15:31 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:15:31 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:15:31 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:15:31 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:15:31 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:15:31 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:15:34 TRACE Controller:24 - *****************POST*****************
+2023-01-15 17:15:34 DEBUG Controller:36 - Controller starts
+2023-01-15 17:15:34 TRACE Controller:39 - Request parameter: command --> loginCommand
+2023-01-15 17:15:34 TRACE Controller:42 - Obtained command --> LoginCommand
+2023-01-15 17:15:34 TRACE LoginCommand:24 - Start tracing LoginCommand
+2023-01-15 17:15:34 TRACE Controller:52 - Redirect address --> /controller?command=goToLoginCommand"
+2023-01-15 17:15:34 DEBUG Controller:53 - Controller finished, now redirect to address --> /controller?command=goToLoginCommand"
+2023-01-15 17:15:34 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:15:34 DEBUG Controller:36 - Controller starts
+2023-01-15 17:15:34 TRACE Controller:39 - Request parameter: command --> goToLoginCommand"
+2023-01-15 17:15:34 TRACE CommandFactory:36 - Command not found, name --> goToLoginCommand"
+2023-01-15 17:15:34 TRACE Controller:42 - Obtained command --> null
+2023-01-15 17:15:34 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:15:34 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/error_page.jsp
+2023-01-15 17:15:34 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/error_page.jsp
+2023-01-15 17:16:08 TRACE ContextListener:30 - Servlet context destruction starts
+2023-01-15 17:16:08 TRACE ContextListener:31 - Servlet context destruction finished
+2023-01-15 17:16:34 DEBUG ContextListener:39 - Log4j has been initialized
+2023-01-15 17:16:34 TRACE ContextListener:44 - Log4J initialization finished
+2023-01-15 17:16:34 TRACE ContextListener:26 - Servlet context initialization finished
+2023-01-15 17:16:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:43 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:45 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:45 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:45 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:45 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:45 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:45 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:45 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:52 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:16:52 DEBUG Controller:36 - Controller starts
+2023-01-15 17:16:52 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:16:52 DEBUG CommandFactory:30 - Command factory was successfully initialized
+2023-01-15 17:16:52 TRACE CommandFactory:31 - Number of commands --> 5
+2023-01-15 17:16:52 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:16:52 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:16:52 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:16:52 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:16:52 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:16:53 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:53 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:53 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:53 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:53 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:53 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:53 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:57 TRACE Controller:24 - *****************POST*****************
+2023-01-15 17:16:57 DEBUG Controller:36 - Controller starts
+2023-01-15 17:16:57 TRACE Controller:39 - Request parameter: command --> registerCommand
+2023-01-15 17:16:57 TRACE Controller:42 - Obtained command --> RegisterCommand
+2023-01-15 17:16:57 TRACE RegisterCommand:26 - Start tracing RegisterCommand
+2023-01-15 17:16:57 INFO  RegisterCommand:48 - RTGISTER CHECK -->page.register.title
+2023-01-15 17:16:57 INFO  RegisterCommand:54 - ERROOOOOOOR
+2023-01-15 17:16:57 TRACE Controller:52 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 17:16:57 DEBUG Controller:53 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 17:16:57 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:16:57 DEBUG Controller:36 - Controller starts
+2023-01-15 17:16:57 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:16:57 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:16:57 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:16:57 TRACE Controller:58 - SESSION PARAMETR --> page.register.title
+2023-01-15 17:16:57 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:16:57 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:16:57 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:57 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:57 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:57 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:57 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:57 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:57 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:16:57 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:18:55 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:18:55 DEBUG Controller:36 - Controller starts
+2023-01-15 17:18:55 TRACE Controller:39 - Request parameter: command --> goToLoginCommand
+2023-01-15 17:18:55 TRACE Controller:42 - Obtained command --> GoToLoginCommand
+2023-01-15 17:18:55 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-15 17:18:55 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:18:55 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-15 17:18:55 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-15 17:18:55 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:18:55 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:18:55 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:18:55 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:18:55 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:18:55 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:18:55 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:18:57 TRACE Controller:24 - *****************POST*****************
+2023-01-15 17:18:57 DEBUG Controller:36 - Controller starts
+2023-01-15 17:18:57 TRACE Controller:39 - Request parameter: command --> languageCommand
+2023-01-15 17:18:57 TRACE Controller:42 - Obtained command --> LanguageCommand
+2023-01-15 17:18:57 TRACE LanguageCommand:26 - Start tracing LanguageCommand
+2023-01-15 17:18:57 TRACE Controller:52 - Redirect address --> /controller?command=goToLoginCommand
+2023-01-15 17:18:57 DEBUG Controller:53 - Controller finished, now redirect to address --> /controller?command=goToLoginCommand
+2023-01-15 17:18:57 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:18:57 DEBUG Controller:36 - Controller starts
+2023-01-15 17:18:57 TRACE Controller:39 - Request parameter: command --> goToLoginCommand
+2023-01-15 17:18:57 TRACE Controller:42 - Obtained command --> GoToLoginCommand
+2023-01-15 17:18:57 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-15 17:18:57 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:18:57 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-15 17:18:57 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-15 17:18:57 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:18:57 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:18:57 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:18:57 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:18:57 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:18:57 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:18:57 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:18:58 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:18:58 DEBUG Controller:36 - Controller starts
+2023-01-15 17:18:58 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:18:58 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:18:58 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:18:58 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:18:58 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:18:58 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:18:58 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:18:58 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:18:58 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:18:58 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:18:58 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:18:58 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:18:58 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:19:03 TRACE Controller:24 - *****************POST*****************
+2023-01-15 17:19:03 DEBUG Controller:36 - Controller starts
+2023-01-15 17:19:03 TRACE Controller:39 - Request parameter: command --> registerCommand
+2023-01-15 17:19:03 TRACE Controller:42 - Obtained command --> RegisterCommand
+2023-01-15 17:19:03 TRACE RegisterCommand:26 - Start tracing RegisterCommand
+2023-01-15 17:19:03 INFO  RegisterCommand:48 - RTGISTER CHECK -->page.register.title
+2023-01-15 17:19:03 INFO  RegisterCommand:54 - ERROOOOOOOR
+2023-01-15 17:19:03 TRACE Controller:52 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 17:19:03 DEBUG Controller:53 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 17:19:03 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:19:03 DEBUG Controller:36 - Controller starts
+2023-01-15 17:19:03 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:19:03 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:19:03 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:19:03 TRACE Controller:58 - SESSION PARAMETR --> page.register.title
+2023-01-15 17:19:03 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:19:03 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:19:03 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:19:03 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:19:03 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:19:03 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:19:03 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:19:03 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:19:03 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:19:03 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:24:31 TRACE ContextListener:30 - Servlet context destruction starts
+2023-01-15 17:24:31 TRACE ContextListener:31 - Servlet context destruction finished
+2023-01-15 17:25:03 DEBUG ContextListener:39 - Log4j has been initialized
+2023-01-15 17:25:03 TRACE ContextListener:44 - Log4J initialization finished
+2023-01-15 17:25:03 TRACE ContextListener:26 - Servlet context initialization finished
+2023-01-15 17:25:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:10 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:10 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:10 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:10 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:10 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:10 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:10 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:14 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:25:14 DEBUG Controller:36 - Controller starts
+2023-01-15 17:25:14 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:25:14 DEBUG CommandFactory:30 - Command factory was successfully initialized
+2023-01-15 17:25:14 TRACE CommandFactory:31 - Number of commands --> 5
+2023-01-15 17:25:14 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:25:14 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:25:14 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:25:14 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:25:14 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:25:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:15 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:17 TRACE Controller:24 - *****************POST*****************
+2023-01-15 17:25:17 DEBUG Controller:36 - Controller starts
+2023-01-15 17:25:17 TRACE Controller:39 - Request parameter: command --> registerCommand
+2023-01-15 17:25:17 TRACE Controller:42 - Obtained command --> RegisterCommand
+2023-01-15 17:25:17 TRACE RegisterCommand:26 - Start tracing RegisterCommand
+2023-01-15 17:25:17 INFO  RegisterCommand:48 - RTGISTER CHECK -->error.password.few_chars
+2023-01-15 17:25:17 INFO  RegisterCommand:54 - ERROOOOOOOR
+2023-01-15 17:25:17 TRACE Controller:52 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 17:25:17 DEBUG Controller:53 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 17:25:17 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:25:17 DEBUG Controller:36 - Controller starts
+2023-01-15 17:25:17 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:25:17 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:25:17 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:25:17 TRACE Controller:58 - SESSION PARAMETR --> error.password.few_chars
+2023-01-15 17:25:17 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:25:17 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:25:17 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:17 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:17 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:17 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:17 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:17 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:17 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:17 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:21 TRACE Controller:24 - *****************POST*****************
+2023-01-15 17:25:21 DEBUG Controller:36 - Controller starts
+2023-01-15 17:25:21 TRACE Controller:39 - Request parameter: command --> languageCommand
+2023-01-15 17:25:21 TRACE Controller:42 - Obtained command --> LanguageCommand
+2023-01-15 17:25:21 TRACE LanguageCommand:26 - Start tracing LanguageCommand
+2023-01-15 17:25:21 TRACE Controller:52 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 17:25:21 DEBUG Controller:53 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 17:25:21 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:25:21 DEBUG Controller:36 - Controller starts
+2023-01-15 17:25:21 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:25:21 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:25:21 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:25:21 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:25:21 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:25:21 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:25:21 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:25:21 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:25:21 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:25:21 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:25:21 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:25:21 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:25:21 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:25:25 TRACE Controller:24 - *****************POST*****************
+2023-01-15 17:25:25 DEBUG Controller:36 - Controller starts
+2023-01-15 17:25:25 TRACE Controller:39 - Request parameter: command --> registerCommand
+2023-01-15 17:25:25 TRACE Controller:42 - Obtained command --> RegisterCommand
+2023-01-15 17:25:25 TRACE RegisterCommand:26 - Start tracing RegisterCommand
+2023-01-15 17:25:25 INFO  RegisterCommand:48 - RTGISTER CHECK -->error.password.few_chars
+2023-01-15 17:25:25 INFO  RegisterCommand:54 - ERROOOOOOOR
+2023-01-15 17:25:25 TRACE Controller:52 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 17:25:25 DEBUG Controller:53 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 17:25:25 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:25:25 DEBUG Controller:36 - Controller starts
+2023-01-15 17:25:25 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:25:25 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:25:25 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:25:25 TRACE Controller:58 - SESSION PARAMETR --> error.password.few_chars
+2023-01-15 17:25:25 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:25:25 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:25:25 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:25:25 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:25:25 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:25:25 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:25:25 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:25:25 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:25:25 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:25:25 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:25:41 TRACE Controller:24 - *****************POST*****************
+2023-01-15 17:25:41 DEBUG Controller:36 - Controller starts
+2023-01-15 17:25:41 TRACE Controller:39 - Request parameter: command --> languageCommand
+2023-01-15 17:25:41 TRACE Controller:42 - Obtained command --> LanguageCommand
+2023-01-15 17:25:41 TRACE LanguageCommand:26 - Start tracing LanguageCommand
+2023-01-15 17:25:41 TRACE Controller:52 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 17:25:41 DEBUG Controller:53 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 17:25:41 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:25:41 DEBUG Controller:36 - Controller starts
+2023-01-15 17:25:41 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:25:41 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:25:41 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:25:41 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:25:41 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:25:41 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:25:41 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:41 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:41 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:41 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:41 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:41 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:41 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:43 TRACE Controller:24 - *****************POST*****************
+2023-01-15 17:25:43 DEBUG Controller:36 - Controller starts
+2023-01-15 17:25:43 TRACE Controller:39 - Request parameter: command --> languageCommand
+2023-01-15 17:25:43 TRACE Controller:42 - Obtained command --> LanguageCommand
+2023-01-15 17:25:43 TRACE LanguageCommand:26 - Start tracing LanguageCommand
+2023-01-15 17:25:43 TRACE Controller:52 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 17:25:43 DEBUG Controller:53 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 17:25:43 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:25:43 DEBUG Controller:36 - Controller starts
+2023-01-15 17:25:43 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:25:43 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:25:43 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:25:43 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:25:43 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:25:43 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:25:43 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:25:43 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:25:43 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:25:43 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:25:43 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:25:43 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:25:43 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:25:44 TRACE Controller:24 - *****************POST*****************
+2023-01-15 17:25:44 DEBUG Controller:36 - Controller starts
+2023-01-15 17:25:44 TRACE Controller:39 - Request parameter: command --> languageCommand
+2023-01-15 17:25:44 TRACE Controller:42 - Obtained command --> LanguageCommand
+2023-01-15 17:25:44 TRACE LanguageCommand:26 - Start tracing LanguageCommand
+2023-01-15 17:25:44 TRACE Controller:52 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 17:25:44 DEBUG Controller:53 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 17:25:44 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:25:44 DEBUG Controller:36 - Controller starts
+2023-01-15 17:25:44 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:25:44 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:25:44 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:25:44 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:25:44 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:25:44 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:25:44 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:44 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:44 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:44 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:44 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:44 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:44 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:45 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:25:45 DEBUG Controller:36 - Controller starts
+2023-01-15 17:25:45 TRACE Controller:39 - Request parameter: command --> goToLoginCommand
+2023-01-15 17:25:45 TRACE Controller:42 - Obtained command --> GoToLoginCommand
+2023-01-15 17:25:45 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-15 17:25:45 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:25:45 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-15 17:25:45 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-15 17:25:45 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:45 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:45 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:45 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:45 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:45 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:45 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:25:55 TRACE ContextListener:30 - Servlet context destruction starts
+2023-01-15 17:25:55 TRACE ContextListener:31 - Servlet context destruction finished
+2023-01-15 17:26:41 DEBUG ContextListener:39 - Log4j has been initialized
+2023-01-15 17:26:41 TRACE ContextListener:44 - Log4J initialization finished
+2023-01-15 17:26:41 TRACE ContextListener:26 - Servlet context initialization finished
+2023-01-15 17:26:43 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:26:43 DEBUG Controller:36 - Controller starts
+2023-01-15 17:26:43 TRACE Controller:39 - Request parameter: command --> null
+2023-01-15 17:26:43 DEBUG CommandFactory:30 - Command factory was successfully initialized
+2023-01-15 17:26:43 TRACE CommandFactory:31 - Number of commands --> 5
+2023-01-15 17:26:43 TRACE CommandFactory:36 - Command not found, name --> null
+2023-01-15 17:26:43 TRACE Controller:42 - Obtained command --> null
+2023-01-15 17:26:43 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:26:43 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/error_page.jsp
+2023-01-15 17:26:43 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/error_page.jsp
+2023-01-15 17:26:47 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:26:47 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:26:47 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:26:47 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:26:47 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:26:47 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:26:47 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:26:48 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:26:48 DEBUG Controller:36 - Controller starts
+2023-01-15 17:26:48 TRACE Controller:39 - Request parameter: command --> null
+2023-01-15 17:26:48 TRACE CommandFactory:36 - Command not found, name --> null
+2023-01-15 17:26:48 TRACE Controller:42 - Obtained command --> null
+2023-01-15 17:26:48 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:26:48 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/error_page.jsp
+2023-01-15 17:26:48 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/error_page.jsp
+2023-01-15 17:27:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:28 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:27:28 DEBUG Controller:36 - Controller starts
+2023-01-15 17:27:28 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:27:28 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:27:28 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:27:28 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:27:28 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:27:28 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:27:29 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:29 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:29 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:29 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:29 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:29 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:29 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:45 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:27:45 DEBUG Controller:36 - Controller starts
+2023-01-15 17:27:45 TRACE Controller:39 - Request parameter: command --> goToLoginCommand
+2023-01-15 17:27:45 TRACE Controller:42 - Obtained command --> GoToLoginCommand
+2023-01-15 17:27:45 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-15 17:27:45 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:27:45 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-15 17:27:45 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-15 17:27:45 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:45 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:45 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:45 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:45 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:45 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:45 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:47 TRACE Controller:24 - *****************POST*****************
+2023-01-15 17:27:47 DEBUG Controller:36 - Controller starts
+2023-01-15 17:27:47 TRACE Controller:39 - Request parameter: command --> languageCommand
+2023-01-15 17:27:47 TRACE Controller:42 - Obtained command --> LanguageCommand
+2023-01-15 17:27:47 TRACE LanguageCommand:26 - Start tracing LanguageCommand
+2023-01-15 17:27:47 TRACE Controller:52 - Redirect address --> /controller?command=goToLoginCommand
+2023-01-15 17:27:47 DEBUG Controller:53 - Controller finished, now redirect to address --> /controller?command=goToLoginCommand
+2023-01-15 17:27:47 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:27:47 DEBUG Controller:36 - Controller starts
+2023-01-15 17:27:47 TRACE Controller:39 - Request parameter: command --> goToLoginCommand
+2023-01-15 17:27:47 TRACE Controller:42 - Obtained command --> GoToLoginCommand
+2023-01-15 17:27:47 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-15 17:27:47 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:27:47 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-15 17:27:47 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-15 17:27:47 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:27:47 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:27:47 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:27:47 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:27:47 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:27:47 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:27:47 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:27:50 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:27:50 DEBUG Controller:36 - Controller starts
+2023-01-15 17:27:50 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:27:50 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:27:50 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:27:50 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:27:50 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:27:50 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:27:50 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:27:50 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:27:50 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:27:50 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:27:50 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:27:50 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:27:50 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:27:54 TRACE Controller:24 - *****************POST*****************
+2023-01-15 17:27:54 DEBUG Controller:36 - Controller starts
+2023-01-15 17:27:54 TRACE Controller:39 - Request parameter: command --> registerCommand
+2023-01-15 17:27:54 TRACE Controller:42 - Obtained command --> RegisterCommand
+2023-01-15 17:27:54 TRACE RegisterCommand:26 - Start tracing RegisterCommand
+2023-01-15 17:27:54 INFO  RegisterCommand:48 - RTGISTER CHECK -->error.password.few_chars
+2023-01-15 17:27:54 INFO  RegisterCommand:54 - ERROOOOOOOR
+2023-01-15 17:27:54 TRACE Controller:52 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 17:27:54 DEBUG Controller:53 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 17:27:54 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:27:54 DEBUG Controller:36 - Controller starts
+2023-01-15 17:27:54 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:27:54 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:27:54 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:27:54 TRACE Controller:58 - SESSION PARAMETR --> error.password.few_chars
+2023-01-15 17:27:54 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:27:54 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:27:54 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:27:54 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:27:54 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:27:54 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:27:54 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:27:54 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:27:54 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:27:54 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:27:56 TRACE Controller:24 - *****************POST*****************
+2023-01-15 17:27:56 DEBUG Controller:36 - Controller starts
+2023-01-15 17:27:56 TRACE Controller:39 - Request parameter: command --> languageCommand
+2023-01-15 17:27:56 TRACE Controller:42 - Obtained command --> LanguageCommand
+2023-01-15 17:27:56 TRACE LanguageCommand:26 - Start tracing LanguageCommand
+2023-01-15 17:27:56 TRACE Controller:52 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 17:27:56 DEBUG Controller:53 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 17:27:56 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:27:56 DEBUG Controller:36 - Controller starts
+2023-01-15 17:27:56 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:27:56 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:27:56 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:27:56 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:27:56 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:27:56 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:27:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:59 TRACE Controller:24 - *****************POST*****************
+2023-01-15 17:27:59 DEBUG Controller:36 - Controller starts
+2023-01-15 17:27:59 TRACE Controller:39 - Request parameter: command --> registerCommand
+2023-01-15 17:27:59 TRACE Controller:42 - Obtained command --> RegisterCommand
+2023-01-15 17:27:59 TRACE RegisterCommand:26 - Start tracing RegisterCommand
+2023-01-15 17:27:59 INFO  RegisterCommand:48 - RTGISTER CHECK -->error.password.few_chars
+2023-01-15 17:27:59 INFO  RegisterCommand:54 - ERROOOOOOOR
+2023-01-15 17:27:59 TRACE Controller:52 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 17:27:59 DEBUG Controller:53 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 17:27:59 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:27:59 DEBUG Controller:36 - Controller starts
+2023-01-15 17:27:59 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:27:59 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:27:59 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:27:59 TRACE Controller:58 - SESSION PARAMETR --> error.password.few_chars
+2023-01-15 17:27:59 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:27:59 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:27:59 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:59 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:59 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:59 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:59 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:59 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:59 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:27:59 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:39:20 TRACE ContextListener:30 - Servlet context destruction starts
+2023-01-15 17:39:20 TRACE ContextListener:31 - Servlet context destruction finished
+2023-01-15 17:39:51 DEBUG ContextListener:39 - Log4j has been initialized
+2023-01-15 17:39:51 TRACE ContextListener:44 - Log4J initialization finished
+2023-01-15 17:39:51 TRACE ContextListener:26 - Servlet context initialization finished
+2023-01-15 17:39:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:39:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:39:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:39:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:39:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:39:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:39:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:39:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:39:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:39:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:39:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:39:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:39:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:39:56 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:39:57 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:39:57 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:39:57 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:39:57 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:39:57 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:39:57 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:39:57 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:40:00 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:40:00 DEBUG Controller:36 - Controller starts
+2023-01-15 17:40:00 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:40:00 DEBUG CommandFactory:30 - Command factory was successfully initialized
+2023-01-15 17:40:00 TRACE CommandFactory:31 - Number of commands --> 5
+2023-01-15 17:40:00 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:40:00 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:40:00 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:40:00 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:40:00 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:40:00 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:40:00 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:40:00 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:40:00 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:40:00 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:40:00 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:40:00 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:40:09 TRACE Controller:24 - *****************POST*****************
+2023-01-15 17:40:09 DEBUG Controller:36 - Controller starts
+2023-01-15 17:40:09 TRACE Controller:39 - Request parameter: command --> registerCommand
+2023-01-15 17:40:09 TRACE Controller:42 - Obtained command --> RegisterCommand
+2023-01-15 17:40:09 TRACE RegisterCommand:26 - Start tracing RegisterCommand
+2023-01-15 17:40:09 TRACE ConnectionPool:82 - Start tracing MySQLUserDAO#findUserByLogin
+2023-01-15 17:40:09 TRACE ConnectionPool:27 - Connection is successful
+2023-01-15 17:40:10 INFO  ConnectionPool:94 - RES!!!!!!!!!!!!!!!!!!!! --> 1
+2023-01-15 17:40:10 TRACE ConnectionPool:50 - Start tracing UserDAO#createUser
+2023-01-15 17:40:10 TRACE ConnectionPool:27 - Connection is successful
+2023-01-15 17:40:10 ERROR ConnectionPool:69 - Duplicate entry 'hui1' for key 'username'
+2023-01-15 17:40:10 INFO  RegisterCommand:48 - RTGISTER CHECK -->null
+2023-01-15 17:40:10 TRACE ConnectionPool:50 - Start tracing UserDAO#createUser
+2023-01-15 17:40:10 TRACE ConnectionPool:27 - Connection is successful
+2023-01-15 17:40:10 ERROR ConnectionPool:69 - Duplicate entry 'hui1' for key 'username'
+2023-01-15 17:40:10 INFO  RegisterCommand:52 - HERE!!!!!!!!!
+2023-01-15 17:40:10 TRACE Controller:52 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 17:40:10 DEBUG Controller:53 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 17:40:10 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:40:10 DEBUG Controller:36 - Controller starts
+2023-01-15 17:40:10 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:40:10 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:40:10 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:40:10 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:40:10 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:40:10 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:40:10 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:40:10 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:40:10 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:40:10 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:40:10 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:40:10 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:40:10 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:41:30 TRACE ContextListener:30 - Servlet context destruction starts
+2023-01-15 17:41:30 TRACE ContextListener:31 - Servlet context destruction finished
+2023-01-15 17:42:17 DEBUG ContextListener:39 - Log4j has been initialized
+2023-01-15 17:42:17 TRACE ContextListener:44 - Log4J initialization finished
+2023-01-15 17:42:17 TRACE ContextListener:26 - Servlet context initialization finished
+2023-01-15 17:42:26 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:26 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:26 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:26 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:26 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:26 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:26 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:26 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:26 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:26 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:26 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:26 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:26 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:26 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:28 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:28 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:28 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:28 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:28 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:28 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:28 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:31 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:42:31 DEBUG Controller:36 - Controller starts
+2023-01-15 17:42:31 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:42:31 DEBUG CommandFactory:30 - Command factory was successfully initialized
+2023-01-15 17:42:31 TRACE CommandFactory:31 - Number of commands --> 5
+2023-01-15 17:42:31 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:42:31 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:42:31 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:42:31 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:42:31 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:42:33 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:33 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:33 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:33 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:33 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:33 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:33 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:41 TRACE Controller:24 - *****************POST*****************
+2023-01-15 17:42:41 DEBUG Controller:36 - Controller starts
+2023-01-15 17:42:41 TRACE Controller:39 - Request parameter: command --> registerCommand
+2023-01-15 17:42:41 TRACE Controller:42 - Obtained command --> RegisterCommand
+2023-01-15 17:42:41 TRACE RegisterCommand:26 - Start tracing RegisterCommand
+2023-01-15 17:42:41 TRACE ConnectionPool:82 - Start tracing MySQLUserDAO#findUserByLogin
+2023-01-15 17:42:41 TRACE ConnectionPool:27 - Connection is successful
+2023-01-15 17:42:42 INFO  ConnectionPool:94 - RES!!!!!!!!!!!!!!!!!!!! --> 1
+2023-01-15 17:42:42 INFO  RegisterCommand:48 - RTGISTER CHECK -->error.login.username_taken
+2023-01-15 17:42:42 INFO  RegisterCommand:54 - ERROOOOOOOR
+2023-01-15 17:42:42 TRACE Controller:52 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 17:42:42 DEBUG Controller:53 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 17:42:42 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:42:42 DEBUG Controller:36 - Controller starts
+2023-01-15 17:42:42 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:42:42 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:42:42 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:42:42 TRACE Controller:58 - SESSION PARAMETR --> error.login.username_taken
+2023-01-15 17:42:42 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:42:42 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:42:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:42 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:42:57 TRACE Controller:24 - *****************POST*****************
+2023-01-15 17:42:57 DEBUG Controller:36 - Controller starts
+2023-01-15 17:42:57 TRACE Controller:39 - Request parameter: command --> languageCommand
+2023-01-15 17:42:57 TRACE Controller:42 - Obtained command --> LanguageCommand
+2023-01-15 17:42:57 TRACE LanguageCommand:26 - Start tracing LanguageCommand
+2023-01-15 17:42:57 TRACE Controller:52 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 17:42:57 DEBUG Controller:53 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 17:42:57 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:42:57 DEBUG Controller:36 - Controller starts
+2023-01-15 17:42:57 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:42:57 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:42:57 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:42:57 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:42:57 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:42:57 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:42:57 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:42:57 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:42:57 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:42:57 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:42:57 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:42:57 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:42:57 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:43:03 TRACE Controller:24 - *****************POST*****************
+2023-01-15 17:43:03 DEBUG Controller:36 - Controller starts
+2023-01-15 17:43:03 TRACE Controller:39 - Request parameter: command --> registerCommand
+2023-01-15 17:43:03 TRACE Controller:42 - Obtained command --> RegisterCommand
+2023-01-15 17:43:03 TRACE RegisterCommand:26 - Start tracing RegisterCommand
+2023-01-15 17:43:03 TRACE ConnectionPool:82 - Start tracing MySQLUserDAO#findUserByLogin
+2023-01-15 17:43:03 TRACE ConnectionPool:27 - Connection is successful
+2023-01-15 17:43:03 INFO  ConnectionPool:94 - RES!!!!!!!!!!!!!!!!!!!! --> 1
+2023-01-15 17:43:03 INFO  RegisterCommand:48 - RTGISTER CHECK -->error.login.username_taken
+2023-01-15 17:43:03 INFO  RegisterCommand:54 - ERROOOOOOOR
+2023-01-15 17:43:03 TRACE Controller:52 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 17:43:03 DEBUG Controller:53 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 17:43:03 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:43:03 DEBUG Controller:36 - Controller starts
+2023-01-15 17:43:03 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:43:03 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:43:03 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:43:03 TRACE Controller:58 - SESSION PARAMETR --> error.login.username_taken
+2023-01-15 17:43:03 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:43:03 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:43:03 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:43:03 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:43:03 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:43:03 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:43:03 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:43:03 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:43:03 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:43:03 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:43:21 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:43:21 DEBUG Controller:36 - Controller starts
+2023-01-15 17:43:21 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:43:21 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:43:21 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:43:21 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:43:21 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:43:21 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:43:21 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:43:21 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:43:21 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:43:21 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:43:21 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:43:21 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:43:21 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:43:35 TRACE Controller:24 - *****************POST*****************
+2023-01-15 17:43:35 DEBUG Controller:36 - Controller starts
+2023-01-15 17:43:35 TRACE Controller:39 - Request parameter: command --> registerCommand
+2023-01-15 17:43:35 TRACE Controller:42 - Obtained command --> RegisterCommand
+2023-01-15 17:43:35 TRACE RegisterCommand:26 - Start tracing RegisterCommand
+2023-01-15 17:43:35 TRACE ConnectionPool:82 - Start tracing MySQLUserDAO#findUserByLogin
+2023-01-15 17:43:35 TRACE ConnectionPool:27 - Connection is successful
+2023-01-15 17:43:35 INFO  ConnectionPool:94 - RES!!!!!!!!!!!!!!!!!!!! --> 1
+2023-01-15 17:43:35 INFO  RegisterCommand:48 - RTGISTER CHECK -->error.login.username_taken
+2023-01-15 17:43:35 INFO  RegisterCommand:54 - ERROOOOOOOR
+2023-01-15 17:43:35 TRACE Controller:52 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 17:43:35 DEBUG Controller:53 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 17:43:35 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:43:35 DEBUG Controller:36 - Controller starts
+2023-01-15 17:43:35 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:43:35 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:43:35 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:43:35 TRACE Controller:58 - SESSION PARAMETR --> error.login.username_taken
+2023-01-15 17:43:35 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:43:35 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:43:35 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:43:35 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:43:35 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:43:35 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:43:35 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:43:35 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:43:35 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:43:35 INFO  LocaleTag:44 - Language is switched to UK
+2023-01-15 17:43:38 TRACE Controller:24 - *****************POST*****************
+2023-01-15 17:43:38 DEBUG Controller:36 - Controller starts
+2023-01-15 17:43:38 TRACE Controller:39 - Request parameter: command --> languageCommand
+2023-01-15 17:43:38 TRACE Controller:42 - Obtained command --> LanguageCommand
+2023-01-15 17:43:38 TRACE LanguageCommand:26 - Start tracing LanguageCommand
+2023-01-15 17:43:38 TRACE Controller:52 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 17:43:38 DEBUG Controller:53 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 17:43:38 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:43:38 DEBUG Controller:36 - Controller starts
+2023-01-15 17:43:38 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:43:38 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:43:38 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:43:38 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:43:38 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:43:38 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:43:38 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:43:38 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:43:38 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:43:38 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:43:38 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:43:38 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:43:38 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:43:51 TRACE Controller:24 - *****************POST*****************
+2023-01-15 17:43:51 DEBUG Controller:36 - Controller starts
+2023-01-15 17:43:51 TRACE Controller:39 - Request parameter: command --> registerCommand
+2023-01-15 17:43:51 TRACE Controller:42 - Obtained command --> RegisterCommand
+2023-01-15 17:43:51 TRACE RegisterCommand:26 - Start tracing RegisterCommand
+2023-01-15 17:43:51 TRACE ConnectionPool:82 - Start tracing MySQLUserDAO#findUserByLogin
+2023-01-15 17:43:51 TRACE ConnectionPool:27 - Connection is successful
+2023-01-15 17:43:51 INFO  ConnectionPool:94 - RES!!!!!!!!!!!!!!!!!!!! --> 1
+2023-01-15 17:43:51 INFO  RegisterCommand:48 - RTGISTER CHECK -->error.login.username_taken
+2023-01-15 17:43:51 INFO  RegisterCommand:54 - ERROOOOOOOR
+2023-01-15 17:43:51 TRACE Controller:52 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 17:43:51 DEBUG Controller:53 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 17:43:51 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:43:51 DEBUG Controller:36 - Controller starts
+2023-01-15 17:43:51 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:43:51 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:43:51 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:43:51 TRACE Controller:58 - SESSION PARAMETR --> error.login.username_taken
+2023-01-15 17:43:51 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:43:51 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:43:51 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:43:51 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:43:51 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:43:51 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:43:51 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:43:51 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:43:51 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:43:51 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:43:57 TRACE Controller:24 - *****************POST*****************
+2023-01-15 17:43:57 DEBUG Controller:36 - Controller starts
+2023-01-15 17:43:57 TRACE Controller:39 - Request parameter: command --> registerCommand
+2023-01-15 17:43:57 TRACE Controller:42 - Obtained command --> RegisterCommand
+2023-01-15 17:43:57 TRACE RegisterCommand:26 - Start tracing RegisterCommand
+2023-01-15 17:43:57 TRACE ConnectionPool:82 - Start tracing MySQLUserDAO#findUserByLogin
+2023-01-15 17:43:57 TRACE ConnectionPool:27 - Connection is successful
+2023-01-15 17:43:57 INFO  ConnectionPool:94 - RES!!!!!!!!!!!!!!!!!!!! --> 0
+2023-01-15 17:43:57 INFO  RegisterCommand:48 - RTGISTER CHECK -->error.password.few_chars
+2023-01-15 17:43:57 INFO  RegisterCommand:54 - ERROOOOOOOR
+2023-01-15 17:43:57 TRACE Controller:52 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 17:43:57 DEBUG Controller:53 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 17:43:57 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:43:57 DEBUG Controller:36 - Controller starts
+2023-01-15 17:43:57 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:43:57 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:43:57 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:43:57 TRACE Controller:58 - SESSION PARAMETR --> error.password.few_chars
+2023-01-15 17:43:57 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:43:57 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:43:57 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:43:57 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:43:57 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:43:57 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:43:57 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:43:57 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:43:57 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:43:57 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:44:09 TRACE Controller:24 - *****************POST*****************
+2023-01-15 17:44:09 DEBUG Controller:36 - Controller starts
+2023-01-15 17:44:09 TRACE Controller:39 - Request parameter: command --> registerCommand
+2023-01-15 17:44:09 TRACE Controller:42 - Obtained command --> RegisterCommand
+2023-01-15 17:44:09 TRACE RegisterCommand:26 - Start tracing RegisterCommand
+2023-01-15 17:44:09 TRACE ConnectionPool:82 - Start tracing MySQLUserDAO#findUserByLogin
+2023-01-15 17:44:09 TRACE ConnectionPool:27 - Connection is successful
+2023-01-15 17:44:09 INFO  ConnectionPool:94 - RES!!!!!!!!!!!!!!!!!!!! --> 0
+2023-01-15 17:44:09 TRACE ConnectionPool:50 - Start tracing UserDAO#createUser
+2023-01-15 17:44:09 TRACE ConnectionPool:27 - Connection is successful
+2023-01-15 17:44:09 INFO  RegisterCommand:48 - RTGISTER CHECK -->null
+2023-01-15 17:44:09 TRACE ConnectionPool:50 - Start tracing UserDAO#createUser
+2023-01-15 17:44:09 TRACE ConnectionPool:27 - Connection is successful
+2023-01-15 17:44:09 ERROR ConnectionPool:69 - Duplicate entry 'hui4' for key 'username'
+2023-01-15 17:44:09 INFO  RegisterCommand:52 - HERE!!!!!!!!!
+2023-01-15 17:44:09 TRACE Controller:52 - Redirect address --> /controller?command=goToRegisterCommand
+2023-01-15 17:44:09 DEBUG Controller:53 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
+2023-01-15 17:44:09 TRACE Controller:29 - *****************GET*****************
+2023-01-15 17:44:09 DEBUG Controller:36 - Controller starts
+2023-01-15 17:44:09 TRACE Controller:39 - Request parameter: command --> goToRegisterCommand
+2023-01-15 17:44:09 TRACE Controller:42 - Obtained command --> GoToRegisterCommand
+2023-01-15 17:44:09 TRACE GoToRegisterCommand:17 - Start tracing GoToRegisterCommand
+2023-01-15 17:44:09 TRACE Controller:58 - SESSION PARAMETR --> null
+2023-01-15 17:44:09 TRACE Controller:60 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:44:09 DEBUG Controller:61 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-15 17:44:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:44:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:44:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:44:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:44:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:44:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 17:44:09 INFO  LocaleTag:44 - Language is switched to EN
+2023-01-15 18:03:09 TRACE ContextListener:30 - Servlet context destruction starts
+2023-01-15 18:03:09 TRACE ContextListener:31 - Servlet context destruction finished

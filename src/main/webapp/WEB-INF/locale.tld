@@ -8,6 +8,7 @@
         <body-content>empty</body-content>
         <attribute>
             <name>value</name>
+            <rtexprvalue>true</rtexprvalue>
         </attribute>
     </tag>
 </taglib>

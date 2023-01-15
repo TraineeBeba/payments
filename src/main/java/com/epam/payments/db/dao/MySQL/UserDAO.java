@@ -92,7 +92,7 @@ public class UserDAO implements IUserDAO {
                     if (resultSet.next()) {
                         int i_res = resultSet.getInt("count(*)");
                         LOG.info("RES!!!!!!!!!!!!!!!!!!!! --> " + i_res);
-                        res =  i_res> 1;
+                        res =  i_res >= 1;
                     }
                     resultSet.close();
                     connection.commit();

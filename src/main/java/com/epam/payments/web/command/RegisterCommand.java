@@ -26,34 +26,25 @@ public class RegisterCommand extends Command {
         LOG.trace("Start tracing RegisterCommand");
 
         HttpSession session = request.getSession();
+        String toMove = "/controller?command=goToErrorCommand";
         String username = "", password = "";
-//        if ((request.getParameter("username") != null) && (request.getParameter("password") != null)) {
-//            login = new String(request.getParameter("username").getBytes("ISO-8859-1"), "UTF-8");
-//            password = new String(request.getParameter("password").getBytes("ISO-8859-1"), "UTF-8");
-//        } else if ((session.getAttribute("username") != null) && (session.getAttribute("password") != null)) {
-//            login = String.valueOf(session.getAttribute("username"));
-//            password = String.valueOf(session.getAttribute("password"));
-//        }
 
         if ((request.getParameter("username") != null) && (request.getParameter("password") != null)) {
             username = new String(request.getParameter("username").getBytes("ISO-8859-1"), "UTF-8");
             password = new String(request.getParameter("password").getBytes("ISO-8859-1"), "UTF-8");
         }
 
-        UserDAO userDAO = new UserDAO();
-        UserService userService = new UserService();
-
         UserDTO userDTO = new UserDTO(username, password);
-        String registerCheck = userService.registerNewAccount(userDTO);
+        String registerCheck = new UserService().registerNewAccount(userDTO);
+        LOG.info("REGISTER CHECK -->" + registerCheck);
 
-        if(registerCheck == null) {
-            userDAO.createUser(username, password);
-        } else {
-            request.setAttribute("errorMsg", registerCheck);
+        if(registerCheck == null) new UserDAO().createUser(username, password);
+        else {
+            LOG.info("ERROOOOOOOR");
+            session.setAttribute("errorMsg", registerCheck);
         }
 
-        String toMove = "/controller?command="
-                + request.getParameter("goto");
+        toMove = "/controller?command=" + request.getParameter("goto");
 
         return toMove;
     }

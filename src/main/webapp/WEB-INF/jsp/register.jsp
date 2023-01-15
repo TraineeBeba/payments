@@ -39,12 +39,13 @@
 			<div class="form-container">
 
 
-				<c:if test="${not empty errorMsg}">
+				<c:if test="${not empty sessionScope.errorMsg}">
 					<div class="alertError">
 						<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-						<strong>Помилка: </strong> <text> ${errorMsg} </text>
+						<strong>Помилка: </strong> <text> <my:Locale value="${sessionScope.errorMsg}"/> </text>
 						<text> <br>(╯ ° □ °) ╯ (┻━┻)</text>
 					</div>
+					<c:remove var="errorMsg" scope="session" />
 				</c:if>
 
 

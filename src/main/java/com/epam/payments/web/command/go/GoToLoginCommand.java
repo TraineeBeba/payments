@@ -16,5 +16,6 @@ public class GoToLoginCommand extends Command {
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         LOG.trace("Start tracing GoToLoginCommand");
         return Path.PAGE_LOGIN;
+
     }
 }

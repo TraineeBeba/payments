@@ -10,11 +10,11 @@ public class UserService {
 
     public String registerNewAccount(UserDTO user) {
         if (userDAO.checkExistenceByUsername(user.getUsername())){
-            return "Користувач з логіном " + user.getUsername() + " вже існує";
+            return "error.login.username_taken";
         }
 
         if (user.getPassword().length() < 6){
-            return "Менше 6 символів в паролі";
+            return "error.password.few_chars";
         }
 
         userDAO.createUser(user.getUsername(), user.getPassword());
