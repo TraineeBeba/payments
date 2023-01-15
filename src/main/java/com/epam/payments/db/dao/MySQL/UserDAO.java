@@ -78,20 +78,21 @@ public class UserDAO implements IUserDAO {
     }
 
     @Override
-    public boolean findByUsername(String username) {
+    public boolean checkExistenceByUsername(String username) {
         LOG.trace("Start tracing MySQLUserDAO#findUserByLogin");
-        UserDTO user = null;
+
+        boolean res = false;
         try (Connection connection = ConnectionPool.getConnection()) {
             if (connection != null) {
-                try (PreparedStatement statement = connection.prepareStatement(Query.SELECT_USER_BY_LOGIN)) {
+                try (PreparedStatement statement = connection.prepareStatement(Query.СHECK_USER_EXISTENCE_BY_NAME)) {
                     connection.setAutoCommit(false);
-                    statement.setString(1, login);
+                    statement.setString(1, username);
                     statement.execute();
                     ResultSet resultSet = statement.getResultSet();
                     if (resultSet.next()) {
-                        user = new UserDTO(resultSet.getInt("id_user"), resultSet.getString("login"),
-                                resultSet.getString("password"), resultSet.getString("email"),
-                                resultSet.getInt("id_role"), resultSet.getInt("id_state"));
+                        int i_res = resultSet.getInt("count(*)");
+                        LOG.info("RES!!!!!!!!!!!!!!!!!!!! --> " + i_res);
+                        res =  i_res> 1;
                     }
                     resultSet.close();
                     connection.commit();
@@ -103,6 +104,6 @@ public class UserDAO implements IUserDAO {
         } catch (SQLException ex) {
             LOG.error(ex.getLocalizedMessage());
         }
-        return user;
+        return res;
     }
 }

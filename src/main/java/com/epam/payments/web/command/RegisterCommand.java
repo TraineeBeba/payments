@@ -1,7 +1,9 @@
 package com.epam.payments.web.command;
 
+import com.epam.payments.Path;
 import com.epam.payments.db.dao.MySQL.UserDAO;
 import com.epam.payments.db.dto.UserDTO;
+import com.epam.payments.web.service.UserService;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -22,7 +24,7 @@ public class RegisterCommand extends Command {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         LOG.trace("Start tracing RegisterCommand");
-        String forward = "";
+
         HttpSession session = request.getSession();
         String username = "", password = "";
 //        if ((request.getParameter("username") != null) && (request.getParameter("password") != null)) {
@@ -39,9 +41,21 @@ public class RegisterCommand extends Command {
         }
 
         UserDAO userDAO = new UserDAO();
-        UserDTO user = new UserDTO();
-        user = userDAO.createUser(username, password);
+        UserService userService = new UserService();
 
-        return forward;
+        UserDTO userDTO = new UserDTO(username, password);
+        String registerCheck = userService.registerNewAccount(userDTO);
+
+        if(registerCheck == null) {
+            userDAO.createUser(username, password);
+        } else {
+            request.setAttribute("errorMsg", registerCheck);
+        }
+
+        String toMove = "/controller?command="
+                + request.getParameter("goto");
+
+        return toMove;
     }
+
 }

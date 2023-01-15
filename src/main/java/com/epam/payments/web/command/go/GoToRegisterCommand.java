@@ -14,7 +14,7 @@ public class GoToRegisterCommand extends Command {
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        LOG.trace("Start tracing GoToLoginCommand");
+        LOG.trace("Start tracing GoToRegisterCommand");
         return Path.PAGE_REGISTER;
     }
 }

@@ -13,16 +13,20 @@
 		<nav class="nav nav-masthead justify-content-right float-md-end row">
 			<div class="right-block col-1">
 				<form action="controller" method="post">
+					<input type="hidden" name="goto" value="goToLoginCommand">
 					<input type="hidden" name="command" value="languageCommand">
 					<input type="hidden" name="language" value="en">
 					<input type="hidden" name=url value="${requestScope['javax.servlet.forward.query_string']}">
+
 					<input type="image" src="/img/us.png" alt="Submit">
 
 				</form>
 				<form action="controller" method="post">
+					<input type="hidden" name="goto" value="goToLoginCommand">
 					<input type="hidden" name="command" value="languageCommand">
 					<input type="hidden" name="language" value="uk">
 					<input type="hidden" name=url value="${requestScope['javax.servlet.forward.query_string']}">
+
 					<input type="image" src="/img/ua.png" alt="Submit">
 				</form>
 			</div>
@@ -44,7 +48,8 @@
 			</div>
 
 			<form style="padding: 2%" action="controller" method="post">
-				<input type="hidden" name="command" value="registerCommand">
+				<input type="hidden" name="goto" value=goToLoginCommand">
+				<input type="hidden" name="command" value="loginCommand">
 				<input type="text" name="username" class="form-control" placeholder="<my:Locale value="page.login.enter"/> <my:Locale value="page.login.username"/>" required><br>
 				<input type="text" name="password" class="form-control" placeholder="<my:Locale value="page.login.enter"/> <my:Locale value="page.login.password"/>" required><br>
 				<button type="submit" class="btn btn-primary"> <my:Locale value="page.login.login"/> </button>

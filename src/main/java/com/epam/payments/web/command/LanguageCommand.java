@@ -2,6 +2,7 @@ package com.epam.payments.web.command;
 
 import com.epam.payments.Path;
 import com.epam.payments.exception.Errors;
+import com.epam.payments.web.command.factory.CommandFactory;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -40,7 +41,8 @@ public class LanguageCommand extends Command {
             session.setAttribute("language", language);
         }
 
-        LOG.info(request.getContextPath());
-        return request.getContextPath();
+        String toMove = "/controller?command=" + request.getParameter("goto");
+
+        return toMove;
     }
 }

@@ -2,7 +2,7 @@ package com.epam.payments.controller;
 
 import com.epam.payments.Path;
 import com.epam.payments.web.command.Command;
-import com.epam.payments.web.command.CommandContainer;
+import com.epam.payments.web.command.factory.CommandFactory;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -34,25 +34,33 @@ public class Controller extends HttpServlet {
 
         LOG.debug("Controller starts");
 
-        // extract command name from the request
         String commandName = request.getParameter("command");
         LOG.trace("Request parameter: command --> " + commandName);
 
-        // obtain command object by its name
-        Command command = CommandContainer.get(commandName);
+        Command command = CommandFactory.get(commandName);
         LOG.trace("Obtained command --> " + command);
 
-        // execute command and get forward address
-        String forward = Path.PAGE_ERROR_PAGE;
+        String toMove = Path.PAGE_ERROR_PAGE;
         try {
-            forward = command.execute(request, response);
+            toMove = command.execute(request, response);
         } catch (Exception ex) {
             request.setAttribute("errorMessage", ex.getMessage());
         }
 
-        LOG.trace("Forward address --> " + forward);
-        LOG.debug("Controller finished, now go to forward address --> " + forward);
+        if(method.equals("post")) {
+            LOG.trace("Redirect address --> " + toMove);
+            LOG.debug("Controller finished, now redirect to address --> " + toMove);
 
-        request.getRequestDispatcher(forward).forward(request, response);
+            response.sendRedirect(toMove);
+        } else if (method.equals("get")) {
+
+            LOG.trace("Forward address --> " + toMove);
+            LOG.debug("Controller finished, now go to forward address --> " + toMove);
+
+            request.getRequestDispatcher(toMove).forward(request, response);
+        } else {
+            LOG.trace("FUCK!!!");
+        }
+
     }
 }

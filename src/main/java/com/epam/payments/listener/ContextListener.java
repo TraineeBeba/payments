@@ -46,7 +46,7 @@ public class ContextListener implements ServletContextListener {
 
     /*private void initCommandContainer() {
         try {
-            Class.forName("ua.nure.tatarinov.SummaryTask4.web.command.CommandContainer");
+            Class.forName("ua.nure.tatarinov.SummaryTask4.web.command.CommandFactory");
         } catch (ClassNotFoundException ex) {
             throw new IllegalStateException("Cannot initialize Command Container");
         }

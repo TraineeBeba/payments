@@ -22,7 +22,6 @@ public class LoginCommand extends Command {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         LOG.trace("Start tracing LoginCommand");
-        String forward = "";
         HttpSession session = request.getSession();
         String login = "", password = "";
         if ((request.getParameter("username") != null) && (request.getParameter("password") != null)) {
@@ -33,6 +32,8 @@ public class LoginCommand extends Command {
             password = String.valueOf(session.getAttribute("password"));
         }
 
-        return forward;
+        String toMove = "/controller?command=" + request.getParameter("goto");
+
+        return toMove;
     }
 }

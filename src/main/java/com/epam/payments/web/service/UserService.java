@@ -1,17 +1,15 @@
-package com.epam.payments.web.validation;
+package com.epam.payments.web.service;
 
 import com.epam.payments.db.dao.IUserDAO;
 import com.epam.payments.db.dao.MySQL.UserDAO;
 import com.epam.payments.db.dto.UserDTO;
 
-import java.util.Collections;
-
-public class UserValidation {
+public class UserService {
 
     private IUserDAO userDAO = new UserDAO();
 
     public String registerNewAccount(UserDTO user) {
-        if (userDAO.findByUsername(user.getUsername()) != null){
+        if (userDAO.checkExistenceByUsername(user.getUsername())){
             return "Користувач з логіном " + user.getUsername() + " вже існує";
         }
 
