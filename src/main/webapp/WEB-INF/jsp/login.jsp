@@ -51,8 +51,8 @@
 			<c:if test="${not empty sessionScope.wrongData}">
 				<div class="alertError">
 					<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-<%--					<strong>Помилка: </strong> <text> <my:Locale value="${sessionScope.wrongData}"/> </text>--%>
-					<strong>Помилка: </strong> <text> ХРІНЬКА </text>
+					<strong>Помилка: </strong> <text> <my:Locale value="${sessionScope.wrongData}"/> </text>
+<%--					<strong>Помилка: </strong> <text> ХРІНЬКА </text>--%>
 					<text> <br>(╯ ° □ °) ╯ (┻━┻)</text>
 				</div>
 				<c:remove var="wrongData" scope="session" />
