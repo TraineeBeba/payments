@@ -14,7 +14,7 @@
 		<nav class="nav nav-masthead justify-content-right float-md-end row">
 			<div class="right-block col-1">
 				<form action="controller" method="post">
-					<input type="hidden" name="goto" value="goToRegisterCommand">
+					<input type="hidden" name="redirect" value="?command=goToRegisterCommand">
 					<input type="hidden" name="command" value="languageCommand">
 					<input type="hidden" name="language" value="en">
 					<input type="hidden" name=url value="${requestScope['javax.servlet.forward.query_string']}">
@@ -22,7 +22,7 @@
 
 				</form>
 				<form action="controller" method="post">
-					<input type="hidden" name="goto" value="goToRegisterCommand">
+					<input type="hidden" name="redirect" value="?command=goToRegisterCommand">
 					<input type="hidden" name="command" value="languageCommand">
 					<input type="hidden" name="language" value="uk">
 					<input type="hidden" name=url value="${requestScope['javax.servlet.forward.query_string']}">
@@ -39,23 +39,21 @@
 			<div class="form-container">
 
 
-				<c:if test="${not empty sessionScope.errorMsg}">
+				<c:if test="${not empty sessionScope.wrongData}">
 					<div class="alertError">
 						<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-						<strong>Помилка: </strong> <text> <my:Locale value="${sessionScope.errorMsg}"/> </text>
+						<strong>Помилка: </strong> <text> <my:Locale value="${sessionScope.wrongData}"/> </text>
 						<text> <br>(╯ ° □ °) ╯ (┻━┻)</text>
 					</div>
-					<c:remove var="errorMsg" scope="session" />
+					<c:remove var="wrongData" scope="session" />
 				</c:if>
-
-
 
 				<div class="categories p-3">
 					<h3> <my:Locale value="page.register.title"/> </h3>
 				</div>
 
 				<form style="padding: 2%" action="controller" method="post">
-					<input type="hidden" name="goto" value="goToRegisterCommand">
+					<input type="hidden" name="redirect" value="?command=goToLoginCommand">
 					<input type="hidden" name="command" value="registerCommand">
 					<input type="text" name="username" class="form-control" placeholder="<my:Locale value="page.register.enter"/> <my:Locale value="page.register.username"/>" required><br>
 					<input type="text" name="password" class="form-control" placeholder="<my:Locale value="page.register.enter"/> <my:Locale value="page.register.password"/>" required><br>

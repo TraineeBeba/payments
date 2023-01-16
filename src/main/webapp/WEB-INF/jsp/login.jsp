@@ -13,7 +13,7 @@
 		<nav class="nav nav-masthead justify-content-right float-md-end row">
 			<div class="right-block col-1">
 				<form action="controller" method="post">
-					<input type="hidden" name="goto" value="goToLoginCommand">
+					<input type="hidden" name="redirect" value="?command=goToLoginCommand">
 					<input type="hidden" name="command" value="languageCommand">
 					<input type="hidden" name="language" value="en">
 					<input type="hidden" name=url value="${requestScope['javax.servlet.forward.query_string']}">
@@ -22,7 +22,7 @@
 
 				</form>
 				<form action="controller" method="post">
-					<input type="hidden" name="goto" value="goToLoginCommand">
+					<input type="hidden" name="redirect" value="?command=goToLoginCommand">
 					<input type="hidden" name="command" value="languageCommand">
 					<input type="hidden" name="language" value="uk">
 					<input type="hidden" name=url value="${requestScope['javax.servlet.forward.query_string']}">
@@ -39,16 +39,31 @@
 	<main class="px-3">
 		<div class="form-container">
 
-			<div id = "flags">
+			<c:if test="${sessionScope.register eq true}">
+				<div class="alertWarning">
+					<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+					<strong>Попередження: </strong> <text> <my:Locale value="page.login.warning"/> </text>
+					<text> <br>(づ ◕‿◕ )づ</text>
+				</div>
+				<c:remove var="register" scope="session" />
+			</c:if>
 
-			</div>
+			<c:if test="${not empty sessionScope.wrongData}">
+				<div class="alertError">
+					<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+<%--					<strong>Помилка: </strong> <text> <my:Locale value="${sessionScope.wrongData}"/> </text>--%>
+					<strong>Помилка: </strong> <text> ХРІНЬКА </text>
+					<text> <br>(╯ ° □ °) ╯ (┻━┻)</text>
+				</div>
+				<c:remove var="wrongData" scope="session" />
+			</c:if>
 
 			<div class="categories p-3">
 				<h3> <my:Locale value="page.login.title"/> </h3>
 			</div>
 
 			<form style="padding: 2%" action="controller" method="post">
-				<input type="hidden" name="goto" value=goToLoginCommand">
+				<input type="hidden" name="redirect" value=?command=goToMainCommand>
 				<input type="hidden" name="command" value="loginCommand">
 				<input type="text" name="username" class="form-control" placeholder="<my:Locale value="page.login.enter"/> <my:Locale value="page.login.username"/>" required><br>
 				<input type="text" name="password" class="form-control" placeholder="<my:Locale value="page.login.enter"/> <my:Locale value="page.login.password"/>" required><br>

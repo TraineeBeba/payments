@@ -1,8 +1,8 @@
 package com.epam.payments.web.command;
 
-import com.epam.payments.Path;
-import com.epam.payments.db.dao.MySQL.UserDAO;
-import com.epam.payments.db.dto.UserDTO;
+import com.epam.payments.utils.Utils;
+import com.epam.payments.web.command.result.CommandResult;
+import com.epam.payments.web.command.result.RedirectResult;
 import com.epam.payments.web.service.UserService;
 import org.apache.log4j.Logger;
 
@@ -18,15 +18,15 @@ import java.io.IOException;
 public class RegisterCommand extends Command {
 
     private static final Logger LOG = Logger.getLogger(RegisterCommand.class);
-
+    private UserService userService = new UserService();
     private static final long serialVersionUID = -7190245479634943129L;
 
     @Override
-    public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    public CommandResult execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         LOG.trace("Start tracing RegisterCommand");
 
         HttpSession session = request.getSession();
-        String toMove = "/controller?command=goToErrorCommand";
+        RedirectResult redirect;
         String username = "", password = "";
 
         if ((request.getParameter("username") != null) && (request.getParameter("password") != null)) {
@@ -34,19 +34,18 @@ public class RegisterCommand extends Command {
             password = new String(request.getParameter("password").getBytes("ISO-8859-1"), "UTF-8");
         }
 
-        UserDTO userDTO = new UserDTO(username, password);
-        String registerCheck = new UserService().registerNewAccount(userDTO);
-        LOG.info("REGISTER CHECK -->" + registerCheck);
 
-        if(registerCheck == null) new UserDAO().createUser(username, password);
-        else {
-            LOG.info("ERROOOOOOOR");
-            session.setAttribute("errorMsg", registerCheck);
+        String registerCheck = userService.checkRegisterUser(username, password);
+        if(registerCheck == null) {
+            userService.getUserDAO().createUser(username, Utils.encrypt(password));
+            session.setAttribute("register", true);
+            redirect = new RedirectResult(request.getParameter("redirect"));
+        } else {
+            session.setAttribute("wrongData", registerCheck);
+            redirect = new RedirectResult("?command=goToRegisterCommand");
         }
 
-        toMove = "/controller?command=" + request.getParameter("goto");
-
-        return toMove;
+        return redirect;
     }
 
 }
