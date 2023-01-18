@@ -34,6 +34,10 @@ public class LoginCommand extends Command {
             password = new String(request.getParameter("password").getBytes("ISO-8859-1"), "UTF-8");
         }
 
+        LOG.info("USERNAME --> " + username);
+        LOG.info("PASSWORD --> " + password);
+        LOG.info("ENCRYPT PASSWORD --> " + Utils.encrypt(password));
+
         String loginCheck = userService.checkLoginUser(username, Utils.encrypt(password));
         if(loginCheck != null) {
             session.setAttribute("wrongData", loginCheck);
@@ -48,7 +52,7 @@ public class LoginCommand extends Command {
     }
 
     private void setSessionParametrs(HttpSession session, String username, String password, UserDTO userDTO) {
-        session.setAttribute("id", userDTO.getId());
+        session.setAttribute("user_id", userDTO.getId());
         session.setAttribute("role_id", userDTO.getRole_id());
         session.setAttribute("state_id", userDTO.getRole_id());
         session.setAttribute("username", username);

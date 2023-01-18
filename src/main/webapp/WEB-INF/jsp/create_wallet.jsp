@@ -23,14 +23,14 @@
 
 				<div class="right-block col-6">
 					<form action="controller" method="post">
-						<input type="hidden" name="redirect" value="?command=goToMainCommand">
+						<input type="hidden" name="redirect" value="?command=goToWalletCreateCommand">
 						<input type="hidden" name="command" value="languageCommand">
 						<input type="hidden" name="language" value="en">
 						<input type="image" src="/img/us.png" alt="Submit">
 
 					</form>
 					<form action="controller" method="post">
-						<input type="hidden" name="redirect" value="?command=goToMainCommand">
+						<input type="hidden" name="redirect" value="?command=goToWalletCreateCommand">
 						<input type="hidden" name="command" value="languageCommand">
 						<input type="hidden" name="language" value="uk">
 						<input type="image" src="/img/ua.png" alt="Submit">
@@ -48,38 +48,31 @@
 	</header>
 
 	<main class="px-3">
-		<div class="сinemas p-3">
-			<h3>Гаманці</h3>
-			<a href="/controller?command=goToWalletCreateCommand"> Додати новий </a>
-		</div>
+		<div class="form-container">
 
-		<table class="table table-dark table-bordered table-hover text-center">
-			<thead>
-			<tr class="row ml-3">
-				<th class="col-2"><b>Назва</b></th>
-				<th class="col-3"><b>Номер рахунку</b></th>
-				<th class="col-3"><b>Баланс</b></th>
-				<th class="col-2">Статус</th>
-				<th class="col-2">Детальніше</th>
-			</tr>
-			</thead>
-			<tbody>
-			<tr class="row ml-3" >
-				<c:forEach items="${wallets}" var="wallet" >
-					<td class="col-2"> <c:out value="${wallet.name}"></c:out> </td>
-					<td class="col-3"> <c:out value="${wallet.bill_number}"></c:out> </td>
-					<td class="col-3"> <c:out value="${wallet.balance}"></c:out> </td>
-					<td class="col-2"> <c:out value="${wallet.getState()}"></c:out> </td>
-					<td class="pupa href-container col-2">
-						<a class="nav-link" href="/controller?command=goToWalletDetailsCommand">Детальніше</a>
-					</td>
-				</c:forEach>
-			</tr>
-			</tbody>
-		</table>
+<%--			<div th:if="${wrongData}" class="alertError">--%>
+<%--				<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>--%>
+<%--				<strong>Помилка: </strong><text th:text="${wrongData}"> </text>--%>
+<%--				<text> <br>(╯ ° □ °) ╯ (┻━┻)</text>--%>
+<%--			</div>--%>
 
-		<div class="categories p-3">
-			<h3> Привіт ${sessionScope.username} </h3>
+			<div class="categories p-3">
+				<h3>Створити новий гаманець</h3>
+			</div>
+
+			<form style="padding: 2%" action="/controller" method="post">
+				<input type="hidden" name="redirect" value="?command=goToWalletCreateCommand">
+				<input type="hidden" name="command" value="createWalletCommand">
+				<input type="text" 	 name="name" placeholder="Введіть назву гаманця" class="form-control" required><br>
+				<button type="submit" class="btn btn-primary">Додати гаманець</button>
+			</form>
+
+			<a href="/controller?command=goToMainCommand"> Я передумав </a>
+
+			<div class="categories p-3">
+				<h3> Привіт ${sessionScope.username} </h3>
+			</div>
+
 		</div>
 
 	</main>

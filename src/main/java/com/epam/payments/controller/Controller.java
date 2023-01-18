@@ -66,7 +66,7 @@ public class Controller extends HttpServlet {
         Command command = CommandFactory.get(commandName);
         LOG.trace("Obtained command --> " + command);
 
-        CommandResult commandResult = new ForwardResult("?command=goToErrorPage");
+        CommandResult commandResult = new ForwardResult("/controller?command=goToErrorCommand");
         try {
             commandResult = command.execute(request, response);
         } catch (Exception ex) {

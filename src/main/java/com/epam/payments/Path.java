@@ -11,11 +11,12 @@ public final class Path {
     public static final String PAGE_MAIN             = "/WEB-INF/jsp/main.jsp";
 
 
-    public static final String PAGE_ERROR = "/WEB-INF/jsp/error_page.jsp";
+    public static final String PAGE_ERROR            = "/WEB-INF/jsp/error_page.jsp";
     public static final String PAGE_ADMIN            = "/WEB-INF/jsp/admin.jsp";
 
 
     // commands
     public static final String PAGE_HOME             = "/controller?command=loginCommand";
 
+    public static final String PAGE_CREATE_WALLET    = "/WEB-INF/jsp/create_wallet.jsp";
 }

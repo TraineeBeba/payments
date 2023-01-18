@@ -5,8 +5,7 @@ import com.epam.payments.db.dto.UserDTO;
 public enum State {
     UNBLOCKED, BLOCKED;
 
-    public static State getState(UserDTO user) {
-        Long stateId = user.getState_id();
+    public static State getState(Long stateId) {
         return State.values()[stateId.intValue() - 1];
     }
 

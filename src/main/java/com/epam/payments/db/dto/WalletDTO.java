@@ -1,5 +1,7 @@
 package com.epam.payments.db.dto;
 
+import com.epam.payments.db.State;
+
 import java.io.Serializable;
 
 public class WalletDTO implements Serializable {
@@ -8,16 +10,26 @@ public class WalletDTO implements Serializable {
     private Long id;
     private Long user_id;
     private Long state_id = 1L;
+    private String name;
     private int bill_number;
     private double balance;
 
     public WalletDTO() {
     }
 
-    public WalletDTO(Long id, Long user_id, Long state_id, int bill_number, double balance) {
+    public WalletDTO(Long user_id, Long state_id, String name, int bill_number, double balance) {
+        this.user_id = user_id;
+        this.state_id = state_id;
+        this.name = name;
+        this.bill_number = bill_number;
+        this.balance = balance;
+    }
+
+    public WalletDTO(Long id, Long user_id, Long state_id, String name, int bill_number, double balance) {
         this.id = id;
         this.user_id = user_id;
         this.state_id = state_id;
+        this.name = name;
         this.bill_number = bill_number;
         this.balance = balance;
     }
@@ -46,6 +58,19 @@ public class WalletDTO implements Serializable {
         this.state_id = state_id;
     }
 
+    public String getState() {
+        State state = State.getState(state_id);
+        return state.getName();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public int getBill_number() {
         return bill_number;
     }
@@ -68,6 +93,7 @@ public class WalletDTO implements Serializable {
                 "id=" + id +
                 ", user_id=" + user_id +
                 ", state_id=" + state_id +
+                ", name='" + name + '\'' +
                 ", bill_number=" + bill_number +
                 ", balance=" + balance +
                 '}';

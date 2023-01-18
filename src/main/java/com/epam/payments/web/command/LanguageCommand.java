@@ -43,6 +43,7 @@ public class LanguageCommand extends Command {
             session.setAttribute("language", language);
         }
 
+        LOG.info("Language is switched to " + language.toUpperCase());
         return new RedirectResult(request.getParameter("redirect"));
     }
 }

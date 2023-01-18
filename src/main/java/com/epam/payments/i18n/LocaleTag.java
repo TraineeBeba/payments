@@ -41,7 +41,6 @@ public class LocaleTag extends TagSupport {
             }
         }
 
-        LOG.info("Language is switched to " + language.toUpperCase());
         return SKIP_BODY;
     }
 }

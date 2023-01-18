@@ -5,6 +5,7 @@ import org.apache.log4j.Logger;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.Random;
 
 
 /**
@@ -35,4 +36,8 @@ public class Utils {
         return hex.toString();
     }
 
+    public static int generateBill() {
+        Random rnd = new Random();
+        return  100000 + rnd.nextInt(900000);
+    }
 }
