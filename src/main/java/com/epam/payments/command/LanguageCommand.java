@@ -1,10 +1,8 @@
-package com.epam.payments.web.command;
+package com.epam.payments.command;
 
-import com.epam.payments.Path;
-import com.epam.payments.exception.Errors;
-import com.epam.payments.web.command.factory.CommandFactory;
-import com.epam.payments.web.command.result.CommandResult;
-import com.epam.payments.web.command.result.RedirectResult;
+
+import com.epam.payments.command.result.CommandResult;
+import com.epam.payments.command.result.RedirectResult;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -24,7 +22,7 @@ public class LanguageCommand extends Command {
     private static final long serialVersionUID = 5063715519941606153L;
 
     @Override
-    public CommandResult execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward) throws IOException, ServletException {
         LOG.trace("Start tracing LanguageCommand");
         HttpSession session = request.getSession();
         List<String> languages = Arrays.asList("en","uk");
@@ -37,7 +35,8 @@ public class LanguageCommand extends Command {
         }
 
         if (!existLanguage){
-            request.setAttribute("errorMessage", Errors.ERR_INVALID_VALUE_LANGUAGE);
+            LOG.info("ERROR");
+//            request.setAttribute("errorMessage", Errors.ERR_INVALID_VALUE_LANGUAGE);
 //            return Path.PAGE_ERROR_PAGE;
         }else {
             session.setAttribute("language", language);

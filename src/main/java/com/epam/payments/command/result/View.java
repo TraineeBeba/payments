@@ -1,4 +1,4 @@
-package com.epam.payments.web.command.result;
+package com.epam.payments.command.result;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;

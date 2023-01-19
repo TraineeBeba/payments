@@ -1,4 +1,4 @@
-package com.epam.payments.web.service;
+package com.epam.payments.db.service;
 
 import com.epam.payments.db.dao.IUserDAO;
 import com.epam.payments.db.dao.IWalletDAO;

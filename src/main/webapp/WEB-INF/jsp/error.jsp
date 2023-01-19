@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="my" uri="/WEB-INF/locale.tld"%>
+<%@ taglib prefix="my" uri="/WEB-INF/tld/locale.tld"%>
 <%@ page isErrorPage="true" %>
-<%@ page import="java.io.PrintWriter" %>
+
 <html>
 
 

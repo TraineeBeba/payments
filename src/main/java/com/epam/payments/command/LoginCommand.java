@@ -1,10 +1,12 @@
-package com.epam.payments.web.command;
+package com.epam.payments.command;
 
 import com.epam.payments.db.dto.UserDTO;
+import com.epam.payments.db.dto.WalletDTO;
+import com.epam.payments.db.service.WalletService;
 import com.epam.payments.utils.Utils;
-import com.epam.payments.web.command.result.CommandResult;
-import com.epam.payments.web.command.result.RedirectResult;
-import com.epam.payments.web.service.UserService;
+import com.epam.payments.command.result.CommandResult;
+import com.epam.payments.command.result.RedirectResult;
+import com.epam.payments.db.service.UserService;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -13,6 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.List;
 
 
 @WebServlet(name = "LoginCommand")
@@ -20,10 +23,11 @@ public class LoginCommand extends Command {
 
     private static final Logger LOG = Logger.getLogger(LoginCommand.class);
     private UserService userService = new UserService();
+    private WalletService walletService  = new WalletService();
     private static final long serialVersionUID = -7190245479634943129L;
 
     @Override
-    public CommandResult execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward) throws IOException, ServletException {
         LOG.trace("Start tracing LoginCommand");
         HttpSession session = request.getSession();
         RedirectResult redirect;
@@ -44,18 +48,21 @@ public class LoginCommand extends Command {
             redirect = new RedirectResult("?command=goToLoginCommand");
         } else {
             UserDTO userDTO = userService.getUserDAO().getUserByName(username);
-            setSessionParametrs(session, username, password, userDTO);
+            List<WalletDTO> wallets = walletService.getWalletDAO().findWalletsByUserId(userDTO.getId());
+            setSessionParametrs(session, username, password, userDTO, wallets);
+
             redirect = new RedirectResult(request.getParameter("redirect"));
         }
 
         return redirect;
     }
 
-    private void setSessionParametrs(HttpSession session, String username, String password, UserDTO userDTO) {
+    private void setSessionParametrs(HttpSession session, String username, String password, UserDTO userDTO, List<WalletDTO> wallets) {
         session.setAttribute("user_id", userDTO.getId());
         session.setAttribute("role_id", userDTO.getRole_id());
         session.setAttribute("state_id", userDTO.getRole_id());
         session.setAttribute("username", username);
         session.setAttribute("password", password);
+        session.setAttribute("wallets", wallets);
     }
 }

@@ -1,12 +1,10 @@
-package com.epam.payments.web.command;
+package com.epam.payments.command;
 
-import com.epam.payments.db.dto.UserDTO;
+import com.epam.payments.command.result.CommandResult;
+import com.epam.payments.command.result.RedirectResult;
 import com.epam.payments.db.dto.WalletDTO;
 import com.epam.payments.utils.Utils;
-import com.epam.payments.web.command.Command;
-import com.epam.payments.web.command.result.CommandResult;
-import com.epam.payments.web.command.result.RedirectResult;
-import com.epam.payments.web.service.WalletService;
+import com.epam.payments.db.service.WalletService;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -20,7 +18,7 @@ public class CreateWalletCommand extends Command {
     private WalletService walletService = new WalletService();
 
     @Override
-    public CommandResult execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward) throws IOException, ServletException {
         LOG.trace("Start tracing CreateWalletCommand");
 
         HttpSession session = request.getSession();

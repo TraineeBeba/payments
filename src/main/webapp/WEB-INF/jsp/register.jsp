@@ -1,6 +1,6 @@
 
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ taglib prefix="my" uri="/WEB-INF/locale.tld" %>
+<%@ taglib prefix="my" uri="/WEB-INF/tld/locale.tld" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <html class="h-100">
@@ -14,7 +14,7 @@
 		<nav class="nav nav-masthead justify-content-right float-md-end row">
 			<div class="right-block col-1">
 				<form action="controller" method="post">
-					<input type="hidden" name="redirect" value="?command=goToRegisterCommand">
+					<input type="hidden" name="redirect" value="?command=goRegisterCommand">
 					<input type="hidden" name="command" value="languageCommand">
 					<input type="hidden" name="language" value="en">
 					<input type="hidden" name=url value="${requestScope['javax.servlet.forward.query_string']}">
@@ -22,7 +22,7 @@
 
 				</form>
 				<form action="controller" method="post">
-					<input type="hidden" name="redirect" value="?command=goToRegisterCommand">
+					<input type="hidden" name="redirect" value="?command=goRegisterCommand">
 					<input type="hidden" name="command" value="languageCommand">
 					<input type="hidden" name="language" value="uk">
 					<input type="hidden" name=url value="${requestScope['javax.servlet.forward.query_string']}">
@@ -53,14 +53,14 @@
 				</div>
 
 				<form style="padding: 2%" action="controller" method="post">
-					<input type="hidden" name="redirect" value="?command=goToLoginCommand">
+					<input type="hidden" name="redirect" value="?command=goLoginCommand">
 					<input type="hidden" name="command" value="registerCommand">
 					<input type="text" name="username" class="form-control" placeholder="<my:Locale value="page.register.enter"/> <my:Locale value="page.register.username"/>" required><br>
 					<input type="text" name="password" class="form-control" placeholder="<my:Locale value="page.register.enter"/> <my:Locale value="page.register.password"/>" required><br>
 					<button type="submit" class="btn btn-primary"> <my:Locale value="page.register.register"/> </button>
 				</form>
 
-				<a class="nav-link active"  href="/controller?command=goToLoginCommand"> <my:Locale value="page.register.go_login"/></a>
+				<a class="nav-link active"  href="/controller?command=goLoginCommand"> <my:Locale value="page.register.go_login"/></a>
 
 			</div>
 		</main>

@@ -6673,7 +6673,7 @@
 2023-01-15 16:26:20 TRACE Controller:38 - Request parameter: command --> registerCommand
 2023-01-15 16:26:20 TRACE Controller:41 - Obtained command --> RegisterCommand
 2023-01-15 16:26:20 TRACE RegisterCommand:26 - Start tracing RegisterCommand
-2023-01-15 16:26:20 INFO  RegisterCommand:48 - RTGISTER CHECK -->Менше 6 символів в паролі
+2023-01-15 16:26:20 INFO  RegisterCommand:48 - RTGISTER CHECK -->пїЅпїЅпїЅпїЅпїЅ 6 пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
 2023-01-15 16:26:20 INFO  RegisterCommand:54 - ERROOOOOOOR
 2023-01-15 16:26:20 TRACE Controller:51 - Redirect address --> /controller?command=goToRegisterCommand
 2023-01-15 16:26:20 DEBUG Controller:52 - Controller finished, now redirect to address --> /controller?command=goToRegisterCommand
@@ -8771,8 +8771,8 @@
 2023-01-16 10:50:33 TRACE CommandFactory:31 - Number of commands --> 5
 2023-01-16 10:50:33 TRACE Controller:67 - Obtained command --> GoToRegisterCommand
 2023-01-16 10:50:33 TRACE GoToRegisterCommand:19 - Start tracing GoToRegisterCommand
-2023-01-16 10:50:33 TRACE Controller:33 - Forward address --> com.epam.payments.web.command.result.ForwardResult@77f87ee8
-2023-01-16 10:50:33 DEBUG Controller:34 - Controller finished, now go to forward address --> com.epam.payments.web.command.result.ForwardResult@77f87ee8
+2023-01-16 10:50:33 TRACE Controller:33 - Forward address --> ForwardResult@77f87ee8
+2023-01-16 10:50:33 DEBUG Controller:34 - Controller finished, now go to forward address --> ForwardResult@77f87ee8
 2023-01-16 10:50:33 INFO  LocaleTag:44 - Language is switched to EN
 2023-01-16 10:50:33 INFO  LocaleTag:44 - Language is switched to EN
 2023-01-16 10:50:33 INFO  LocaleTag:44 - Language is switched to EN
@@ -8785,8 +8785,8 @@
 2023-01-16 10:50:35 TRACE Controller:64 - Request parameter: command --> goToLoginCommand
 2023-01-16 10:50:35 TRACE Controller:67 - Obtained command --> GoToLoginCommand
 2023-01-16 10:50:35 TRACE GoToLoginCommand:19 - Start tracing GoToLoginCommand
-2023-01-16 10:50:35 TRACE Controller:33 - Forward address --> com.epam.payments.web.command.result.ForwardResult@cc4d78b
-2023-01-16 10:50:35 DEBUG Controller:34 - Controller finished, now go to forward address --> com.epam.payments.web.command.result.ForwardResult@cc4d78b
+2023-01-16 10:50:35 TRACE Controller:33 - Forward address --> ForwardResult@cc4d78b
+2023-01-16 10:50:35 DEBUG Controller:34 - Controller finished, now go to forward address --> ForwardResult@cc4d78b
 2023-01-16 10:50:35 INFO  LocaleTag:44 - Language is switched to EN
 2023-01-16 10:50:35 INFO  LocaleTag:44 - Language is switched to EN
 2023-01-16 10:50:35 INFO  LocaleTag:44 - Language is switched to EN
@@ -8799,15 +8799,15 @@
 2023-01-16 10:50:37 TRACE Controller:64 - Request parameter: command --> languageCommand
 2023-01-16 10:50:37 TRACE Controller:67 - Obtained command --> LanguageCommand
 2023-01-16 10:50:37 TRACE LanguageCommand:28 - Start tracing LanguageCommand
-2023-01-16 10:50:37 TRACE Controller:40 - Redirect address --> com.epam.payments.web.command.result.RedirectResult@6e7e8b23
-2023-01-16 10:50:37 DEBUG Controller:41 - Controller finished, now redirect to address --> com.epam.payments.web.command.result.RedirectResult@6e7e8b23
+2023-01-16 10:50:37 TRACE Controller:40 - Redirect address --> RedirectResult@6e7e8b23
+2023-01-16 10:50:37 DEBUG Controller:41 - Controller finished, now redirect to address --> RedirectResult@6e7e8b23
 2023-01-16 10:50:37 TRACE Controller:54 - *****************GET*****************
 2023-01-16 10:50:37 DEBUG Controller:61 - Controller starts
 2023-01-16 10:50:37 TRACE Controller:64 - Request parameter: command --> goToLoginCommand
 2023-01-16 10:50:37 TRACE Controller:67 - Obtained command --> GoToLoginCommand
 2023-01-16 10:50:37 TRACE GoToLoginCommand:19 - Start tracing GoToLoginCommand
-2023-01-16 10:50:37 TRACE Controller:33 - Forward address --> com.epam.payments.web.command.result.ForwardResult@63a568d
-2023-01-16 10:50:37 DEBUG Controller:34 - Controller finished, now go to forward address --> com.epam.payments.web.command.result.ForwardResult@63a568d
+2023-01-16 10:50:37 TRACE Controller:33 - Forward address --> ForwardResult@63a568d
+2023-01-16 10:50:37 DEBUG Controller:34 - Controller finished, now go to forward address --> ForwardResult@63a568d
 2023-01-16 10:50:37 INFO  LocaleTag:44 - Language is switched to UK
 2023-01-16 10:50:37 INFO  LocaleTag:44 - Language is switched to UK
 2023-01-16 10:50:37 INFO  LocaleTag:44 - Language is switched to UK
@@ -8820,15 +8820,15 @@
 2023-01-16 10:50:38 TRACE Controller:64 - Request parameter: command --> languageCommand
 2023-01-16 10:50:38 TRACE Controller:67 - Obtained command --> LanguageCommand
 2023-01-16 10:50:38 TRACE LanguageCommand:28 - Start tracing LanguageCommand
-2023-01-16 10:50:38 TRACE Controller:40 - Redirect address --> com.epam.payments.web.command.result.RedirectResult@5d374101
-2023-01-16 10:50:38 DEBUG Controller:41 - Controller finished, now redirect to address --> com.epam.payments.web.command.result.RedirectResult@5d374101
+2023-01-16 10:50:38 TRACE Controller:40 - Redirect address --> RedirectResult@5d374101
+2023-01-16 10:50:38 DEBUG Controller:41 - Controller finished, now redirect to address --> RedirectResult@5d374101
 2023-01-16 10:50:38 TRACE Controller:54 - *****************GET*****************
 2023-01-16 10:50:38 DEBUG Controller:61 - Controller starts
 2023-01-16 10:50:38 TRACE Controller:64 - Request parameter: command --> goToLoginCommand
 2023-01-16 10:50:38 TRACE Controller:67 - Obtained command --> GoToLoginCommand
 2023-01-16 10:50:38 TRACE GoToLoginCommand:19 - Start tracing GoToLoginCommand
-2023-01-16 10:50:38 TRACE Controller:33 - Forward address --> com.epam.payments.web.command.result.ForwardResult@425d5326
-2023-01-16 10:50:38 DEBUG Controller:34 - Controller finished, now go to forward address --> com.epam.payments.web.command.result.ForwardResult@425d5326
+2023-01-16 10:50:38 TRACE Controller:33 - Forward address --> ForwardResult@425d5326
+2023-01-16 10:50:38 DEBUG Controller:34 - Controller finished, now go to forward address --> ForwardResult@425d5326
 2023-01-16 10:50:38 INFO  LocaleTag:44 - Language is switched to EN
 2023-01-16 10:50:38 INFO  LocaleTag:44 - Language is switched to EN
 2023-01-16 10:50:38 INFO  LocaleTag:44 - Language is switched to EN
@@ -8841,8 +8841,8 @@
 2023-01-16 10:50:39 TRACE Controller:64 - Request parameter: command --> goToRegisterCommand
 2023-01-16 10:50:39 TRACE Controller:67 - Obtained command --> GoToRegisterCommand
 2023-01-16 10:50:39 TRACE GoToRegisterCommand:19 - Start tracing GoToRegisterCommand
-2023-01-16 10:50:39 TRACE Controller:33 - Forward address --> com.epam.payments.web.command.result.ForwardResult@6bc15599
-2023-01-16 10:50:39 DEBUG Controller:34 - Controller finished, now go to forward address --> com.epam.payments.web.command.result.ForwardResult@6bc15599
+2023-01-16 10:50:39 TRACE Controller:33 - Forward address --> ForwardResult@6bc15599
+2023-01-16 10:50:39 DEBUG Controller:34 - Controller finished, now go to forward address --> ForwardResult@6bc15599
 2023-01-16 10:50:39 INFO  LocaleTag:44 - Language is switched to EN
 2023-01-16 10:50:39 INFO  LocaleTag:44 - Language is switched to EN
 2023-01-16 10:50:39 INFO  LocaleTag:44 - Language is switched to EN
@@ -8855,15 +8855,15 @@
 2023-01-16 10:50:41 TRACE Controller:64 - Request parameter: command --> languageCommand
 2023-01-16 10:50:41 TRACE Controller:67 - Obtained command --> LanguageCommand
 2023-01-16 10:50:41 TRACE LanguageCommand:28 - Start tracing LanguageCommand
-2023-01-16 10:50:41 TRACE Controller:40 - Redirect address --> com.epam.payments.web.command.result.RedirectResult@7706411f
-2023-01-16 10:50:41 DEBUG Controller:41 - Controller finished, now redirect to address --> com.epam.payments.web.command.result.RedirectResult@7706411f
+2023-01-16 10:50:41 TRACE Controller:40 - Redirect address --> RedirectResult@7706411f
+2023-01-16 10:50:41 DEBUG Controller:41 - Controller finished, now redirect to address --> RedirectResult@7706411f
 2023-01-16 10:50:41 TRACE Controller:54 - *****************GET*****************
 2023-01-16 10:50:41 DEBUG Controller:61 - Controller starts
 2023-01-16 10:50:41 TRACE Controller:64 - Request parameter: command --> goToRegisterCommand
 2023-01-16 10:50:41 TRACE Controller:67 - Obtained command --> GoToRegisterCommand
 2023-01-16 10:50:41 TRACE GoToRegisterCommand:19 - Start tracing GoToRegisterCommand
-2023-01-16 10:50:41 TRACE Controller:33 - Forward address --> com.epam.payments.web.command.result.ForwardResult@7b921382
-2023-01-16 10:50:41 DEBUG Controller:34 - Controller finished, now go to forward address --> com.epam.payments.web.command.result.ForwardResult@7b921382
+2023-01-16 10:50:41 TRACE Controller:33 - Forward address --> ForwardResult@7b921382
+2023-01-16 10:50:41 DEBUG Controller:34 - Controller finished, now go to forward address --> ForwardResult@7b921382
 2023-01-16 10:50:41 INFO  LocaleTag:44 - Language is switched to UK
 2023-01-16 10:50:41 INFO  LocaleTag:44 - Language is switched to UK
 2023-01-16 10:50:41 INFO  LocaleTag:44 - Language is switched to UK
@@ -8876,15 +8876,15 @@
 2023-01-16 10:50:42 TRACE Controller:64 - Request parameter: command --> languageCommand
 2023-01-16 10:50:42 TRACE Controller:67 - Obtained command --> LanguageCommand
 2023-01-16 10:50:42 TRACE LanguageCommand:28 - Start tracing LanguageCommand
-2023-01-16 10:50:42 TRACE Controller:40 - Redirect address --> com.epam.payments.web.command.result.RedirectResult@63e1e105
-2023-01-16 10:50:42 DEBUG Controller:41 - Controller finished, now redirect to address --> com.epam.payments.web.command.result.RedirectResult@63e1e105
+2023-01-16 10:50:42 TRACE Controller:40 - Redirect address --> RedirectResult@63e1e105
+2023-01-16 10:50:42 DEBUG Controller:41 - Controller finished, now redirect to address --> RedirectResult@63e1e105
 2023-01-16 10:50:42 TRACE Controller:54 - *****************GET*****************
 2023-01-16 10:50:42 DEBUG Controller:61 - Controller starts
 2023-01-16 10:50:42 TRACE Controller:64 - Request parameter: command --> goToRegisterCommand
 2023-01-16 10:50:42 TRACE Controller:67 - Obtained command --> GoToRegisterCommand
 2023-01-16 10:50:42 TRACE GoToRegisterCommand:19 - Start tracing GoToRegisterCommand
-2023-01-16 10:50:42 TRACE Controller:33 - Forward address --> com.epam.payments.web.command.result.ForwardResult@3db6d9df
-2023-01-16 10:50:42 DEBUG Controller:34 - Controller finished, now go to forward address --> com.epam.payments.web.command.result.ForwardResult@3db6d9df
+2023-01-16 10:50:42 TRACE Controller:33 - Forward address --> ForwardResult@3db6d9df
+2023-01-16 10:50:42 DEBUG Controller:34 - Controller finished, now go to forward address --> ForwardResult@3db6d9df
 2023-01-16 10:50:42 INFO  LocaleTag:44 - Language is switched to EN
 2023-01-16 10:50:42 INFO  LocaleTag:44 - Language is switched to EN
 2023-01-16 10:50:42 INFO  LocaleTag:44 - Language is switched to EN
@@ -8897,8 +8897,8 @@
 2023-01-16 10:51:32 TRACE Controller:64 - Request parameter: command --> goToRegisterCommand
 2023-01-16 10:51:32 TRACE Controller:67 - Obtained command --> GoToRegisterCommand
 2023-01-16 10:51:32 TRACE GoToRegisterCommand:19 - Start tracing GoToRegisterCommand
-2023-01-16 10:51:32 TRACE Controller:33 - Forward address --> com.epam.payments.web.command.result.ForwardResult@7dc53d73
-2023-01-16 10:51:32 DEBUG Controller:34 - Controller finished, now go to forward address --> com.epam.payments.web.command.result.ForwardResult@7dc53d73
+2023-01-16 10:51:32 TRACE Controller:33 - Forward address --> ForwardResult@7dc53d73
+2023-01-16 10:51:32 DEBUG Controller:34 - Controller finished, now go to forward address --> ForwardResult@7dc53d73
 2023-01-16 10:51:32 INFO  LocaleTag:44 - Language is switched to EN
 2023-01-16 10:51:32 INFO  LocaleTag:44 - Language is switched to EN
 2023-01-16 10:51:32 INFO  LocaleTag:44 - Language is switched to EN
@@ -13340,3 +13340,315 @@
 2023-01-17 19:12:39 DEBUG Controller:34 - Controller finished, now go to forward address --> /WEB-INF/jsp/main.jsp
 2023-01-17 19:27:08 TRACE ContextListener:30 - Servlet context destruction starts
 2023-01-17 19:27:08 TRACE ContextListener:31 - Servlet context destruction finished
+2023-01-19 11:44:21 DEBUG ContextListener:39 - Log4j has been initialized
+2023-01-19 11:44:21 TRACE ContextListener:44 - Log4J initialization finished
+2023-01-19 11:44:21 TRACE ContextListener:26 - Servlet context initialization finished
+2023-01-19 11:44:33 TRACE Controller:51 - *****************GET*****************
+2023-01-19 11:44:33 DEBUG Controller:58 - Controller starts
+2023-01-19 11:44:33 TRACE Controller:61 - Request parameter: command --> goRegisterCommand
+2023-01-19 11:44:33 DEBUG CommandFactory:27 - Command factory was successfully initialized
+2023-01-19 11:44:33 TRACE CommandFactory:28 - Number of commands --> 6
+2023-01-19 11:44:33 TRACE Controller:70 - Obtained command --> GoCommand
+2023-01-19 11:44:33 TRACE GoCommand:17 - Start tracing GetCommand
+2023-01-19 11:44:33 TRACE Controller:30 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-19 11:44:33 DEBUG Controller:31 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-19 11:44:38 TRACE Controller:51 - *****************GET*****************
+2023-01-19 11:44:38 DEBUG Controller:58 - Controller starts
+2023-01-19 11:44:38 TRACE Controller:61 - Request parameter: command --> goLoginCommand
+2023-01-19 11:44:38 TRACE Controller:70 - Obtained command --> GoCommand
+2023-01-19 11:44:38 TRACE GoCommand:17 - Start tracing GetCommand
+2023-01-19 11:44:38 TRACE Controller:30 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-19 11:44:38 DEBUG Controller:31 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-19 11:44:40 TRACE Controller:46 - *****************POST*****************
+2023-01-19 11:44:40 DEBUG Controller:58 - Controller starts
+2023-01-19 11:44:40 TRACE Controller:61 - Request parameter: command --> languageCommand
+2023-01-19 11:44:40 TRACE Controller:70 - Obtained command --> LanguageCommand
+2023-01-19 11:44:40 TRACE LanguageCommand:26 - Start tracing LanguageCommand
+2023-01-19 11:44:40 INFO  LanguageCommand:45 - Language is switched to UK
+2023-01-19 11:44:40 TRACE Controller:37 - Redirect address --> ?command=goLoginCommand
+2023-01-19 11:44:40 DEBUG Controller:38 - Controller finished, now redirect to address --> ?command=goLoginCommand
+2023-01-19 11:44:40 TRACE Controller:51 - *****************GET*****************
+2023-01-19 11:44:40 DEBUG Controller:58 - Controller starts
+2023-01-19 11:44:40 TRACE Controller:61 - Request parameter: command --> goLoginCommand
+2023-01-19 11:44:40 TRACE Controller:70 - Obtained command --> GoCommand
+2023-01-19 11:44:40 TRACE GoCommand:17 - Start tracing GetCommand
+2023-01-19 11:44:40 TRACE Controller:30 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-19 11:44:40 DEBUG Controller:31 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-19 11:44:42 TRACE Controller:51 - *****************GET*****************
+2023-01-19 11:44:42 DEBUG Controller:58 - Controller starts
+2023-01-19 11:44:42 TRACE Controller:61 - Request parameter: command --> goRegisterCommand
+2023-01-19 11:44:42 TRACE Controller:70 - Obtained command --> GoCommand
+2023-01-19 11:44:42 TRACE GoCommand:17 - Start tracing GetCommand
+2023-01-19 11:44:42 TRACE Controller:30 - Forward address --> /WEB-INF/jsp/register.jsp
+2023-01-19 11:44:42 DEBUG Controller:31 - Controller finished, now go to forward address --> /WEB-INF/jsp/register.jsp
+2023-01-19 11:44:44 TRACE Controller:51 - *****************GET*****************
+2023-01-19 11:44:44 DEBUG Controller:58 - Controller starts
+2023-01-19 11:44:44 TRACE Controller:61 - Request parameter: command --> goLoginCommand
+2023-01-19 11:44:44 TRACE Controller:70 - Obtained command --> GoCommand
+2023-01-19 11:44:44 TRACE GoCommand:17 - Start tracing GetCommand
+2023-01-19 11:44:44 TRACE Controller:30 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-19 11:44:44 DEBUG Controller:31 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-19 11:44:48 TRACE Controller:46 - *****************POST*****************
+2023-01-19 11:44:48 DEBUG Controller:58 - Controller starts
+2023-01-19 11:44:48 TRACE Controller:61 - Request parameter: command --> loginCommand
+2023-01-19 11:44:48 TRACE Controller:70 - Obtained command --> LoginCommand
+2023-01-19 11:44:48 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-19 11:44:48 INFO  LoginCommand:37 - USERNAME --> 123
+2023-01-19 11:44:48 INFO  LoginCommand:38 - PASSWORD --> 123456
+2023-01-19 11:44:48 INFO  LoginCommand:39 - ENCRYPT PASSWORD --> e10adc3949ba59abbe56e057f20f883e
+2023-01-19 11:44:48 TRACE ConnectionPool:79 - Start tracing UserDAO#checkExistenceByUsernameAndPassword
+2023-01-19 11:44:48 TRACE ConnectionPool:27 - Connection is successful
+2023-01-19 11:44:51 INFO  ConnectionPool:92 - RES!!!!!!!!!!!!!!!!!!!! --> 1
+2023-01-19 11:44:51 TRACE ConnectionPool:110 - Start tracing UserDAO#checkUserStatusByName
+2023-01-19 11:44:51 TRACE ConnectionPool:27 - Connection is successful
+2023-01-19 11:44:51 INFO  ConnectionPool:122 - RES!!!!!!!!!!!!!!!!!!!! --> 1
+2023-01-19 11:44:51 TRACE ConnectionPool:140 - Start tracing UserDAO#getUserByName
+2023-01-19 11:44:51 TRACE ConnectionPool:27 - Connection is successful
+2023-01-19 11:44:51 TRACE Controller:37 - Redirect address --> ?command=goMainCommand
+2023-01-19 11:44:51 DEBUG Controller:38 - Controller finished, now redirect to address --> ?command=goMainCommand
+2023-01-19 11:44:51 TRACE Controller:51 - *****************GET*****************
+2023-01-19 11:44:51 DEBUG Controller:58 - Controller starts
+2023-01-19 11:44:51 TRACE Controller:61 - Request parameter: command --> goMainCommand
+2023-01-19 11:44:51 TRACE Controller:70 - Obtained command --> GoCommand
+2023-01-19 11:44:51 TRACE GoCommand:17 - Start tracing GetCommand
+2023-01-19 11:44:51 TRACE Controller:30 - Forward address --> /WEB-INF/jsp/main.jsp
+2023-01-19 11:44:51 DEBUG Controller:31 - Controller finished, now go to forward address --> /WEB-INF/jsp/main.jsp
+2023-01-19 11:44:59 TRACE Controller:46 - *****************POST*****************
+2023-01-19 11:44:59 DEBUG Controller:58 - Controller starts
+2023-01-19 11:44:59 TRACE Controller:61 - Request parameter: command --> languageCommand
+2023-01-19 11:44:59 TRACE Controller:70 - Obtained command --> LanguageCommand
+2023-01-19 11:44:59 TRACE LanguageCommand:26 - Start tracing LanguageCommand
+2023-01-19 11:44:59 INFO  LanguageCommand:45 - Language is switched to UK
+2023-01-19 11:44:59 TRACE Controller:37 - Redirect address --> ?command=goMainCommand
+2023-01-19 11:44:59 DEBUG Controller:38 - Controller finished, now redirect to address --> ?command=goMainCommand
+2023-01-19 11:44:59 TRACE Controller:51 - *****************GET*****************
+2023-01-19 11:44:59 DEBUG Controller:58 - Controller starts
+2023-01-19 11:44:59 TRACE Controller:61 - Request parameter: command --> goMainCommand
+2023-01-19 11:44:59 TRACE Controller:70 - Obtained command --> GoCommand
+2023-01-19 11:44:59 TRACE GoCommand:17 - Start tracing GetCommand
+2023-01-19 11:44:59 TRACE Controller:30 - Forward address --> /WEB-INF/jsp/main.jsp
+2023-01-19 11:44:59 DEBUG Controller:31 - Controller finished, now go to forward address --> /WEB-INF/jsp/main.jsp
+2023-01-19 11:45:02 TRACE Controller:46 - *****************POST*****************
+2023-01-19 11:45:02 DEBUG Controller:58 - Controller starts
+2023-01-19 11:45:02 TRACE Controller:61 - Request parameter: command --> languageCommand
+2023-01-19 11:45:02 TRACE Controller:70 - Obtained command --> LanguageCommand
+2023-01-19 11:45:02 TRACE LanguageCommand:26 - Start tracing LanguageCommand
+2023-01-19 11:45:02 INFO  LanguageCommand:45 - Language is switched to EN
+2023-01-19 11:45:02 TRACE Controller:37 - Redirect address --> ?command=goMainCommand
+2023-01-19 11:45:02 DEBUG Controller:38 - Controller finished, now redirect to address --> ?command=goMainCommand
+2023-01-19 11:45:02 TRACE Controller:51 - *****************GET*****************
+2023-01-19 11:45:02 DEBUG Controller:58 - Controller starts
+2023-01-19 11:45:02 TRACE Controller:61 - Request parameter: command --> goMainCommand
+2023-01-19 11:45:02 TRACE Controller:70 - Obtained command --> GoCommand
+2023-01-19 11:45:02 TRACE GoCommand:17 - Start tracing GetCommand
+2023-01-19 11:45:02 TRACE Controller:30 - Forward address --> /WEB-INF/jsp/main.jsp
+2023-01-19 11:45:02 DEBUG Controller:31 - Controller finished, now go to forward address --> /WEB-INF/jsp/main.jsp
+2023-01-19 11:45:04 TRACE Controller:51 - *****************GET*****************
+2023-01-19 11:45:04 DEBUG Controller:58 - Controller starts
+2023-01-19 11:45:04 TRACE Controller:61 - Request parameter: command --> goCreate-WalletCommand
+2023-01-19 11:45:04 TRACE Controller:70 - Obtained command --> GoCommand
+2023-01-19 11:45:04 TRACE GoCommand:17 - Start tracing GetCommand
+2023-01-19 11:45:04 TRACE Controller:30 - Forward address --> /WEB-INF/jsp/create-wallet.jsp
+2023-01-19 11:45:04 DEBUG Controller:31 - Controller finished, now go to forward address --> /WEB-INF/jsp/create-wallet.jsp
+2023-01-19 11:45:07 TRACE Controller:51 - *****************GET*****************
+2023-01-19 11:45:07 DEBUG Controller:58 - Controller starts
+2023-01-19 11:45:07 TRACE Controller:61 - Request parameter: command --> goMainCommand
+2023-01-19 11:45:07 TRACE Controller:70 - Obtained command --> GoCommand
+2023-01-19 11:45:07 TRACE GoCommand:17 - Start tracing GetCommand
+2023-01-19 11:45:07 TRACE Controller:30 - Forward address --> /WEB-INF/jsp/main.jsp
+2023-01-19 11:45:07 DEBUG Controller:31 - Controller finished, now go to forward address --> /WEB-INF/jsp/main.jsp
+2023-01-19 11:45:59 TRACE Controller:51 - *****************GET*****************
+2023-01-19 11:45:59 DEBUG Controller:58 - Controller starts
+2023-01-19 11:45:59 TRACE Controller:61 - Request parameter: command --> goCreate-WalletCommand
+2023-01-19 11:45:59 TRACE Controller:70 - Obtained command --> GoCommand
+2023-01-19 11:45:59 TRACE GoCommand:17 - Start tracing GetCommand
+2023-01-19 11:45:59 TRACE Controller:30 - Forward address --> /WEB-INF/jsp/create-wallet.jsp
+2023-01-19 11:45:59 DEBUG Controller:31 - Controller finished, now go to forward address --> /WEB-INF/jsp/create-wallet.jsp
+2023-01-19 11:46:01 TRACE Controller:51 - *****************GET*****************
+2023-01-19 11:46:01 DEBUG Controller:58 - Controller starts
+2023-01-19 11:46:01 TRACE Controller:61 - Request parameter: command --> goMainCommand
+2023-01-19 11:46:01 TRACE Controller:70 - Obtained command --> GoCommand
+2023-01-19 11:46:01 TRACE GoCommand:17 - Start tracing GetCommand
+2023-01-19 11:46:01 TRACE Controller:30 - Forward address --> /WEB-INF/jsp/main.jsp
+2023-01-19 11:46:01 DEBUG Controller:31 - Controller finished, now go to forward address --> /WEB-INF/jsp/main.jsp
+2023-01-19 11:46:02 TRACE Controller:51 - *****************GET*****************
+2023-01-19 11:46:02 DEBUG Controller:58 - Controller starts
+2023-01-19 11:46:02 TRACE Controller:61 - Request parameter: command --> goCreate-WalletCommand
+2023-01-19 11:46:02 TRACE Controller:70 - Obtained command --> GoCommand
+2023-01-19 11:46:02 TRACE GoCommand:17 - Start tracing GetCommand
+2023-01-19 11:46:02 TRACE Controller:30 - Forward address --> /WEB-INF/jsp/create-wallet.jsp
+2023-01-19 11:46:02 DEBUG Controller:31 - Controller finished, now go to forward address --> /WEB-INF/jsp/create-wallet.jsp
+2023-01-19 11:46:03 TRACE Controller:51 - *****************GET*****************
+2023-01-19 11:46:03 DEBUG Controller:58 - Controller starts
+2023-01-19 11:46:03 TRACE Controller:61 - Request parameter: command --> goMainCommand
+2023-01-19 11:46:03 TRACE Controller:70 - Obtained command --> GoCommand
+2023-01-19 11:46:03 TRACE GoCommand:17 - Start tracing GetCommand
+2023-01-19 11:46:03 TRACE Controller:30 - Forward address --> /WEB-INF/jsp/main.jsp
+2023-01-19 11:46:03 DEBUG Controller:31 - Controller finished, now go to forward address --> /WEB-INF/jsp/main.jsp
+2023-01-19 12:06:38 TRACE ContextListener:30 - Servlet context destruction starts
+2023-01-19 12:06:38 TRACE ContextListener:31 - Servlet context destruction finished
+2023-01-19 12:07:18 DEBUG ContextListener:39 - Log4j has been initialized
+2023-01-19 12:07:18 TRACE ContextListener:44 - Log4J initialization finished
+2023-01-19 12:07:18 TRACE ContextListener:26 - Servlet context initialization finished
+2023-01-19 12:07:41 TRACE Controller:46 - *****************POST*****************
+2023-01-19 12:07:41 DEBUG Controller:58 - Controller starts
+2023-01-19 12:07:41 TRACE Controller:61 - Request parameter: command --> loginCommand
+2023-01-19 12:07:41 DEBUG CommandFactory:27 - Command factory was successfully initialized
+2023-01-19 12:07:42 TRACE CommandFactory:28 - Number of commands --> 6
+2023-01-19 12:07:42 TRACE Controller:70 - Obtained command --> LoginCommand
+2023-01-19 12:07:42 TRACE LoginCommand:31 - Start tracing LoginCommand
+2023-01-19 12:07:42 INFO  LoginCommand:41 - USERNAME --> 123
+2023-01-19 12:07:42 INFO  LoginCommand:42 - PASSWORD --> 123456
+2023-01-19 12:07:42 INFO  LoginCommand:43 - ENCRYPT PASSWORD --> e10adc3949ba59abbe56e057f20f883e
+2023-01-19 12:07:42 TRACE ConnectionPool:79 - Start tracing UserDAO#checkExistenceByUsernameAndPassword
+2023-01-19 12:07:42 TRACE ConnectionPool:27 - Connection is successful
+2023-01-19 12:07:43 INFO  ConnectionPool:92 - RES!!!!!!!!!!!!!!!!!!!! --> 1
+2023-01-19 12:07:43 TRACE ConnectionPool:110 - Start tracing UserDAO#checkUserStatusByName
+2023-01-19 12:07:43 TRACE ConnectionPool:27 - Connection is successful
+2023-01-19 12:07:43 INFO  ConnectionPool:122 - RES!!!!!!!!!!!!!!!!!!!! --> 1
+2023-01-19 12:07:43 TRACE ConnectionPool:140 - Start tracing UserDAO#getUserByName
+2023-01-19 12:07:43 TRACE ConnectionPool:27 - Connection is successful
+2023-01-19 12:07:43 TRACE ConnectionPool:18 - Start tracing WalletDAO#findWalletsByUserId
+2023-01-19 12:07:43 TRACE ConnectionPool:27 - Connection is successful
+2023-01-19 12:07:43 TRACE Controller:37 - Redirect address --> ?command=goMainCommand
+2023-01-19 12:07:43 DEBUG Controller:38 - Controller finished, now redirect to address --> ?command=goMainCommand
+2023-01-19 12:07:43 TRACE Controller:51 - *****************GET*****************
+2023-01-19 12:07:43 DEBUG Controller:58 - Controller starts
+2023-01-19 12:07:43 TRACE Controller:61 - Request parameter: command --> goMainCommand
+2023-01-19 12:07:43 TRACE Controller:70 - Obtained command --> GoCommand
+2023-01-19 12:07:43 TRACE GoCommand:17 - Start tracing GetCommand
+2023-01-19 12:07:43 TRACE Controller:30 - Forward address --> /WEB-INF/jsp/main.jsp
+2023-01-19 12:07:43 DEBUG Controller:31 - Controller finished, now go to forward address --> /WEB-INF/jsp/main.jsp
+2023-01-19 12:09:31 TRACE ContextListener:30 - Servlet context destruction starts
+2023-01-19 12:09:31 TRACE ContextListener:31 - Servlet context destruction finished
+2023-01-19 12:10:28 DEBUG ContextListener:39 - Log4j has been initialized
+2023-01-19 12:10:28 TRACE ContextListener:44 - Log4J initialization finished
+2023-01-19 12:10:28 TRACE ContextListener:26 - Servlet context initialization finished
+2023-01-19 12:27:51 TRACE ContextListener:30 - Servlet context destruction starts
+2023-01-19 12:27:51 TRACE ContextListener:31 - Servlet context destruction finished
+2023-01-19 12:28:54 DEBUG ContextListener:39 - Log4j has been initialized
+2023-01-19 12:28:54 TRACE ContextListener:44 - Log4J initialization finished
+2023-01-19 12:28:54 TRACE ContextListener:26 - Servlet context initialization finished
+2023-01-19 12:29:05 TRACE Controller:46 - *****************POST*****************
+2023-01-19 12:29:05 DEBUG Controller:58 - Controller starts
+2023-01-19 12:29:05 TRACE Controller:61 - Request parameter: command --> languageCommand
+
+2023-01-19 12:29:05 DEBUG CommandFactory:27 - Command factory was successfully initialized
+2023-01-19 12:29:05 TRACE CommandFactory:28 - Number of commands --> 6
+2023-01-19 12:29:05 TRACE CommandFactory:33 - Command not found, name --> languageCommand
+
+2023-01-19 12:29:05 TRACE Controller:70 - Obtained command --> null
+2023-01-19 12:29:05 TRACE Controller:30 - Forward address --> ?command=goErrorCommand
+2023-01-19 12:29:05 DEBUG Controller:31 - Controller finished, now go to forward address --> ?command=goErrorCommand
+2023-01-19 12:29:08 TRACE Controller:46 - *****************POST*****************
+2023-01-19 12:29:08 DEBUG Controller:58 - Controller starts
+2023-01-19 12:29:08 TRACE Controller:61 - Request parameter: command --> languageCommand
+
+2023-01-19 12:29:08 TRACE CommandFactory:33 - Command not found, name --> languageCommand
+
+2023-01-19 12:29:08 TRACE Controller:70 - Obtained command --> null
+2023-01-19 12:29:08 TRACE Controller:30 - Forward address --> ?command=goErrorCommand
+2023-01-19 12:29:08 DEBUG Controller:31 - Controller finished, now go to forward address --> ?command=goErrorCommand
+2023-01-19 12:29:10 TRACE Controller:46 - *****************POST*****************
+2023-01-19 12:29:10 DEBUG Controller:58 - Controller starts
+2023-01-19 12:29:10 TRACE Controller:61 - Request parameter: command --> languageCommand
+
+2023-01-19 12:29:10 TRACE CommandFactory:33 - Command not found, name --> languageCommand
+
+2023-01-19 12:29:10 TRACE Controller:70 - Obtained command --> null
+2023-01-19 12:29:10 TRACE Controller:30 - Forward address --> ?command=goErrorCommand
+2023-01-19 12:29:10 DEBUG Controller:31 - Controller finished, now go to forward address --> ?command=goErrorCommand
+2023-01-19 12:29:11 TRACE Controller:46 - *****************POST*****************
+2023-01-19 12:29:11 DEBUG Controller:58 - Controller starts
+2023-01-19 12:29:11 TRACE Controller:61 - Request parameter: command --> languageCommand
+
+2023-01-19 12:29:11 TRACE CommandFactory:33 - Command not found, name --> languageCommand
+
+2023-01-19 12:29:11 TRACE Controller:70 - Obtained command --> null
+2023-01-19 12:29:11 TRACE Controller:30 - Forward address --> ?command=goErrorCommand
+2023-01-19 12:29:11 DEBUG Controller:31 - Controller finished, now go to forward address --> ?command=goErrorCommand
+2023-01-19 12:29:40 TRACE ContextListener:30 - Servlet context destruction starts
+2023-01-19 12:29:40 TRACE ContextListener:31 - Servlet context destruction finished
+2023-01-19 12:30:23 DEBUG ContextListener:39 - Log4j has been initialized
+2023-01-19 12:30:23 TRACE ContextListener:44 - Log4J initialization finished
+2023-01-19 12:30:23 TRACE ContextListener:26 - Servlet context initialization finished
+2023-01-19 12:30:35 TRACE Controller:46 - *****************POST*****************
+2023-01-19 12:30:35 DEBUG Controller:58 - Controller starts
+2023-01-19 12:30:35 TRACE Controller:61 - Request parameter: command --> languageCommand
+
+2023-01-19 12:30:35 DEBUG CommandFactory:27 - Command factory was successfully initialized
+2023-01-19 12:30:35 TRACE CommandFactory:28 - Number of commands --> 6
+2023-01-19 12:30:35 TRACE CommandFactory:33 - Command not found, name --> languageCommand
+
+2023-01-19 12:30:35 TRACE Controller:70 - Obtained command --> null
+2023-01-19 12:30:35 TRACE Controller:30 - Forward address --> ?command=goErrorCommand
+2023-01-19 12:30:35 DEBUG Controller:31 - Controller finished, now go to forward address --> ?command=goErrorCommand
+2023-01-19 12:30:37 TRACE Controller:46 - *****************POST*****************
+2023-01-19 12:30:37 DEBUG Controller:58 - Controller starts
+2023-01-19 12:30:37 TRACE Controller:61 - Request parameter: command --> languageCommand
+
+2023-01-19 12:30:37 TRACE CommandFactory:33 - Command not found, name --> languageCommand
+
+2023-01-19 12:30:37 TRACE Controller:70 - Obtained command --> null
+2023-01-19 12:30:37 TRACE Controller:30 - Forward address --> ?command=goErrorCommand
+2023-01-19 12:30:37 DEBUG Controller:31 - Controller finished, now go to forward address --> ?command=goErrorCommand
+2023-01-19 12:32:05 TRACE Controller:46 - *****************POST*****************
+2023-01-19 12:32:05 DEBUG Controller:58 - Controller starts
+2023-01-19 12:32:05 TRACE Controller:61 - Request parameter: command --> loginCommand
+2023-01-19 12:32:05 TRACE Controller:70 - Obtained command --> LoginCommand
+2023-01-19 12:32:05 TRACE LoginCommand:31 - Start tracing LoginCommand
+2023-01-19 12:32:05 INFO  LoginCommand:41 - USERNAME --> 123
+2023-01-19 12:32:05 INFO  LoginCommand:42 - PASSWORD --> 123456
+2023-01-19 12:32:05 INFO  LoginCommand:43 - ENCRYPT PASSWORD --> e10adc3949ba59abbe56e057f20f883e
+2023-01-19 12:32:05 TRACE ConnectionPool:79 - Start tracing UserDAO#checkExistenceByUsernameAndPassword
+2023-01-19 12:32:05 TRACE ConnectionPool:27 - Connection is successful
+2023-01-19 12:32:07 INFO  ConnectionPool:92 - RES!!!!!!!!!!!!!!!!!!!! --> 1
+2023-01-19 12:32:07 TRACE ConnectionPool:110 - Start tracing UserDAO#checkUserStatusByName
+2023-01-19 12:32:07 TRACE ConnectionPool:27 - Connection is successful
+2023-01-19 12:32:07 INFO  ConnectionPool:122 - RES!!!!!!!!!!!!!!!!!!!! --> 1
+2023-01-19 12:32:07 TRACE ConnectionPool:140 - Start tracing UserDAO#getUserByName
+2023-01-19 12:32:07 TRACE ConnectionPool:27 - Connection is successful
+2023-01-19 12:32:07 TRACE ConnectionPool:18 - Start tracing WalletDAO#findWalletsByUserId
+2023-01-19 12:32:07 TRACE ConnectionPool:27 - Connection is successful
+2023-01-19 12:32:07 TRACE Controller:37 - Redirect address --> ?command=goMainCommand
+2023-01-19 12:32:07 DEBUG Controller:38 - Controller finished, now redirect to address --> ?command=goMainCommand
+2023-01-19 12:32:07 TRACE Controller:51 - *****************GET*****************
+2023-01-19 12:32:07 DEBUG Controller:58 - Controller starts
+2023-01-19 12:32:07 TRACE Controller:61 - Request parameter: command --> goMainCommand
+2023-01-19 12:32:07 TRACE Controller:70 - Obtained command --> GoCommand
+2023-01-19 12:32:07 TRACE GoCommand:17 - Start tracing GetCommand
+2023-01-19 12:32:07 TRACE Controller:30 - Forward address --> /WEB-INF/jsp/main.jsp
+2023-01-19 12:32:07 DEBUG Controller:31 - Controller finished, now go to forward address --> /WEB-INF/jsp/main.jsp
+2023-01-19 12:32:11 TRACE Controller:46 - *****************POST*****************
+2023-01-19 12:32:11 DEBUG Controller:58 - Controller starts
+2023-01-19 12:32:11 TRACE Controller:61 - Request parameter: command --> languageCommand
+2023-01-19 12:32:11 TRACE Controller:70 - Obtained command --> LanguageCommand
+2023-01-19 12:32:11 TRACE LanguageCommand:26 - Start tracing LanguageCommand
+2023-01-19 12:32:11 INFO  LanguageCommand:45 - Language is switched to UK
+2023-01-19 12:32:11 TRACE Controller:37 - Redirect address --> ?command=goMainCommand
+2023-01-19 12:32:11 DEBUG Controller:38 - Controller finished, now redirect to address --> ?command=goMainCommand
+2023-01-19 12:32:11 TRACE Controller:51 - *****************GET*****************
+2023-01-19 12:32:11 DEBUG Controller:58 - Controller starts
+2023-01-19 12:32:11 TRACE Controller:61 - Request parameter: command --> goMainCommand
+2023-01-19 12:32:11 TRACE Controller:70 - Obtained command --> GoCommand
+2023-01-19 12:32:11 TRACE GoCommand:17 - Start tracing GetCommand
+2023-01-19 12:32:11 TRACE Controller:30 - Forward address --> /WEB-INF/jsp/main.jsp
+2023-01-19 12:32:11 DEBUG Controller:31 - Controller finished, now go to forward address --> /WEB-INF/jsp/main.jsp
+2023-01-19 12:33:19 TRACE ContextListener:30 - Servlet context destruction starts
+2023-01-19 12:33:19 TRACE ContextListener:31 - Servlet context destruction finished
+2023-01-19 12:34:15 DEBUG ContextListener:39 - Log4j has been initialized
+2023-01-19 12:34:15 TRACE ContextListener:44 - Log4J initialization finished
+2023-01-19 12:34:15 TRACE ContextListener:26 - Servlet context initialization finished
+2023-01-19 12:34:28 TRACE Controller:46 - *****************POST*****************
+2023-01-19 12:34:28 DEBUG Controller:58 - Controller starts
+2023-01-19 12:34:28 TRACE Controller:61 - Request parameter: command --> languageCommand
+
+2023-01-19 12:34:28 DEBUG CommandFactory:27 - Command factory was successfully initialized
+2023-01-19 12:34:28 TRACE CommandFactory:28 - Number of commands --> 6
+2023-01-19 12:34:28 TRACE CommandFactory:33 - Command not found, name --> languageCommand
+
+2023-01-19 12:34:28 TRACE Controller:70 - Obtained command --> null
+2023-01-19 12:34:28 TRACE Controller:30 - Forward address --> controller/?command=goErrorCommand
+2023-01-19 12:34:28 DEBUG Controller:31 - Controller finished, now go to forward address --> controller/?command=goErrorCommand
+2023-01-19 12:35:24 TRACE ContextListener:30 - Servlet context destruction starts
+2023-01-19 12:35:24 TRACE ContextListener:31 - Servlet context destruction finished

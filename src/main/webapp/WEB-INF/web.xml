@@ -11,7 +11,7 @@
 
     <servlet>
         <servlet-name>Controller</servlet-name>
-        <servlet-class>com.epam.payments.controller.Controller</servlet-class>
+        <servlet-class>com.epam.payments.Controller</servlet-class>
     </servlet>
 
     <servlet-mapping>

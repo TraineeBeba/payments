@@ -1,7 +1,7 @@
-package com.epam.payments.web.command.factory;
+package com.epam.payments.command.factory;
 
-import com.epam.payments.web.command.*;
-import com.epam.payments.web.command.go.*;
+import com.epam.payments.command.*;
+
 import org.apache.log4j.Logger;
 
 import java.util.Map;
@@ -22,12 +22,7 @@ public class CommandFactory {
         commands.put("languageCommand", new LanguageCommand());
         commands.put("logoutCommand", new LogoutCommand());
         commands.put("createWalletCommand", new CreateWalletCommand());
-
-        commands.put("goToLoginCommand", new GoToLoginCommand());
-        commands.put("goToRegisterCommand", new GoToRegisterCommand());
-        commands.put("goToMainCommand", new GoToMainCommand());
-        commands.put("goToErrorCommand", new GoToErrorCommand());
-        commands.put("goToWalletCreateCommand", new GoToWalletCreateCommand());
+        commands.put("goCommand", new GoCommand());
 
         LOG.debug("Command factory was successfully initialized");
         LOG.trace("Number of commands --> " + commands.size());

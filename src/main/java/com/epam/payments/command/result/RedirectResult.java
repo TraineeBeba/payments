@@ -1,4 +1,4 @@
-package com.epam.payments.web.command.result;
+package com.epam.payments.command.result;
 
 public class RedirectResult implements CommandResult {
     private String refirectResource;

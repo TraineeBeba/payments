@@ -1,9 +1,9 @@
-package com.epam.payments.web.command;
+package com.epam.payments.command;
 
+import com.epam.payments.command.result.CommandResult;
+import com.epam.payments.command.result.RedirectResult;
 import com.epam.payments.utils.Utils;
-import com.epam.payments.web.command.result.CommandResult;
-import com.epam.payments.web.command.result.RedirectResult;
-import com.epam.payments.web.service.UserService;
+import com.epam.payments.db.service.UserService;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -22,7 +22,7 @@ public class RegisterCommand extends Command {
     private static final long serialVersionUID = -7190245479634943129L;
 
     @Override
-    public CommandResult execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward) throws IOException, ServletException {
         LOG.trace("Start tracing RegisterCommand");
 
         HttpSession session = request.getSession();

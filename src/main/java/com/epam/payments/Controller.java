@@ -1,21 +1,18 @@
-package com.epam.payments.controller;
+package com.epam.payments;
 
-import com.epam.payments.Path;
-import com.epam.payments.web.command.Command;
-import com.epam.payments.web.command.factory.CommandFactory;
-import com.epam.payments.web.command.result.CommandResult;
-import com.epam.payments.web.command.result.ForwardResult;
-import com.epam.payments.web.command.result.RedirectResult;
-import com.epam.payments.web.command.result.View;
+import com.epam.payments.command.Command;
+import com.epam.payments.command.factory.CommandFactory;
+import com.epam.payments.command.result.CommandResult;
+import com.epam.payments.command.result.ForwardResult;
+import com.epam.payments.command.result.RedirectResult;
+import com.epam.payments.command.result.View;
 import org.apache.log4j.Logger;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
@@ -47,28 +44,34 @@ public class Controller extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         LOG.trace("*****************POST*****************");
-        process(request, response, "post");
+        process(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         LOG.trace("*****************GET*****************");
-        process(request, response, "get");
+        process(request, response);
     }
 
     private void process(HttpServletRequest request,
-                         HttpServletResponse response, String method) throws IOException, ServletException {
+                         HttpServletResponse response) throws IOException, ServletException {
 
         LOG.debug("Controller starts");
 
-        String commandName = request.getParameter("command");
+        String commandName = request.getParameter("command").trim();
         LOG.trace("Request parameter: command --> " + commandName);
+
+        String forward = "";
+        if(commandName.startsWith("go")){
+            forward = commandName.substring("go".length(), commandName.length() - "Command".length()).toLowerCase();
+            commandName = "goCommand";
+        }
 
         Command command = CommandFactory.get(commandName);
         LOG.trace("Obtained command --> " + command);
 
-        CommandResult commandResult = new ForwardResult("/controller?command=goToErrorCommand");
+        CommandResult commandResult = new ForwardResult("?command=goErrorCommand");
         try {
-            commandResult = command.execute(request, response);
+            commandResult = command.execute(request, response, forward);
         } catch (Exception ex) {
             request.setAttribute("errorMessage", ex.getMessage());
         }

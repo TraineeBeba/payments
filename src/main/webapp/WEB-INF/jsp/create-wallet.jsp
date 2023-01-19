@@ -1,5 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ taglib prefix="my" uri="/WEB-INF/locale.tld" %>
+<%@ taglib prefix="my" uri="/WEB-INF/tld/locale.tld" %>
+<%@ taglib prefix="с" uri="/WEB-INF/tld/locale.tld" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <html class="h-100">
@@ -15,7 +16,7 @@
 		<div>
 			<nav class="nav nav-masthead justify-content-right float-md-end row">
 				<div class="left-block col-6">
-					<a class="nav-link active" aria-current="page" href="/controller?command=goToMainCommand">Гаманці</a>
+					<a class="nav-link active" aria-current="page" href="/controller?command=goMainCommand">Гаманці</a>
 					<%--				<a class="nav-link active" aria-current="page" href="/cinema">Поповнення ігор</a>--%>
 					<%--				<a class="nav-link active" aria-current="page" href="/cinema">Перекази</a>--%>
 
@@ -23,21 +24,21 @@
 
 				<div class="right-block col-6">
 					<form action="controller" method="post">
-						<input type="hidden" name="redirect" value="?command=goToWalletCreateCommand">
+						<input type="hidden" name="redirect" value="?command=goCreate-WalletCommand">
 						<input type="hidden" name="command" value="languageCommand">
 						<input type="hidden" name="language" value="en">
 						<input type="image" src="/img/us.png" alt="Submit">
 
 					</form>
 					<form action="controller" method="post">
-						<input type="hidden" name="redirect" value="?command=goToWalletCreateCommand">
+						<input type="hidden" name="redirect" value="?command=goCreate-WalletCommand">
 						<input type="hidden" name="command" value="languageCommand">
 						<input type="hidden" name="language" value="uk">
 						<input type="image" src="/img/ua.png" alt="Submit">
 					</form>
 
 					<form style="padding: 2%" action="controller" method="post">
-						<input type="hidden" name="redirect" value="?command=goToLoginCommand">
+						<input type="hidden" name="redirect" value="?command=goLoginCommand">
 						<input type="hidden" name="command" value="logoutCommand">
 						<a class="nav-link" href='#' onclick='this.parentNode.submit(); return false;'>Вийти</a>
 					</form>
@@ -61,13 +62,13 @@
 			</div>
 
 			<form style="padding: 2%" action="/controller" method="post">
-				<input type="hidden" name="redirect" value="?command=goToWalletCreateCommand">
+				<input type="hidden" name="redirect" value="?command=goCreate-WalletCommand">
 				<input type="hidden" name="command" value="createWalletCommand">
 				<input type="text" 	 name="name" placeholder="Введіть назву гаманця" class="form-control" required><br>
 				<button type="submit" class="btn btn-primary">Додати гаманець</button>
 			</form>
 
-			<a href="/controller?command=goToMainCommand"> Я передумав </a>
+			<a href="/controller?command=goMainCommand"> Я передумав </a>
 
 			<div class="categories p-3">
 				<h3> Привіт ${sessionScope.username} </h3>
