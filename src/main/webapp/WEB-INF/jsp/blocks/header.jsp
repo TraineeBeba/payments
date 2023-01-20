@@ -1,24 +1,44 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="n" uri="/WEB-INF/tld/name.tld" %>
 
 <header class="mb-15">
     <div>
-        <nav class="nav nav-masthead justify-content-left float-md-end row">
-
+        <nav class="nav nav-masthead justify-content-right float-md-end row">
             <div class="left-block col-6">
-
-                <a class="nav-link active" aria-current="page" href="/cinema">Головна</a>
-                <a class="nav-link active" aria-current="page" href="/cinema">Поповнення ігор</a>
-                <a class="nav-link active" aria-current="page" href="/cinema">Перекази</a>
-
+                <c:if test="${not empty sessionScope.user_id}">
+                    <a class="nav-link active" aria-current="page" href="/<n:Name value="controller.name"/><n:Name value="redirect.main"/>">Гаманці</a>
+                    <a class="nav-link active" aria-current="page" href="/<n:Name value="controller.name"/><n:Name value="redirect.prepare-transfer"/>">Перекази</a>
+                </c:if>
             </div>
 
             <div class="right-block col-6">
-                <a  class="nav-link" href="/login">Авторизація</a>
-                <a  class="nav-link" href="/registration">Реєстрація</a>
-                <a  class="nav-link" href="/logout">Вийти</a>
+                <div class="right-block col-1">
+                    <c:set var = "currentPage" scope = "session" value = "${sessionScope.currentPage}"/>
+                    <form action="<n:Name value="controller.name"/>" method="post">
+                        <input type="hidden" name="redirect" value="<n:Name value="redirect.${currentPage}"/>">
+                        <input type="hidden" name="command" value="<n:Name value="command.language"/>">
+                        <input type="hidden" name="language" value="en">
+                        <input type="image" src="/img/us.png" alt="Submit">
 
+                    </form>
+                    <form action="<n:Name value="controller.name"/>" method="post">
+                        <input type="hidden" name="redirect" value="<n:Name value="redirect.${currentPage}"/>">
+                        <input type="hidden" name="command" value="<n:Name value="command.language"/>">
+                        <input type="hidden" name="language" value="uk">
+                        <input type="image" src="/img/ua.png" alt="Submit">
+                    </form>
+                </div>
+
+                <c:if test="${not empty sessionScope.user_id}">
+                    <form style="padding: 2%" action="<n:Name value="controller.name"/>" method="post">
+                        <input type="hidden" name="redirect" value="<n:Name value="redirect.login"/>">
+                        <input type="hidden" name="command" value="<n:Name value="command.logout"/>">
+                        <a class="nav-link" href='#' onclick='this.parentNode.submit(); return false;'>Вийти</a>
+                    </form>
+                </c:if>
             </div>
+
         </nav>
     </div>
 </header>

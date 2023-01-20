@@ -8,16 +8,16 @@ public class UserDTO implements Serializable {
     
     private Long id;
     private Long role_id = 1L;
-    private Long state_id = 1L;
+    private Long status_id = 1L;
     private String username;
     private String password;
 
     public UserDTO(){}
 
-    public UserDTO(Long id, Long role_id, Long state_id, String username, String password) {
+    public UserDTO(Long id, Long role_id, Long status_id, String username, String password) {
         this.id = id;
         this.role_id = role_id;
-        this.state_id = state_id;
+        this.status_id = status_id;
         this.username = username;
         this.password = password;
     }
@@ -43,12 +43,12 @@ public class UserDTO implements Serializable {
         this.role_id = role_id;
     }
 
-    public Long getState_id() {
-        return state_id;
+    public Long getStatus_id() {
+        return status_id;
     }
 
-    public void setState_id(Long state_id) {
-        this.state_id = state_id;
+    public void setStatus_id(Long status_id) {
+        this.status_id = status_id;
     }
 
     public String getUsername() {
@@ -72,7 +72,7 @@ public class UserDTO implements Serializable {
         return "UserDTO{" +
                 "id=" + id +
                 ", role_id=" + role_id +
-                ", state_id=" + state_id +
+                ", state_id=" + status_id +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 '}';

@@ -18,5 +18,5 @@ public final class Path {
     // commands
     public static final String PAGE_HOME             = "/controller?command=loginCommand";
 
-    public static final String PAGE_CREATE_WALLET    = "/WEB-INF/jsp/create-wallet.jsp";
+    public static final String PAGE_CREATE_WALLET    = "/WEB-INF/jsp/prepare-transfer.jsp";
 }

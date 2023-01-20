@@ -27,12 +27,13 @@ public class LocaleTag extends TagSupport {
 
         String language = String.valueOf(session.getAttribute("language"));
         if (language == null || language.isEmpty() || language.equals("null")){
-            language = "en";
+            language = "uk";
         }
 
         if (value!=null){
             Locale locale = new Locale(language);
             ResourceBundle rb = ResourceBundle.getBundle("resources", locale);
+            session.setAttribute("language", language);
             JspWriter out = pageContext.getOut();
             try {
                 out.println(rb.getString(value));

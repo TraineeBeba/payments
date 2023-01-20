@@ -1,5 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="my" uri="/WEB-INF/tld/locale.tld"%>
+<%@ taglib prefix="n" uri="/WEB-INF/tld/name.tld" %>
 <%@ page isErrorPage="true" %>
 
 <html>

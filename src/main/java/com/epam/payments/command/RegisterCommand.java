@@ -38,11 +38,11 @@ public class RegisterCommand extends Command {
         String registerCheck = userService.checkRegisterUser(username, password);
         if(registerCheck == null) {
             userService.getUserDAO().createUser(username, Utils.encrypt(password));
-            session.setAttribute("register", true);
+            session.setAttribute("registerSuccess", "true");
             redirect = new RedirectResult(request.getParameter("redirect"));
         } else {
             session.setAttribute("wrongData", registerCheck);
-            redirect = new RedirectResult("?command=goToRegisterCommand");
+            redirect = new RedirectResult("?command=goRegisterCommand");
         }
 
         return redirect;

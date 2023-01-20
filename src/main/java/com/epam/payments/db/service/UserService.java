@@ -9,11 +9,11 @@ public class UserService {
 
     public String checkRegisterUser(String username, String password) {
         if (userDAO.checkExistenceByUsername(username)){
-            return "error.login.username_taken";
+            return "alertError.login.username_taken";
         }
 
         if (password.length() < 6){
-            return "error.password.few_chars";
+            return "alertError.password.few_chars";
         }
 
         return null;
@@ -21,11 +21,11 @@ public class UserService {
 
     public String checkLoginUser(String username, String password) {
         if (!userDAO.checkExistenceByUsernameAndPassword(username, password)){
-            return "error.login.wrong_data";
+            return "alertError.login.wrong_data";
         }
 
         if (!userDAO.checkUserStatusByName(username)) {
-            return "error.login.user_blocked";
+            return "alertError.login.user_blocked";
         }
 
         return null;

@@ -3,8 +3,8 @@
     <jsp-version>2.0</jsp-version>
     <short-name>Example TLD</short-name>
     <tag>
-        <name>Command</name>
-        <tag-class>com.epam.payments.tag.CommandTag</tag-class>
+        <name>Name</name>
+        <tag-class>com.epam.payments.tag.NameTag</tag-class>
         <body-content>empty</body-content>
         <attribute>
             <name>value</name>

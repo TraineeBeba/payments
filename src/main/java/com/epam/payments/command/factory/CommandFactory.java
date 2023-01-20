@@ -2,9 +2,11 @@ package com.epam.payments.command.factory;
 
 import com.epam.payments.command.*;
 
+import com.epam.payments.utils.Utils;
 import org.apache.log4j.Logger;
 
 import java.util.Map;
+import java.util.Properties;
 import java.util.TreeMap;
 
 /**
@@ -17,12 +19,16 @@ public class CommandFactory {
     private static Map<String, Command> commands = new TreeMap<>();
 
     static {
-        commands.put("loginCommand", new LoginCommand());
-        commands.put("registerCommand", new RegisterCommand());
-        commands.put("languageCommand", new LanguageCommand());
-        commands.put("logoutCommand", new LogoutCommand());
-        commands.put("createWalletCommand", new CreateWalletCommand());
-        commands.put("goCommand", new GoCommand());
+        Properties p = Utils.getNameProperties();
+
+        commands.put(p.getProperty("command.login"), new LoginCommand());
+        commands.put(p.getProperty("command.register"), new RegisterCommand());
+        commands.put(p.getProperty("command.language"), new LanguageCommand());
+        commands.put(p.getProperty("command.logout"), new LogoutCommand());
+        commands.put(p.getProperty("command.create-wallet"), new CreateWalletCommand());
+        commands.put(p.getProperty("command.prepare-transfer"), new PrepareTransferCommand());
+        commands.put(p.getProperty("command.send-transfer"), new SendTransferCommand());
+        commands.put(p.getProperty("command.go"), new GoCommand());
 
         LOG.debug("Command factory was successfully initialized");
         LOG.trace("Number of commands --> " + commands.size());

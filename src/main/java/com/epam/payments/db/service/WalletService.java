@@ -3,6 +3,7 @@ package com.epam.payments.db.service;
 import com.epam.payments.db.dao.IUserDAO;
 import com.epam.payments.db.dao.IWalletDAO;
 import com.epam.payments.db.dao.MySQL.WalletDAO;
+import com.epam.payments.db.dto.TransferDTO;
 
 public class WalletService {
 
@@ -19,4 +20,5 @@ public class WalletService {
     public boolean checkBillNumber(int bill_number) {
         return !walletDAO.checkBillNumberExistance(bill_number);
     }
+
 }

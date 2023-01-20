@@ -42,11 +42,11 @@ public class CreateWalletCommand extends Command {
         String createWalletCheck = walletService.checkCreate(name);
         if(createWalletCheck == null) {
             walletService.getWalletDAO().createWallet(new WalletDTO(user_id, 1L, name, bill_number, 1000));
-            session.setAttribute("create_wallet", true);
+            session.setAttribute("walletCreationSuccess", true);
             redirect = new RedirectResult(request.getParameter("redirect"));
         } else {
             session.setAttribute("wrongData", createWalletCheck);
-            redirect = new RedirectResult("?command=goToWalletCreateCommand");
+            redirect = new RedirectResult("?command=goWalletCreateCommand");
         }
 
         return redirect;

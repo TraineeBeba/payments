@@ -7,7 +7,8 @@ public class TransferDTO implements Serializable {
     private static final long serialVersionUID = 2004384289185509242L;
     
     private Long id;
-    private Long sender_wallet_id;
+    private Long status_id;
+    private int sender_bill_number;
     private int recipient_bill_number;
     private LocalDateTime date_time;
     private double sum;
@@ -15,9 +16,17 @@ public class TransferDTO implements Serializable {
     public TransferDTO() {
     }
 
-    public TransferDTO(Long id, Long sender_wallet_id, int recipient_bill_number, LocalDateTime date_time, double sum) {
+    public TransferDTO(Long status_id, int sender_bill_number, int recipient_bill_number, double sum, LocalDateTime date_time) {
+        this.status_id = status_id;
+        this.sender_bill_number = sender_bill_number;
+        this.recipient_bill_number = recipient_bill_number;
+        this.sum = sum;
+        this.date_time = date_time;
+    }
+
+    public TransferDTO(Long id, int sender_bill_number, int recipient_bill_number, LocalDateTime date_time, double sum) {
         this.id = id;
-        this.sender_wallet_id = sender_wallet_id;
+        this.sender_bill_number = sender_bill_number;
         this.recipient_bill_number = recipient_bill_number;
         this.date_time = date_time;
         this.sum = sum;
@@ -31,12 +40,12 @@ public class TransferDTO implements Serializable {
         this.id = id;
     }
 
-    public Long getSender_wallet_id() {
-        return sender_wallet_id;
+    public int getSender_bill_number() {
+        return sender_bill_number;
     }
 
-    public void setSender_wallet_id(Long sender_wallet_id) {
-        this.sender_wallet_id = sender_wallet_id;
+    public void setSender_bill_number(int sender_bill_number) {
+        this.sender_bill_number = sender_bill_number;
     }
 
     public int getRecipient_bill_number() {
@@ -67,7 +76,7 @@ public class TransferDTO implements Serializable {
     public String toString() {
         return "TransferDTO{" +
                 "id=" + id +
-                ", sender_wallet_id=" + sender_wallet_id +
+                ", sender_bill_number=" + sender_bill_number +
                 ", recipient_bill_number=" + recipient_bill_number +
                 ", date_time=" + date_time +
                 ", sum=" + sum +

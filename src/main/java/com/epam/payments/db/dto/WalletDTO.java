@@ -1,6 +1,6 @@
 package com.epam.payments.db.dto;
 
-import com.epam.payments.db.State;
+import com.epam.payments.db.UserStatus;
 
 import java.io.Serializable;
 
@@ -59,8 +59,8 @@ public class WalletDTO implements Serializable {
     }
 
     public String getState() {
-        State state = State.getState(state_id);
-        return state.getName();
+        UserStatus userStatus = UserStatus.getState(state_id);
+        return userStatus.getName();
     }
 
     public String getName() {

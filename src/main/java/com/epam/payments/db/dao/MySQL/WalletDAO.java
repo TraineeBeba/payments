@@ -2,6 +2,7 @@ package com.epam.payments.db.dao.MySQL;
 
 import com.epam.payments.db.dao.ConnectionPool;
 import com.epam.payments.db.dao.IWalletDAO;
+import com.epam.payments.db.dto.TransferDTO;
 import com.epam.payments.db.dto.UserDTO;
 import com.epam.payments.db.dto.WalletDTO;
 import org.apache.log4j.Logger;
@@ -99,5 +100,20 @@ public class WalletDAO implements IWalletDAO {
             LOG.error(ex.getLocalizedMessage());
         }
         return res;
+    }
+
+    @Override
+    public void doTransfer(TransferDTO transferDTO) {
+
+    }
+
+    @Override
+    public boolean checkSum(double sum) {
+        return false;
+    }
+
+    @Override
+    public WalletDTO getWalletByRecipentBill(int recipient_bill_number) {
+        return null;
     }
 }

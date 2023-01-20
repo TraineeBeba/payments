@@ -23,13 +23,13 @@ public class LogoutCommand extends Command {
         LOG.trace("Start tracing LogoutCommand");
 
         HttpSession session = request.getSession();
-        session.removeAttribute("id");
+        session.removeAttribute("user_id");
         session.removeAttribute("role_id");
         session.removeAttribute("state_id");
         session.removeAttribute("username");
         session.removeAttribute("password");
         session.removeAttribute("wallets");
-        session.invalidate();
+//        session.setAttribute("", );
 
         return new RedirectResult(request.getParameter("redirect"));
     }
