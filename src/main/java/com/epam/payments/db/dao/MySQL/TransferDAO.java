@@ -40,7 +40,7 @@ public class TransferDAO implements ITransferDAO {
     }
 
     @Override
-    public List<TransferDTO> findTransfersBySenderBill(int bill_number, String sortBy, int offset, int noOfRecords) {
+    public List<TransferDTO> findTransfersByBill(int bill_number, String sortBy, int offset, int noOfRecords) {
         LOG.trace("Start tracing WalletDAO#findWalletsByUserId");
 
         List<TransferDTO> transferDTOList = new ArrayList<>();
@@ -66,12 +66,13 @@ public class TransferDAO implements ITransferDAO {
                 ) {
                     connection.setAutoCommit(false);
                     statement.setInt(1, bill_number);
+                    statement.setInt(2, bill_number);
                     statement.execute();
                     ResultSet resultSet = statement.getResultSet();
                     while (resultSet.next()) {
-                        transferDTO = new TransferDTO(resultSet.getLong("id"), resultSet.getInt("sender_bill_number"),
-                                resultSet.getInt("recipient_bill_number"), resultSet.getDouble("sum"),
-                                 resultSet.getDate("date"));
+                        transferDTO = new TransferDTO(resultSet.getLong("id"), resultSet.getLong("status_id"),
+                                resultSet.getInt("sender_bill_number"), resultSet.getInt("recipient_bill_number"),
+                                resultSet.getDouble("sum"), resultSet.getDate("date"));
                         transferDTOList.add(transferDTO);
 
 //                        LOG.info(transferDTO.toString());

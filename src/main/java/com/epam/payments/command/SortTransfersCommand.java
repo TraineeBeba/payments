@@ -27,6 +27,7 @@ public class SortTransfersCommand extends Command {
 
         String sort = "transfer.id DESC";
         Integer currTransferPage = 1;
+        Integer currWalletBill = 0;
 
         LOG.info("transferSort " + request.getParameter("transferSort"));
         if(request.getParameter("transferSort") != null) sort = request.getParameter("transferSort");
@@ -34,8 +35,12 @@ public class SortTransfersCommand extends Command {
         LOG.info("currTransferPage " + request.getParameter("currTransferPage"));
         if(request.getParameter("currTransferPage") != null) currTransferPage = Integer.parseInt(request.getParameter("currTransferPage"));
 
+        LOG.info("currWalletBill " + request.getParameter("currWalletBill"));
+        if(request.getParameter("currWalletBill") != null) currWalletBill = Integer.parseInt(request.getParameter("currWalletBill"));
+
         session.setAttribute("transferSort", sort);
         session.setAttribute("currTransferPage", currTransferPage);
+        session.setAttribute("currWalletBill", currWalletBill);
 //        if(session.getAttribute("transferSort") != null) sort = String.valueOf(session.getAttribute("transferSort"));
 //        String = request.getParameter("currTransferPage");
 

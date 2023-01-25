@@ -9,7 +9,7 @@ public interface ITransferDAO {
     void createTransfer(TransferDTO transferDTO);
 
 
-    List<TransferDTO> findTransfersBySenderBill(int bill_number, String sortBy, int offset, int noOfRecords);
+    List<TransferDTO> findTransfersByBill(int bill_number, String sortBy, int offset, int noOfRecords);
 
     int getNoOfRecords();
 }

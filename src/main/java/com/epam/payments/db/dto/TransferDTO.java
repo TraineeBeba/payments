@@ -19,7 +19,8 @@ public class TransferDTO implements Serializable {
 
 
 
-    public TransferDTO(Long status_id, int sender_bill_number, int recipient_bill_number, double sum, Date date) {
+    public TransferDTO(Long id, Long status_id, int sender_bill_number, int recipient_bill_number, double sum, Date date) {
+        this.id = id;
         this.status_id = status_id;
         this.sender_bill_number = sender_bill_number;
         this.recipient_bill_number = recipient_bill_number;
@@ -27,8 +28,8 @@ public class TransferDTO implements Serializable {
         this.date = date;
     }
 
-    public TransferDTO(Long id, int sender_bill_number, int recipient_bill_number, double sum) {
-        this.id = id;
+    public TransferDTO(Long status_id, int sender_bill_number, int recipient_bill_number, double sum) {
+        this.status_id = status_id;
         this.sender_bill_number = sender_bill_number;
         this.recipient_bill_number = recipient_bill_number;
         this.sum = sum;

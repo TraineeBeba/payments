@@ -10,7 +10,7 @@ public class Query {
     public static final String SELECT_USER_BY_NAME                =           "SELECT * FROM user WHERE user.username = ? ";
     public static final String СHECK_USER_STATUS_BY_NAME          =           "SELECT user.status_id FROM user WHERE user.username = ?";
     public static final String SELECT_SORTED_WALLETS_BY_USER_ID =           "SELECT * FROM wallet WHERE wallet.user_id = ? ORDER BY <sortParam>";
-    public static final String SELECT_SORTED_TRANSFERS_BY_USER_ID =           "SELECT SQL_CALC_FOUND_ROWS * FROM transfer WHERE transfer.sender_bill_number = ? ORDER BY <sortParam> LIMIT <offsetParam>,<noOfRecordsParam>";
+    public static final String SELECT_SORTED_TRANSFERS_BY_USER_ID =           "SELECT SQL_CALC_FOUND_ROWS * FROM transfer WHERE transfer.sender_bill_number = ? OR transfer.recipient_bill_number = ? ORDER BY <sortParam> LIMIT <offsetParam>,<noOfRecordsParam>";
     public static final String СHECK_BILL_NUMBER_EXISTENCE        =           "SELECT count(*) FROM wallet WHERE wallet.bill_number = ?" ;
     public static final String CREATE_WALLET                      =           "INSERT INTO wallet VALUES (DEFAULT, ?, 1, ?, ?, ?)";
     public static final String СHECK_WALLET_EXISTENCE_BY_NAME_AND_USER_ID     =           "SELECT count(*) FROM wallet WHERE wallet.user_id =? AND wallet.name = ?";

@@ -6,5 +6,9 @@
         <name>Transfers</name>
         <tag-class> com.epam.payments.tag.TransfersTag</tag-class>
         <body-content>empty</body-content>
+        <attribute>
+            <name>value</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
     </tag>
 </taglib>
