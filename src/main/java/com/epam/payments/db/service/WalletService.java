@@ -1,9 +1,7 @@
 package com.epam.payments.db.service;
 
-import com.epam.payments.db.dao.IUserDAO;
 import com.epam.payments.db.dao.IWalletDAO;
 import com.epam.payments.db.dao.MySQL.WalletDAO;
-import com.epam.payments.db.dto.TransferDTO;
 
 public class WalletService {
 
@@ -13,7 +11,19 @@ public class WalletService {
         return walletDAO;
     }
 
-    public String checkCreate(String name) {
+    public String checkCreate(Long user_id, String name) {
+        if (!name.equals(name.trim()) || name.isBlank()){
+            return "alertError.whitespaces";
+        }
+
+        if(walletDAO.checkWalletExistenceByNameAndUserId(user_id, name)){
+           return "alertError.wallet_name_exists";
+        }
+
+        if(walletDAO.checkWalletsCountByUserId(user_id)){
+            return "alertError.max_wallets";
+        }
+
         return null;
     }
 

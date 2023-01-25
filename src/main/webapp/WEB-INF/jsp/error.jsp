@@ -8,7 +8,7 @@
 
 <%--    <c:set var="title" value="Error" scope="page" />--%>
 <%--    <title> <my:Locale value="page.error.page"/> </title>--%>
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+<%--    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">--%>
     <script src="../../bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
 

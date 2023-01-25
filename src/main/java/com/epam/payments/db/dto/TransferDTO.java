@@ -2,6 +2,7 @@ package com.epam.payments.db.dto;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.sql.Date;
 
 public class TransferDTO implements Serializable {
     private static final long serialVersionUID = 2004384289185509242L;
@@ -10,25 +11,26 @@ public class TransferDTO implements Serializable {
     private Long status_id;
     private int sender_bill_number;
     private int recipient_bill_number;
-    private LocalDateTime date_time;
+    private Date date;
     private double sum;
 
     public TransferDTO() {
     }
 
-    public TransferDTO(Long status_id, int sender_bill_number, int recipient_bill_number, double sum, LocalDateTime date_time) {
+
+
+    public TransferDTO(Long status_id, int sender_bill_number, int recipient_bill_number, double sum, Date date) {
         this.status_id = status_id;
         this.sender_bill_number = sender_bill_number;
         this.recipient_bill_number = recipient_bill_number;
         this.sum = sum;
-        this.date_time = date_time;
+        this.date = date;
     }
 
-    public TransferDTO(Long id, int sender_bill_number, int recipient_bill_number, LocalDateTime date_time, double sum) {
+    public TransferDTO(Long id, int sender_bill_number, int recipient_bill_number, double sum) {
         this.id = id;
         this.sender_bill_number = sender_bill_number;
         this.recipient_bill_number = recipient_bill_number;
-        this.date_time = date_time;
         this.sum = sum;
     }
 
@@ -56,12 +58,12 @@ public class TransferDTO implements Serializable {
         this.recipient_bill_number = recipient_bill_number;
     }
 
-    public LocalDateTime getDate_time() {
-        return date_time;
+    public Date getDate() {
+        return date;
     }
 
-    public void setDate_time(LocalDateTime date_time) {
-        this.date_time = date_time;
+    public void setDate(java.util.Date date) {
+        this.date = new Date(date.getTime());
     }
 
     public double getSum() {
@@ -78,7 +80,7 @@ public class TransferDTO implements Serializable {
                 "id=" + id +
                 ", sender_bill_number=" + sender_bill_number +
                 ", recipient_bill_number=" + recipient_bill_number +
-                ", date_time=" + date_time +
+                ", date_time=" + date +
                 ", sum=" + sum +
                 '}';
     }

@@ -14,7 +14,7 @@
     <c:remove var="registerSuccess" scope="session" />
 </c:if>
 
-<c:if test="${not empty sessionScope.walletCreationSuccess eq true}">
+<c:if test="${sessionScope.walletCreationSuccess eq true}">
     <div class="alertWarning">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
         <strong><my:Locale value="alertWarning.alert"/></strong>
@@ -22,6 +22,36 @@
         <text> <br><my:Locale value="alertWarning.emodji"/></text>
     </div>
     <c:remove var="walletCreationSuccess" scope="session" />
+</c:if>
+
+<c:if test="${not empty sessionScope.cancelTransfer eq true}">
+    <div class="alertWarning">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong><my:Locale value="alertWarning.alert"/></strong>
+        <text> <my:Locale value="alertWarning.cancelTransfer"/> </text>
+        <text> <br><my:Locale value="alertWarning.emodji"/></text>
+    </div>
+    <c:remove var="cancelTransfer" scope="session" />
+</c:if>
+
+<c:if test="${not empty sessionScope.transferSuccess eq true}">
+    <div class="alertWarning">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong><my:Locale value="alertWarning.alert"/></strong>
+        <text> <my:Locale value="alertWarning.sucess.transfer"/> </text>
+        <text> <br><my:Locale value="alertWarning.emodji"/></text>
+    </div>
+    <c:remove var="transferSuccess" scope="session" />
+</c:if>
+
+<c:if test="${not empty sessionScope.logout eq true}">
+    <div class="alertWarning">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong><my:Locale value="alertWarning.alert"/></strong>
+        <text> <my:Locale value="alertWarning.logout"/> </text>
+        <text> <br><my:Locale value="alertWarning.emodji"/></text>
+    </div>
+    <c:remove var="logout" scope="session" />
 </c:if>
 
 <c:if test="${not empty sessionScope.wrongData}">

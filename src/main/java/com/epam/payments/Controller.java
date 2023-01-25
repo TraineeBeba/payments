@@ -1,7 +1,7 @@
 package com.epam.payments;
 
 import com.epam.payments.command.Command;
-import com.epam.payments.command.factory.CommandFactory;
+import com.epam.payments.command.CommandFactory;
 import com.epam.payments.command.result.CommandResult;
 import com.epam.payments.command.result.ForwardResult;
 import com.epam.payments.command.result.RedirectResult;

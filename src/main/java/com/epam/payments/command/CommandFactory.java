@@ -1,6 +1,4 @@
-package com.epam.payments.command.factory;
-
-import com.epam.payments.command.*;
+package com.epam.payments.command;
 
 import com.epam.payments.utils.Utils;
 import org.apache.log4j.Logger;
@@ -28,6 +26,9 @@ public class CommandFactory {
         commands.put(p.getProperty("command.create-wallet"), new CreateWalletCommand());
         commands.put(p.getProperty("command.prepare-transfer"), new PrepareTransferCommand());
         commands.put(p.getProperty("command.send-transfer"), new SendTransferCommand());
+        commands.put(p.getProperty("command.cancel-transfer"), new CancelTransferCommand());
+        commands.put(p.getProperty("command.sort-wallets"), new SortWalletsCommand());
+        commands.put(p.getProperty("command.sort-transfers"), new SortTransfersCommand());
         commands.put(p.getProperty("command.go"), new GoCommand());
 
         LOG.debug("Command factory was successfully initialized");

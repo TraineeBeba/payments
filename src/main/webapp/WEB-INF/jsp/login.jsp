@@ -17,7 +17,6 @@
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 	<main class="px-3">
 		<div class="form-container">
-
 			<c:import url="blocks/warnings.jsp" />
 
 			<div class="categories p-3">

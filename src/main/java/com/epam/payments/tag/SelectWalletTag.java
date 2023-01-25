@@ -24,13 +24,12 @@ public class SelectWalletTag extends TagSupport {
         LOG.info("Start tracing SelectWalletTag");
         HttpSession session = pageContext.getSession();
         String language = String.valueOf(session.getAttribute("language"));
+        String sortBy = String.valueOf(session.getAttribute("walletSort"));
         ResourceBundle rb = ResourceBundle.getBundle("resources", new Locale(language));
-        List<WalletDTO> wallets = walletService.getWalletDAO().
-                findWalletsByUserId((Long) session.getAttribute("user_id"));
-        session.setAttribute("wallets", wallets);
+        List<WalletDTO> wallets = walletService.getWalletDAO().findWalletsByUserId((Long) session.getAttribute("user_id"), sortBy);
+//        session.setAttribute("wallets", wallets);
 
-        WalletDTO walletDTO
-                ;
+        WalletDTO walletDTO;
         JspWriter out = pageContext.getOut();
         Iterator walletDTOIterator = wallets.iterator();
         StringBuffer select = new StringBuffer();
@@ -39,6 +38,8 @@ public class SelectWalletTag extends TagSupport {
         while (walletDTOIterator.hasNext()) {
             walletDTO = (WalletDTO) walletDTOIterator.next();
             select.append("<option value=\"").append(walletDTO.getBill_number()).append("\">")
+                    .append(walletDTO.getName())
+                    .append(" ")
                     .append(walletDTO.getBill_number())
                     .append(" ")
                     .append(walletDTO.getBalance())

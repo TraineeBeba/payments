@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserDAO implements IUserDAO {
-    private static Logger LOG = Logger.getLogger(ConnectionPool.class.getName());
+    private static Logger LOG = Logger.getLogger(UserDAO.class.getName());
 
     @Override
     public UserDTO createUser(String username, String password) {
@@ -118,7 +118,7 @@ public class UserDAO implements IUserDAO {
                     statement.execute();
                     ResultSet resultSet = statement.getResultSet();
                     if (resultSet.next()) {
-                        int i_res = resultSet.getInt("state_id");
+                        int i_res = resultSet.getInt("status_id");
                         LOG.info("RES!!!!!!!!!!!!!!!!!!!! --> " + i_res);
                         res =  i_res == 1;
                     }
@@ -149,7 +149,7 @@ public class UserDAO implements IUserDAO {
                     ResultSet resultSet = statement.getResultSet();
                     if (resultSet.next()) {
                         userDTO = new UserDTO(resultSet.getLong("id"), resultSet.getLong("role_id"),
-                                resultSet.getLong("state_id"), resultSet.getString("username"),
+                                resultSet.getLong("status_id"), resultSet.getString("username"),
                                 resultSet.getString("password"));
                     }
                     resultSet.close();
@@ -180,7 +180,7 @@ public class UserDAO implements IUserDAO {
                     ResultSet resultSet = statement.getResultSet();
                     while (resultSet.next()) {
                         user = new UserDTO(resultSet.getLong("id"), resultSet.getLong("role_id"),
-                                resultSet.getLong("state_id"), resultSet.getString("username"),
+                                resultSet.getLong("status_id"), resultSet.getString("username"),
                                 resultSet.getString("password"));
                         users.add(user);
                     }

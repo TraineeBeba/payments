@@ -22,7 +22,7 @@ public class CreateWalletCommand extends Command {
         LOG.trace("Start tracing CreateWalletCommand");
 
         HttpSession session = request.getSession();
-        RedirectResult redirect = new RedirectResult(request.getParameter("redirect"));
+        RedirectResult redirect;
         String name = "";
         Long user_id = -1L;
 
@@ -39,14 +39,14 @@ public class CreateWalletCommand extends Command {
             bill_number = Utils.generateBill();
         } while (!walletService.checkBillNumber(bill_number));
 
-        String createWalletCheck = walletService.checkCreate(name);
+        String createWalletCheck = walletService.checkCreate(user_id, name);
         if(createWalletCheck == null) {
             walletService.getWalletDAO().createWallet(new WalletDTO(user_id, 1L, name, bill_number, 1000));
             session.setAttribute("walletCreationSuccess", true);
             redirect = new RedirectResult(request.getParameter("redirect"));
         } else {
             session.setAttribute("wrongData", createWalletCheck);
-            redirect = new RedirectResult("?command=goWalletCreateCommand");
+            redirect = new RedirectResult("?command=goCreate-WalletCommand");
         }
 
         return redirect;

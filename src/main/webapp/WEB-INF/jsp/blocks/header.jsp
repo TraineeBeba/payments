@@ -9,11 +9,12 @@
                 <c:if test="${not empty sessionScope.user_id}">
                     <a class="nav-link active" aria-current="page" href="/<n:Name value="controller.name"/><n:Name value="redirect.main"/>">Гаманці</a>
                     <a class="nav-link active" aria-current="page" href="/<n:Name value="controller.name"/><n:Name value="redirect.prepare-transfer"/>">Перекази</a>
+                    <a class="nav-link active" aria-current="page" href="/<n:Name value="controller.name"/><n:Name value="redirect.transfers-history"/>">Історія переказів</a>
                 </c:if>
             </div>
 
             <div class="right-block col-6">
-                <div class="right-block col-1">
+                <div class="right-block col-2">
                     <c:set var = "currentPage" scope = "session" value = "${sessionScope.currentPage}"/>
                     <form action="<n:Name value="controller.name"/>" method="post">
                         <input type="hidden" name="redirect" value="<n:Name value="redirect.${currentPage}"/>">
@@ -30,13 +31,15 @@
                     </form>
                 </div>
 
-                <c:if test="${not empty sessionScope.user_id}">
-                    <form style="padding: 2%" action="<n:Name value="controller.name"/>" method="post">
-                        <input type="hidden" name="redirect" value="<n:Name value="redirect.login"/>">
-                        <input type="hidden" name="command" value="<n:Name value="command.logout"/>">
-                        <a class="nav-link" href='#' onclick='this.parentNode.submit(); return false;'>Вийти</a>
-                    </form>
-                </c:if>
+                <div class="right-block col-2">
+                    <c:if test="${not empty sessionScope.user_id}">
+                        <form style="padding: 2%" action="<n:Name value="controller.name"/>" method="post">
+                            <input type="hidden" name="redirect" value="<n:Name value="redirect.login"/>">
+                            <input type="hidden" name="command" value="<n:Name value="command.logout"/>">
+                            <a class="nav-link" href='#' onclick='this.parentNode.submit(); return false;'>Вийти</a>
+                        </form>
+                    </c:if>
+                </div>
             </div>
 
         </nav>

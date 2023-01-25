@@ -7,16 +7,17 @@ import java.util.List;
 
 public interface IWalletDAO {
 
-    List<WalletDTO> findWalletsByUserId(Long user_id);
-
-
+    List<WalletDTO> findWalletsByUserId(Long user_id, String sortBy);
     void createWallet(WalletDTO walletDTO);
 
     boolean checkBillNumberExistance(int bill_number);
 
-    boolean checkSum(double sum);
+    WalletDTO getWalletByBill(int bill_number);
 
-    WalletDTO getWalletByRecipentBill(int recipient_bill_number);
+    void doTransfer(TransferDTO transferDTO, double sender_balance, double recipient_balance);
 
-    void doTransfer(TransferDTO transferDTO);
+    boolean checkWalletExistenceByNameAndUserId(Long user_id, String name);
+
+    boolean checkWalletsCountByUserId(Long user_id);
+
 }

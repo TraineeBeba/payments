@@ -24,8 +24,6 @@ import java.util.Random;
 public class Utils {
     public static final Logger LOG = Logger.getLogger(Utils.class);
 
-    private static WalletService walletService  = new WalletService();
-
     /**
      * Hash the input string in the md5
      * @param pass
@@ -61,14 +59,5 @@ public class Utils {
         }
 
         return names;
-    }
-
-    public static void loadInfo(HttpServletRequest request, String forward) {
-        if(forward.equals("main")){
-            HttpSession session = request.getSession();
-            List<WalletDTO> wallets = walletService.getWalletDAO().
-                                                    findWalletsByUserId((Long) session.getAttribute("user_id"));
-            session.setAttribute("wallets", wallets);
-        }
     }
 }

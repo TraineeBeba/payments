@@ -203,6 +203,16 @@
             user-select: none;
         }
 
+        .row {
+            display: flex;   // Distribute horizontally
+        }
+
+        .row > .column {
+
+        /*flex: 0 0 25%;   // Each column 25%*/
+        width: 160px;
+        }
+
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;

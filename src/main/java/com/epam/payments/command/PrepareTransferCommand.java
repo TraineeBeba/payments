@@ -2,6 +2,7 @@ package com.epam.payments.command;
 
 import com.epam.payments.command.result.CommandResult;
 import com.epam.payments.command.result.RedirectResult;
+import com.epam.payments.db.PaymentStatus;
 import com.epam.payments.db.dto.TransferDTO;
 import com.epam.payments.db.service.TransferService;
 import com.epam.payments.db.service.WalletService;
@@ -13,6 +14,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.time.LocalDateTime;
+
+import static com.epam.payments.db.PaymentStatus.PREPARED;
 
 
 public class PrepareTransferCommand extends Command {
@@ -32,20 +35,15 @@ public class PrepareTransferCommand extends Command {
         int sender_bill_number = Integer.parseInt(request.getParameter("sender_bill_number"));
         int recipient_bill_number = Integer.parseInt(request.getParameter("recipient_bill_number"));
         double sum = Double.parseDouble(request.getParameter("sum"));
-        Long status_id = 1L;
-        LocalDateTime date_time = LocalDateTime.now();
 
-        TransferDTO transferDTO = new TransferDTO(status_id, sender_bill_number, recipient_bill_number, sum, date_time);
+        TransferDTO transferDTO = new TransferDTO(PREPARED.getId(), sender_bill_number, recipient_bill_number, sum);
         String transferCheck = transferService.transferCheck(transferDTO);
         if(transferCheck == null) {
             session.setAttribute("transferDTO", transferDTO);
-//            transferService.getTransferDAO().createTranfer(transferDTO);
-//            walletService.getWalletDAO().doTransfer(transferDTO);
-//            session.setAttribute("sended", true);
             redirect = new RedirectResult(request.getParameter("redirect"));
         } else {
             session.setAttribute("wrongData", transferCheck);
-            redirect = new RedirectResult("?command=goTransferCommand");
+            redirect = new RedirectResult("?command=goPrepare-TransferCommand");
         }
 
         return redirect;

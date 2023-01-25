@@ -18,20 +18,24 @@ public class TransferService {
     }
 
     public String transferCheck(TransferDTO transferDTO) {
+        if (transferDTO.getRecipient_bill_number() == transferDTO.getSender_bill_number()){
+            return "alertError.bad_selftransfer";
+        }
+
+        WalletDTO senderWallet = walletDAO.getWalletByBill(transferDTO.getSender_bill_number());
+        if (Double.compare(senderWallet.getBalance(), transferDTO.getSum()) < 0){
+            return "alertError.few_balance";
+        }
+
+        WalletDTO recipientWallet = walletDAO.getWalletByBill(transferDTO.getRecipient_bill_number());
+        if (recipientWallet == null) {
+            return "alertError.no_wallet";
+        }
+
+        if (recipientWallet.getState().equals(UserStatus.BLOCKED.getName())){
+            return "alertError.wallet_blocked";
+        }
+
         return null;
-//        if (!walletDAO.checkSum(transferDTO.getSum())){
-//            return "Замало коштів";
-//        }
-//
-//        WalletDTO walletDTO = walletDAO.getWalletByRecipentBill(transferDTO.getRecipient_bill_number());
-//        if (walletDTO == null) {
-//            return "Такого гаманця отримувача не існує";
-//        }
-//
-//        if (walletDTO.getState().equals(UserStatus.BLOCKED.getName())){
-//            return "Гаманець отримувача заблокований";
-//        }
-//
-//        return null;
     }
 }

@@ -1,11 +1,15 @@
 package com.epam.payments.db.dao;
 
 import com.epam.payments.db.dto.TransferDTO;
-import com.epam.payments.db.dto.WalletDTO;
+
+import java.util.List;
 
 public interface ITransferDAO {
 
-    void createTranfer(TransferDTO transferDTO);
+    void createTransfer(TransferDTO transferDTO);
 
 
+    List<TransferDTO> findTransfersBySenderBill(int bill_number, String sortBy, int offset, int noOfRecords);
+
+    int getNoOfRecords();
 }

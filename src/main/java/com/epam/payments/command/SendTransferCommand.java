@@ -3,6 +3,7 @@ package com.epam.payments.command;
 import com.epam.payments.command.result.CommandResult;
 import com.epam.payments.command.result.RedirectResult;
 import com.epam.payments.db.dto.TransferDTO;
+import com.epam.payments.db.dto.WalletDTO;
 import com.epam.payments.db.service.TransferService;
 import com.epam.payments.db.service.WalletService;
 import org.apache.log4j.Logger;
@@ -12,12 +13,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.time.LocalDateTime;
+import java.sql.Date;
 
 public class SendTransferCommand extends Command {
     private static final Logger LOG = Logger.getLogger(PrepareTransferCommand.class);
-    private TransferService transferService = new TransferService();
     private WalletService walletService = new WalletService();
+    private TransferService transferService = new TransferService();
     private static final long serialVersionUID = -7190245479634943129L;
 
     @Override
@@ -25,23 +26,23 @@ public class SendTransferCommand extends Command {
         LOG.trace("Start tracing SendTransferCommand");
 
         HttpSession session = request.getSession();
-        RedirectResult redirect;
+        CommandResult redirect = new RedirectResult(request.getParameter("redirect"));
+        TransferDTO transferDTO = (TransferDTO) session.getAttribute("transferDTO");
 
-        int sender_bill_number = Integer.parseInt(request.getParameter("sender_bill_number"));
-        int recipent_bill_number = Integer.parseInt(request.getParameter("recipent_bill_number"));
-        double sum = Double.parseDouble(request.getParameter("sum"));
-        LocalDateTime date_time = LocalDateTime.now();
-
-        TransferDTO transferDTO = new TransferDTO(1L, sender_bill_number, recipent_bill_number, sum, date_time);
         String transferCheck = transferService.transferCheck(transferDTO);
         if(transferCheck == null) {
-            transferService.getTransferDAO().createTranfer(transferDTO);
-            walletService.getWalletDAO().doTransfer(transferDTO);
-            session.setAttribute("sended", true);
-            redirect = new RedirectResult(request.getParameter("redirect"));
+            WalletDTO senderWallet = walletService.getWalletDAO().getWalletByBill(transferDTO.getSender_bill_number());
+            WalletDTO recipientWallet = walletService.getWalletDAO().getWalletByBill(transferDTO.getRecipient_bill_number());
+
+            transferDTO.setDate(new java.util.Date());
+            walletService.getWalletDAO().doTransfer(transferDTO, senderWallet.getBalance(), recipientWallet.getBalance());
+            transferService.getTransferDAO().createTransfer(transferDTO);
+
+            session.removeAttribute("transferDTO");
+            session.setAttribute("transferSuccess", true);
         } else {
             session.setAttribute("wrongData", transferCheck);
-            redirect = new RedirectResult("?command=goTransferCommand");
+            redirect = new RedirectResult("?command=goSend-TransferCommand");
         }
 
         return redirect;
