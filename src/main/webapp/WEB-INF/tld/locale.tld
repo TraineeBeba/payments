@@ -4,7 +4,7 @@
     <short-name>Example TLD</short-name>
     <tag>
         <name>Locale</name>
-        <tag-class>com.epam.payments.i18n.LocaleTag</tag-class>
+        <tag-class>com.epam.payments.tag.LocaleTag</tag-class>
         <body-content>empty</body-content>
         <attribute>
             <name>value</name>

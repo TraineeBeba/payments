@@ -1,0 +1,104 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="n" uri="/WEB-INF/tld/namespace.tld" %>
+<%@ taglib prefix="i18n" uri="/WEB-INF/tld/locale.tld" %>
+
+
+<c:if test="${sessionScope.registerSuccess eq true}">
+    <div class="alertSuccess">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong><i18n:Locale value="alertWarning.alert"/></strong>
+        <text> <i18n:Locale value="alertWarning.sucess.register"/> </text>
+        <text> <br><i18n:Locale value="alertWarning.emodji"/></text>
+    </div>
+    <c:remove var="registerSuccess" scope="session" />
+</c:if>
+
+<c:if test="${sessionScope.walletCreationSuccess eq true}">
+    <div class="alertSuccess">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong><i18n:Locale value="alertWarning.alert"/></strong>
+        <text> <i18n:Locale value="alertWarning.sucess.walletCreation"/> </text>
+        <text> <br><i18n:Locale value="alertWarning.emodji"/></text>
+    </div>
+    <c:remove var="walletCreationSuccess" scope="session" />
+</c:if>
+
+<c:if test="${not empty sessionScope.transferSuccess eq true}">
+    <div class="alertSuccess">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong><i18n:Locale value="alertWarning.alert"/></strong>
+        <text> <i18n:Locale value="alertWarning.sucess.transfer"/> </text>
+        <text> <br><i18n:Locale value="alertWarning.emodji"/></text>
+    </div>
+    <c:remove var="transferSuccess" scope="session" />
+</c:if>
+
+<c:if test="${not empty sessionScope.blockWalletSuccess eq true}">
+    <div class="alertSuccess">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong><i18n:Locale value="alertWarning.alert"/></strong>
+        <text> <i18n:Locale value="alertWarning.block-wallet"/> </text>
+        <text> <br><i18n:Locale value="alertWarning.emodji"/></text>
+    </div>
+    <c:remove var="blockWalletSuccess" scope="session" />
+</c:if>
+
+<c:if test="${not empty sessionScope.unblockWalletSuccess eq true}">
+    <div class="alertSuccess">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong><i18n:Locale value="alertWarning.alert"/></strong>
+        <text> <i18n:Locale value="alertWarning.unblock-wallet"/> </text>
+        <text> <br><i18n:Locale value="alertWarning.emodji"/></text>
+    </div>
+    <c:remove var="unblockWalletSuccess" scope="session" />
+</c:if>
+
+<c:if test="${not empty sessionScope.requestCreationSuccess eq true}">
+    <div class="alertSuccess">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong><i18n:Locale value="alertWarning.alert"/></strong>
+        <text> <i18n:Locale value="alertWarning.request-creation"/> </text>
+        <text> <br><i18n:Locale value="alertWarning.emodji"/></text>
+    </div>
+    <c:remove var="requestCreationSuccess" scope="session" />
+</c:if>
+
+<c:if test="${not empty sessionScope.logout eq true}">
+    <div class="alertWarning">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong><i18n:Locale value="alertWarning.alert"/></strong>
+        <text> <i18n:Locale value="alertWarning.logout"/> </text>
+        <text> <br><i18n:Locale value="alertWarning.emodji"/></text>
+    </div>
+    <c:remove var="logout" scope="session" />
+</c:if>
+
+<c:if test="${not empty sessionScope.cancelTransfer eq true}">
+    <div class="alertWarning">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong><i18n:Locale value="alertWarning.alert"/></strong>
+        <text> <i18n:Locale value="alertWarning.cancelTransfer"/> </text>
+        <text> <br><i18n:Locale value="alertWarning.emodji"/></text>
+    </div>
+    <c:remove var="cancelTransfer" scope="session" />
+</c:if>
+
+<c:if test="${not empty sessionScope.requestExist eq true}">
+    <div class="alertWarning">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong><i18n:Locale value="alertWarning.alert"/></strong>
+        <text> <i18n:Locale value="alertWarning.request-exist"/> </text>
+        <text> <br><i18n:Locale value="alertWarning.emodji"/></text>
+    </div>
+    <c:remove var="requestExist" scope="session" />
+</c:if>
+
+<c:if test="${not empty sessionScope.wrongData}">
+    <div class="alertError">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong><i18n:Locale value="alertError.error"/></strong> <text> <%--<i18n:Locale value="${sessionScope.wrongData}"--%> ${sessionScope.wrongData} /> </text>
+        <text> <br><i18n:Locale value="alertError.emodji"/></text>
+    </div>
+    <c:remove var="wrongData" scope="session" />
+</c:if>

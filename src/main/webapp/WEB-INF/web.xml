@@ -27,11 +27,55 @@
     </resource-ref>
 
     <listener>
-        <listener-class>com.epam.payments.listener.ContextListener</listener-class>
+        <listener-class>com.epam.payments.appcontext.AppContextListener</listener-class>
     </listener>
+
+    <filter>
+        <filter-name>EncodingFilter</filter-name>
+        <filter-class>com.epam.payments.filter.EncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+
+    <filter>
+        <filter-name>CommandAccessFilter</filter-name>
+        <filter-class>com.epam.payments.filter.CommandAccessFilter</filter-class>
+
+        <init-param>
+<!--            goCommand-->
+            <param-name>out-of-control</param-name><!--goUserCommand-->
+            <param-value> languageCommand loginCommand registerCommand logoutCommand goRegisterCommand goLoginCommand</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>common </param-name> <!--goCommand--> <!--unblockWalletCommand-->
+            <param-value> blockWalletCommand sortTransfersCommand sortWalletsCommand</param-value>
+        </init-param>
+        <init-param>
+            <param-name>user</param-name>
+            <param-value> create-WalletCommand prepareTransferCommand sendTransferCommand cancelTransferCommand goUser-WalletsCommand goWallet-DetailsCommand goUser-Create-WalletCommand goUser-Prepare-TransferCommand goUser-Send-TransferCommand </param-value>
+        </init-param>
+        <init-param>
+            <param-name>admin</param-name>
+            <param-value> unblockUserCommand blockUserCommand unblockWalletCommand goWallet-DetailsCommand goAdmin-User-DetailsCommand goAdmin-UsersCommand</param-value>
+        </init-param>
+
+    </filter>
+
+    <filter-mapping>
+        <filter-name>EncodingFilter</filter-name>
+        <url-pattern>/WEB-INF/jsp/*</url-pattern>
+        <servlet-name>Controller</servlet-name>
+    </filter-mapping>
+
+<!--    <filter-mapping>-->
+<!--        <filter-name>CommandAccessFilter</filter-name>-->
+<!--        <servlet-name>Controller</servlet-name>-->
+<!--    </filter-mapping>-->
 
     <welcome-file-list>
         <welcome-file>controller?command=goLoginCommand</welcome-file>
-<!--        <welcome-file>/WEB-INF/jsp/login.jsp</welcome-file>-->
     </welcome-file-list>
 </web-app>

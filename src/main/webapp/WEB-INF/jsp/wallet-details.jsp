@@ -1,67 +1,101 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ taglib prefix="my" uri="/WEB-INF/tld/locale.tld" %>
-<%@ taglib prefix="n" uri="/WEB-INF/tld/name.tld" %>
-<%@ taglib prefix="transfers" uri="/WEB-INF/tld/transfers.tld" %>
+<%@ taglib prefix="i18n" uri="/WEB-INF/tld/locale.tld" %>
+<%@ taglib prefix="n" uri="/WEB-INF/tld/namespace.tld" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %>
-<%--<c:set var = "currTransferPage" scope = "session" value = "1"/>--%>
-<%--<c:set var = "noOfTransferPages" scope = "session" value = "2"/>--%>
 
 <html class="h-100">
-
 <head>
-	<c:import url="blocks/head.jsp" />
+	<%@ include file="/WEB-INF/jspf/head.jspf" %>
 </head>
 
 <body class="h-100 text-white bg-dark">
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
 	<header class="mb-15">
-		<c:import url="blocks/header.jsp" />
+		<%@ include file="/WEB-INF/jspf/header.jspf" %>
 	</header>
 
 	<main class="px-3">
-		<c:import url="blocks/warnings.jsp" />
+		<%@ include file="/WEB-INF/jspf/alerts.jspf" %>
+
+		<h3>${requestScope.currWallet.name}  №${requestScope.currWallet.bill_number}  ${requestScope.currWallet.balance} грн </h3><br>
+
+		<div>
+			<h4>Дії:</h4>
+			<c:choose>
+				<c:when test="${requestScope.currWallet.getState() eq 'blocked'  and sessionScope.userDTO.getRole() eq 'role_admin'}">
+					<form action="<n:Namespace value="controller.name"/>" method="post">
+						<input type="hidden" name="command" value="<n:Namespace value="command.unblock-wallet"/>">
+						<input type="hidden" name="walletId" value="${requestScope.currWallet.getId()}">
+
+						<a class="pr-2" href='#' onclick='this.parentNode.submit();'>Розблокувати</a>
+					</form>
+				</c:when>
+				<c:when test="${requestScope.currWallet.getState() eq 'blocked'  and sessionScope.userDTO.getRole() eq 'role_user'}">
+					<form action="<n:Namespace value="controller.name"/>" method="post">
+						<input type="hidden" name="command" value="<n:Namespace value="command.wallet-request"/>">
+						<input type="hidden" name="request_type" value="unblock_wallet">
+                        <input type="hidden" name="walletId" value="${requestScope.currWallet.getId()}">
+
+						<a class="pr-2" href='#' onclick='this.parentNode.submit();'>Розблокувати</a>
+					</form>
+				</c:when>
+				<c:when test="${requestScope.currWallet.getState() eq 'unblocked'}">
+					<form action="<n:Namespace value="controller.name"/>" method="post">
+						<input type="hidden" name="command" value="<n:Namespace value="command.block-wallet"/>">
+						<input type="hidden" name="walletId" value="${requestScope.currWallet.getId()}">
+
+						<a class="pr-2" href='#' onclick='this.parentNode.submit();'>Заблокувати</a>
+					</form>
+				</c:when>
+			</c:choose>
+
+			<form action="<n:Namespace value="controller.name"/>" method="get">
+				<input type="hidden" name="command" value="<n:Namespace value="command.go.user-wallets"/>">
+
+				<a class="pr-2" href='#' onclick='this.parentNode.submit();'>Назад</a>
+			</form>
+
+		</div>
+		<br>
+
+		<h4>Історія переказів:</h4><br>
 
 		<div class="left-block col-4">
 
-			<form style="padding: 2%">
+			<form>
 				<a class="pr-2">Сортувати:</a>
 			</form>
 
-			<form style="padding: 2%" action="<n:Name value="controller.name"/>" method="post">
-				<input type="hidden" name="redirect" value="<n:Name value="redirect.${sessionScope.currentPage}"/>">
-				<input type="hidden" name="command" value="<n:Name value="command.sort-transfers"/>">
-                <input type="hidden" name="currTransferPage" value="${sessionScope.currTransferPage}">
-				<input type="hidden" name="currWalletBill" value="${sessionScope.currWalletBill}">
+			<form action="<n:Namespace value="controller.name"/>" method="get">
+				<input type="hidden" name="command" value="<n:Namespace value="command.go.wallet-details"/>">
 				<input type="hidden" name="transferSort" value="transfer.id DESC">
+				<input type="hidden" name="page" value="${requestScope.page}">
+				<input type="hidden" name="bill_number" value="${requestScope.currWallet.bill_number}">
 
-				<a class="pr-2" href='#' onclick='this.parentNode.submit(); return false;'>За Id</a>
+				<a class="pr-2" href='#' onclick='this.parentNode.submit(); '>За Id</a>
 			</form>
 
-			<form style="padding: 2%" action="<n:Name value="controller.name"/>" method="post">
-				<input type="hidden" name="redirect" value="<n:Name value="redirect.${sessionScope.currentPage}"/>">
-				<input type="hidden" name="command" value="<n:Name value="command.sort-transfers"/>">
-                <input type="hidden" name="currTransferPage" value="${sessionScope.currTransferPage}">
-				<input type="hidden" name="currWalletBill" value="${sessionScope.currWalletBill}">
+			<form action="<n:Namespace value="controller.name"/>" method="get">
+				<input type="hidden" name="command" value="<n:Namespace value="command.go.wallet-details"/>">
 				<input type="hidden" name="transferSort" value="transfer.date ASC, transfer.id ASC">
+				<input type="hidden" name="page" value="${requestScope.page}">
+				<input type="hidden" name="bill_number" value="${requestScope.currWallet.bill_number}">
 
 				<a class="pr-2" href='#' onclick='this.parentNode.submit(); '>Old to New</a>
 			</form>
 
-			<form style="padding: 2%" action="<n:Name value="controller.name"/>" method="post">
-				<input type="hidden" name="redirect" value="<n:Name value="redirect.${sessionScope.currentPage}"/>">
-				<input type="hidden" name="command" value="<n:Name value="command.sort-transfers"/>">
-                <input type="hidden" name="currTransferPage" value="${sessionScope.currTransferPage}">
-				<input type="hidden" name="currWalletBill" value="${sessionScope.currWalletBill}">
+			<form action="<n:Namespace value="controller.name"/>" method="get">
+				<input type="hidden" name="command" value="<n:Namespace value="command.go.wallet-details"/>">
 				<input type="hidden" name="transferSort" value="transfer.date DESC, transfer.id DESC">
+				<input type="hidden" name="page" value="${requestScope.page}">
+				<input type="hidden" name="bill_number" value="${requestScope.currWallet.bill_number}">
 
-				<a class="pr-2" href='#' onclick='this.parentNode.submit(); return false;'>New to Old</a>
+				<a class="pr-2" href='#' onclick='this.parentNode.submit();'>New to Old</a>
 			</form>
 		</div>
 		<br>
 
-		<transfers:Transfers value="${sessionScope.currWalletBill}"/>
 
 		<table class="table table-dark table-bordered table-hover text-center">
 			<thead>
@@ -75,12 +109,12 @@
 			</thead>
 			<tbody>
 			<tr class="row ml-3" >
-				<c:forEach items="${sessionScope.walletTransfers}" var="transfer" >
+				<c:forEach items="${requestScope.walletTransfers}" var="transfer" >
 					<td class="col-2"> <c:out value="${transfer.id}"></c:out> </td>
 					<td class="col-3"> <c:out value="${transfer.sender_bill_number}"></c:out> </td>
 					<td class="col-3"> <c:out value="${transfer.recipient_bill_number}"></c:out> </td>
 					<c:choose>
-						<c:when test="${transfer.sender_bill_number eq sessionScope.currWalletBill}">
+						<c:when test="${transfer.sender_bill_number eq requestScope.currWallet.bill_number}">
 							<td class="col-2"> <c:out value="-${transfer.sum}"></c:out> </td>
 						</c:when>
 						<c:otherwise>
@@ -93,65 +127,53 @@
 			</tbody>
 		</table>
 
-		<%--For displaying Previous link except for the 1st page --%>
-		<c:if test="${sessionScope.currTransferPage != 1}">
-			<form style="padding: 2%" action="<n:Name value="controller.name"/>" method="post">
-				<input type="hidden" name="redirect" value="<n:Name value="redirect.${sessionScope.currentPage}"/>">
-				<input type="hidden" name="command" value="<n:Name value="command.sort-transfers"/>">
-                <input type="hidden" name="transferSort" value="${sessionScope.transferSort}">
-				<input type="hidden" name="currTransferPage" value="${sessionScope.currTransferPage - 1}">
-				<input type="hidden" name="currWalletBill" value="${sessionScope.currWalletBill}">
-
-				<td><a class="pr-2" href='#' onclick='this.parentNode.submit(); return false;'>Previous</a></td>
-			</form>
-		</c:if>
-
-		<%--For displaying Page numbers.
-    	The when condition does not display a link for the current page--%>
 		<table border="1" cellpadding="5" cellspacing="5">
 			<tr>
-				<c:forEach begin="1" end="${sessionScope.noOfTransferPages}" var="i">
+				<c:if test="${requestScope.page != 1}">
+					<td>
+					<form action="<n:Namespace value="controller.name"/>" method="get">
+						<input type="hidden" name="command" value="<n:Namespace value="command.go.wallet-details"/>">
+						<input type="hidden" name="page" value="${requestScope.page - 1}">
+						<input type="hidden" name="bill_number" value="${requestScope.currWallet.bill_number}">
+
+						<a class="pr-2" href='#' onclick='this.parentNode.submit();'>Previous</a>
+					</form>
+					</td>
+				</c:if>
+
+				<c:forEach begin="1" end="${requestScope.noOfTransferPages}" var="i">
 					<c:choose>
-						<c:when test="${sessionScope.currTransferPage eq i}">
+						<c:when test="${requestScope.page eq i}">
 							<td>${i}</td>
 						</c:when>
 						<c:otherwise>
 							<td>
-							<form style="padding: 2%" action="<n:Name value="controller.name"/>" method="post">
-								<input type="hidden" name="redirect" value="<n:Name value="redirect.${sessionScope.currentPage}"/>">
-								<input type="hidden" name="command" value="<n:Name value="command.sort-transfers"/>">
-								<input type="hidden" name="transferSort" value="${sessionScope.transferSort}">
-								<input type="hidden" name="currWalletBill" value="${sessionScope.currWalletBill}">
-								<input type="hidden" name="currTransferPage" value="${i}">
+							<form action="<n:Namespace value="controller.name"/>" method="get">
+								<input type="hidden" name="command" value="<n:Namespace value="command.go.wallet-details"/>">
+								<input type="hidden" name="page" value="${i}">
+								<input type="hidden" name="bill_number" value="${requestScope.currWallet.bill_number}">
 
-								<a class="pr-2" href='#' onclick='this.parentNode.submit(); return false;'>${i}</a>
+								<a class="pr-2" href='#' onclick='this.parentNode.submit();'>${i}</a>
 							</form>
 							</td>
 						</c:otherwise>
 					</c:choose>
 				</c:forEach>
+
+			<c:if test="${requestScope.page lt requestScope.noOfTransferPages}">
+				<td>
+				<form action="<n:Namespace value="controller.name"/>" method="get">
+					<input type="hidden" name="command" value="<n:Namespace value="command.go.wallet-details"/>">
+					<input type="hidden" name="page" value="${requestScope.page + 1}">
+					<input type="hidden" name="bill_number" value="${requestScope.currWallet.bill_number}">
+
+					<a class="pr-2" href='#' onclick='this.parentNode.submit();'>Next</a>
+				</form>
+				</td>
+			</c:if>
 			</tr>
 		</table>
 
-		<%--For displaying Next link --%>
-		<c:if test="${sessionScope.currTransferPage lt sessionScope.noOfTransferPages}">
-			<form style="padding: 2%" action="<n:Name value="controller.name"/>" method="post">
-				<input type="hidden" name="redirect" value="<n:Name value="redirect.${sessionScope.currentPage}"/>">
-				<input type="hidden" name="command" value="<n:Name value="command.sort-transfers"/>">
-                <input type="hidden" name="transferSort" value="${sessionScope.transferSort}">
-				<input type="hidden" name="currWalletBill" value="${sessionScope.currWalletBill}">
-				<input type="hidden" name="currTransferPage" value="${sessionScope.currTransferPage + 1}">
-
-				<td><a class="pr-2" href='#' onclick='this.parentNode.submit(); return false;'>Next</a></td>
-			</form>
-		</c:if>
-
-		<div class="categories p-3">
-			<h3> Привіт ${sessionScope.username} </h3>
-			<h3> Cортування ${sessionScope.transferSort} </h3>
-			<h3> currTransferPage ${sessionScope.currTransferPage} </h3>
-			<h3> noOfTransferPages ${sessionScope.noOfTransferPages} </h3>
-		</div>
 	</main>
 </div>
 </body>

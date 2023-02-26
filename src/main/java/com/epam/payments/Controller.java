@@ -6,6 +6,7 @@ import com.epam.payments.command.result.CommandResult;
 import com.epam.payments.command.result.ForwardResult;
 import com.epam.payments.command.result.RedirectResult;
 import com.epam.payments.command.result.View;
+import com.epam.payments.exeption.InternalServerException;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -28,7 +29,7 @@ public class Controller extends HttpServlet {
     static {
         views.put(ForwardResult.class, (commandResult, request, response) -> {
             LOG.trace("Forward address --> " + commandResult.getResource());
-            LOG.debug("Controller finished, now go to forward address --> " + commandResult.getResource());
+            LOG.debug("Controller finished, now navigation to forward address --> " + commandResult.getResource());
 
             request.getRequestDispatcher(commandResult.getResource()).forward(request, response);
 
@@ -42,41 +43,33 @@ public class Controller extends HttpServlet {
 
     }
 
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         LOG.trace("*****************POST*****************");
         process(request, response);
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         LOG.trace("*****************GET*****************");
         process(request, response);
     }
 
     private void process(HttpServletRequest request,
-                         HttpServletResponse response) throws IOException, ServletException {
-
+                         HttpServletResponse response) throws ServletException, IOException {
         LOG.debug("Controller starts");
 
         String commandName = request.getParameter("command").trim();
         LOG.trace("Request parameter: command --> " + commandName);
-
-        String forward = "";
-        if(commandName.startsWith("go")){
-            forward = commandName.substring("go".length(), commandName.length() - "Command".length()).toLowerCase();
-            commandName = "goCommand";
-        }
 
         Command command = CommandFactory.get(commandName);
         LOG.trace("Obtained command --> " + command);
 
         CommandResult commandResult = new ForwardResult("?command=goErrorCommand");
         try {
-            commandResult = command.execute(request, response, forward);
-        } catch (Exception ex) {
-            request.setAttribute("errorMessage", ex.getMessage());
+            commandResult = command.execute(request, response);
+        } catch (InternalServerException ex) {
+            throw new ServletException(ex.getMessage(), ex);
         }
 
         views.get(commandResult.getClass()).render(commandResult, request, response);
-
     }
 }
