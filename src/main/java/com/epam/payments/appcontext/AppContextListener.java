@@ -1,9 +1,8 @@
 package com.epam.payments.appcontext;
 
 import com.epam.payments.appcontext.constant.ContextConstants;
-import com.epam.payments.appcontext.exeption.GetAppContextException;
 import com.epam.payments.appcontext.impl.AppContext;
-import com.epam.payments.command.constant.ParameterNames;
+import com.epam.payments.command.constant.ParamNames;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
@@ -12,8 +11,10 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
+import static com.epam.payments.command.constant.ParamNames.*;
+
 @WebListener()
-public class AppContextListener implements ServletContextListener, ContextConstants, ParameterNames {
+public class AppContextListener implements ServletContextListener, ContextConstants {
     private static final Logger LOG = Logger.getLogger(AppContextListener.class);
 
     public AppContextListener() {

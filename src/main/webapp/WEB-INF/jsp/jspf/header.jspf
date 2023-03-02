@@ -1,0 +1,54 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page import="com.epam.payments.command.constant.ParamNames"%>
+<%@ page import="com.epam.payments.command.constant.CommandNames"%>
+<%@ page import="com.epam.payments.command.i18n.constant.Locale"%>
+<%@ page import="com.epam.payments.command.constant.WebUrlConstants"%>
+
+<header class="mb-15">
+    <div>
+        <nav class="nav nav-masthead justify-content-right float-md-end row">
+            <div class="left-block col-6">
+<%--                <c:choose>--%>
+<%--                    <c:when test="${sessionScope.userDTO.getRole() eq 'role_user'}">--%>
+<%--                        <a class="nav-link active" aria-current="page" href="/<n:Namespace value="controller.name"/>?command=<n:Namespace value="command.go.user-wallets"/>"> <i18n:Locale value="header.wallets"/> </a>--%>
+<%--                        <a class="nav-link active" aria-current="page" href="/<n:Namespace value="controller.name"/>?command=<n:Namespace value="command.go.prepare-transfer"/>"> <i18n:Locale value="header.transfers"/> </a>--%>
+<%--                        <a class="nav-link active" aria-current="page" href="/<n:Namespace value="controller.name"/>?command=<n:Namespace value="command.go.top-up-balance"/>"> Поповнити баланс </a>--%>
+<%--                        <a class="nav-link active" aria-current="page" href="/<n:Namespace value="controller.name"/>?command=<n:Namespace value="command.go.notifications"/>"> Cповіщення </a>--%>
+<%--                    </c:when>--%>
+<%--                    <c:when test="${sessionScope.userDTO.getRole() eq 'role_admin'}">--%>
+<%--                        <a class="nav-link active" aria-current="page" href="/<n:Namespace value="controller.name"/>?command=<n:Namespace value="command.go.admin-users"/>"> Користувачі </a>--%>
+<%--                        <a class="nav-link active" aria-current="page" href="/<n:Namespace value="controller.name"/>?command=<n:Namespace value="command.go.wallet-requests"/>"> Гаманцеві запити </a>--%>
+<%--                    </c:when>--%>
+<%--                </c:choose>--%>
+
+            </div>
+
+            <div class="right-block col-6">
+                <div class="right-block col-2">
+                    <form action="${WebUrlConstants.LANGUAGE_URL}" method="get">
+<%--                        <input type="hidden" name="${ParamNames.QUERY_PARAMS}" value="${requestScope['javax.servlet.forward.query_string']}">--%>
+                        <input type="hidden" name="${ParamNames.LANGUAGE}" value="${Locale.EN}">
+                        <input type="image" src="/img/us.png" alt="Submit">
+
+                    </form>
+                    <form action="payments/${WebUrlConstants.CONTROLLER_URL}" method="get">
+                        <input type="hidden" name="${ParamNames.COMMAND}" value="${CommandNames.LANGUAGE}">
+                        <input type="hidden" name="${ParamNames.LANGUAGE}" value="${Locale.UK}">
+                        <input type="hidden" name="${ParamNames.QUERY_PARAMS}" value="${requestScope['javax.servlet.forward.query_string']}">
+                        <input type="image" src="/img/ua.png" alt="Submit">
+                    </form>
+                </div>
+
+<%--                <div class="right-block col-2">--%>
+<%--                    <c:if test="${not empty sessionScope.userDTO}">--%>
+<%--                        <form style="padding: 2%" action="<n:Namespace value="controller.name"/>" method="get">--%>
+<%--                            <input type="hidden" name="command" value="<n:Namespace value="command.logout"/>">--%>
+<%--                            <a class="nav-link" href='#' onclick='this.parentNode.submit();'> <i18n:Locale value="header.logout"/> </a>--%>
+<%--                        </form>--%>
+<%--                    </c:if>--%>
+<%--                </div>--%>
+            </div>
+        </nav>
+    </div>
+</header>

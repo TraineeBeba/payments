@@ -3,6 +3,7 @@ package com.epam.payments.command.navigation.user;
 import com.epam.payments.command.Command;
 import com.epam.payments.command.result.CommandResult;
 import com.epam.payments.command.result.ForwardResult;
+import com.epam.payments.command.result.RedirectResult;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -18,6 +19,7 @@ public class GoCreateWalletCommand extends Command  {
     public CommandResult execute(HttpServletRequest request, HttpServletResponse response){
         LOG.trace("Start tracing GetCommand");
 
-        return new ForwardResult(CREATE_WALLET_PATH);
+//        return new ForwardResult(CREATE_WALLET_PATH);
+        return new RedirectResult("USER_WALLETS_URL");
     }
 }

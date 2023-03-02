@@ -3,6 +3,7 @@ package com.epam.payments.command.navigation.admin;
 import com.epam.payments.command.Command;
 import com.epam.payments.command.result.CommandResult;
 import com.epam.payments.command.result.ForwardResult;
+import com.epam.payments.command.result.RedirectResult;
 import com.epam.payments.core.model.entity.WalletRequestEntity;
 import com.epam.payments.core.service.WalletRequestService;
 import com.epam.payments.core.service.impl.WalletRequestServiceImpl;
@@ -15,6 +16,8 @@ import java.io.IOException;
 import java.util.List;
 
 
+import static com.epam.payments.command.constant.ParamNames.*;
+import static com.epam.payments.command.constant.SortConstants.*;
 import static com.epam.payments.core.model.enums.status.RequestStatus.IN_PROCESS;
 
 public class GoWalletRequestsCommand extends Command {
@@ -38,7 +41,8 @@ public class GoWalletRequestsCommand extends Command {
 //
 //        setRequestAttributes(request, page, walletRequestSort, walletRequests, noOfTransferPages);
 
-        return new ForwardResult(WALLET_REQUESTS_PATH);
+//        return new ForwardResult(WALLET_REQUESTS_PATH);
+        return new RedirectResult("USER_WALLETS_URL");
     }
 
 //    private int getNoOfTransferPages() {

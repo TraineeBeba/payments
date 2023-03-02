@@ -1,16 +1,37 @@
 package com.epam.payments.command.constant;
 
-public interface WebPathConstants {
-    String PATH_PREFIX = "WEB-INF/jsp/";
-    String ADMIN_USERS_PATH = PATH_PREFIX + "admin-users.jsp";
-    String LOGIN_PATH = PATH_PREFIX + "login.jsp";
-    String REGISTER_PATH = PATH_PREFIX + "register.jsp";
-    String CREATE_WALLET_PATH = PATH_PREFIX + "create-wallet.jsp";
-    String PREPARE_TRANSFER_PATH = PATH_PREFIX + "prepare-transfer.jsp";
-    String SEND_TRANSFER_PATH = PATH_PREFIX + "send-transfer.jsp";
-    String USER_WALLETS_PATH = PATH_PREFIX + "user-wallets.jsp";
-    String WALLET_DETAILS_PATH = PATH_PREFIX + "wallet-details.jsp";
-    String TOP_UP_BALANCE_PATH = PATH_PREFIX + "top-up-balance.jsp";
-    String NOTIFICATIONS_PATH = PATH_PREFIX + "notifications.jsp";
-    String WALLET_REQUESTS_PATH = PATH_PREFIX + "wallet-requests.jsp";
+public final class WebPathConstants {
+    public static final String PATH_PREFIX = "/WEB-INF/jsp/";
+
+    // Admin paths
+    public static final String ADMIN_PATH_PREFIX = PATH_PREFIX + "admin/";
+    public static final String ADMIN_USERS_PATH = ADMIN_PATH_PREFIX + "user/users.jsp";
+    public static final String ADMIN_WALLET_REQUESTS_PATH = ADMIN_PATH_PREFIX + "request/wallet-requests.jsp";
+
+    // Authentication paths
+    public static final String AUTHENTICATION_PATH_PREFIX = PATH_PREFIX + "authentication/";
+    public static final String LOGIN_PATH = AUTHENTICATION_PATH_PREFIX + "login.jsp";
+    public static final String REGISTER_PATH = AUTHENTICATION_PATH_PREFIX + "register.jsp";
+
+    // User wallet paths
+    public static final String USER_PATH_PREFIX = PATH_PREFIX + "user/";
+    public static final String USER_WALLETS_PATH = USER_PATH_PREFIX + "wallet/wallets.jsp";
+    public static final String USER_WALLET_DETAILS_PATH = USER_PATH_PREFIX + "wallet/wallet-details.jsp";
+    public static final String USER_CREATE_WALLET_PATH = USER_PATH_PREFIX + "wallet/wallet-create.jsp";
+    public static final String USER_TOP_UP_BALANCE_PATH = USER_PATH_PREFIX + "wallet/wallet-top-up.jsp";
+
+    // User transfer paths
+    public static final String USER_TRANSFER_PATH_PREFIX = USER_PATH_PREFIX + "transfer/";
+    public static final String USER_PREPARE_TRANSFER_PATH = USER_TRANSFER_PATH_PREFIX + "transfer-prepare.jsp";
+    public static final String USER_SEND_TRANSFER_PATH = USER_TRANSFER_PATH_PREFIX + "transfer-send.jsp";
+
+    // Common paths
+    public static final String COMMON_PATH_PREFIX = PATH_PREFIX + "jspf/";
+    public static final String ALERTS_PATH = COMMON_PATH_PREFIX + "alerts.jspf";
+    public static final String HEADER_PATH = COMMON_PATH_PREFIX + "header.jspf";
+    public static final String HEAD_PATH = COMMON_PATH_PREFIX + "head.jspf";
+
+    public static String print (){
+        return "HUI";
+    }
 }

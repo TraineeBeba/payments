@@ -3,6 +3,7 @@ package com.epam.payments.command.navigation.user;
 import com.epam.payments.command.Command;
 import com.epam.payments.command.result.CommandResult;
 import com.epam.payments.command.result.ForwardResult;
+import com.epam.payments.command.result.RedirectResult;
 import com.epam.payments.core.model.entity.UserEntity;
 import com.epam.payments.core.model.entity.WalletEntity;
 import com.epam.payments.core.service.UserService;
@@ -17,6 +18,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
+
+import static com.epam.payments.command.constant.ParamNames.*;
+import static com.epam.payments.command.constant.SortConstants.*;
 
 public class GoTopUpBalanceCommand extends Command {
     private static final Logger LOG = Logger.getLogger(GoTopUpBalanceCommand.class);
@@ -33,7 +37,8 @@ public class GoTopUpBalanceCommand extends Command {
 
 //        setRequestAttributes(request, wallets);
 
-        return new ForwardResult(TOP_UP_BALANCE_PATH);
+//        return new ForwardResult(TOP_UP_BALANCE_PATH);
+        return new RedirectResult("USER_WALLETS_URL");
     }
 
     public String getWalletSortParameter(HttpSession session) {

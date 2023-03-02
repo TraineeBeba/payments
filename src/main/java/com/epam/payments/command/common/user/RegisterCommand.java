@@ -16,6 +16,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import static com.epam.payments.command.constant.ParamNames.*;
+import static com.epam.payments.command.constant.WebUrlConstants.LOGIN_URL;
+import static com.epam.payments.command.constant.WebUrlConstants.REGISTER_URL;
+
 
 @WebServlet(name = "RegisterCommand")
 public class RegisterCommand extends Command {
@@ -26,9 +30,9 @@ public class RegisterCommand extends Command {
     public CommandResult execute(HttpServletRequest request, HttpServletResponse response) throws InternalServerException {
         LOG.trace("Start tracing RegisterCommand");
 
-        UserService userService = ServletUtils.getService(request, UserServiceImpl.class);
-        String username = request.getParameter(USERNAME);
-        String password = request.getParameter(PASSWORD);
+        final UserService userService = ServletUtils.getService(request, UserService.class);
+        final String username = ServletUtils.getStringParameter(request, USERNAME);
+        final String password = ServletUtils.getStringParameter(request, PASSWORD);
 
         HttpSession session = request.getSession();
         RedirectResult redirectResult;

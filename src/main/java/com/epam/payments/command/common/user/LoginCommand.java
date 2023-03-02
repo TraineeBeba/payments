@@ -16,9 +16,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import static com.epam.payments.command.constant.ParamNames.*;
+import static com.epam.payments.command.constant.WebUrlConstants.LOGIN_URL;
+
 public class LoginCommand extends Command {
     private static final Logger LOG = Logger.getLogger(LoginCommand.class);
-
     private static final long serialVersionUID = -7190245479634943129L;
 
     @Override
@@ -36,9 +38,11 @@ public class LoginCommand extends Command {
             session.setAttribute(USER_ENTITY, userEntity);
 
             if (userEntity.getRole() == Role.ROLE_ADMIN) {
-                redirectResult = new RedirectResult(ADMIN_USERS_URL);
+//                redirectResult = new RedirectResult(ADMIN_USERS_URL);
+                return new RedirectResult("USER_WALLETS_URL");
             } else {
-                redirectResult = new RedirectResult(USER_WALLETS_URL);
+//                redirectResult = new RedirectResult(USER_WALLETS_URL);
+                return new RedirectResult("USER_WALLETS_URL");
             }
         } catch (AuthenticationException | UserValidationException e) {
             session.setAttribute(WRONG_DATA, e.getMessage());

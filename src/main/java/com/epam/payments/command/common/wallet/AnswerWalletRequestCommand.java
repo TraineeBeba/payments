@@ -13,6 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+import static com.epam.payments.command.constant.ParamNames.*;
+
 public class AnswerWalletRequestCommand extends Command {
     private static final Logger LOG = Logger.getLogger(AnswerWalletRequestCommand.class);
 
@@ -42,8 +44,9 @@ public class AnswerWalletRequestCommand extends Command {
 
 //
 
-        redirect = new RedirectResult(USER_WALLETS_URL);
+//        redirect = new RedirectResult(USER_WALLETS_URL);
+        return new RedirectResult("USER_WALLETS_URL");
 
-        return redirect;
+//        return redirect;
     }
 }

@@ -1,6 +1,7 @@
 package com.epam.payments.core.database.dao.mysql.query;
 
 public interface Query {
+     final String USER = "user";
     // TODO split into 4 interfaces
     String CREATE_USER                      = "INSERT INTO user VALUES (DEFAULT, ?, ?, ?, ?)";
     String SELECT_USER_BY_ID                = "SELECT * FROM user WHERE user.id = ? ";

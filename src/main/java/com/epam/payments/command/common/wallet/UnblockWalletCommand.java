@@ -43,8 +43,9 @@ public class UnblockWalletCommand extends Command {
 //                session.setAttribute(UNBLOCK_WALLET_SUCCESS, true);
 //            }
 //        }
-        redirect = new RedirectResult(USER_WALLETS_URL);
+//        redirect = new RedirectResult(USER_WALLETS_URL);
+        return new RedirectResult("USER_WALLETS_URL");
 
-        return redirect;
+//        return redirect;
     }
 }

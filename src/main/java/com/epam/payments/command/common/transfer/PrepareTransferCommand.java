@@ -13,6 +13,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.math.BigDecimal;
 
+import static com.epam.payments.command.constant.ParamNames.*;
 import static com.epam.payments.core.model.enums.status.TransferStatus.PREPARED;
 
 public class PrepareTransferCommand extends Command {

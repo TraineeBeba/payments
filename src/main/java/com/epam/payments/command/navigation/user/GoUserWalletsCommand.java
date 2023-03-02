@@ -18,6 +18,10 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
+import static com.epam.payments.command.constant.ParamNames.*;
+import static com.epam.payments.command.constant.SortConstants.*;
+import static com.epam.payments.command.constant.WebPathConstants.*;
+
 public class GoUserWalletsCommand extends Command {
     public static final Logger LOG = Logger.getLogger(GoUserWalletsCommand.class);
     private static final long serialVersionUID = -4327477400419749096L;

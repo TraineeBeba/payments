@@ -3,6 +3,7 @@ package com.epam.payments.command.navigation.user;
 import com.epam.payments.command.Command;
 import com.epam.payments.command.result.CommandResult;
 import com.epam.payments.command.result.ForwardResult;
+import com.epam.payments.command.result.RedirectResult;
 import com.epam.payments.core.model.entity.UserEntity;
 import com.epam.payments.core.model.entity.WalletEntity;
 import com.epam.payments.core.service.WalletService;
@@ -15,6 +16,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
+
+import static com.epam.payments.command.constant.ParamNames.*;
+import static com.epam.payments.command.constant.SortConstants.*;
 
 
 public class GoPrepareTransferCommand extends Command {
@@ -32,7 +36,8 @@ public class GoPrepareTransferCommand extends Command {
 //        List<WalletEntity> wallets = walletServiceImpl.getUnblockedByUserId(userEntity, walletSort);
 //        setRequestAttributes(request, wallets);
 
-        return new ForwardResult(PREPARE_TRANSFER_PATH);
+//        return new ForwardResult(PREPARE_TRANSFER_PATH);
+        return new RedirectResult("USER_WALLETS_URL");
     }
 
     private void setRequestAttributes(HttpServletRequest request, List<WalletEntity> wallets) {

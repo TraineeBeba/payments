@@ -11,6 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+import static com.epam.payments.command.constant.ParamNames.CANCEL_TRANSFER;
+
 public class CancelTransferCommand extends Command {
     private static final Logger LOG = Logger.getLogger(CancelTransferCommand.class);
 
@@ -23,7 +25,8 @@ public class CancelTransferCommand extends Command {
         HttpSession session = request.getSession();
         setAttributes(session);
 
-        return new RedirectResult(USER_WALLETS_URL);
+//        return new RedirectResult(USER_WALLETS_URL);
+        return new RedirectResult("USER_WALLETS_URL");
     }
 
     private void setAttributes(HttpSession session) {

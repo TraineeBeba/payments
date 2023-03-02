@@ -3,6 +3,7 @@ package com.epam.payments.command.navigation.user;
 import com.epam.payments.command.Command;
 import com.epam.payments.command.result.CommandResult;
 import com.epam.payments.command.result.ForwardResult;
+import com.epam.payments.command.result.RedirectResult;
 import com.epam.payments.core.model.entity.TransferEntity;
 import com.epam.payments.core.model.entity.WalletEntity;
 import com.epam.payments.core.service.WalletService;
@@ -14,6 +15,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
+
+import static com.epam.payments.command.constant.ParamNames.*;
+import static com.epam.payments.command.constant.SortConstants.*;
 
 
 public class GoWalletDetailsCommand extends Command {
@@ -43,7 +47,8 @@ public class GoWalletDetailsCommand extends Command {
 //
 //        setRequestAttributes(request, page, transferSort, walletTransfers, currWallet, noOfTransferPages);
 
-        return new ForwardResult(WALLET_DETAILS_PATH);
+//        return new ForwardResult(WALLET_DETAILS_PATH);
+        return new RedirectResult("USER_WALLETS_URL");
     }
 
     private int getBillNumberParameter(HttpServletRequest request) {

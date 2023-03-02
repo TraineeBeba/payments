@@ -1,14 +1,14 @@
-package com.epam.payments.command.navigation.security;
+package com.epam.payments.command.navigation.authentication;
 
 import com.epam.payments.command.Command;
 import com.epam.payments.command.result.CommandResult;
 import com.epam.payments.command.result.ForwardResult;
 import org.apache.log4j.Logger;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
+
+import static com.epam.payments.command.constant.WebPathConstants.REGISTER_PATH;
 
 
 public class GoRegisterCommand extends Command  {

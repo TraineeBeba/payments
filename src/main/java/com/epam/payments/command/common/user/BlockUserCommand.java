@@ -15,6 +15,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+import static com.epam.payments.command.constant.ParamNames.CURR_USER_ID;
+import static com.epam.payments.command.constant.ParamNames.WRONG_DATA;
+
 public class BlockUserCommand extends Command {
     private static final Logger LOG = Logger.getLogger(BlockUserCommand.class);
 
@@ -31,9 +34,11 @@ public class BlockUserCommand extends Command {
         } catch (UserNotFoundException e) {
             HttpSession session = request.getSession();
             session.setAttribute(WRONG_DATA, e.getMessage());
-            return new RedirectResult(ADMIN_USERS_URL);
+//            return new RedirectResult(ADMIN_USERS_URL);
+            return new RedirectResult("USER_WALLETS_URL");
         }
 
-        return new RedirectResult(ADMIN_USERS_URL);
+//        return new RedirectResult(ADMIN_USERS_URL);
+        return new RedirectResult("USER_WALLETS_URL");
     }
 }

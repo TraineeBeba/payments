@@ -12,7 +12,7 @@ import javax.servlet.http.HttpSession;
 import java.util.Optional;
 import java.util.function.Function;
 
-import static com.epam.payments.command.constant.ParameterNames.APP_CONTEXT;
+import static com.epam.payments.command.constant.ParamNames.APP_CONTEXT;
 
 public class ServletUtils {
     public static <T> T getParameter(HttpServletRequest request, String paramName, Function<String, T> parser) throws ParameterNotFoundException {

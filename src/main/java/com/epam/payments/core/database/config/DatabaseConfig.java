@@ -17,39 +17,31 @@ public class DatabaseConfig implements DatabaseConstants {
     private final String databaseType;
 
     public DatabaseConfig(String configFile) throws DatabaseConfigCreationException {
-//        try {
-            Properties properties = new Properties();
 
+        Properties properties = new Properties();
 
-//            try (InputStream input = new FileInputStream(configFile)) {
-            try (InputStream input = Thread.currentThread().getContextClassLoader().getResourceAsStream("/" + configFile)) {
-                properties.load(input);
-            } catch (IOException e) {
-                throw new LoadingConfigurationFileException(e.getMessage(), e.getCause());
-            }
+        try (InputStream input = Thread.currentThread().getContextClassLoader().getResourceAsStream("/" + configFile)) {
+            properties.load(input);
+        } catch (IOException e) {
+            throw new LoadingConfigurationFileException(e.getMessage(), e.getCause());
+        }
 
-            // Set the data source name based on the current database type
-            this.databaseType = properties.getProperty(DATABASE_TYPE);
-            if (databaseType == null || databaseType.isEmpty()) {
-                throw new DatabaseTypeNotSpecifiedException();
-            }
+        // Set the data source name based on the current database type
+        this.databaseType = properties.getProperty(DATABASE_TYPE);
+        if (databaseType == null || databaseType.isEmpty()) {
+            throw new DatabaseTypeNotSpecifiedException();
+        }
 
-            switch (databaseType) {
-                case MYSQL:
-                    this.dataSourceName = properties.getProperty(MYSQL_DATASOURCE_NAME);
-                    break;
-                case POSTGRES:
-                    this.dataSourceName = properties.getProperty(POSTGRES_DATASOURCE_NAME);
-                    break;
-                default:
-                    throw new UnsupportedDatabaseTypeException(databaseType);
-            }
-//        } catch (LoadingConfigurationFileException |
-//                 DatabaseTypeNotSpecifiedException |
-//                 UnsupportedDatabaseTypeException e) {
-//            throw new DatabaseConfigCreationException(e.getMessage(), e.getCause());
-////            throw new DatabaseConfigException(e.getMessage(), e.getCause());
-//        }
+        switch (databaseType) {
+            case MYSQL:
+                this.dataSourceName = properties.getProperty(MYSQL_DATASOURCE_NAME);
+                break;
+            case POSTGRES:
+                this.dataSourceName = properties.getProperty(POSTGRES_DATASOURCE_NAME);
+                break;
+            default:
+                throw new UnsupportedDatabaseTypeException(databaseType);
+        }
     }
 
     public String getDataSourceName() {

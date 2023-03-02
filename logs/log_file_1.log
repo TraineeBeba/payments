@@ -751,3 +751,1620 @@ Caused by: com.epam.payments.core.database.config.exeption.creation.concrete.Uns
 2023-02-26 18:19:38 TRACE ContextListener:31 - Servlet context destruction finished
 2023-02-26 18:19:38 TRACE AppContextListener:49 - Servlet appContext destruction starts
 2023-02-26 18:19:38 TRACE AppContextListener:50 - Servlet appContext destruction finished
+2023-02-28 20:46:46 TRACE AppContextListener:22 - Servlet appContext initialization starts
+2023-02-28 20:46:46 TRACE AppContextListener:53 - Log4J initialization started
+2023-02-28 20:46:46 DEBUG AppContextListener:56 - Log4j has been initialized
+2023-02-28 20:46:46 TRACE AppContextListener:61 - Log4J initialization finished
+2023-02-28 20:46:46 TRACE AppContextListener:44 - Servlet appContext initialization finished
+2023-02-28 20:46:46 TRACE ContextListener:20 - Servlet context initialization starts
+2023-02-28 20:46:46 TRACE ContextListener:35 - Log4J initialization started
+2023-02-28 20:46:46 DEBUG ContextListener:38 - Log4j has been initialized
+2023-02-28 20:46:46 TRACE ContextListener:43 - Log4J initialization finished
+2023-02-28 20:46:46 TRACE ContextListener:26 - Servlet context initialization finished
+2023-02-28 20:46:47 INFO  EncodingFilter:35 - Filter initialization starts
+2023-02-28 20:46:47 INFO  EncodingFilter:41 - Filter initialization finished
+2023-02-28 20:46:48 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 20:46:48 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 20:46:48 TRACE Controller:52 - *****************GET*****************
+2023-02-28 20:46:48 DEBUG Controller:59 - Controller starts
+2023-02-28 20:46:48 TRACE Controller:62 - Request parameter: command --> goLoginCommand
+2023-02-28 20:46:49 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 20:46:49 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 20:46:49 TRACE Controller:52 - *****************GET*****************
+2023-02-28 20:46:49 DEBUG Controller:59 - Controller starts
+2023-02-28 20:46:49 TRACE Controller:62 - Request parameter: command --> goLoginCommand
+2023-02-28 20:47:19 TRACE EncodingFilter:18 - =========================================================================
+2023-02-28 20:47:19 INFO  EncodingFilter:19 - Filter destruction starts
+2023-02-28 20:47:19 INFO  EncodingFilter:20 - Filter destruction finished
+2023-02-28 20:47:19 TRACE ContextListener:30 - Servlet context destruction starts
+2023-02-28 20:47:19 TRACE ContextListener:31 - Servlet context destruction finished
+2023-02-28 20:47:19 TRACE AppContextListener:48 - Servlet appContext destruction starts
+2023-02-28 20:47:19 TRACE AppContextListener:49 - Servlet appContext destruction finished
+2023-02-28 20:47:50 TRACE AppContextListener:22 - Servlet appContext initialization starts
+2023-02-28 20:47:50 TRACE AppContextListener:53 - Log4J initialization started
+2023-02-28 20:47:50 DEBUG AppContextListener:56 - Log4j has been initialized
+2023-02-28 20:47:50 TRACE AppContextListener:61 - Log4J initialization finished
+2023-02-28 20:47:50 TRACE AppContextListener:44 - Servlet appContext initialization finished
+2023-02-28 20:47:50 TRACE ContextListener:20 - Servlet context initialization starts
+2023-02-28 20:47:50 TRACE ContextListener:35 - Log4J initialization started
+2023-02-28 20:47:50 DEBUG ContextListener:38 - Log4j has been initialized
+2023-02-28 20:47:50 TRACE ContextListener:43 - Log4J initialization finished
+2023-02-28 20:47:50 TRACE ContextListener:26 - Servlet context initialization finished
+2023-02-28 20:47:51 INFO  EncodingFilter:35 - Filter initialization starts
+2023-02-28 20:47:51 INFO  EncodingFilter:41 - Filter initialization finished
+2023-02-28 20:47:51 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 20:47:51 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 20:47:51 TRACE Controller:52 - *****************GET*****************
+2023-02-28 20:47:51 DEBUG Controller:59 - Controller starts
+2023-02-28 20:47:51 TRACE Controller:62 - Request parameter: command --> goLoginCommand
+2023-02-28 20:47:52 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 20:47:52 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 20:47:52 TRACE Controller:52 - *****************GET*****************
+2023-02-28 20:47:52 DEBUG Controller:59 - Controller starts
+2023-02-28 20:47:52 TRACE Controller:62 - Request parameter: command --> goLoginCommand
+2023-02-28 20:48:18 TRACE EncodingFilter:18 - =========================================================================
+2023-02-28 20:48:18 INFO  EncodingFilter:19 - Filter destruction starts
+2023-02-28 20:48:18 INFO  EncodingFilter:20 - Filter destruction finished
+2023-02-28 20:48:18 TRACE ContextListener:30 - Servlet context destruction starts
+2023-02-28 20:48:18 TRACE ContextListener:31 - Servlet context destruction finished
+2023-02-28 20:48:18 TRACE AppContextListener:48 - Servlet appContext destruction starts
+2023-02-28 20:48:18 TRACE AppContextListener:49 - Servlet appContext destruction finished
+2023-02-28 20:48:51 TRACE AppContextListener:22 - Servlet appContext initialization starts
+2023-02-28 20:48:51 TRACE AppContextListener:53 - Log4J initialization started
+2023-02-28 20:48:51 DEBUG AppContextListener:56 - Log4j has been initialized
+2023-02-28 20:48:51 TRACE AppContextListener:61 - Log4J initialization finished
+2023-02-28 20:48:51 TRACE AppContextListener:44 - Servlet appContext initialization finished
+2023-02-28 20:48:51 TRACE ContextListener:20 - Servlet context initialization starts
+2023-02-28 20:48:51 TRACE ContextListener:35 - Log4J initialization started
+2023-02-28 20:48:51 DEBUG ContextListener:38 - Log4j has been initialized
+2023-02-28 20:48:51 TRACE ContextListener:43 - Log4J initialization finished
+2023-02-28 20:48:51 TRACE ContextListener:26 - Servlet context initialization finished
+2023-02-28 20:48:51 INFO  EncodingFilter:35 - Filter initialization starts
+2023-02-28 20:48:51 INFO  EncodingFilter:41 - Filter initialization finished
+2023-02-28 20:48:52 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 20:48:52 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 20:48:52 TRACE Controller:52 - *****************GET*****************
+2023-02-28 20:48:52 DEBUG Controller:59 - Controller starts
+2023-02-28 20:48:52 TRACE Controller:62 - Request parameter: command --> goLoginCommand
+2023-02-28 20:48:52 DEBUG CommandFactory:62 - Command factory was successfully initialized
+2023-02-28 20:48:52 TRACE CommandFactory:63 - Number of commands --> 4
+2023-02-28 20:48:52 TRACE CommandFactory:68 - Command not found, name --> goLoginCommand
+2023-02-28 20:48:52 TRACE Controller:65 - Obtained command --> null
+2023-02-28 20:48:53 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 20:48:53 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 20:48:53 TRACE Controller:52 - *****************GET*****************
+2023-02-28 20:48:53 DEBUG Controller:59 - Controller starts
+2023-02-28 20:48:53 TRACE Controller:62 - Request parameter: command --> goLoginCommand
+2023-02-28 20:48:53 TRACE CommandFactory:68 - Command not found, name --> goLoginCommand
+2023-02-28 20:48:53 TRACE Controller:65 - Obtained command --> null
+2023-02-28 20:49:16 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 20:49:16 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 20:49:16 TRACE Controller:52 - *****************GET*****************
+2023-02-28 20:49:16 DEBUG Controller:59 - Controller starts
+2023-02-28 20:49:36 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 20:49:36 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 20:49:36 TRACE Controller:52 - *****************GET*****************
+2023-02-28 20:49:36 DEBUG Controller:59 - Controller starts
+2023-02-28 20:49:36 TRACE Controller:62 - Request parameter: command --> login-page
+2023-02-28 20:49:36 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-02-28 20:49:36 TRACE GoLoginCommand:18 - Start tracing GetCommand
+2023-02-28 20:49:36 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 20:49:36 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:07:47 TRACE EncodingFilter:18 - =========================================================================
+2023-02-28 21:07:47 INFO  EncodingFilter:19 - Filter destruction starts
+2023-02-28 21:07:47 INFO  EncodingFilter:20 - Filter destruction finished
+2023-02-28 21:07:47 TRACE ContextListener:30 - Servlet context destruction starts
+2023-02-28 21:07:47 TRACE ContextListener:31 - Servlet context destruction finished
+2023-02-28 21:07:47 TRACE AppContextListener:48 - Servlet appContext destruction starts
+2023-02-28 21:07:47 TRACE AppContextListener:49 - Servlet appContext destruction finished
+2023-02-28 21:08:27 TRACE AppContextListener:24 - Servlet appContext initialization starts
+2023-02-28 21:08:27 TRACE AppContextListener:55 - Log4J initialization started
+2023-02-28 21:08:27 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-02-28 21:08:27 TRACE AppContextListener:63 - Log4J initialization finished
+2023-02-28 21:08:27 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-02-28 21:08:27 TRACE ContextListener:20 - Servlet context initialization starts
+2023-02-28 21:08:27 TRACE ContextListener:35 - Log4J initialization started
+2023-02-28 21:08:27 DEBUG ContextListener:38 - Log4j has been initialized
+2023-02-28 21:08:27 TRACE ContextListener:43 - Log4J initialization finished
+2023-02-28 21:08:27 TRACE ContextListener:26 - Servlet context initialization finished
+2023-02-28 21:08:28 INFO  EncodingFilter:35 - Filter initialization starts
+2023-02-28 21:08:28 INFO  EncodingFilter:41 - Filter initialization finished
+2023-02-28 21:08:29 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 21:08:29 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 21:08:29 TRACE Controller:52 - *****************GET*****************
+2023-02-28 21:08:29 DEBUG Controller:59 - Controller starts
+2023-02-28 21:08:29 TRACE Controller:62 - Request parameter: command --> login-page
+2023-02-28 21:08:29 DEBUG CommandFactory:64 - Command factory was successfully initialized
+2023-02-28 21:08:29 TRACE CommandFactory:65 - Number of commands --> 4
+2023-02-28 21:08:29 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-02-28 21:08:29 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-02-28 21:08:29 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:08:29 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:08:34 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 21:08:34 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 21:08:34 TRACE Controller:52 - *****************GET*****************
+2023-02-28 21:08:34 DEBUG Controller:59 - Controller starts
+2023-02-28 21:08:34 TRACE Controller:62 - Request parameter: command --> login-page
+2023-02-28 21:08:34 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-02-28 21:08:34 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-02-28 21:08:34 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:08:34 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:12:32 TRACE EncodingFilter:18 - =========================================================================
+2023-02-28 21:12:32 INFO  EncodingFilter:19 - Filter destruction starts
+2023-02-28 21:12:32 INFO  EncodingFilter:20 - Filter destruction finished
+2023-02-28 21:12:32 TRACE ContextListener:30 - Servlet context destruction starts
+2023-02-28 21:12:32 TRACE ContextListener:31 - Servlet context destruction finished
+2023-02-28 21:12:32 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-02-28 21:12:32 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-02-28 21:13:07 TRACE AppContextListener:24 - Servlet appContext initialization starts
+2023-02-28 21:13:07 TRACE AppContextListener:55 - Log4J initialization started
+2023-02-28 21:13:07 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-02-28 21:13:07 TRACE AppContextListener:63 - Log4J initialization finished
+2023-02-28 21:13:07 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-02-28 21:13:07 TRACE ContextListener:20 - Servlet context initialization starts
+2023-02-28 21:13:07 TRACE ContextListener:35 - Log4J initialization started
+2023-02-28 21:13:07 DEBUG ContextListener:38 - Log4j has been initialized
+2023-02-28 21:13:07 TRACE ContextListener:43 - Log4J initialization finished
+2023-02-28 21:13:07 TRACE ContextListener:26 - Servlet context initialization finished
+2023-02-28 21:13:08 INFO  EncodingFilter:35 - Filter initialization starts
+2023-02-28 21:13:08 INFO  EncodingFilter:41 - Filter initialization finished
+2023-02-28 21:13:09 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 21:13:09 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 21:13:09 TRACE Controller:52 - *****************GET*****************
+2023-02-28 21:13:09 DEBUG Controller:59 - Controller starts
+2023-02-28 21:13:09 TRACE Controller:62 - Request parameter: command --> login-page
+2023-02-28 21:13:09 DEBUG CommandFactory:64 - Command factory was successfully initialized
+2023-02-28 21:13:09 TRACE CommandFactory:65 - Number of commands --> 4
+2023-02-28 21:13:09 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-02-28 21:13:09 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-02-28 21:13:09 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:13:09 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:13:14 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 21:13:14 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 21:13:14 TRACE Controller:52 - *****************GET*****************
+2023-02-28 21:13:14 DEBUG Controller:59 - Controller starts
+2023-02-28 21:13:14 TRACE Controller:62 - Request parameter: command --> login-page
+2023-02-28 21:13:14 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-02-28 21:13:14 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-02-28 21:13:14 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:13:14 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:14:58 TRACE EncodingFilter:18 - =========================================================================
+2023-02-28 21:14:58 INFO  EncodingFilter:19 - Filter destruction starts
+2023-02-28 21:14:58 INFO  EncodingFilter:20 - Filter destruction finished
+2023-02-28 21:14:58 TRACE ContextListener:30 - Servlet context destruction starts
+2023-02-28 21:14:58 TRACE ContextListener:31 - Servlet context destruction finished
+2023-02-28 21:14:58 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-02-28 21:14:58 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-02-28 21:15:33 TRACE AppContextListener:24 - Servlet appContext initialization starts
+2023-02-28 21:15:33 TRACE AppContextListener:55 - Log4J initialization started
+2023-02-28 21:15:33 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-02-28 21:15:33 TRACE AppContextListener:63 - Log4J initialization finished
+2023-02-28 21:15:33 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-02-28 21:15:33 TRACE ContextListener:20 - Servlet context initialization starts
+2023-02-28 21:15:33 TRACE ContextListener:35 - Log4J initialization started
+2023-02-28 21:15:33 DEBUG ContextListener:38 - Log4j has been initialized
+2023-02-28 21:15:33 TRACE ContextListener:43 - Log4J initialization finished
+2023-02-28 21:15:33 TRACE ContextListener:26 - Servlet context initialization finished
+2023-02-28 21:15:34 INFO  EncodingFilter:35 - Filter initialization starts
+2023-02-28 21:15:34 INFO  EncodingFilter:41 - Filter initialization finished
+2023-02-28 21:15:35 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 21:15:35 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 21:15:35 TRACE Controller:52 - *****************GET*****************
+2023-02-28 21:15:35 DEBUG Controller:59 - Controller starts
+2023-02-28 21:15:35 TRACE Controller:62 - Request parameter: command --> login-page
+2023-02-28 21:15:35 DEBUG CommandFactory:64 - Command factory was successfully initialized
+2023-02-28 21:15:35 TRACE CommandFactory:65 - Number of commands --> 4
+2023-02-28 21:15:35 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-02-28 21:15:35 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-02-28 21:15:35 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:15:35 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:15:39 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 21:15:39 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 21:15:39 TRACE Controller:52 - *****************GET*****************
+2023-02-28 21:15:39 DEBUG Controller:59 - Controller starts
+2023-02-28 21:15:39 TRACE Controller:62 - Request parameter: command --> login-page
+2023-02-28 21:15:39 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-02-28 21:15:39 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-02-28 21:15:39 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:15:39 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:19:24 TRACE EncodingFilter:18 - =========================================================================
+2023-02-28 21:19:24 INFO  EncodingFilter:19 - Filter destruction starts
+2023-02-28 21:19:24 INFO  EncodingFilter:20 - Filter destruction finished
+2023-02-28 21:19:24 TRACE ContextListener:30 - Servlet context destruction starts
+2023-02-28 21:19:24 TRACE ContextListener:31 - Servlet context destruction finished
+2023-02-28 21:19:24 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-02-28 21:19:24 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-02-28 21:19:52 TRACE AppContextListener:24 - Servlet appContext initialization starts
+2023-02-28 21:19:52 TRACE AppContextListener:55 - Log4J initialization started
+2023-02-28 21:19:52 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-02-28 21:19:52 TRACE AppContextListener:63 - Log4J initialization finished
+2023-02-28 21:19:53 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-02-28 21:19:53 TRACE ContextListener:20 - Servlet context initialization starts
+2023-02-28 21:19:53 TRACE ContextListener:35 - Log4J initialization started
+2023-02-28 21:19:53 DEBUG ContextListener:38 - Log4j has been initialized
+2023-02-28 21:19:53 TRACE ContextListener:43 - Log4J initialization finished
+2023-02-28 21:19:53 TRACE ContextListener:26 - Servlet context initialization finished
+2023-02-28 21:19:53 INFO  EncodingFilter:35 - Filter initialization starts
+2023-02-28 21:19:53 INFO  EncodingFilter:41 - Filter initialization finished
+2023-02-28 21:19:54 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 21:19:54 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 21:19:54 TRACE Controller:52 - *****************GET*****************
+2023-02-28 21:19:54 DEBUG Controller:59 - Controller starts
+2023-02-28 21:19:54 TRACE Controller:62 - Request parameter: command --> login-page
+2023-02-28 21:19:54 DEBUG CommandFactory:64 - Command factory was successfully initialized
+2023-02-28 21:19:54 TRACE CommandFactory:65 - Number of commands --> 4
+2023-02-28 21:19:54 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-02-28 21:19:54 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-02-28 21:19:54 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:19:54 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:19:59 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 21:19:59 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 21:19:59 TRACE Controller:52 - *****************GET*****************
+2023-02-28 21:19:59 DEBUG Controller:59 - Controller starts
+2023-02-28 21:19:59 TRACE Controller:62 - Request parameter: command --> login-page
+2023-02-28 21:19:59 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-02-28 21:19:59 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-02-28 21:19:59 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:19:59 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:23:16 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 21:23:16 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 21:23:16 TRACE Controller:52 - *****************GET*****************
+2023-02-28 21:23:16 DEBUG Controller:59 - Controller starts
+2023-02-28 21:23:16 TRACE Controller:62 - Request parameter: command --> register-page
+2023-02-28 21:23:16 TRACE Controller:65 - Obtained command --> GoRegisterCommand
+2023-02-28 21:23:16 TRACE GoRegisterCommand:20 - Start tracing GetCommand
+2023-02-28 21:23:16 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-02-28 21:23:16 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-02-28 21:33:41 TRACE EncodingFilter:18 - =========================================================================
+2023-02-28 21:33:41 INFO  EncodingFilter:19 - Filter destruction starts
+2023-02-28 21:33:41 INFO  EncodingFilter:20 - Filter destruction finished
+2023-02-28 21:33:41 TRACE ContextListener:30 - Servlet context destruction starts
+2023-02-28 21:33:41 TRACE ContextListener:31 - Servlet context destruction finished
+2023-02-28 21:33:41 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-02-28 21:33:41 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-02-28 21:34:07 TRACE AppContextListener:24 - Servlet appContext initialization starts
+2023-02-28 21:34:07 TRACE AppContextListener:55 - Log4J initialization started
+2023-02-28 21:34:07 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-02-28 21:34:07 TRACE AppContextListener:63 - Log4J initialization finished
+2023-02-28 21:34:07 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-02-28 21:34:07 TRACE ContextListener:20 - Servlet context initialization starts
+2023-02-28 21:34:07 TRACE ContextListener:35 - Log4J initialization started
+2023-02-28 21:34:07 DEBUG ContextListener:38 - Log4j has been initialized
+2023-02-28 21:34:07 TRACE ContextListener:43 - Log4J initialization finished
+2023-02-28 21:34:07 TRACE ContextListener:26 - Servlet context initialization finished
+2023-02-28 21:34:07 INFO  EncodingFilter:35 - Filter initialization starts
+2023-02-28 21:34:07 INFO  EncodingFilter:41 - Filter initialization finished
+2023-02-28 21:34:08 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 21:34:08 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 21:34:08 TRACE Controller:52 - *****************GET*****************
+2023-02-28 21:34:08 DEBUG Controller:59 - Controller starts
+2023-02-28 21:34:08 TRACE Controller:62 - Request parameter: command --> login-page
+2023-02-28 21:34:08 DEBUG CommandFactory:64 - Command factory was successfully initialized
+2023-02-28 21:34:08 TRACE CommandFactory:65 - Number of commands --> 4
+2023-02-28 21:34:08 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-02-28 21:34:08 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-02-28 21:34:08 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:34:08 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:34:12 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 21:34:12 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 21:34:12 TRACE Controller:52 - *****************GET*****************
+2023-02-28 21:34:12 DEBUG Controller:59 - Controller starts
+2023-02-28 21:34:12 TRACE Controller:62 - Request parameter: command --> login-page
+2023-02-28 21:34:12 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-02-28 21:34:12 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-02-28 21:34:12 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:34:12 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:34:22 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 21:34:22 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 21:34:22 TRACE Controller:52 - *****************GET*****************
+2023-02-28 21:34:22 DEBUG Controller:59 - Controller starts
+2023-02-28 21:34:22 TRACE Controller:62 - Request parameter: command --> register-page
+2023-02-28 21:34:22 TRACE Controller:65 - Obtained command --> GoRegisterCommand
+2023-02-28 21:34:22 TRACE GoRegisterCommand:20 - Start tracing GetCommand
+2023-02-28 21:34:22 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-02-28 21:34:22 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-02-28 21:39:49 TRACE EncodingFilter:18 - =========================================================================
+2023-02-28 21:39:49 INFO  EncodingFilter:19 - Filter destruction starts
+2023-02-28 21:39:49 INFO  EncodingFilter:20 - Filter destruction finished
+2023-02-28 21:39:49 TRACE ContextListener:30 - Servlet context destruction starts
+2023-02-28 21:39:49 TRACE ContextListener:31 - Servlet context destruction finished
+2023-02-28 21:39:49 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-02-28 21:39:49 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-02-28 21:41:21 TRACE AppContextListener:24 - Servlet appContext initialization starts
+2023-02-28 21:41:21 TRACE AppContextListener:55 - Log4J initialization started
+2023-02-28 21:41:21 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-02-28 21:41:21 TRACE AppContextListener:63 - Log4J initialization finished
+2023-02-28 21:41:21 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-02-28 21:41:21 TRACE ContextListener:20 - Servlet context initialization starts
+2023-02-28 21:41:21 TRACE ContextListener:35 - Log4J initialization started
+2023-02-28 21:41:21 DEBUG ContextListener:38 - Log4j has been initialized
+2023-02-28 21:41:21 TRACE ContextListener:43 - Log4J initialization finished
+2023-02-28 21:41:21 TRACE ContextListener:26 - Servlet context initialization finished
+2023-02-28 21:41:21 INFO  EncodingFilter:35 - Filter initialization starts
+2023-02-28 21:41:21 INFO  EncodingFilter:41 - Filter initialization finished
+2023-02-28 21:41:22 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 21:41:22 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 21:41:22 TRACE Controller:52 - *****************GET*****************
+2023-02-28 21:41:22 DEBUG Controller:59 - Controller starts
+2023-02-28 21:41:22 TRACE Controller:62 - Request parameter: command --> login-page
+2023-02-28 21:41:22 DEBUG CommandFactory:64 - Command factory was successfully initialized
+2023-02-28 21:41:22 TRACE CommandFactory:65 - Number of commands --> 4
+2023-02-28 21:41:22 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-02-28 21:41:22 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-02-28 21:41:22 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:41:22 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:41:26 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 21:41:26 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 21:41:26 TRACE Controller:52 - *****************GET*****************
+2023-02-28 21:41:26 DEBUG Controller:59 - Controller starts
+2023-02-28 21:41:26 TRACE Controller:62 - Request parameter: command --> login-page
+2023-02-28 21:41:26 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-02-28 21:41:26 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-02-28 21:41:26 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:41:26 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:41:30 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 21:41:30 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 21:41:30 TRACE Controller:52 - *****************GET*****************
+2023-02-28 21:41:30 DEBUG Controller:59 - Controller starts
+2023-02-28 21:41:30 TRACE Controller:62 - Request parameter: command --> register-page
+2023-02-28 21:41:30 TRACE Controller:65 - Obtained command --> GoRegisterCommand
+2023-02-28 21:41:30 TRACE GoRegisterCommand:20 - Start tracing GetCommand
+2023-02-28 21:41:30 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-02-28 21:41:30 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-02-28 21:42:28 TRACE EncodingFilter:18 - =========================================================================
+2023-02-28 21:42:28 INFO  EncodingFilter:19 - Filter destruction starts
+2023-02-28 21:42:28 INFO  EncodingFilter:20 - Filter destruction finished
+2023-02-28 21:42:28 TRACE ContextListener:30 - Servlet context destruction starts
+2023-02-28 21:42:28 TRACE ContextListener:31 - Servlet context destruction finished
+2023-02-28 21:42:28 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-02-28 21:42:28 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-02-28 21:43:08 TRACE AppContextListener:24 - Servlet appContext initialization starts
+2023-02-28 21:43:08 TRACE AppContextListener:55 - Log4J initialization started
+2023-02-28 21:43:08 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-02-28 21:43:08 TRACE AppContextListener:63 - Log4J initialization finished
+2023-02-28 21:43:08 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-02-28 21:43:08 TRACE ContextListener:20 - Servlet context initialization starts
+2023-02-28 21:43:08 TRACE ContextListener:35 - Log4J initialization started
+2023-02-28 21:43:08 DEBUG ContextListener:38 - Log4j has been initialized
+2023-02-28 21:43:08 TRACE ContextListener:43 - Log4J initialization finished
+2023-02-28 21:43:08 TRACE ContextListener:26 - Servlet context initialization finished
+2023-02-28 21:43:09 INFO  EncodingFilter:35 - Filter initialization starts
+2023-02-28 21:43:09 INFO  EncodingFilter:41 - Filter initialization finished
+2023-02-28 21:43:10 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 21:43:10 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 21:43:10 TRACE Controller:52 - *****************GET*****************
+2023-02-28 21:43:10 DEBUG Controller:59 - Controller starts
+2023-02-28 21:43:10 TRACE Controller:62 - Request parameter: command --> login-page
+2023-02-28 21:43:10 DEBUG CommandFactory:64 - Command factory was successfully initialized
+2023-02-28 21:43:10 TRACE CommandFactory:65 - Number of commands --> 4
+2023-02-28 21:43:10 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-02-28 21:43:10 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-02-28 21:43:10 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:43:10 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:43:13 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 21:43:13 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 21:43:13 TRACE Controller:52 - *****************GET*****************
+2023-02-28 21:43:13 DEBUG Controller:59 - Controller starts
+2023-02-28 21:43:13 TRACE Controller:62 - Request parameter: command --> login-page
+2023-02-28 21:43:13 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-02-28 21:43:13 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-02-28 21:43:13 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:43:13 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:43:17 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 21:43:17 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 21:43:17 TRACE Controller:52 - *****************GET*****************
+2023-02-28 21:43:17 DEBUG Controller:59 - Controller starts
+2023-02-28 21:43:17 TRACE Controller:62 - Request parameter: command --> register-page
+2023-02-28 21:43:17 TRACE Controller:65 - Obtained command --> GoRegisterCommand
+2023-02-28 21:43:17 TRACE GoRegisterCommand:20 - Start tracing GetCommand
+2023-02-28 21:43:17 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-02-28 21:43:17 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-02-28 21:44:40 TRACE EncodingFilter:18 - =========================================================================
+2023-02-28 21:44:40 INFO  EncodingFilter:19 - Filter destruction starts
+2023-02-28 21:44:40 INFO  EncodingFilter:20 - Filter destruction finished
+2023-02-28 21:44:40 TRACE ContextListener:30 - Servlet context destruction starts
+2023-02-28 21:44:40 TRACE ContextListener:31 - Servlet context destruction finished
+2023-02-28 21:44:40 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-02-28 21:44:40 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-02-28 21:49:08 TRACE AppContextListener:24 - Servlet appContext initialization starts
+2023-02-28 21:49:08 TRACE AppContextListener:55 - Log4J initialization started
+2023-02-28 21:49:08 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-02-28 21:49:08 TRACE AppContextListener:63 - Log4J initialization finished
+2023-02-28 21:49:08 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-02-28 21:49:08 TRACE ContextListener:20 - Servlet context initialization starts
+2023-02-28 21:49:08 TRACE ContextListener:35 - Log4J initialization started
+2023-02-28 21:49:08 DEBUG ContextListener:38 - Log4j has been initialized
+2023-02-28 21:49:08 TRACE ContextListener:43 - Log4J initialization finished
+2023-02-28 21:49:08 TRACE ContextListener:26 - Servlet context initialization finished
+2023-02-28 21:49:08 INFO  EncodingFilter:35 - Filter initialization starts
+2023-02-28 21:49:08 INFO  EncodingFilter:41 - Filter initialization finished
+2023-02-28 21:49:09 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 21:49:09 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 21:49:09 TRACE Controller:52 - *****************GET*****************
+2023-02-28 21:49:09 DEBUG Controller:59 - Controller starts
+2023-02-28 21:49:09 TRACE Controller:62 - Request parameter: command --> login-page
+2023-02-28 21:49:09 DEBUG CommandFactory:64 - Command factory was successfully initialized
+2023-02-28 21:49:09 TRACE CommandFactory:65 - Number of commands --> 4
+2023-02-28 21:49:09 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-02-28 21:49:09 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-02-28 21:49:09 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:49:09 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:49:14 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 21:49:14 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 21:49:14 TRACE Controller:52 - *****************GET*****************
+2023-02-28 21:49:14 DEBUG Controller:59 - Controller starts
+2023-02-28 21:49:14 TRACE Controller:62 - Request parameter: command --> login-page
+2023-02-28 21:49:14 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-02-28 21:49:14 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-02-28 21:49:14 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:49:14 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-02-28 21:49:18 INFO  EncodingFilter:24 - Filter starts
+2023-02-28 21:49:18 INFO  EncodingFilter:30 - Filter finished
+2023-02-28 21:49:18 TRACE Controller:52 - *****************GET*****************
+2023-02-28 21:49:18 DEBUG Controller:59 - Controller starts
+2023-02-28 21:49:18 TRACE Controller:62 - Request parameter: command --> register-page
+2023-02-28 21:49:18 TRACE Controller:65 - Obtained command --> GoRegisterCommand
+2023-02-28 21:49:18 TRACE GoRegisterCommand:20 - Start tracing GetCommand
+2023-02-28 21:49:18 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-02-28 21:49:18 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-02-28 21:58:09 TRACE EncodingFilter:18 - =========================================================================
+2023-02-28 21:58:09 INFO  EncodingFilter:19 - Filter destruction starts
+2023-02-28 21:58:09 INFO  EncodingFilter:20 - Filter destruction finished
+2023-02-28 21:58:09 TRACE ContextListener:30 - Servlet context destruction starts
+2023-02-28 21:58:09 TRACE ContextListener:31 - Servlet context destruction finished
+2023-02-28 21:58:09 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-02-28 21:58:09 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-03-01 08:52:26 TRACE AppContextListener:24 - Servlet appContext initialization starts
+2023-03-01 08:52:26 TRACE AppContextListener:55 - Log4J initialization started
+2023-03-01 08:52:26 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-03-01 08:52:27 TRACE AppContextListener:63 - Log4J initialization finished
+2023-03-01 08:52:27 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-03-01 08:52:27 TRACE ContextListener:20 - Servlet context initialization starts
+2023-03-01 08:52:27 TRACE ContextListener:35 - Log4J initialization started
+2023-03-01 08:52:27 DEBUG ContextListener:38 - Log4j has been initialized
+2023-03-01 08:52:27 TRACE ContextListener:43 - Log4J initialization finished
+2023-03-01 08:52:27 TRACE ContextListener:26 - Servlet context initialization finished
+2023-03-01 08:52:28 INFO  EncodingFilter:35 - Filter initialization starts
+2023-03-01 08:52:28 INFO  EncodingFilter:41 - Filter initialization finished
+2023-03-01 08:52:29 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 08:52:29 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 08:52:29 TRACE Controller:52 - *****************GET*****************
+2023-03-01 08:52:29 DEBUG Controller:59 - Controller starts
+2023-03-01 08:52:29 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 08:52:29 DEBUG CommandFactory:64 - Command factory was successfully initialized
+2023-03-01 08:52:29 TRACE CommandFactory:65 - Number of commands --> 4
+2023-03-01 08:52:29 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 08:52:29 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 08:52:29 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 08:52:29 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 08:52:36 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 08:52:36 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 08:52:36 TRACE Controller:52 - *****************GET*****************
+2023-03-01 08:52:36 DEBUG Controller:59 - Controller starts
+2023-03-01 08:52:36 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 08:52:36 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 08:52:36 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 08:52:36 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 08:52:36 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 08:52:56 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 08:52:56 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 08:52:56 TRACE Controller:52 - *****************GET*****************
+2023-03-01 08:52:56 DEBUG Controller:59 - Controller starts
+2023-03-01 08:52:56 TRACE Controller:62 - Request parameter: command --> register-page
+2023-03-01 08:52:56 TRACE Controller:65 - Obtained command --> GoRegisterCommand
+2023-03-01 08:52:56 TRACE GoRegisterCommand:20 - Start tracing GetCommand
+2023-03-01 08:52:56 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 08:52:56 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 08:53:00 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 08:53:00 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 08:53:00 TRACE Controller:52 - *****************GET*****************
+2023-03-01 08:53:00 DEBUG Controller:59 - Controller starts
+2023-03-01 08:53:00 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 08:53:00 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 08:53:00 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 08:53:00 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 08:53:00 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 08:55:47 TRACE EncodingFilter:18 - =========================================================================
+2023-03-01 08:55:47 INFO  EncodingFilter:19 - Filter destruction starts
+2023-03-01 08:55:47 INFO  EncodingFilter:20 - Filter destruction finished
+2023-03-01 08:55:47 TRACE ContextListener:30 - Servlet context destruction starts
+2023-03-01 08:55:47 TRACE ContextListener:31 - Servlet context destruction finished
+2023-03-01 08:55:47 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-03-01 08:55:47 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-03-01 08:56:48 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-03-01 08:56:48 TRACE AppContextListener:63 - Log4J initialization finished
+2023-03-01 08:56:48 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-03-01 08:56:48 TRACE ContextListener:20 - Servlet context initialization starts
+2023-03-01 08:56:48 TRACE ContextListener:35 - Log4J initialization started
+2023-03-01 08:56:48 DEBUG ContextListener:38 - Log4j has been initialized
+2023-03-01 08:56:48 TRACE ContextListener:43 - Log4J initialization finished
+2023-03-01 08:56:48 TRACE ContextListener:26 - Servlet context initialization finished
+2023-03-01 08:56:48 INFO  EncodingFilter:35 - Filter initialization starts
+2023-03-01 08:56:48 INFO  EncodingFilter:41 - Filter initialization finished
+2023-03-01 08:56:49 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 08:56:49 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 08:56:49 TRACE Controller:52 - *****************GET*****************
+2023-03-01 08:56:49 DEBUG Controller:59 - Controller starts
+2023-03-01 08:56:49 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 08:56:49 DEBUG CommandFactory:64 - Command factory was successfully initialized
+2023-03-01 08:56:49 TRACE CommandFactory:65 - Number of commands --> 4
+2023-03-01 08:56:49 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 08:56:49 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 08:56:49 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 08:56:49 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 08:56:56 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 08:56:56 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 08:56:56 TRACE Controller:52 - *****************GET*****************
+2023-03-01 08:56:56 DEBUG Controller:59 - Controller starts
+2023-03-01 08:56:56 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 08:56:56 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 08:56:56 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 08:56:56 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 08:56:56 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 08:58:10 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 08:58:10 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 08:58:10 TRACE Controller:52 - *****************GET*****************
+2023-03-01 08:58:10 DEBUG Controller:59 - Controller starts
+2023-03-01 08:58:10 TRACE Controller:62 - Request parameter: command --> register-page
+2023-03-01 08:58:10 TRACE Controller:65 - Obtained command --> GoRegisterCommand
+2023-03-01 08:58:10 TRACE GoRegisterCommand:20 - Start tracing GetCommand
+2023-03-01 08:58:10 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 08:58:10 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 08:58:18 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 08:58:18 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 08:58:18 TRACE Controller:52 - *****************GET*****************
+2023-03-01 08:58:18 DEBUG Controller:59 - Controller starts
+2023-03-01 08:58:18 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 08:58:18 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 08:58:18 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 08:58:18 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 08:58:18 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:00:17 TRACE EncodingFilter:18 - =========================================================================
+2023-03-01 09:00:17 INFO  EncodingFilter:19 - Filter destruction starts
+2023-03-01 09:00:17 INFO  EncodingFilter:20 - Filter destruction finished
+2023-03-01 09:00:17 TRACE ContextListener:30 - Servlet context destruction starts
+2023-03-01 09:00:17 TRACE ContextListener:31 - Servlet context destruction finished
+2023-03-01 09:00:17 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-03-01 09:00:17 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-03-01 09:00:55 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-03-01 09:00:55 TRACE AppContextListener:63 - Log4J initialization finished
+2023-03-01 09:00:55 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-03-01 09:00:55 TRACE ContextListener:20 - Servlet context initialization starts
+2023-03-01 09:00:55 TRACE ContextListener:35 - Log4J initialization started
+2023-03-01 09:00:55 DEBUG ContextListener:38 - Log4j has been initialized
+2023-03-01 09:00:55 TRACE ContextListener:43 - Log4J initialization finished
+2023-03-01 09:00:55 TRACE ContextListener:26 - Servlet context initialization finished
+2023-03-01 09:00:56 INFO  EncodingFilter:35 - Filter initialization starts
+2023-03-01 09:00:56 INFO  EncodingFilter:41 - Filter initialization finished
+2023-03-01 09:00:56 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:00:56 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:00:56 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:00:56 DEBUG Controller:59 - Controller starts
+2023-03-01 09:00:56 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 09:00:56 DEBUG CommandFactory:64 - Command factory was successfully initialized
+2023-03-01 09:00:56 TRACE CommandFactory:65 - Number of commands --> 4
+2023-03-01 09:00:56 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 09:00:56 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 09:00:56 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:00:56 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:01:03 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:01:03 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:01:03 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:01:03 DEBUG Controller:59 - Controller starts
+2023-03-01 09:01:03 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 09:01:03 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 09:01:03 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 09:01:03 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:01:03 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:01:43 TRACE EncodingFilter:18 - =========================================================================
+2023-03-01 09:01:43 INFO  EncodingFilter:19 - Filter destruction starts
+2023-03-01 09:01:43 INFO  EncodingFilter:20 - Filter destruction finished
+2023-03-01 09:01:43 TRACE ContextListener:30 - Servlet context destruction starts
+2023-03-01 09:01:43 TRACE ContextListener:31 - Servlet context destruction finished
+2023-03-01 09:01:43 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-03-01 09:01:43 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-03-01 09:02:25 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-03-01 09:02:25 TRACE AppContextListener:63 - Log4J initialization finished
+2023-03-01 09:02:25 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-03-01 09:02:25 TRACE ContextListener:20 - Servlet context initialization starts
+2023-03-01 09:02:25 TRACE ContextListener:35 - Log4J initialization started
+2023-03-01 09:02:25 DEBUG ContextListener:38 - Log4j has been initialized
+2023-03-01 09:02:25 TRACE ContextListener:43 - Log4J initialization finished
+2023-03-01 09:02:25 TRACE ContextListener:26 - Servlet context initialization finished
+2023-03-01 09:02:26 INFO  EncodingFilter:35 - Filter initialization starts
+2023-03-01 09:02:26 INFO  EncodingFilter:41 - Filter initialization finished
+2023-03-01 09:02:27 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:02:27 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:02:27 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:02:27 DEBUG Controller:59 - Controller starts
+2023-03-01 09:02:27 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 09:02:27 DEBUG CommandFactory:64 - Command factory was successfully initialized
+2023-03-01 09:02:27 TRACE CommandFactory:65 - Number of commands --> 4
+2023-03-01 09:02:27 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 09:02:27 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 09:02:27 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:02:27 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:02:33 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:02:33 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:02:33 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:02:33 DEBUG Controller:59 - Controller starts
+2023-03-01 09:02:33 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 09:02:33 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 09:02:33 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 09:02:33 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:02:33 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:02:59 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:02:59 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:02:59 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:02:59 DEBUG Controller:59 - Controller starts
+2023-03-01 09:02:59 TRACE Controller:62 - Request parameter: command --> register-page
+2023-03-01 09:02:59 TRACE Controller:65 - Obtained command --> GoRegisterCommand
+2023-03-01 09:02:59 TRACE GoRegisterCommand:20 - Start tracing GetCommand
+2023-03-01 09:02:59 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 09:02:59 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 09:03:04 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:03:04 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:03:04 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:03:04 DEBUG Controller:59 - Controller starts
+2023-03-01 09:03:04 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 09:03:04 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 09:03:04 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 09:03:04 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:03:04 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:03:05 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:03:05 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:03:05 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:03:05 DEBUG Controller:59 - Controller starts
+2023-03-01 09:03:05 TRACE Controller:62 - Request parameter: command --> register-page
+2023-03-01 09:03:05 TRACE Controller:65 - Obtained command --> GoRegisterCommand
+2023-03-01 09:03:05 TRACE GoRegisterCommand:20 - Start tracing GetCommand
+2023-03-01 09:03:05 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 09:03:05 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 09:03:06 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:03:06 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:03:06 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:03:06 DEBUG Controller:59 - Controller starts
+2023-03-01 09:03:06 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 09:03:06 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 09:03:06 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 09:03:06 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:03:06 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:06:36 TRACE EncodingFilter:18 - =========================================================================
+2023-03-01 09:06:36 INFO  EncodingFilter:19 - Filter destruction starts
+2023-03-01 09:06:36 INFO  EncodingFilter:20 - Filter destruction finished
+2023-03-01 09:06:36 TRACE ContextListener:30 - Servlet context destruction starts
+2023-03-01 09:06:36 TRACE ContextListener:31 - Servlet context destruction finished
+2023-03-01 09:06:36 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-03-01 09:06:36 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-03-01 09:07:13 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-03-01 09:07:13 TRACE AppContextListener:63 - Log4J initialization finished
+2023-03-01 09:07:13 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-03-01 09:07:13 TRACE ContextListener:20 - Servlet context initialization starts
+2023-03-01 09:07:13 TRACE ContextListener:35 - Log4J initialization started
+2023-03-01 09:07:13 DEBUG ContextListener:38 - Log4j has been initialized
+2023-03-01 09:07:13 TRACE ContextListener:43 - Log4J initialization finished
+2023-03-01 09:07:13 TRACE ContextListener:26 - Servlet context initialization finished
+2023-03-01 09:07:13 INFO  EncodingFilter:35 - Filter initialization starts
+2023-03-01 09:07:13 INFO  EncodingFilter:41 - Filter initialization finished
+2023-03-01 09:07:14 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:07:14 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:07:14 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:07:14 DEBUG Controller:59 - Controller starts
+2023-03-01 09:07:14 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 09:07:14 DEBUG CommandFactory:64 - Command factory was successfully initialized
+2023-03-01 09:07:14 TRACE CommandFactory:65 - Number of commands --> 4
+2023-03-01 09:07:14 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 09:07:14 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 09:07:14 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:07:14 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:07:21 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:07:21 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:07:21 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:07:21 DEBUG Controller:59 - Controller starts
+2023-03-01 09:07:21 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 09:07:21 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 09:07:21 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 09:07:21 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:07:21 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:07:31 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:07:31 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:07:31 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:07:31 DEBUG Controller:59 - Controller starts
+2023-03-01 09:07:31 TRACE Controller:62 - Request parameter: command --> register-page
+2023-03-01 09:07:31 TRACE Controller:65 - Obtained command --> GoRegisterCommand
+2023-03-01 09:07:31 TRACE GoRegisterCommand:20 - Start tracing GetCommand
+2023-03-01 09:07:31 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 09:07:31 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 09:07:34 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:07:34 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:07:34 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:07:34 DEBUG Controller:59 - Controller starts
+2023-03-01 09:07:34 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 09:07:34 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 09:07:34 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 09:07:34 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:07:34 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:07:36 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:07:36 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:07:36 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:07:36 DEBUG Controller:59 - Controller starts
+2023-03-01 09:07:36 TRACE Controller:62 - Request parameter: command --> register-page
+2023-03-01 09:07:36 TRACE Controller:65 - Obtained command --> GoRegisterCommand
+2023-03-01 09:07:36 TRACE GoRegisterCommand:20 - Start tracing GetCommand
+2023-03-01 09:07:36 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 09:07:36 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 09:08:22 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:08:22 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:08:22 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:08:22 DEBUG Controller:59 - Controller starts
+2023-03-01 09:08:22 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 09:08:22 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 09:08:22 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 09:08:22 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:08:22 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:30:19 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:30:19 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:30:19 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:30:19 DEBUG Controller:59 - Controller starts
+2023-03-01 09:33:09 TRACE EncodingFilter:18 - =========================================================================
+2023-03-01 09:33:09 INFO  EncodingFilter:19 - Filter destruction starts
+2023-03-01 09:33:09 INFO  EncodingFilter:20 - Filter destruction finished
+2023-03-01 09:33:09 TRACE ContextListener:30 - Servlet context destruction starts
+2023-03-01 09:33:09 TRACE ContextListener:31 - Servlet context destruction finished
+2023-03-01 09:33:09 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-03-01 09:33:09 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-03-01 09:33:52 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-03-01 09:33:52 TRACE AppContextListener:63 - Log4J initialization finished
+2023-03-01 09:33:52 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-03-01 09:33:52 TRACE ContextListener:20 - Servlet context initialization starts
+2023-03-01 09:33:52 TRACE ContextListener:35 - Log4J initialization started
+2023-03-01 09:33:52 DEBUG ContextListener:38 - Log4j has been initialized
+2023-03-01 09:33:52 TRACE ContextListener:43 - Log4J initialization finished
+2023-03-01 09:33:52 TRACE ContextListener:26 - Servlet context initialization finished
+2023-03-01 09:33:53 INFO  EncodingFilter:35 - Filter initialization starts
+2023-03-01 09:33:53 INFO  EncodingFilter:41 - Filter initialization finished
+2023-03-01 09:33:53 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:33:53 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:33:53 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:33:53 DEBUG Controller:59 - Controller starts
+2023-03-01 09:33:53 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 09:33:53 DEBUG CommandFactory:65 - Command factory was successfully initialized
+2023-03-01 09:33:53 TRACE CommandFactory:66 - Number of commands --> 5
+2023-03-01 09:33:53 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 09:33:53 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 09:33:53 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:33:53 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:34:01 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:34:01 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:34:01 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:34:01 DEBUG Controller:59 - Controller starts
+2023-03-01 09:34:01 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 09:34:01 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 09:34:01 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 09:34:01 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:34:01 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:34:20 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:34:20 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:34:20 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:34:20 DEBUG Controller:59 - Controller starts
+2023-03-01 09:34:20 TRACE Controller:62 - Request parameter: command --> register-page
+2023-03-01 09:34:20 TRACE Controller:65 - Obtained command --> GoRegisterCommand
+2023-03-01 09:34:20 TRACE GoRegisterCommand:20 - Start tracing GetCommand
+2023-03-01 09:34:20 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 09:34:20 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 09:34:22 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:34:22 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:34:22 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:34:22 DEBUG Controller:59 - Controller starts
+2023-03-01 09:34:22 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 09:34:22 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 09:34:22 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 09:34:22 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:34:22 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:34:24 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:34:24 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:34:24 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:34:24 DEBUG Controller:59 - Controller starts
+2023-03-01 09:38:37 TRACE EncodingFilter:18 - =========================================================================
+2023-03-01 09:38:37 INFO  EncodingFilter:19 - Filter destruction starts
+2023-03-01 09:38:37 INFO  EncodingFilter:20 - Filter destruction finished
+2023-03-01 09:38:37 TRACE ContextListener:30 - Servlet context destruction starts
+2023-03-01 09:38:37 TRACE ContextListener:31 - Servlet context destruction finished
+2023-03-01 09:38:37 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-03-01 09:38:37 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-03-01 09:39:25 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-03-01 09:39:25 TRACE AppContextListener:63 - Log4J initialization finished
+2023-03-01 09:39:25 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-03-01 09:39:25 TRACE ContextListener:20 - Servlet context initialization starts
+2023-03-01 09:39:25 TRACE ContextListener:35 - Log4J initialization started
+2023-03-01 09:39:25 DEBUG ContextListener:38 - Log4j has been initialized
+2023-03-01 09:39:25 TRACE ContextListener:43 - Log4J initialization finished
+2023-03-01 09:39:25 TRACE ContextListener:26 - Servlet context initialization finished
+2023-03-01 09:39:26 INFO  EncodingFilter:35 - Filter initialization starts
+2023-03-01 09:39:26 INFO  EncodingFilter:41 - Filter initialization finished
+2023-03-01 09:39:26 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:39:26 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:39:26 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:39:26 DEBUG Controller:59 - Controller starts
+2023-03-01 09:39:26 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 09:39:26 DEBUG CommandFactory:65 - Command factory was successfully initialized
+2023-03-01 09:39:26 TRACE CommandFactory:66 - Number of commands --> 5
+2023-03-01 09:39:26 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 09:39:26 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 09:39:26 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:39:26 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:39:32 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:39:32 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:39:32 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:39:32 DEBUG Controller:59 - Controller starts
+2023-03-01 09:39:32 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 09:39:32 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 09:39:32 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 09:39:32 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:39:32 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:39:43 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:39:43 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:39:43 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:39:43 DEBUG Controller:59 - Controller starts
+2023-03-01 09:42:06 TRACE EncodingFilter:18 - =========================================================================
+2023-03-01 09:42:06 INFO  EncodingFilter:19 - Filter destruction starts
+2023-03-01 09:42:06 INFO  EncodingFilter:20 - Filter destruction finished
+2023-03-01 09:42:06 TRACE ContextListener:30 - Servlet context destruction starts
+2023-03-01 09:42:06 TRACE ContextListener:31 - Servlet context destruction finished
+2023-03-01 09:42:06 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-03-01 09:42:06 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-03-01 09:42:45 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-03-01 09:42:45 TRACE AppContextListener:63 - Log4J initialization finished
+2023-03-01 09:42:45 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-03-01 09:42:45 TRACE ContextListener:20 - Servlet context initialization starts
+2023-03-01 09:42:45 TRACE ContextListener:35 - Log4J initialization started
+2023-03-01 09:42:45 DEBUG ContextListener:38 - Log4j has been initialized
+2023-03-01 09:42:45 TRACE ContextListener:43 - Log4J initialization finished
+2023-03-01 09:42:45 TRACE ContextListener:26 - Servlet context initialization finished
+2023-03-01 09:42:46 INFO  EncodingFilter:35 - Filter initialization starts
+2023-03-01 09:42:46 INFO  EncodingFilter:41 - Filter initialization finished
+2023-03-01 09:42:46 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:42:46 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:42:46 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:42:46 DEBUG Controller:59 - Controller starts
+2023-03-01 09:42:46 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 09:42:46 DEBUG CommandFactory:65 - Command factory was successfully initialized
+2023-03-01 09:42:46 TRACE CommandFactory:66 - Number of commands --> 5
+2023-03-01 09:42:46 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 09:42:46 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 09:42:46 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:42:46 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:42:55 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:42:55 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:42:55 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:42:55 DEBUG Controller:59 - Controller starts
+2023-03-01 09:42:55 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 09:42:55 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 09:42:55 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 09:42:55 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:42:55 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:43:00 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:43:00 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:43:00 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:43:00 DEBUG Controller:59 - Controller starts
+2023-03-01 09:43:17 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:43:17 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:43:17 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:43:17 DEBUG Controller:59 - Controller starts
+2023-03-01 09:47:02 TRACE EncodingFilter:18 - =========================================================================
+2023-03-01 09:47:02 INFO  EncodingFilter:19 - Filter destruction starts
+2023-03-01 09:47:02 INFO  EncodingFilter:20 - Filter destruction finished
+2023-03-01 09:47:02 TRACE ContextListener:30 - Servlet context destruction starts
+2023-03-01 09:47:02 TRACE ContextListener:31 - Servlet context destruction finished
+2023-03-01 09:47:02 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-03-01 09:47:02 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-03-01 09:47:46 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-03-01 09:47:46 TRACE AppContextListener:63 - Log4J initialization finished
+2023-03-01 09:47:46 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-03-01 09:47:46 TRACE ContextListener:20 - Servlet context initialization starts
+2023-03-01 09:47:46 TRACE ContextListener:35 - Log4J initialization started
+2023-03-01 09:47:46 DEBUG ContextListener:38 - Log4j has been initialized
+2023-03-01 09:47:46 TRACE ContextListener:43 - Log4J initialization finished
+2023-03-01 09:47:46 TRACE ContextListener:26 - Servlet context initialization finished
+2023-03-01 09:47:47 INFO  EncodingFilter:35 - Filter initialization starts
+2023-03-01 09:47:47 INFO  EncodingFilter:41 - Filter initialization finished
+2023-03-01 09:47:47 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:47:47 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:47:47 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:47:47 DEBUG Controller:59 - Controller starts
+2023-03-01 09:47:47 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 09:47:47 DEBUG CommandFactory:65 - Command factory was successfully initialized
+2023-03-01 09:47:47 TRACE CommandFactory:66 - Number of commands --> 5
+2023-03-01 09:47:47 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 09:47:47 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 09:47:47 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:47:47 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:47:56 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:47:56 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:47:56 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:47:56 DEBUG Controller:59 - Controller starts
+2023-03-01 09:47:56 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 09:47:56 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 09:47:56 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 09:47:56 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:47:56 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:47:59 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:47:59 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:47:59 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:47:59 DEBUG Controller:59 - Controller starts
+2023-03-01 09:47:59 TRACE Controller:62 - Request parameter: command --> register-page
+2023-03-01 09:47:59 TRACE Controller:65 - Obtained command --> GoRegisterCommand
+2023-03-01 09:47:59 TRACE GoRegisterCommand:20 - Start tracing GetCommand
+2023-03-01 09:47:59 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 09:47:59 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 09:48:11 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:48:11 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:48:11 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:48:11 DEBUG Controller:59 - Controller starts
+2023-03-01 09:48:11 TRACE Controller:62 - Request parameter: command --> language
+2023-03-01 09:48:11 TRACE Controller:65 - Obtained command --> LanguageCommand
+2023-03-01 09:48:11 TRACE LanguageCommand:26 - Start tracing LanguageCommand
+2023-03-01 09:48:11 INFO  LanguageCommand:33 - command=register-page
+2023-03-01 09:48:11 TRACE Controller:38 - Redirect address --> ?command=register-page
+2023-03-01 09:48:11 DEBUG Controller:39 - Controller finished, now redirect to address --> ?command=register-page
+2023-03-01 09:48:11 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:48:11 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:48:11 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:48:11 DEBUG Controller:59 - Controller starts
+2023-03-01 09:48:11 TRACE Controller:62 - Request parameter: command --> register-page
+2023-03-01 09:48:11 TRACE Controller:65 - Obtained command --> GoRegisterCommand
+2023-03-01 09:48:11 TRACE GoRegisterCommand:20 - Start tracing GetCommand
+2023-03-01 09:48:11 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 09:48:11 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 09:50:14 TRACE EncodingFilter:18 - =========================================================================
+2023-03-01 09:50:14 INFO  EncodingFilter:19 - Filter destruction starts
+2023-03-01 09:50:14 INFO  EncodingFilter:20 - Filter destruction finished
+2023-03-01 09:50:14 TRACE ContextListener:30 - Servlet context destruction starts
+2023-03-01 09:50:14 TRACE ContextListener:31 - Servlet context destruction finished
+2023-03-01 09:50:14 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-03-01 09:50:14 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-03-01 09:50:57 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-03-01 09:50:57 TRACE AppContextListener:63 - Log4J initialization finished
+2023-03-01 09:50:57 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-03-01 09:50:57 TRACE ContextListener:20 - Servlet context initialization starts
+2023-03-01 09:50:57 TRACE ContextListener:35 - Log4J initialization started
+2023-03-01 09:50:57 DEBUG ContextListener:38 - Log4j has been initialized
+2023-03-01 09:50:57 TRACE ContextListener:43 - Log4J initialization finished
+2023-03-01 09:50:57 TRACE ContextListener:26 - Servlet context initialization finished
+2023-03-01 09:50:57 INFO  EncodingFilter:35 - Filter initialization starts
+2023-03-01 09:50:57 INFO  EncodingFilter:41 - Filter initialization finished
+2023-03-01 09:50:58 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:50:58 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:50:58 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:50:58 DEBUG Controller:59 - Controller starts
+2023-03-01 09:50:58 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 09:50:58 DEBUG CommandFactory:65 - Command factory was successfully initialized
+2023-03-01 09:50:58 TRACE CommandFactory:66 - Number of commands --> 5
+2023-03-01 09:50:58 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 09:50:58 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 09:50:58 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:50:58 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:51:05 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:51:05 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:51:05 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:51:05 DEBUG Controller:59 - Controller starts
+2023-03-01 09:51:05 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 09:51:05 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 09:51:05 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 09:51:05 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:51:05 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:52:40 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:52:40 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:52:40 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:52:40 DEBUG Controller:59 - Controller starts
+2023-03-01 09:52:40 TRACE Controller:62 - Request parameter: command --> register-page
+2023-03-01 09:52:40 TRACE Controller:65 - Obtained command --> GoRegisterCommand
+2023-03-01 09:52:40 TRACE GoRegisterCommand:20 - Start tracing GetCommand
+2023-03-01 09:52:40 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 09:52:40 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 09:56:48 TRACE EncodingFilter:18 - =========================================================================
+2023-03-01 09:56:48 INFO  EncodingFilter:19 - Filter destruction starts
+2023-03-01 09:56:48 INFO  EncodingFilter:20 - Filter destruction finished
+2023-03-01 09:56:48 TRACE ContextListener:30 - Servlet context destruction starts
+2023-03-01 09:56:48 TRACE ContextListener:31 - Servlet context destruction finished
+2023-03-01 09:56:48 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-03-01 09:56:48 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-03-01 09:57:35 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-03-01 09:57:35 TRACE AppContextListener:63 - Log4J initialization finished
+2023-03-01 09:57:35 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-03-01 09:57:35 TRACE ContextListener:20 - Servlet context initialization starts
+2023-03-01 09:57:35 TRACE ContextListener:35 - Log4J initialization started
+2023-03-01 09:57:35 DEBUG ContextListener:38 - Log4j has been initialized
+2023-03-01 09:57:35 TRACE ContextListener:43 - Log4J initialization finished
+2023-03-01 09:57:35 TRACE ContextListener:26 - Servlet context initialization finished
+2023-03-01 09:57:36 INFO  EncodingFilter:35 - Filter initialization starts
+2023-03-01 09:57:36 INFO  EncodingFilter:41 - Filter initialization finished
+2023-03-01 09:57:36 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:57:36 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:57:36 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:57:36 DEBUG Controller:59 - Controller starts
+2023-03-01 09:57:36 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 09:57:36 DEBUG CommandFactory:65 - Command factory was successfully initialized
+2023-03-01 09:57:36 TRACE CommandFactory:66 - Number of commands --> 5
+2023-03-01 09:57:36 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 09:57:36 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 09:57:36 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:57:36 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:57:42 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 09:57:42 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 09:57:42 TRACE Controller:52 - *****************GET*****************
+2023-03-01 09:57:42 DEBUG Controller:59 - Controller starts
+2023-03-01 09:57:42 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 09:57:42 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 09:57:42 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 09:57:42 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 09:57:42 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:04:44 TRACE EncodingFilter:18 - =========================================================================
+2023-03-01 10:04:44 INFO  EncodingFilter:19 - Filter destruction starts
+2023-03-01 10:04:44 INFO  EncodingFilter:20 - Filter destruction finished
+2023-03-01 10:04:44 TRACE ContextListener:30 - Servlet context destruction starts
+2023-03-01 10:04:44 TRACE ContextListener:31 - Servlet context destruction finished
+2023-03-01 10:04:44 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-03-01 10:04:44 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-03-01 10:05:38 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-03-01 10:05:38 TRACE AppContextListener:63 - Log4J initialization finished
+2023-03-01 10:05:39 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-03-01 10:05:39 TRACE ContextListener:20 - Servlet context initialization starts
+2023-03-01 10:05:39 TRACE ContextListener:35 - Log4J initialization started
+2023-03-01 10:05:39 DEBUG ContextListener:38 - Log4j has been initialized
+2023-03-01 10:05:39 TRACE ContextListener:43 - Log4J initialization finished
+2023-03-01 10:05:39 TRACE ContextListener:26 - Servlet context initialization finished
+2023-03-01 10:05:39 INFO  EncodingFilter:35 - Filter initialization starts
+2023-03-01 10:05:39 INFO  EncodingFilter:41 - Filter initialization finished
+2023-03-01 10:05:40 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:05:40 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:05:40 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:05:40 DEBUG Controller:59 - Controller starts
+2023-03-01 10:05:40 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 10:05:40 DEBUG CommandFactory:65 - Command factory was successfully initialized
+2023-03-01 10:05:40 TRACE CommandFactory:66 - Number of commands --> 5
+2023-03-01 10:05:40 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 10:05:40 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 10:05:40 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:05:40 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:05:50 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:05:50 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:05:50 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:05:50 DEBUG Controller:59 - Controller starts
+2023-03-01 10:05:50 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 10:05:50 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 10:05:50 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 10:05:50 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:05:50 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:06:46 TRACE EncodingFilter:18 - =========================================================================
+2023-03-01 10:06:46 INFO  EncodingFilter:19 - Filter destruction starts
+2023-03-01 10:06:46 INFO  EncodingFilter:20 - Filter destruction finished
+2023-03-01 10:06:46 TRACE ContextListener:30 - Servlet context destruction starts
+2023-03-01 10:06:46 TRACE ContextListener:31 - Servlet context destruction finished
+2023-03-01 10:06:46 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-03-01 10:06:46 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-03-01 10:07:21 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-03-01 10:07:21 TRACE AppContextListener:63 - Log4J initialization finished
+2023-03-01 10:07:22 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-03-01 10:07:22 TRACE ContextListener:20 - Servlet context initialization starts
+2023-03-01 10:07:22 TRACE ContextListener:35 - Log4J initialization started
+2023-03-01 10:07:22 DEBUG ContextListener:38 - Log4j has been initialized
+2023-03-01 10:07:22 TRACE ContextListener:43 - Log4J initialization finished
+2023-03-01 10:07:22 TRACE ContextListener:26 - Servlet context initialization finished
+2023-03-01 10:07:22 INFO  EncodingFilter:35 - Filter initialization starts
+2023-03-01 10:07:22 INFO  EncodingFilter:41 - Filter initialization finished
+2023-03-01 10:07:23 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:07:23 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:07:23 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:07:23 DEBUG Controller:59 - Controller starts
+2023-03-01 10:07:23 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 10:07:23 DEBUG CommandFactory:65 - Command factory was successfully initialized
+2023-03-01 10:07:23 TRACE CommandFactory:66 - Number of commands --> 5
+2023-03-01 10:07:23 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 10:07:23 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 10:07:23 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:07:23 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:07:29 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:07:29 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:07:29 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:07:29 DEBUG Controller:59 - Controller starts
+2023-03-01 10:07:29 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 10:07:29 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 10:07:29 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 10:07:29 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:07:29 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:08:28 TRACE EncodingFilter:18 - =========================================================================
+2023-03-01 10:08:28 INFO  EncodingFilter:19 - Filter destruction starts
+2023-03-01 10:08:28 INFO  EncodingFilter:20 - Filter destruction finished
+2023-03-01 10:08:28 TRACE ContextListener:30 - Servlet context destruction starts
+2023-03-01 10:08:28 TRACE ContextListener:31 - Servlet context destruction finished
+2023-03-01 10:08:28 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-03-01 10:08:28 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-03-01 10:09:15 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-03-01 10:09:15 TRACE AppContextListener:63 - Log4J initialization finished
+2023-03-01 10:09:15 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-03-01 10:09:15 TRACE ContextListener:20 - Servlet context initialization starts
+2023-03-01 10:09:15 TRACE ContextListener:35 - Log4J initialization started
+2023-03-01 10:09:15 DEBUG ContextListener:38 - Log4j has been initialized
+2023-03-01 10:09:15 TRACE ContextListener:43 - Log4J initialization finished
+2023-03-01 10:09:15 TRACE ContextListener:26 - Servlet context initialization finished
+2023-03-01 10:09:15 INFO  EncodingFilter:35 - Filter initialization starts
+2023-03-01 10:09:15 INFO  EncodingFilter:41 - Filter initialization finished
+2023-03-01 10:09:16 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:09:16 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:09:16 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:09:16 DEBUG Controller:59 - Controller starts
+2023-03-01 10:09:16 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 10:09:16 DEBUG CommandFactory:65 - Command factory was successfully initialized
+2023-03-01 10:09:16 TRACE CommandFactory:66 - Number of commands --> 5
+2023-03-01 10:09:16 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 10:09:16 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 10:09:16 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:09:16 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:09:21 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:09:21 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:09:21 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:09:21 DEBUG Controller:59 - Controller starts
+2023-03-01 10:09:21 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 10:09:21 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 10:09:21 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 10:09:21 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:09:21 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:09:25 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:09:25 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:09:25 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:09:25 DEBUG Controller:59 - Controller starts
+2023-03-01 10:09:25 TRACE Controller:62 - Request parameter: command --> register-page
+2023-03-01 10:09:25 TRACE Controller:65 - Obtained command --> GoRegisterCommand
+2023-03-01 10:09:25 TRACE GoRegisterCommand:20 - Start tracing GetCommand
+2023-03-01 10:09:25 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 10:09:25 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 10:09:28 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:09:28 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:09:28 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:09:28 DEBUG Controller:59 - Controller starts
+2023-03-01 10:09:28 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 10:09:28 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 10:09:28 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 10:09:28 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:09:28 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:09:29 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:09:29 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:09:29 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:09:29 DEBUG Controller:59 - Controller starts
+2023-03-01 10:09:29 TRACE Controller:62 - Request parameter: command --> register-page
+2023-03-01 10:09:29 TRACE Controller:65 - Obtained command --> GoRegisterCommand
+2023-03-01 10:09:29 TRACE GoRegisterCommand:20 - Start tracing GetCommand
+2023-03-01 10:09:29 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 10:09:29 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 10:09:32 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:09:32 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:09:32 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:09:32 DEBUG Controller:59 - Controller starts
+2023-03-01 10:09:32 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 10:09:32 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 10:09:32 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 10:09:32 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:09:32 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:09:39 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:09:39 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:09:39 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:09:39 DEBUG Controller:59 - Controller starts
+2023-03-01 10:09:39 TRACE Controller:62 - Request parameter: command --> language
+2023-03-01 10:09:39 TRACE Controller:65 - Obtained command --> LanguageCommand
+2023-03-01 10:09:39 TRACE LanguageCommand:26 - Start tracing LanguageCommand
+2023-03-01 10:09:39 INFO  LanguageCommand:33 - command=login-page
+2023-03-01 10:09:39 TRACE Controller:38 - Redirect address --> /payments?command=login-page
+2023-03-01 10:09:39 DEBUG Controller:39 - Controller finished, now redirect to address --> /payments?command=login-page
+2023-03-01 10:10:03 TRACE EncodingFilter:18 - =========================================================================
+2023-03-01 10:10:03 INFO  EncodingFilter:19 - Filter destruction starts
+2023-03-01 10:10:03 INFO  EncodingFilter:20 - Filter destruction finished
+2023-03-01 10:10:03 TRACE ContextListener:30 - Servlet context destruction starts
+2023-03-01 10:10:03 TRACE ContextListener:31 - Servlet context destruction finished
+2023-03-01 10:10:03 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-03-01 10:10:03 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-03-01 10:10:44 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-03-01 10:10:44 TRACE AppContextListener:63 - Log4J initialization finished
+2023-03-01 10:10:45 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-03-01 10:10:45 TRACE ContextListener:20 - Servlet context initialization starts
+2023-03-01 10:10:45 TRACE ContextListener:35 - Log4J initialization started
+2023-03-01 10:10:45 DEBUG ContextListener:38 - Log4j has been initialized
+2023-03-01 10:10:45 TRACE ContextListener:43 - Log4J initialization finished
+2023-03-01 10:10:45 TRACE ContextListener:26 - Servlet context initialization finished
+2023-03-01 10:10:45 INFO  EncodingFilter:35 - Filter initialization starts
+2023-03-01 10:10:45 INFO  EncodingFilter:41 - Filter initialization finished
+2023-03-01 10:10:46 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:10:46 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:10:46 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:10:46 DEBUG Controller:59 - Controller starts
+2023-03-01 10:10:46 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 10:10:46 DEBUG CommandFactory:65 - Command factory was successfully initialized
+2023-03-01 10:10:46 TRACE CommandFactory:66 - Number of commands --> 5
+2023-03-01 10:10:46 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 10:10:46 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 10:10:46 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:10:46 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:10:52 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:10:52 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:10:52 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:10:52 DEBUG Controller:59 - Controller starts
+2023-03-01 10:10:52 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 10:10:52 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 10:10:52 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 10:10:52 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:10:52 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:10:56 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:10:56 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:10:56 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:10:56 DEBUG Controller:59 - Controller starts
+2023-03-01 10:10:56 TRACE Controller:62 - Request parameter: command --> register-page
+2023-03-01 10:10:56 TRACE Controller:65 - Obtained command --> GoRegisterCommand
+2023-03-01 10:10:56 TRACE GoRegisterCommand:20 - Start tracing GetCommand
+2023-03-01 10:10:56 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 10:10:56 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 10:11:00 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:11:00 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:11:00 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:11:00 DEBUG Controller:59 - Controller starts
+2023-03-01 10:11:00 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 10:11:00 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 10:11:00 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 10:11:00 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:11:00 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:11:51 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:11:51 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:11:51 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:11:51 DEBUG Controller:59 - Controller starts
+2023-03-01 10:12:51 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:12:51 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:12:51 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:12:51 DEBUG Controller:59 - Controller starts
+2023-03-01 10:12:51 TRACE Controller:62 - Request parameter: command --> language
+2023-03-01 10:12:51 TRACE Controller:65 - Obtained command --> LanguageCommand
+2023-03-01 10:12:51 TRACE LanguageCommand:26 - Start tracing LanguageCommand
+2023-03-01 10:12:51 INFO  LanguageCommand:33 - command=login-page
+2023-03-01 10:12:51 TRACE Controller:38 - Redirect address --> /payments?command=login-page
+2023-03-01 10:12:51 DEBUG Controller:39 - Controller finished, now redirect to address --> /payments?command=login-page
+2023-03-01 10:13:44 TRACE EncodingFilter:18 - =========================================================================
+2023-03-01 10:13:44 INFO  EncodingFilter:19 - Filter destruction starts
+2023-03-01 10:13:44 INFO  EncodingFilter:20 - Filter destruction finished
+2023-03-01 10:13:44 TRACE ContextListener:30 - Servlet context destruction starts
+2023-03-01 10:13:44 TRACE ContextListener:31 - Servlet context destruction finished
+2023-03-01 10:13:44 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-03-01 10:13:44 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-03-01 10:14:38 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-03-01 10:14:38 TRACE AppContextListener:63 - Log4J initialization finished
+2023-03-01 10:14:39 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-03-01 10:14:39 TRACE ContextListener:20 - Servlet context initialization starts
+2023-03-01 10:14:39 TRACE ContextListener:35 - Log4J initialization started
+2023-03-01 10:14:39 DEBUG ContextListener:38 - Log4j has been initialized
+2023-03-01 10:14:39 TRACE ContextListener:43 - Log4J initialization finished
+2023-03-01 10:14:39 TRACE ContextListener:26 - Servlet context initialization finished
+2023-03-01 10:14:39 INFO  EncodingFilter:35 - Filter initialization starts
+2023-03-01 10:14:39 INFO  EncodingFilter:41 - Filter initialization finished
+2023-03-01 10:14:40 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:14:40 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:14:40 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:14:40 DEBUG Controller:59 - Controller starts
+2023-03-01 10:14:40 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 10:14:40 DEBUG CommandFactory:65 - Command factory was successfully initialized
+2023-03-01 10:14:40 TRACE CommandFactory:66 - Number of commands --> 5
+2023-03-01 10:14:40 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 10:14:40 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 10:14:40 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:14:40 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:14:46 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:14:46 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:14:46 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:14:46 DEBUG Controller:59 - Controller starts
+2023-03-01 10:14:46 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 10:14:46 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 10:14:46 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 10:14:46 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:14:46 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:14:50 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:14:50 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:14:50 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:14:50 DEBUG Controller:59 - Controller starts
+2023-03-01 10:14:50 TRACE Controller:62 - Request parameter: command --> register-page
+2023-03-01 10:14:50 TRACE Controller:65 - Obtained command --> GoRegisterCommand
+2023-03-01 10:14:50 TRACE GoRegisterCommand:20 - Start tracing GetCommand
+2023-03-01 10:14:50 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 10:14:50 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 10:14:53 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:14:53 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:14:53 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:14:53 DEBUG Controller:59 - Controller starts
+2023-03-01 10:14:53 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 10:14:53 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 10:14:53 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 10:14:53 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:14:53 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:14:55 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:14:55 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:14:55 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:14:55 DEBUG Controller:59 - Controller starts
+2023-03-01 10:15:11 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:15:11 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:15:11 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:15:11 DEBUG Controller:59 - Controller starts
+2023-03-01 10:15:11 TRACE Controller:62 - Request parameter: command --> language
+2023-03-01 10:15:11 TRACE Controller:65 - Obtained command --> LanguageCommand
+2023-03-01 10:15:11 TRACE LanguageCommand:26 - Start tracing LanguageCommand
+2023-03-01 10:15:11 INFO  LanguageCommand:33 - command=login-page
+2023-03-01 10:15:11 TRACE Controller:38 - Redirect address --> ?command=login-page
+2023-03-01 10:15:11 DEBUG Controller:39 - Controller finished, now redirect to address --> ?command=login-page
+2023-03-01 10:17:21 TRACE EncodingFilter:18 - =========================================================================
+2023-03-01 10:17:21 INFO  EncodingFilter:19 - Filter destruction starts
+2023-03-01 10:17:21 INFO  EncodingFilter:20 - Filter destruction finished
+2023-03-01 10:17:21 TRACE ContextListener:30 - Servlet context destruction starts
+2023-03-01 10:17:21 TRACE ContextListener:31 - Servlet context destruction finished
+2023-03-01 10:17:21 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-03-01 10:17:21 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-03-01 10:18:27 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-03-01 10:18:27 TRACE AppContextListener:63 - Log4J initialization finished
+2023-03-01 10:18:28 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-03-01 10:18:28 TRACE ContextListener:20 - Servlet context initialization starts
+2023-03-01 10:18:28 TRACE ContextListener:35 - Log4J initialization started
+2023-03-01 10:18:28 DEBUG ContextListener:38 - Log4j has been initialized
+2023-03-01 10:18:28 TRACE ContextListener:43 - Log4J initialization finished
+2023-03-01 10:18:28 TRACE ContextListener:26 - Servlet context initialization finished
+2023-03-01 10:18:28 INFO  EncodingFilter:35 - Filter initialization starts
+2023-03-01 10:18:28 INFO  EncodingFilter:41 - Filter initialization finished
+2023-03-01 10:18:29 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:18:29 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:18:29 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:18:29 DEBUG Controller:59 - Controller starts
+2023-03-01 10:18:29 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 10:18:29 DEBUG CommandFactory:65 - Command factory was successfully initialized
+2023-03-01 10:18:29 TRACE CommandFactory:66 - Number of commands --> 5
+2023-03-01 10:18:29 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 10:18:29 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 10:18:29 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:18:29 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:18:35 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:18:35 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:18:35 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:18:35 DEBUG Controller:59 - Controller starts
+2023-03-01 10:18:35 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 10:18:35 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 10:18:35 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 10:18:35 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:18:35 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:18:37 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:18:37 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:18:37 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:18:37 DEBUG Controller:59 - Controller starts
+2023-03-01 10:18:37 TRACE Controller:62 - Request parameter: command --> register-page
+2023-03-01 10:18:37 TRACE Controller:65 - Obtained command --> GoRegisterCommand
+2023-03-01 10:18:37 TRACE GoRegisterCommand:20 - Start tracing GetCommand
+2023-03-01 10:18:37 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 10:18:37 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 10:18:41 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:18:41 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:18:41 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:18:41 DEBUG Controller:59 - Controller starts
+2023-03-01 10:18:41 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 10:18:41 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 10:18:41 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 10:18:41 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:18:41 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:18:43 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:18:43 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:18:43 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:18:43 DEBUG Controller:59 - Controller starts
+2023-03-01 10:18:43 TRACE Controller:62 - Request parameter: command --> language
+2023-03-01 10:18:43 TRACE Controller:65 - Obtained command --> LanguageCommand
+2023-03-01 10:18:43 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-03-01 10:18:43 INFO  LanguageCommand:34 - command=login-page
+2023-03-01 10:18:43 TRACE Controller:38 - Redirect address --> /payments/controller?command=login-page
+2023-03-01 10:18:43 DEBUG Controller:39 - Controller finished, now redirect to address --> /payments/controller?command=login-page
+2023-03-01 10:21:12 TRACE EncodingFilter:18 - =========================================================================
+2023-03-01 10:21:12 INFO  EncodingFilter:19 - Filter destruction starts
+2023-03-01 10:21:12 INFO  EncodingFilter:20 - Filter destruction finished
+2023-03-01 10:21:12 TRACE ContextListener:30 - Servlet context destruction starts
+2023-03-01 10:21:12 TRACE ContextListener:31 - Servlet context destruction finished
+2023-03-01 10:21:12 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-03-01 10:21:12 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-03-01 10:22:24 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-03-01 10:22:24 TRACE AppContextListener:63 - Log4J initialization finished
+2023-03-01 10:22:24 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-03-01 10:22:24 TRACE ContextListener:20 - Servlet context initialization starts
+2023-03-01 10:22:24 TRACE ContextListener:35 - Log4J initialization started
+2023-03-01 10:22:24 DEBUG ContextListener:38 - Log4j has been initialized
+2023-03-01 10:22:24 TRACE ContextListener:43 - Log4J initialization finished
+2023-03-01 10:22:24 TRACE ContextListener:26 - Servlet context initialization finished
+2023-03-01 10:22:24 INFO  EncodingFilter:35 - Filter initialization starts
+2023-03-01 10:22:24 INFO  EncodingFilter:41 - Filter initialization finished
+2023-03-01 10:22:25 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:22:25 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:22:25 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:22:25 DEBUG Controller:59 - Controller starts
+2023-03-01 10:22:25 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 10:22:25 DEBUG CommandFactory:65 - Command factory was successfully initialized
+2023-03-01 10:22:25 TRACE CommandFactory:66 - Number of commands --> 5
+2023-03-01 10:22:25 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 10:22:25 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 10:22:25 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:22:25 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:22:26 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:22:26 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:22:26 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:22:26 DEBUG Controller:59 - Controller starts
+2023-03-01 10:22:26 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 10:22:26 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 10:22:26 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 10:22:26 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:22:26 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:24:26 TRACE EncodingFilter:18 - =========================================================================
+2023-03-01 10:24:26 INFO  EncodingFilter:19 - Filter destruction starts
+2023-03-01 10:24:26 INFO  EncodingFilter:20 - Filter destruction finished
+2023-03-01 10:24:26 TRACE ContextListener:30 - Servlet context destruction starts
+2023-03-01 10:24:26 TRACE ContextListener:31 - Servlet context destruction finished
+2023-03-01 10:24:26 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-03-01 10:24:26 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-03-01 10:25:11 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-03-01 10:25:11 TRACE AppContextListener:63 - Log4J initialization finished
+2023-03-01 10:25:11 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-03-01 10:25:11 TRACE ContextListener:20 - Servlet context initialization starts
+2023-03-01 10:25:11 TRACE ContextListener:35 - Log4J initialization started
+2023-03-01 10:25:11 DEBUG ContextListener:38 - Log4j has been initialized
+2023-03-01 10:25:11 TRACE ContextListener:43 - Log4J initialization finished
+2023-03-01 10:25:11 TRACE ContextListener:26 - Servlet context initialization finished
+2023-03-01 10:25:12 INFO  EncodingFilter:35 - Filter initialization starts
+2023-03-01 10:25:12 INFO  EncodingFilter:41 - Filter initialization finished
+2023-03-01 10:25:12 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:25:12 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:25:12 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:25:12 DEBUG Controller:59 - Controller starts
+2023-03-01 10:25:12 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 10:25:13 DEBUG CommandFactory:65 - Command factory was successfully initialized
+2023-03-01 10:25:13 TRACE CommandFactory:66 - Number of commands --> 5
+2023-03-01 10:25:13 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 10:25:13 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 10:25:13 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:25:13 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:25:22 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:25:22 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:25:22 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:25:22 DEBUG Controller:59 - Controller starts
+2023-03-01 10:25:22 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 10:25:22 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 10:25:22 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 10:25:22 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:25:22 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:28:51 TRACE EncodingFilter:18 - =========================================================================
+2023-03-01 10:28:51 INFO  EncodingFilter:19 - Filter destruction starts
+2023-03-01 10:28:51 INFO  EncodingFilter:20 - Filter destruction finished
+2023-03-01 10:28:51 TRACE ContextListener:30 - Servlet context destruction starts
+2023-03-01 10:28:51 TRACE ContextListener:31 - Servlet context destruction finished
+2023-03-01 10:28:51 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-03-01 10:28:51 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-03-01 10:29:40 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-03-01 10:29:40 TRACE AppContextListener:63 - Log4J initialization finished
+2023-03-01 10:29:40 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-03-01 10:29:40 TRACE ContextListener:20 - Servlet context initialization starts
+2023-03-01 10:29:40 TRACE ContextListener:35 - Log4J initialization started
+2023-03-01 10:29:40 DEBUG ContextListener:38 - Log4j has been initialized
+2023-03-01 10:29:40 TRACE ContextListener:43 - Log4J initialization finished
+2023-03-01 10:29:40 TRACE ContextListener:26 - Servlet context initialization finished
+2023-03-01 10:29:41 INFO  EncodingFilter:35 - Filter initialization starts
+2023-03-01 10:29:41 INFO  EncodingFilter:41 - Filter initialization finished
+2023-03-01 10:29:41 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:29:41 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:29:41 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:29:41 DEBUG Controller:59 - Controller starts
+2023-03-01 10:29:41 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 10:29:42 DEBUG CommandFactory:65 - Command factory was successfully initialized
+2023-03-01 10:29:42 TRACE CommandFactory:66 - Number of commands --> 5
+2023-03-01 10:29:42 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 10:29:42 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 10:29:42 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:29:42 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:29:48 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:29:48 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:29:48 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:29:48 DEBUG Controller:59 - Controller starts
+2023-03-01 10:29:48 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 10:29:48 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 10:29:48 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 10:29:48 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:29:48 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:29:51 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:29:51 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:29:51 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:29:51 DEBUG Controller:59 - Controller starts
+2023-03-01 10:29:51 TRACE Controller:62 - Request parameter: command --> register-page
+2023-03-01 10:29:51 TRACE Controller:65 - Obtained command --> GoRegisterCommand
+2023-03-01 10:29:51 TRACE GoRegisterCommand:20 - Start tracing GetCommand
+2023-03-01 10:29:51 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 10:29:51 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 10:29:54 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:29:54 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:29:54 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:29:54 DEBUG Controller:59 - Controller starts
+2023-03-01 10:29:54 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 10:29:54 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 10:29:54 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 10:29:54 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:29:54 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:33:41 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:33:41 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:33:41 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:33:41 DEBUG Controller:59 - Controller starts
+2023-03-01 10:33:41 TRACE Controller:62 - Request parameter: command --> register-page
+2023-03-01 10:33:41 TRACE Controller:65 - Obtained command --> GoRegisterCommand
+2023-03-01 10:33:41 TRACE GoRegisterCommand:20 - Start tracing GetCommand
+2023-03-01 10:33:41 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 10:33:41 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 10:33:42 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 10:33:42 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 10:33:42 TRACE Controller:52 - *****************GET*****************
+2023-03-01 10:33:42 DEBUG Controller:59 - Controller starts
+2023-03-01 10:33:42 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 10:33:42 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 10:33:42 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 10:33:42 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 10:33:42 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 11:05:49 TRACE EncodingFilter:18 - =========================================================================
+2023-03-01 11:05:49 INFO  EncodingFilter:19 - Filter destruction starts
+2023-03-01 11:05:49 INFO  EncodingFilter:20 - Filter destruction finished
+2023-03-01 11:05:49 TRACE ContextListener:30 - Servlet context destruction starts
+2023-03-01 11:05:49 TRACE ContextListener:31 - Servlet context destruction finished
+2023-03-01 11:05:49 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-03-01 11:05:49 TRACE AppContextListener:51 - Servlet appContext destruction finished
+2023-03-01 17:41:11 DEBUG AppContextListener:58 - Log4j has been initialized
+2023-03-01 17:41:11 TRACE AppContextListener:63 - Log4J initialization finished
+2023-03-01 17:41:11 TRACE AppContextListener:46 - Servlet appContext initialization finished
+2023-03-01 17:41:11 TRACE ContextListener:20 - Servlet context initialization starts
+2023-03-01 17:41:11 TRACE ContextListener:35 - Log4J initialization started
+2023-03-01 17:41:11 DEBUG ContextListener:38 - Log4j has been initialized
+2023-03-01 17:41:11 TRACE ContextListener:43 - Log4J initialization finished
+2023-03-01 17:41:11 TRACE ContextListener:26 - Servlet context initialization finished
+2023-03-01 17:41:15 INFO  EncodingFilter:35 - Filter initialization starts
+2023-03-01 17:41:15 INFO  EncodingFilter:41 - Filter initialization finished
+2023-03-01 17:41:16 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 17:41:16 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 17:41:16 TRACE Controller:52 - *****************GET*****************
+2023-03-01 17:41:16 DEBUG Controller:59 - Controller starts
+2023-03-01 17:41:17 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 17:41:17 DEBUG CommandFactory:65 - Command factory was successfully initialized
+2023-03-01 17:41:17 TRACE CommandFactory:66 - Number of commands --> 5
+2023-03-01 17:41:17 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 17:41:17 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 17:41:17 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 17:41:17 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 17:41:28 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 17:41:28 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 17:41:28 TRACE Controller:52 - *****************GET*****************
+2023-03-01 17:41:28 DEBUG Controller:59 - Controller starts
+2023-03-01 17:41:28 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 17:41:28 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 17:41:28 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 17:41:28 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 17:41:28 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 17:41:53 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 17:41:53 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 17:41:53 TRACE Controller:52 - *****************GET*****************
+2023-03-01 17:41:53 DEBUG Controller:59 - Controller starts
+2023-03-01 17:41:53 TRACE Controller:62 - Request parameter: command --> register-page
+2023-03-01 17:41:53 TRACE Controller:65 - Obtained command --> GoRegisterCommand
+2023-03-01 17:41:53 TRACE GoRegisterCommand:20 - Start tracing GetCommand
+2023-03-01 17:41:53 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 17:41:53 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/register.jsp
+2023-03-01 17:42:13 INFO  EncodingFilter:24 - Filter starts
+2023-03-01 17:42:13 INFO  EncodingFilter:30 - Filter finished
+2023-03-01 17:42:13 TRACE Controller:52 - *****************GET*****************
+2023-03-01 17:42:13 DEBUG Controller:59 - Controller starts
+2023-03-01 17:42:13 TRACE Controller:62 - Request parameter: command --> login-page
+2023-03-01 17:42:13 TRACE Controller:65 - Obtained command --> GoLoginCommand
+2023-03-01 17:42:13 TRACE GoLoginCommand:20 - Start tracing GetCommand
+2023-03-01 17:42:13 TRACE Controller:31 - Forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 17:42:13 DEBUG Controller:32 - Controller finished, now navigation to forward address --> /WEB-INF/jsp/authentication/login.jsp
+2023-03-01 20:15:54 TRACE EncodingFilter:18 - =========================================================================
+2023-03-01 20:15:54 INFO  EncodingFilter:19 - Filter destruction starts
+2023-03-01 20:15:54 INFO  EncodingFilter:20 - Filter destruction finished
+2023-03-01 20:15:54 TRACE ContextListener:30 - Servlet context destruction starts
+2023-03-01 20:15:54 TRACE ContextListener:31 - Servlet context destruction finished
+2023-03-01 20:15:54 TRACE AppContextListener:50 - Servlet appContext destruction starts
+2023-03-01 20:15:54 TRACE AppContextListener:51 - Servlet appContext destruction finished

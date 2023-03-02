@@ -6,11 +6,11 @@ import com.epam.payments.command.result.CommandResult;
 import com.epam.payments.command.result.ForwardResult;
 import com.epam.payments.command.result.RedirectResult;
 import com.epam.payments.command.result.View;
+import com.epam.payments.core.utils.ServletUtils;
 import com.epam.payments.exeption.InternalServerException;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -18,8 +18,8 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.epam.payments.command.constant.ParamNames.COMMAND;
 
-@WebServlet(name = "Controller")
 public class Controller extends HttpServlet {
 
     private static final Logger LOG = Logger.getLogger(Controller.class);
@@ -55,21 +55,19 @@ public class Controller extends HttpServlet {
 
     private void process(HttpServletRequest request,
                          HttpServletResponse response) throws ServletException, IOException {
-        LOG.debug("Controller starts");
-
-        String commandName = request.getParameter("command").trim();
-        LOG.trace("Request parameter: command --> " + commandName);
-
-        Command command = CommandFactory.get(commandName);
-        LOG.trace("Obtained command --> " + command);
-
-        CommandResult commandResult = new ForwardResult("?command=goErrorCommand");
         try {
-            commandResult = command.execute(request, response);
+            LOG.debug("Controller starts");
+
+            String commandName = ServletUtils.getStringParameter(request, COMMAND);
+            LOG.trace("Request parameter: command --> " + commandName);
+
+            Command command = CommandFactory.get(commandName);
+            LOG.trace("Obtained command --> " + command);
+
+            CommandResult commandResult = command.execute(request, response);
+            views.get(commandResult.getClass()).render(commandResult, request, response);
         } catch (InternalServerException ex) {
             throw new ServletException(ex.getMessage(), ex);
         }
-
-        views.get(commandResult.getClass()).render(commandResult, request, response);
     }
 }

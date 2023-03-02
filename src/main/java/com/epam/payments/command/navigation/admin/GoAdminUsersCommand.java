@@ -14,6 +14,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
+import static com.epam.payments.command.constant.ParamNames.*;
+import static com.epam.payments.command.constant.SortConstants.*;
+import static com.epam.payments.command.constant.WebPathConstants.ADMIN_USERS_PATH;
+
 
 public class GoAdminUsersCommand extends Command {
     public static final Logger LOG = Logger.getLogger(GoAdminUsersCommand.class);

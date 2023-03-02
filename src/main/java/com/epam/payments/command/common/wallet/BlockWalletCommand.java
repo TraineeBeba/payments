@@ -40,8 +40,8 @@ public class BlockWalletCommand extends Command {
 //        currWallet.setState_id(BLOCKED.getId());
 //        session.setAttribute("currWallet", currWallet);
 
-        redirect = new RedirectResult(USER_WALLETS_URL);
-
-        return redirect;
+//        redirect = new RedirectResult(USER_WALLETS_URL);
+        return new RedirectResult("USER_WALLETS_URL");
+//        return redirect;
     }
 }

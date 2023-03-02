@@ -46,12 +46,6 @@ public class AppContextManager implements DatabaseConstants {
             throw new AppContextCreationException(e.getMessage(), e);
         }
 
-//        catch (UnsupportedContextFactoryException e) {
-//            throw new AppContextInitializationException("Error creating app context: " + e.getMessage(), e);
-//        } catch (AppContextCreationException e) {
-//            throw new AppContextInitializationException("Error creating app context: " + e.getMessage(), e);
-//        }
-
         return currentAppContext;
     }
 }

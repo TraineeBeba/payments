@@ -49,22 +49,22 @@ public class MySqlAppContext extends AppContext {
     }
 
     @Override
-    public UserService getUserService() {
+    protected UserService getUserService() {
         return this.userService;
     }
 
     @Override
-    public WalletService getWalletService() {
+    protected WalletService getWalletService() {
         return walletService;
     }
 
     @Override
-    public TransferService getTransferService() {
+    protected TransferService getTransferService() {
         return transferService;
     }
 
     @Override
-    public WalletRequestService getWalletRequestService() {
+    protected WalletRequestService getWalletRequestService() {
         return walletRequestService;
     }
 }

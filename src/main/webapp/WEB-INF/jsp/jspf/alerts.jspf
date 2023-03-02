@@ -1,104 +1,102 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="n" uri="/WEB-INF/tld/namespace.tld" %>
-<%@ taglib prefix="i18n" uri="/WEB-INF/tld/locale.tld" %>
+<%@ page import="com.epam.payments.command.constant.ParamNames"%>
 
-
-<c:if test="${sessionScope.registerSuccess eq true}">
+<c:if test="${sessionScope[ParameterNames.REGISTER_SUCCESS] eq true}">
     <div class="alertSuccess">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
         <strong><i18n:Locale value="alertWarning.alert"/></strong>
         <text> <i18n:Locale value="alertWarning.sucess.register"/> </text>
         <text> <br><i18n:Locale value="alertWarning.emodji"/></text>
     </div>
-    <c:remove var="registerSuccess" scope="session" />
+    <c:remove var="${ParameterNames.REGISTER_SUCCESS}" scope="session" />
 </c:if>
 
-<c:if test="${sessionScope.walletCreationSuccess eq true}">
+<c:if test="${sessionScope[ParameterNames.WALLET_CREATION_SUCCESS] eq true}">
     <div class="alertSuccess">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
         <strong><i18n:Locale value="alertWarning.alert"/></strong>
         <text> <i18n:Locale value="alertWarning.sucess.walletCreation"/> </text>
         <text> <br><i18n:Locale value="alertWarning.emodji"/></text>
     </div>
-    <c:remove var="walletCreationSuccess" scope="session" />
+    <c:remove var="${ParameterNames.WALLET_CREATION_SUCCESS}" scope="session" />
 </c:if>
 
-<c:if test="${not empty sessionScope.transferSuccess eq true}">
+<c:if test="${not empty sessionScope[ParameterNames.TRANSFER_SUCCESS] eq true}">
     <div class="alertSuccess">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
         <strong><i18n:Locale value="alertWarning.alert"/></strong>
         <text> <i18n:Locale value="alertWarning.sucess.transfer"/> </text>
         <text> <br><i18n:Locale value="alertWarning.emodji"/></text>
     </div>
-    <c:remove var="transferSuccess" scope="session" />
+    <c:remove var="${ParameterNames.TRANSFER_SUCCESS}" scope="session" />
 </c:if>
 
-<c:if test="${not empty sessionScope.blockWalletSuccess eq true}">
+<c:if test="${not empty sessionScope[ParameterNames.BLOCK_WALLET_SUCCESS] eq true}">
     <div class="alertSuccess">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
         <strong><i18n:Locale value="alertWarning.alert"/></strong>
         <text> <i18n:Locale value="alertWarning.block-wallet"/> </text>
         <text> <br><i18n:Locale value="alertWarning.emodji"/></text>
     </div>
-    <c:remove var="blockWalletSuccess" scope="session" />
+    <c:remove var="${ParameterNames.BLOCK_WALLET_SUCCESS}" scope="session" />
 </c:if>
 
-<c:if test="${not empty sessionScope.unblockWalletSuccess eq true}">
+<c:if test="${not empty sessionScope[ParameterNames.UNBLOCK_WALLET_SUCCESS] eq true}">
     <div class="alertSuccess">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
         <strong><i18n:Locale value="alertWarning.alert"/></strong>
         <text> <i18n:Locale value="alertWarning.unblock-wallet"/> </text>
         <text> <br><i18n:Locale value="alertWarning.emodji"/></text>
     </div>
-    <c:remove var="unblockWalletSuccess" scope="session" />
+    <c:remove var="${ParameterNames.UNBLOCK_WALLET_SUCCESS}" scope="session" />
 </c:if>
 
-<c:if test="${not empty sessionScope.requestCreationSuccess eq true}">
+<c:if test="${not empty sessionScope[ParameterNames.REQUEST_CREATION_SUCCESS] eq true}">
     <div class="alertSuccess">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
         <strong><i18n:Locale value="alertWarning.alert"/></strong>
         <text> <i18n:Locale value="alertWarning.request-creation"/> </text>
         <text> <br><i18n:Locale value="alertWarning.emodji"/></text>
     </div>
-    <c:remove var="requestCreationSuccess" scope="session" />
+    <c:remove var="${ParameterNames.REQUEST_CREATION_SUCCESS}" scope="session" />
 </c:if>
 
-<c:if test="${not empty sessionScope.logout eq true}">
+<c:if test="${not empty sessionScope[ParameterNames.LOGOUT] eq true}">
     <div class="alertWarning">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
         <strong><i18n:Locale value="alertWarning.alert"/></strong>
         <text> <i18n:Locale value="alertWarning.logout"/> </text>
         <text> <br><i18n:Locale value="alertWarning.emodji"/></text>
     </div>
-    <c:remove var="logout" scope="session" />
+    <c:remove var="${ParameterNames.LOGOUT}" scope="session" />
 </c:if>
 
-<c:if test="${not empty sessionScope.cancelTransfer eq true}">
+<c:if test="${not empty sessionScope[ParameterNames.CANCEL_TRANSFER] eq true}">
     <div class="alertWarning">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
         <strong><i18n:Locale value="alertWarning.alert"/></strong>
         <text> <i18n:Locale value="alertWarning.cancelTransfer"/> </text>
         <text> <br><i18n:Locale value="alertWarning.emodji"/></text>
     </div>
-    <c:remove var="cancelTransfer" scope="session" />
+    <c:remove var="${ParameterNames.CANCEL_TRANSFER}" scope="session" />
 </c:if>
 
-<c:if test="${not empty sessionScope.requestExist eq true}">
+<c:if test="${not empty sessionScope[ParameterNames.REQUEST_EXIST] eq true}">
     <div class="alertWarning">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
         <strong><i18n:Locale value="alertWarning.alert"/></strong>
         <text> <i18n:Locale value="alertWarning.request-exist"/> </text>
         <text> <br><i18n:Locale value="alertWarning.emodji"/></text>
     </div>
-    <c:remove var="requestExist" scope="session" />
+    <c:remove var="${ParameterNames.REQUEST_EXIST}" scope="session" />
 </c:if>
 
-<c:if test="${not empty sessionScope.wrongData}">
+<c:if test="${not empty sessionScope[ParameterNames.WRONG_DATA]}">
     <div class="alertError">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-        <strong><i18n:Locale value="alertError.error"/></strong> <text> <%--<i18n:Locale value="${sessionScope.wrongData}"--%> ${sessionScope.wrongData} /> </text>
+        <strong><i18n:Locale value="alertError.error"/></strong> <text> <i18n:Locale value="${sessionScope[ParameterNames.WRONG_DATA]}"/> </text>
         <text> <br><i18n:Locale value="alertError.emodji"/></text>
     </div>
-    <c:remove var="wrongData" scope="session" />
+    <c:remove var= "${ParameterNames.WRONG_DATA}" scope="session" />
 </c:if>

@@ -23,7 +23,8 @@ public class SendTransferCommand extends Command {
         LOG.trace("Start tracing SendTransferCommand");
 
         HttpSession session = request.getSession();
-        CommandResult redirect = new RedirectResult(USER_WALLETS_URL);
+//        CommandResult redirect = new RedirectResult(USER_WALLETS_URL);
+        return new RedirectResult("USER_WALLETS_URL");
 //        TransferEntity transferEntity = (TransferEntity) session.getAttribute(TRANSFER_ENTITY);
 //
 //        if(transferEntity != null) {
@@ -44,7 +45,7 @@ public class SendTransferCommand extends Command {
 //            }
 //        }
 
-        return redirect;
+//        return redirect;
     }
 }
 

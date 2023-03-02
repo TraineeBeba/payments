@@ -14,17 +14,22 @@
         <servlet-class>com.epam.payments.Controller</servlet-class>
     </servlet>
 
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>Controller</servlet-name>-->
+<!--        <url-pattern>${WebUrlConstants.CONTROLLER_URL}</url-pattern>-->
+<!--    </servlet-mapping>-->
+
     <servlet-mapping>
         <servlet-name>Controller</servlet-name>
         <url-pattern>/controller</url-pattern>
     </servlet-mapping>
 
-    <resource-ref>
-        <description>DB Connection</description>
-        <res-ref-name>jdbc/payments</res-ref-name>
-        <res-type>javax.sql.DataSource</res-type>
-        <res-auth>Container</res-auth>
-    </resource-ref>
+<!--    <resource-ref>-->
+<!--        <description>DB Connection</description>-->
+<!--        <res-ref-name>jdbc/payments</res-ref-name>-->
+<!--        <res-type>javax.sql.DataSource</res-type>-->
+<!--        <res-auth>Container</res-auth>-->
+<!--    </resource-ref>-->
 
     <listener>
         <listener-class>com.epam.payments.appcontext.AppContextListener</listener-class>
@@ -39,30 +44,30 @@
         </init-param>
     </filter>
 
-    <filter>
-        <filter-name>CommandAccessFilter</filter-name>
-        <filter-class>com.epam.payments.filter.CommandAccessFilter</filter-class>
+<!--    <filter>-->
+<!--        <filter-name>CommandAccessFilter</filter-name>-->
+<!--        <filter-class>com.epam.payments.filter.CommandAccessFilter</filter-class>-->
 
-        <init-param>
-<!--            goCommand-->
-            <param-name>out-of-control</param-name><!--goUserCommand-->
-            <param-value> languageCommand loginCommand registerCommand logoutCommand goRegisterCommand goLoginCommand</param-value>
-        </init-param>
+<!--        <init-param>-->
+<!--&lt;!&ndash;            goCommand&ndash;&gt;-->
+<!--            <param-name>out-of-control</param-name>&lt;!&ndash;goUserCommand&ndash;&gt;-->
+<!--            <param-value> languageCommand loginCommand registerCommand logoutCommand goRegisterCommand goLoginCommand</param-value>-->
+<!--        </init-param>-->
 
-        <init-param>
-            <param-name>common </param-name> <!--goCommand--> <!--unblockWalletCommand-->
-            <param-value> blockWalletCommand sortTransfersCommand sortWalletsCommand</param-value>
-        </init-param>
-        <init-param>
-            <param-name>user</param-name>
-            <param-value> create-WalletCommand prepareTransferCommand sendTransferCommand cancelTransferCommand goUser-WalletsCommand goWallet-DetailsCommand goUser-Create-WalletCommand goUser-Prepare-TransferCommand goUser-Send-TransferCommand </param-value>
-        </init-param>
-        <init-param>
-            <param-name>admin</param-name>
-            <param-value> unblockUserCommand blockUserCommand unblockWalletCommand goWallet-DetailsCommand goAdmin-User-DetailsCommand goAdmin-UsersCommand</param-value>
-        </init-param>
+<!--        <init-param>-->
+<!--            <param-name>common </param-name> &lt;!&ndash;goCommand&ndash;&gt; &lt;!&ndash;unblockWalletCommand&ndash;&gt;-->
+<!--            <param-value> blockWalletCommand sortTransfersCommand sortWalletsCommand</param-value>-->
+<!--        </init-param>-->
+<!--        <init-param>-->
+<!--            <param-name>user</param-name>-->
+<!--            <param-value> create-WalletCommand prepareTransferCommand sendTransferCommand cancelTransferCommand goUser-WalletsCommand goWallet-DetailsCommand goUser-Create-WalletCommand goUser-Prepare-TransferCommand goUser-Send-TransferCommand </param-value>-->
+<!--        </init-param>-->
+<!--        <init-param>-->
+<!--            <param-name>admin</param-name>-->
+<!--            <param-value> unblockUserCommand blockUserCommand unblockWalletCommand goWallet-DetailsCommand goAdmin-User-DetailsCommand goAdmin-UsersCommand</param-value>-->
+<!--        </init-param>-->
 
-    </filter>
+<!--    </filter>-->
 
     <filter-mapping>
         <filter-name>EncodingFilter</filter-name>
@@ -75,7 +80,15 @@
 <!--        <servlet-name>Controller</servlet-name>-->
 <!--    </filter-mapping>-->
 
+<!--    <welcome-file-list>-->
+<!--        <welcome-file>${WebUrlConstants.GO_LOGIN_PAGE_URL}</welcome-file>-->
+<!--    </welcome-file-list>-->
     <welcome-file-list>
-        <welcome-file>controller?command=goLoginCommand</welcome-file>
+        <welcome-file>/controller?command=login-page</welcome-file>
     </welcome-file-list>
+
+<!--    <error-page>-->
+<!--        <exception-type>java.lang.Throwable</exception-type>-->
+<!--        <location>/error.jsp</location>-->
+<!--    </error-page>-->
 </web-app>

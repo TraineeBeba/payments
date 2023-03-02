@@ -49,8 +49,8 @@ public class WalletRequestCommand extends Command {
 //
 //        }
 
-        redirect = new RedirectResult(USER_WALLETS_URL);
-
-        return redirect;
+//        redirect = new RedirectResult(USER_WALLETS_URL);
+        return new RedirectResult("USER_WALLETS_URL");
+//        return redirect;
     }
 }

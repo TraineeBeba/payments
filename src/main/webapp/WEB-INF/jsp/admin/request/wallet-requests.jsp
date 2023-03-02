@@ -1,8 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="i18n" uri="/WEB-INF/tld/locale.tld" %>
-<%@ taglib prefix="n" uri="/WEB-INF/tld/namespace.tld" %>
-<%@ taglib prefix="load-users" uri="/WEB-INF/tld/load-users.tld" %>
 
 <html class="h-100">
 

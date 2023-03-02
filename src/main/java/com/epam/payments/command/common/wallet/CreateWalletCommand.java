@@ -17,6 +17,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.math.BigDecimal;
 
+import static com.epam.payments.command.constant.ParamNames.USER_ENTITY;
 import static com.epam.payments.core.model.enums.state.WalletState.UNBLOCKED;
 
 
