@@ -1,12 +1,10 @@
-package com.epam.payments.command.navigation.admin;
+package com.epam.payments.command.navigation.admin.user;
 
 import com.epam.payments.command.Command;
 import com.epam.payments.command.result.CommandResult;
 import com.epam.payments.command.result.ForwardResult;
 import com.epam.payments.core.model.dto.UserDTO;
-import com.epam.payments.core.model.entity.UserEntity;
 import com.epam.payments.core.service.user.UserService;
-import com.epam.payments.core.service.wallet.WalletService;
 import com.epam.payments.core.utils.ServletUtils;
 import com.epam.payments.core.utils.exeption.ParameterNotFoundException;
 import com.epam.payments.exeption.InternalServerException;

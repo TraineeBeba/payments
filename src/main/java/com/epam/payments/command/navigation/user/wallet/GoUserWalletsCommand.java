@@ -41,24 +41,7 @@ public class GoUserWalletsCommand extends Command {
         List<WalletDTO> wallets = walletService.getSortedListByUserDTO(userDTO, walletSort);
 
         request.setAttribute(WALLETS, wallets);
-        session.setAttribute(WALLET_SORT, walletSort);
 
         return new ForwardResult(USER_WALLETS_PATH);
     }
-
-//    private UserEntity getUserEntity(HttpServletRequest request, HttpSession session) {
-//        UserEntity userEntity;
-//        if(request.getParameter(SELECTED_USER_NAME) != null) {
-//            String userName = request.getParameter(SELECTED_USER_NAME);
-////            userEntity = userService.findByUsername(userName);
-//
-////            session.setAttribute(SELECTED_USER, userEntity);
-//        } else if (session.getAttribute(SELECTED_USER) != null){
-//            userEntity = (UserEntity) session.getAttribute(SELECTED_USER);
-//        } else {
-//            userEntity = (UserEntity) session.getAttribute(USER_ENTITY);
-//        }
-//
-//        return userEntity;
-//    }
 }

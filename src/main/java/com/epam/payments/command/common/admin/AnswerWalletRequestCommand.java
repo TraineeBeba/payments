@@ -1,4 +1,4 @@
-package com.epam.payments.command.common.user.wallet;
+package com.epam.payments.command.common.admin;
 
 import com.epam.payments.command.Command;
 import com.epam.payments.command.result.CommandResult;

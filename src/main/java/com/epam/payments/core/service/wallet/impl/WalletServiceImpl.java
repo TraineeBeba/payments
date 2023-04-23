@@ -88,9 +88,9 @@ public class WalletServiceImpl extends AbstractWallet implements WalletService {
     }
 
     @Override
-    public WalletDTO getWalletByBill(int bill_number) throws WalletNotFoundException{
-        WalletEntity walletEntity = getWalletEntityByBill(bill_number);
-        return WalletMapper.INSTANCE.toDTO(walletEntity);
+    public WalletEntity getWalletByBill(int bill_number) throws WalletNotFoundException{
+
+        return getWalletEntityByBill(bill_number);
     }
 
     private WalletEntity getWalletEntityByBill(int bill_number) throws WalletNotFoundException {

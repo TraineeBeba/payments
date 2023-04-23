@@ -38,7 +38,7 @@ public class MySQLWalletDAOImpl implements WalletDAO, WalletQuery {
         WalletEntity walletEntity = null;
 //        try (Connection connection = connectionPool.getConnection()) {
 //            if (connection != null) {
-//                try (PreparedStatement statement = connection.prepareStatement(Query.SELECT_WALLET_BY_ID)) {
+//                try (PreparedStatement statement = connection.prepareStatement(WalletRequestQuery.SELECT_WALLET_BY_ID)) {
 //                    connection.setAutoCommit(false);
 //                    statement.setLong(1, id);
 //                    statement.execute();

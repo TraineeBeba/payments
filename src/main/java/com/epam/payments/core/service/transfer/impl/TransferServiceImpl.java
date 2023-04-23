@@ -9,6 +9,7 @@ import com.epam.payments.core.model.enums.state.WalletState;
 import com.epam.payments.core.model.enums.status.TransferStatus;
 import com.epam.payments.core.model.mapper.TransferMapper;
 import com.epam.payments.core.model.mapper.UserMapper;
+import com.epam.payments.core.model.mapper.WalletMapper;
 import com.epam.payments.core.service.transfer.exception.PrepareTransferException;
 import com.epam.payments.core.service.transfer.exception.SendTransferException;
 import com.epam.payments.core.service.transfer.exception.ValidTransferException;
@@ -33,8 +34,8 @@ public class TransferServiceImpl implements TransferService {
     @Override
     public TransferDTO prepareTransfer(WalletService walletService, int senderBillNumber, int recipientBillNumber, BigDecimal sum) throws PrepareTransferException {
         try {
-            WalletDTO senderWallet = walletService.getWalletByBill(senderBillNumber);
-            WalletDTO recipientWallet = walletService.getWalletByBill(recipientBillNumber);
+            WalletDTO senderWallet = WalletMapper.INSTANCE.toDTO(walletService.getWalletByBill(senderBillNumber));
+            WalletDTO recipientWallet = WalletMapper.INSTANCE.toDTO(walletService.getWalletByBill(recipientBillNumber));
 
             isValidTransfer(senderWallet, recipientWallet, sum);
         } catch (WalletNotFoundException | ValidTransferException e) {

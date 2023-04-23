@@ -61,8 +61,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void blockUser(Long userId) throws UserNotFoundException {
-        Optional<UserEntity> optionalUser = Optional.of(userDAO.findById(userId));
+    public void blockUser(String username) throws UserNotFoundException {
+        Optional<UserEntity> optionalUser = Optional.of(userDAO.findByUsername(username));
         UserEntity userEntity = optionalUser.orElseThrow(() ->new UserNotFoundException("щось там"));
         userEntity.setState(BLOCKED);
 
@@ -70,8 +70,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void unblockUser(Long userId) throws UserNotFoundException{
-        Optional<UserEntity> optionalUser = Optional.of(userDAO.findById(userId));
+    public void unblockUser(String username) throws UserNotFoundException{
+        Optional<UserEntity> optionalUser = Optional.of(userDAO.findByUsername(username));
         UserEntity userEntity = optionalUser.orElseThrow(() ->new UserNotFoundException("щось там"));
         userEntity.setState(UNBLOCKED);
 
@@ -136,8 +136,11 @@ public class UserServiceImpl implements UserService {
         userDAO.update(entity);
     }
 
-    public UserEntity findByUsername(String username) {
-        return userDAO.findByUsername(username);
+    @Override
+    public UserDTO findByUsername(String username) throws UserNotFoundException {
+        Optional<UserEntity> optionalUser = Optional.of(userDAO.findByUsername(username));
+        UserEntity userEntity = optionalUser.orElseThrow(() ->new UserNotFoundException("щось там"));
+        return UserMapper.INSTANCE.toDTO(userEntity);
     }
 
     public List<UserDTO> getSortedList(String userSort, int offset, int recordsPerPage)  {

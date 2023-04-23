@@ -1,16 +1,19 @@
 package com.epam.payments.command;
 
+import com.epam.payments.command.common.admin.AdminBlockWalletCommand;
+import com.epam.payments.command.common.admin.AdminUnblockWalletCommand;
+import com.epam.payments.command.common.admin.BlockUserCommand;
+import com.epam.payments.command.common.admin.UnblockUserCommand;
 import com.epam.payments.command.common.authentication.LoginCommand;
 import com.epam.payments.command.common.authentication.LogoutCommand;
 import com.epam.payments.command.common.authentication.RegisterCommand;
 import com.epam.payments.command.common.user.transfer.CancelTransferCommand;
 import com.epam.payments.command.common.user.transfer.PrepareTransferCommand;
 import com.epam.payments.command.common.user.transfer.SendTransferCommand;
-import com.epam.payments.command.common.user.wallet.BlockWalletCommand;
-import com.epam.payments.command.common.user.wallet.CreateWalletCommand;
-import com.epam.payments.command.common.user.wallet.TopUpBalanceCommand;
-import com.epam.payments.command.common.user.wallet.UnblockWalletCommand;
-import com.epam.payments.command.navigation.admin.GoAdminUsersCommand;
+import com.epam.payments.command.common.user.wallet.*;
+import com.epam.payments.command.navigation.admin.user.GoAdminUsersCommand;
+import com.epam.payments.command.navigation.admin.user.wallet.GoAdminUserWalletsCommand;
+import com.epam.payments.command.navigation.admin.user.wallet.GoAdminWalletDetailsCommand;
 import com.epam.payments.command.navigation.authentication.GoLoginCommand;
 import com.epam.payments.command.navigation.authentication.GoRegisterCommand;
 import com.epam.payments.command.i18n.LanguageCommand;
@@ -48,6 +51,11 @@ public class CommandFactory {
         commands.put(PREPARE_TRANSFER, new PrepareTransferCommand());
         commands.put(SEND_TRANSFER, new SendTransferCommand());
         commands.put(CANCEL_TRANSFER, new CancelTransferCommand());
+        commands.put(WALLET_REQUEST, new WalletRequestCommand());
+        commands.put(BLOCK_USER, new BlockUserCommand());
+        commands.put(UNBLOCK_USER, new UnblockUserCommand());
+        commands.put(ADMIN_UNBLOCK_WALLET, new AdminUnblockWalletCommand());
+        commands.put(ADMIN_BLOCK_WALLET, new AdminBlockWalletCommand());
 
         commands.put(GO_LOGIN_PAGE, new GoLoginCommand());
         commands.put(GO_REGISTER_PAGE, new GoRegisterCommand());
@@ -58,6 +66,8 @@ public class CommandFactory {
         commands.put(GO_PREPARE_TRANSFER_PAGE, new GoPrepareTransferCommand());
         commands.put(GO_SEND_TRANSFER_PAGE, new GoSendTransferCommand());
         commands.put(GO_ADMIN_USERS_PAGE, new GoAdminUsersCommand());
+        commands.put(GO_ADMIN_USER_WALLETS_PAGE, new GoAdminUserWalletsCommand());
+        commands.put(GO_ADMIN_WALLET_DETAILS_PAGE, new GoAdminWalletDetailsCommand());
 
         LOG.debug("Command factory was successfully initialized");
         LOG.trace("Number of commands --> " + commands.size());

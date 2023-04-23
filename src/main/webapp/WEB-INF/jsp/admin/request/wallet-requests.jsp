@@ -4,18 +4,18 @@
 <html class="h-100">
 
 <head>
-	<%@ include file="/WEB-INF/jspf/head.jspf" %>
+	<%@ include file="/WEB-INF/jsp/jspf/head.jspf" %>
 </head>
 
 <body class="h-100 text-white bg-dark">
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
 	<header class="mb-15">
-		<%@ include file="/WEB-INF/jspf/header.jspf" %>
+		<%@ include file="/WEB-INF/jsp/jspf/header.jspf" %>
 	</header>
 
 	<main class="px-3">
-		<%@ include file="/WEB-INF/jspf/alerts.jspf" %>
+		<%@ include file="/WEB-INF/jsp/jspf/alerts.jspf" %>
 
 		<div class="сinemas p-3">
 <%--			<h3> <my:Locale value="page.user.title"/> </h3>--%>

@@ -1,13 +1,10 @@
 package com.epam.payments.core.database.dao.mysql;
 
-import com.epam.payments.core.database.dao.mysql.query.Query;
 import com.epam.payments.core.database.dao.mysql.query.UserQuery;
-import com.epam.payments.core.database.mapper.RowMapper;
 import com.epam.payments.core.database.mapper.UserEntityRowMapper;
 import com.epam.payments.core.database.pool.ConnectionPool;
 import com.epam.payments.core.model.entity.UserEntity;
 import com.epam.payments.core.database.dao.UserDAO;
-import com.epam.payments.core.model.enums.role.Role;
 import com.epam.payments.core.model.enums.state.UserState;
 import org.apache.log4j.Logger;
 
@@ -60,6 +57,7 @@ public class MySQLUserDAOImpl implements UserDAO, UserQuery {
                     statement1.setLong(++ind, userEntity.getState().getId());
                     statement1.setString(++ind, userEntity.getUsername());
                     statement1.setString(++ind, userEntity.getPassword());
+                    statement1.setLong(++ind, userEntity.getId());
                     statement1.executeUpdate();
                 } catch (SQLException e) {
                     LOG.error(e.getLocalizedMessage());

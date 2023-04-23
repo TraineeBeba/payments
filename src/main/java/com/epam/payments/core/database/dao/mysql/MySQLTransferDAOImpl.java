@@ -1,9 +1,7 @@
 package com.epam.payments.core.database.dao.mysql;
 
-import com.epam.payments.core.database.dao.mysql.query.Query;
 import com.epam.payments.core.database.dao.mysql.query.TransferQuery;
 import com.epam.payments.core.database.mapper.TransferEntityRowMapper;
-import com.epam.payments.core.database.mapper.UserEntityRowMapper;
 import com.epam.payments.core.database.pool.ConnectionPool;
 import com.epam.payments.core.model.entity.TransferEntity;
 import com.epam.payments.core.model.enums.status.TransferStatus;

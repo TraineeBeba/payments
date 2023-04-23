@@ -39,13 +39,25 @@ public class PostgreWalletRequestDAOImpl implements WalletRequestDAO, Queries {
     }
 
     @Override
-    public boolean existsByWalletIdAndStatusID(Long walletId, Long status_id) {
+    public boolean existsByWalletIdAndStatus(Long walletId, RequestStatus requestStatus) {
         // Waiting for you to implement it :)
         return false;
     }
 
     @Override
     public List<WalletRequestEntity> getSortedList(String walletRequestSort, int offset, int noOfRecords, RequestStatus status) {
+        // Waiting for you to implement it :)
+        return null;
+    }
+
+    @Override
+    public int getNoOfRecords() {
+        // Waiting for you to implement it :)
+        return 0;
+    }
+
+    @Override
+    public WalletRequestEntity findByWalletIDandRequestStatus(Long walletId, RequestStatus requestStatus) {
         // Waiting for you to implement it :)
         return null;
     }

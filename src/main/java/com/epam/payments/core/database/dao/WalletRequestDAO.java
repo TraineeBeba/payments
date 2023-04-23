@@ -7,9 +7,11 @@ import java.util.List;
 
 public interface WalletRequestDAO extends DAO<WalletRequestEntity> {
 
-    boolean existsByWalletIdAndStatusID(Long walletId, Long status_id);
+    boolean existsByWalletIdAndStatus(Long walletId, RequestStatus requestStatus);
 
     List<WalletRequestEntity> getSortedList(String walletRequestSort, int offset, int recordsPerPage, RequestStatus status);
 
+    int getNoOfRecords();
 
+    WalletRequestEntity findByWalletIDandRequestStatus(Long walletId, RequestStatus requestStatus);
 }

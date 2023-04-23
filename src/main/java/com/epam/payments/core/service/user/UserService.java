@@ -13,10 +13,11 @@ import java.util.List;
 public interface UserService extends Service {
     UserDTO authenticateUser(String username, String password) throws AuthenticationException, UserValidationException;
     void registerUser(String username, String password) throws RegistrationException, UserValidationException;
-    void blockUser(Long userId) throws UserNotFoundException;
-    void unblockUser(Long userId) throws UserNotFoundException;
-
+    void blockUser(String username) throws UserNotFoundException;
+    void unblockUser(String username) throws UserNotFoundException;
     List<UserDTO> getSortedList(String userSort, int offset, int recordsPerPage);
+
+    UserDTO findByUsername(String username) throws UserNotFoundException;
 
     int getNoOfRecords();
 }

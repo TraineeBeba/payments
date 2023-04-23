@@ -14,8 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import static com.epam.payments.command.constant.ParamNames.*;
-import static com.epam.payments.command.constant.WebUrlConstants.GO_CREATE_WALLET_PAGE_URL;
-import static com.epam.payments.command.constant.WebUrlConstants.GO_USER_WALLETS_PAGE_URL;
+import static com.epam.payments.command.constant.WebUrlConstants.*;
 
 public class BlockWalletCommand extends Command {
     private static final Logger LOG = Logger.getLogger(BlockWalletCommand.class);
@@ -37,7 +36,7 @@ public class BlockWalletCommand extends Command {
             redirect = new RedirectResult(GO_USER_WALLETS_PAGE_URL);
         } catch (WalletNotFoundException e){
             session.setAttribute(WRONG_DATA, e.getMessage());
-            redirect = new RedirectResult(GO_CREATE_WALLET_PAGE_URL);
+            redirect = new RedirectResult(GO_USER_WALLETS_PAGE_URL);
         }
 
         return redirect;

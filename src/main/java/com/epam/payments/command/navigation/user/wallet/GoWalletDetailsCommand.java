@@ -6,6 +6,7 @@ import com.epam.payments.command.result.ForwardResult;
 import com.epam.payments.command.result.RedirectResult;
 import com.epam.payments.core.model.dto.TransferDTO;
 import com.epam.payments.core.model.dto.WalletDTO;
+import com.epam.payments.core.model.mapper.WalletMapper;
 import com.epam.payments.core.service.transfer.TransferService;
 import com.epam.payments.core.service.wallet.MaxBalanceException;
 import com.epam.payments.core.service.wallet.WalletNotFoundException;
@@ -46,7 +47,7 @@ public class GoWalletDetailsCommand extends Command {
         int bill_number = ServletUtils.getIntParameter(request, BILL_NUMBER);
 
         try {
-            WalletDTO currWallet = walletService.getWalletByBill(bill_number);
+            WalletDTO currWallet =  WalletMapper.INSTANCE.toDTO(walletService.getWalletByBill(bill_number));
             int page = getPage(request);
             String transferSort = getTransferSort(request);
             int offset = (page - 1) * DEFAULT_RECORDS_PER_PAGE;

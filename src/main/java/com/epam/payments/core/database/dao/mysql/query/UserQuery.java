@@ -16,7 +16,7 @@ public interface UserQuery {
     String SELECT_SORTED_USERS = "SELECT SQL_CALC_FOUND_ROWS * FROM user ORDER BY <sortParam> LIMIT <offsetParam>,<noOfRecordsParam>";
     String SELECT_USER_BY_NAME              = "SELECT * FROM `" + USER_TABLE + "` WHERE user.username = ? ";
 
-    String UPDATE_USER                      = "UPDATE user SET SET user.role_id=?, user.state_id=?, user.username=?, user.password=? WHERE user.id=?\"";
+    String UPDATE_USER                      = "UPDATE user SET user.role_id=?, user.state_id=?, user.username=?, user.password=? WHERE user.id=?";
 
     String EXISTS_USER_BY_NAME              = "SELECT EXISTS (SELECT * FROM `" + USER_TABLE + "` WHERE `" + USERNAME + "` = ?) AS `" + EXISTS + "`";
     String EXISTS_USER_BY_NAME_AND_PASSWORD = "SELECT EXISTS (SELECT * FROM user WHERE user.username = ? AND user.password = ?) AS `" + EXISTS + "`";

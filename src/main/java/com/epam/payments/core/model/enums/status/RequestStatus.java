@@ -9,7 +9,7 @@ public enum RequestStatus {
         this.id = id;
     }
 
-    public static RequestStatus getAnswerType(Long id) {
+    public static RequestStatus getRequestStatus(Long id) {
         return RequestStatus.values()[id.intValue() - 1];
     }
 

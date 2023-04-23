@@ -33,23 +33,6 @@
 		<div>
 			<h4><fmt:message key="actions"/></h4>
 			<c:choose>
-<%--				<c:when test="${requestScope.currWallet.getState() eq 'blocked'  and sessionScope.userDTO.getRole() eq 'role_admin'}">--%>
-<%--					<form action="<n:Namespace value="controller.name"/>" method="post">--%>
-<%--						<input type="hidden" name="command" value="<n:Namespace value="command.unblock-wallet"/>">--%>
-<%--						<input type="hidden" name="walletId" value="${requestScope.currWallet.getId()}">--%>
-
-<%--						<a class="pr-2" href='#' onclick='this.parentNode.submit();'>Розблокувати</a>--%>
-<%--					</form>--%>
-<%--				</c:when>--%>
-				<c:when test="${currWallet.getState().getName() eq 'blocked'  and userDTO.getRole().getName() eq 'role_user'}">
-					<form action="${WebUrlConstants.COMMON_URL_PREFIX}" method="post">
-						<input type="hidden" name="${ParamNames.COMMAND}" value="${CommandNames.WALLET_REQUEST}">
-						<input type="hidden" name="${ParamNames.REQUEST_TYPE}" value="unblock_wallet">
-                        <input type="hidden" name="${ParamNames.BILL_NUMBER}" value="${currWallet.getBill_number()}">
-
-						<a class="pr-2" href='#' onclick='this.parentNode.submit();'><fmt:message key="unblock"/></a>
-					</form>
-				</c:when>
 				<c:when test="${currWallet.getState().getName() eq 'unblocked'}">
 					<form action="${WebUrlConstants.COMMON_URL_PREFIX}" method="post">
 						<input type="hidden" name="${ParamNames.COMMAND}" value="${CommandNames.BLOCK_WALLET}">
@@ -58,6 +41,15 @@
 						<a class="pr-2" href='#' onclick='this.parentNode.submit();'><fmt:message key="block"/></a>
 					</form>
 				</c:when>
+				<c:otherwise> <%--test="${currWallet.getState().getName() eq 'blocked'} "--%>
+					<form action="${WebUrlConstants.COMMON_URL_PREFIX}" method="post">
+						<input type="hidden" name="${ParamNames.COMMAND}" value="${CommandNames.WALLET_REQUEST}">
+						<input type="hidden" name="${ParamNames.REQUEST_TYPE}" value="unblock_wallet">
+						<input type="hidden" name="${ParamNames.BILL_NUMBER}" value="${currWallet.getBill_number()}">
+
+						<a class="pr-2" href='#' onclick='this.parentNode.submit();'><fmt:message key="unblock"/></a>
+					</form>
+				</c:otherwise>
 			</c:choose>
 
 			<a class="nav-link active" aria-current="page" href="${WebUrlConstants.GO_USER_WALLETS_PAGE_URL}"> <fmt:message key="back"/> </a>

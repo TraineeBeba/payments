@@ -4,6 +4,7 @@ import com.epam.payments.core.model.dto.TransferDTO;
 import com.epam.payments.core.model.dto.UserDTO;
 import com.epam.payments.core.model.dto.WalletDTO;
 import com.epam.payments.core.model.entity.TransferEntity;
+import com.epam.payments.core.model.entity.WalletEntity;
 import com.epam.payments.core.model.enums.state.WalletState;
 import com.epam.payments.core.service.Service;
 
@@ -21,7 +22,7 @@ public interface WalletService extends Service {
 
     List<WalletDTO> getSortedListByUserDTOAndState(UserDTO userDTO, WalletState state, String walletSort);
 
-    WalletDTO getWalletByBill(int bill_number) throws WalletNotFoundException;
+    WalletEntity getWalletByBill(int bill_number) throws WalletNotFoundException;
 
     void blockWallet(int bill_number) throws WalletNotFoundException;
 

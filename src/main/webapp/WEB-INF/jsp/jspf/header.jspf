@@ -21,7 +21,7 @@
                     </c:when>
                     <c:when test="${userDTO.getRole().name() eq Role.ROLE_ADMIN.name()}">
                         <a class="nav-link active" aria-current="page" href="${WebUrlConstants.GO_ADMIN_USERS_PAGE_URL}"> Користувачі </a>
-                        <a class="nav-link active" aria-current="page" href="${WebUrlConstants.GO_WALLET_REQUESTS_PAGE_URL}"> Гаманцеві запити </a>
+<%--                        <a class="nav-link active" aria-current="page" href="${WebUrlConstants.GO_WALLET_REQUESTS_PAGE_URL}"> Гаманцеві запити </a>--%>
                     </c:when>
                 </c:choose>
             </div>
