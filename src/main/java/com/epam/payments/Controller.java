@@ -38,7 +38,7 @@ public class Controller extends HttpServlet {
             LOG.trace("Redirect address --> " + commandResult.getResource());
             LOG.debug("Controller finished, now redirect to address --> " + commandResult.getResource());
 
-            response.sendRedirect(request.getContextPath() + commandResult.getResource());
+            response.sendRedirect(/*request.getContextPath() + */commandResult.getResource());
         });
 
     }
@@ -66,7 +66,7 @@ public class Controller extends HttpServlet {
 
             CommandResult commandResult = command.execute(request, response);
             views.get(commandResult.getClass()).render(commandResult, request, response);
-        } catch (InternalServerException ex) {
+        } catch (InternalServerException | NullPointerException ex) {
             throw new ServletException(ex.getMessage(), ex);
         }
     }

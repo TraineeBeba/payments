@@ -11,8 +11,8 @@ public final class ParamNames {
     public static final String PASSWORD = "password";
     public static final String LOGOUT = "logout";
 
-    public static final String USER_ENTITY = "userEntity";
-    public static final String TRANSFER_ENTITY = "transferEntity";
+    public static final String USER_DTO = "userDTO";
+    public static final String TRANSFER_DTO = "transferDTO";
     public static final String WALLET_ENTITY = "walletEntity";
     public static final String WALLET_REQUEST_ENTITY = "walletRequestEntity";
 

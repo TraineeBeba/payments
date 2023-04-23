@@ -68,4 +68,10 @@ public class PostgreUserDAOImpl implements UserDAO, Queries {
         // Waiting for you to implement it :)
         return false;
     }
+
+    @Override
+    public int getNoOfRecords() {
+        // Waiting for you to implement it :)
+        return 0;
+    }
 }

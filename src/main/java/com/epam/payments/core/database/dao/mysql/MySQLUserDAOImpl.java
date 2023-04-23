@@ -1,6 +1,9 @@
 package com.epam.payments.core.database.dao.mysql;
 
 import com.epam.payments.core.database.dao.mysql.query.Query;
+import com.epam.payments.core.database.dao.mysql.query.UserQuery;
+import com.epam.payments.core.database.mapper.RowMapper;
+import com.epam.payments.core.database.mapper.UserEntityRowMapper;
 import com.epam.payments.core.database.pool.ConnectionPool;
 import com.epam.payments.core.model.entity.UserEntity;
 import com.epam.payments.core.database.dao.UserDAO;
@@ -13,9 +16,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class MySQLUserDAOImpl implements UserDAO {
+public class MySQLUserDAOImpl implements UserDAO, UserQuery {
     private static Logger LOG = Logger.getLogger(MySQLUserDAOImpl.class.getName());
-    ConnectionPool connectionPool;
+    private final UserEntityRowMapper rowMapper = new UserEntityRowMapper();
+    private final ConnectionPool connectionPool;
+    private int noOfRecords;
 
     public MySQLUserDAOImpl(ConnectionPool connectionPool) {
         this.connectionPool = connectionPool;
@@ -30,19 +35,14 @@ public class MySQLUserDAOImpl implements UserDAO {
     public void save(UserEntity userEntity) {
         LOG.trace("Start tracing MySQLUserDAOImpl#createUser");
 
-        try (Connection connection = connectionPool.getConnection()) {
-            if (connection != null) {
-                try (PreparedStatement statement = connection.prepareStatement(Query.CREATE_USER)) {
-                    int ind = 0;
-                    statement.setLong(++ind, userEntity.getRole().getId());
-                    statement.setLong(++ind, userEntity.getState().getId());
-                    statement.setString(++ind, userEntity.getUsername());
-                    statement.setString(++ind, userEntity.getPassword());
-                    statement.executeUpdate();
-                } catch (SQLException ex) {
-                    LOG.error(ex.getLocalizedMessage());
-                }
-            }
+        try (Connection connection = connectionPool.getConnection();
+             PreparedStatement statement = connection.prepareStatement(CREATE_USER)) {
+                int ind = 0;
+                statement.setLong(++ind, userEntity.getRole().getId());
+                statement.setLong(++ind, userEntity.getState().getId());
+                statement.setString(++ind, userEntity.getUsername());
+                statement.setString(++ind, userEntity.getPassword());
+                statement.executeUpdate();
         } catch (SQLException ex) {
             LOG.error(ex.getLocalizedMessage());
         }
@@ -54,7 +54,7 @@ public class MySQLUserDAOImpl implements UserDAO {
 
         try (Connection connection = connectionPool.getConnection()) {
             if (connection != null) {
-                try (PreparedStatement statement1 = connection.prepareStatement(Query.UPDATE_USER)) {
+                try (PreparedStatement statement1 = connection.prepareStatement(UPDATE_USER)) {
                     int ind = 0;
                     statement1.setLong(++ind, userEntity.getRole().getId());
                     statement1.setLong(++ind, userEntity.getState().getId());
@@ -77,19 +77,14 @@ public class MySQLUserDAOImpl implements UserDAO {
         UserEntity userEntity = null;
         try (Connection connection = connectionPool.getConnection()) {
             if (connection != null) {
-                try (PreparedStatement statement = connection.prepareStatement(Query.SELECT_USER_BY_ID)) {
+                try (PreparedStatement statement = connection.prepareStatement(SELECT_USER_BY_ID)) {
                     int ind = 0;
                     statement.setLong(++ind, userId);
                     statement.execute();
 
                     ResultSet resultSet = statement.getResultSet();
                     if (resultSet.next()) {
-                        Role role = Role.getRole(resultSet.getLong("role_id"));
-                        UserState state = UserState.getState(resultSet.getLong("state_id"));
-
-                        userEntity = new UserEntity(resultSet.getLong("id"), role,
-                                state, resultSet.getString("username"),
-                                resultSet.getString("password"));
+                        userEntity = rowMapper.mapRow(resultSet);
                     }
                     resultSet.close();
                 } catch (SQLException e) {
@@ -109,19 +104,14 @@ public class MySQLUserDAOImpl implements UserDAO {
         UserEntity userEntity = null;
         try (Connection connection = connectionPool.getConnection()) {
             if (connection != null) {
-                try (PreparedStatement statement = connection.prepareStatement(Query.SELECT_USER_BY_NAME)) {
+                try (PreparedStatement statement = connection.prepareStatement(SELECT_USER_BY_NAME)) {
                     int ind = 0;
                     statement.setString(++ind, username);
                     statement.execute();
 
                     ResultSet resultSet = statement.getResultSet();
                     if (resultSet.next()) {
-                        Role role = Role.getRole(resultSet.getLong("role_id"));
-                        UserState state = UserState.getState(resultSet.getLong("state_id"));
-
-                        userEntity = new UserEntity(resultSet.getLong("id"), role,
-                                state, resultSet.getString("username"),
-                                resultSet.getString("password"));
+                        userEntity = rowMapper.mapRow(resultSet);
                     }
                     resultSet.close();
                 } catch (SQLException e) {
@@ -144,26 +134,27 @@ public class MySQLUserDAOImpl implements UserDAO {
         try (Connection connection = connectionPool.getConnection()) {
             if (connection != null) {
                 try (PreparedStatement statement = connection.prepareStatement(
-                        Query
-                                .SELECT_SORTED_USERS
+
+                                SELECT_SORTED_USERS
                                 .replace("<sortParam>", userSort)
                                 .replace("<offsetParam>", String.valueOf(offset))
                                 .replace("<noOfRecordsParam>", String.valueOf(noOfRecords))
-                )) {
+                );
+                     PreparedStatement countStatement = connection.prepareStatement("SELECT FOUND_ROWS()");
+                     ) {
                     statement.execute();
                     ResultSet resultSet = statement.getResultSet();
                     while (resultSet.next()) {
-                        Role role = Role.getRole(resultSet.getLong("role_id"));
-                        UserState state = UserState.getState(resultSet.getLong("state_id"));
-
-                        userEntity = new UserEntity(resultSet.getLong("id"), role,
-                                state, resultSet.getString("username"),
-                                resultSet.getString("password"));
-
+                        userEntity = rowMapper.mapRow(resultSet);
                         users.add(userEntity);
                         LOG.info(userEntity);
                     }
 
+                    ResultSet countResultSet = countStatement.executeQuery();
+                    if (countResultSet.next()) {
+                        this.noOfRecords = countResultSet.getInt(1);
+                        LOG.info("Total rows count: " + noOfRecords);
+                    }
 
                     resultSet.close();
                 } catch (SQLException ex) {
@@ -179,19 +170,19 @@ public class MySQLUserDAOImpl implements UserDAO {
 
     @Override
     public boolean existsByUsername(String username) {
-        LOG.trace("Start tracing MySQLUserDAOImpl#findByUsername");
+        LOG.trace("Start tracing MySQLUserDAOImpl#existsByUsername");
 
         boolean exists = false;
         try (Connection connection = connectionPool.getConnection()) {
             if (connection != null) {
-                try (PreparedStatement statement = connection.prepareStatement(Query.EXISTS_USER_BY_NAME)) {
+                try (PreparedStatement statement = connection.prepareStatement(EXISTS_USER_BY_NAME)) {
                     int ind = 0;
                     statement.setString(++ind, username);
                     statement.execute();
 
                     ResultSet resultSet = statement.getResultSet();
                     if (resultSet.next()) {
-                        exists = resultSet.getBoolean("exists");
+                        exists = resultSet.getBoolean(EXISTS);
                         LOG.info("findByUsername --> " + exists);
                     }
                     resultSet.close();
@@ -213,14 +204,14 @@ public class MySQLUserDAOImpl implements UserDAO {
         boolean exists = false;
         try (Connection connection = connectionPool.getConnection()) {
             if (connection != null) {
-                try (PreparedStatement statement = connection.prepareStatement(Query.EXISTS_USER_BY_NAME_AND_PASSWORD)) {
+                try (PreparedStatement statement = connection.prepareStatement(EXISTS_USER_BY_NAME_AND_PASSWORD)) {
                     int ind = 0;
                     statement.setString(++ind, username);
                     statement.setString(++ind, password);
                     statement.execute();
                     ResultSet resultSet = statement.getResultSet();
                     if (resultSet.next()) {
-                        exists = resultSet.getBoolean("exists");
+                        exists = resultSet.getBoolean(EXISTS);
                         LOG.info("findByUsernameAndPassword --> " + exists);
                     }
                     resultSet.close();
@@ -241,13 +232,13 @@ public class MySQLUserDAOImpl implements UserDAO {
         boolean isBlocked = false;
         try (Connection connection = connectionPool.getConnection()) {
             if (connection != null) {
-                try (PreparedStatement statement = connection.prepareStatement(Query.SELECT_USER_STATE_BY_NAME)) {
+                try (PreparedStatement statement = connection.prepareStatement(SELECT_USER_STATE_BY_NAME)) {
                     int ind = 0;
                     statement.setString(++ind, username);
                     statement.execute();
                     ResultSet resultSet = statement.getResultSet();
                     if (resultSet.next()) {
-                        isBlocked = resultSet.getLong("state_id") == UserState.BLOCKED.getId();
+                        isBlocked = resultSet.getLong(STATE_ID) == UserState.BLOCKED.getId();
                     }
 
                     resultSet.close();
@@ -260,5 +251,10 @@ public class MySQLUserDAOImpl implements UserDAO {
             LOG.error(ex.getLocalizedMessage());
         }
         return isBlocked;
+    }
+
+    @Override
+    public int getNoOfRecords() {
+        return this.noOfRecords;
     }
 }

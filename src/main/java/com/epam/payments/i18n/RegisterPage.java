@@ -10,13 +10,13 @@ public final class RegisterPage /*implements Initializable*/{
     private static ResourceBundle register;
 
     static {
-        register = ResourceBundle.getBundle("locale/" + BUNDLE_NAME, new Locale(EN));
+        register = ResourceBundle.getBundle(BUNDLE_NAME, new Locale(EN));
     }
 
-    public static final String TITLE = register.getString("TITLE");
-    public static final String ENTER_LABEL = register.getString("ENTER_LABEL");
-    public static final String USERNAME_PLACEHOLDER = register.getString("USERNAME_PLACEHOLDER");
-    public static final String PASSWORD_PLACEHOLDER = register.getString("PASSWORD_PLACEHOLDER");
-    public static final String REGISTER_BUTTON = register.getString("REGISTER_BUTTON");
-    public static final String GO_LOGIN_BUTTON = register.getString("GO_LOGIN_BUTTON");
+//    public static final String TITLE = register.getString("TITLE");
+//    public static final String ENTER_LABEL = register.getString("ENTER_LABEL");
+//    public static final String USERNAME_PLACEHOLDER = register.getString("USERNAME_PLACEHOLDER");
+//    public static final String PASSWORD_PLACEHOLDER = register.getString("PASSWORD_PLACEHOLDER");
+//    public static final String REGISTER_BUTTON = register.getString("REGISTER_BUTTON");
+//    public static final String GO_LOGIN_BUTTON = register.getString("GO_LOGIN_BUTTON");
 }

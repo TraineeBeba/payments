@@ -14,7 +14,8 @@ import javax.servlet.http.HttpSession;
 
 import static com.epam.payments.command.constant.ParamNames.LANGUAGE;
 import static com.epam.payments.command.constant.ParamNames.QUERY_PARAMS;
-import static com.epam.payments.command.constant.WebUrlConstants.CONTROLLER_URL;
+import static com.epam.payments.command.constant.WebUrlConstants.COMMON_URL_PREFIX;
+
 
 public class LanguageCommand extends Command {
 
@@ -31,10 +32,8 @@ public class LanguageCommand extends Command {
         session.setAttribute(LANGUAGE, language);
 
         String queryParams = ServletUtils.getStringParameter(request, QUERY_PARAMS);
-        LOG.info(queryParams);
-        String originalUrl = /*request.getContextPath() + */ CONTROLLER_URL + (queryParams != null ? "?" + queryParams : "");
+        String originalUrl = COMMON_URL_PREFIX + (queryParams != null ? "?" + queryParams : "");
 
-//        return new RedirectResult(request.getContextPath()+"?"+request.getParameter("url"));
         return new RedirectResult(originalUrl);
     }
 }

@@ -31,7 +31,5 @@ public final class WebPathConstants {
     public static final String HEADER_PATH = COMMON_PATH_PREFIX + "header.jspf";
     public static final String HEAD_PATH = COMMON_PATH_PREFIX + "head.jspf";
 
-    public static String print (){
-        return "HUI";
-    }
+    public static final String ERROR_PATH = "/WEB-INF/jsp/error/error.jsp";
 }

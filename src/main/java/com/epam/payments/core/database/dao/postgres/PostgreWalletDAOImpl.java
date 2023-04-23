@@ -3,10 +3,14 @@ package com.epam.payments.core.database.dao.postgres;
 import com.epam.payments.core.database.pool.ConnectionPool;
 import com.epam.payments.core.database.dao.WalletDAO;
 import com.epam.payments.core.database.dao.postgres.query.Queries;
+import com.epam.payments.core.model.dto.TransferDTO;
+import com.epam.payments.core.model.entity.TransferEntity;
 import com.epam.payments.core.model.entity.UserEntity;
 import com.epam.payments.core.model.entity.WalletEntity;
+import com.epam.payments.core.model.enums.state.WalletState;
 import org.apache.log4j.Logger;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 public class PostgreWalletDAOImpl implements WalletDAO, Queries {
@@ -36,13 +40,13 @@ public class PostgreWalletDAOImpl implements WalletDAO, Queries {
     }
 
     @Override
-    public List<WalletEntity> getSortedListByUserId(Long user_id, String sortBy) {
+    public List<WalletEntity> getSortedListByUserEntity(UserEntity userEntity, String sortBy) {
         // Waiting for you to implement it :)
         return null;
     }
 
     @Override
-    public List<WalletEntity> getUnblockedByUserId(UserEntity userEntity, String sortBy) {
+    public List<WalletEntity> getSortedListByUserEntityAndState(UserEntity userEntity, WalletState state, String sortBy) {
         // Waiting for you to implement it :)
         return null;
     }
@@ -71,8 +75,8 @@ public class PostgreWalletDAOImpl implements WalletDAO, Queries {
     }
 
     @Override
-    public boolean isValidCountByUserId(Long user_id) {
+    public TransferEntity doTransfer(TransferDTO transferDTO) {
         // Waiting for you to implement it :)
-        return false;
+        return null;
     }
 }

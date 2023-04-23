@@ -2,23 +2,17 @@ package com.epam.payments.command.navigation.admin;
 
 import com.epam.payments.command.Command;
 import com.epam.payments.command.result.CommandResult;
-import com.epam.payments.command.result.ForwardResult;
 import com.epam.payments.command.result.RedirectResult;
 import com.epam.payments.core.model.entity.WalletRequestEntity;
-import com.epam.payments.core.service.WalletRequestService;
-import com.epam.payments.core.service.impl.WalletRequestServiceImpl;
 import org.apache.log4j.Logger;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
 import java.util.List;
 
 
 import static com.epam.payments.command.constant.ParamNames.*;
 import static com.epam.payments.command.constant.SortConstants.*;
-import static com.epam.payments.core.model.enums.status.RequestStatus.IN_PROCESS;
 
 public class GoWalletRequestsCommand extends Command {
     public static final Logger LOG = Logger.getLogger(GoWalletRequestsCommand.class);

@@ -1,22 +1,28 @@
 package com.epam.payments.command;
 
-import com.epam.payments.command.common.user.*;
-import com.epam.payments.command.common.wallet.*;
-import com.epam.payments.command.constant.CommandNames;
+import com.epam.payments.command.common.authentication.LoginCommand;
+import com.epam.payments.command.common.authentication.LogoutCommand;
+import com.epam.payments.command.common.authentication.RegisterCommand;
+import com.epam.payments.command.common.user.transfer.CancelTransferCommand;
+import com.epam.payments.command.common.user.transfer.PrepareTransferCommand;
+import com.epam.payments.command.common.user.transfer.SendTransferCommand;
+import com.epam.payments.command.common.user.wallet.BlockWalletCommand;
+import com.epam.payments.command.common.user.wallet.CreateWalletCommand;
+import com.epam.payments.command.common.user.wallet.TopUpBalanceCommand;
+import com.epam.payments.command.common.user.wallet.UnblockWalletCommand;
 import com.epam.payments.command.navigation.admin.GoAdminUsersCommand;
-import com.epam.payments.command.navigation.admin.GoWalletRequestsCommand;
 import com.epam.payments.command.navigation.authentication.GoLoginCommand;
 import com.epam.payments.command.navigation.authentication.GoRegisterCommand;
-import com.epam.payments.command.navigation.user.*;
 import com.epam.payments.command.i18n.LanguageCommand;
-import com.epam.payments.command.common.transfer.CancelTransferCommand;
-import com.epam.payments.command.common.transfer.PrepareTransferCommand;
-import com.epam.payments.command.common.transfer.SendTransferCommand;
-import com.epam.payments.core.utils.Utils;
+import com.epam.payments.command.navigation.user.transfer.GoPrepareTransferCommand;
+import com.epam.payments.command.navigation.user.transfer.GoSendTransferCommand;
+import com.epam.payments.command.navigation.user.wallet.GoCreateWalletCommand;
+import com.epam.payments.command.navigation.user.wallet.GoTopUpBalanceCommand;
+import com.epam.payments.command.navigation.user.wallet.GoUserWalletsCommand;
+import com.epam.payments.command.navigation.user.wallet.GoWalletDetailsCommand;
 import org.apache.log4j.Logger;
 
 import java.util.Map;
-import java.util.Properties;
 import java.util.TreeMap;
 
 import static com.epam.payments.command.constant.CommandNames.*;
@@ -31,36 +37,27 @@ public class CommandFactory {
     private static Map<String, Command> commands = new TreeMap<>();
 
     static {
-//        Properties p = Utils.getNamespaceProperties();
-
+        commands.put(LANGUAGE, new LanguageCommand());
         commands.put(LOGIN, new LoginCommand());
         commands.put(REGISTER, new RegisterCommand());
-        commands.put(LANGUAGE, new LanguageCommand());
-//        commands.put(p.getProperty("command.language"), new LanguageCommand());
-//        commands.put(p.getProperty("command.logout"), new LogoutCommand());
-//        commands.put(p.getProperty("command.create-wallet"), new CreateWalletCommand());
-//        commands.put(p.getProperty("command.prepare-transfer"), new PrepareTransferCommand());
-//        commands.put(p.getProperty("command.send-transfer"), new SendTransferCommand());
-//        commands.put(p.getProperty("command.cancel-transfer"), new CancelTransferCommand());
-//        commands.put(p.getProperty("command.block-wallet"), new BlockWalletCommand());
-//        commands.put(p.getProperty("command.unblock-wallet"), new UnblockWalletCommand());
-//        commands.put(p.getProperty("command.unblock-user"), new UnblockUserCommand());
-//        commands.put(p.getProperty("command.block-user"), new BlockUserCommand());
-//        commands.put(p.getProperty("command.top-up-balance"), new TopUpBalanceCommand());
-//        commands.put(p.getProperty("command.wallet-request"), new WalletRequestCommand());
-//        commands.put(p.getProperty("command.answer-wallet-request"), new AnswerWalletRequestCommand());
+        commands.put(LOGOUT, new LogoutCommand());
+        commands.put(TOP_UP_BALANCE, new TopUpBalanceCommand());
+        commands.put(CREATE_WALLET, new CreateWalletCommand());
+        commands.put(BLOCK_WALLET, new BlockWalletCommand());
+        commands.put(UNBLOCK_WALLET, new UnblockWalletCommand());
+        commands.put(PREPARE_TRANSFER, new PrepareTransferCommand());
+        commands.put(SEND_TRANSFER, new SendTransferCommand());
+        commands.put(CANCEL_TRANSFER, new CancelTransferCommand());
 
         commands.put(GO_LOGIN_PAGE, new GoLoginCommand());
         commands.put(GO_REGISTER_PAGE, new GoRegisterCommand());
-
-//        commands.put(p.getProperty("command.go.admin-users"), new GoAdminUsersCommand());
-//        commands.put(p.getProperty("command.go.create-wallet"), new GoCreateWalletCommand());
-//        commands.put(p.getProperty("command.go.prepare-transfer"), new GoPrepareTransferCommand());
-//        commands.put(p.getProperty("command.go.send-transfer"), new GoSendTransferCommand());
-//        commands.put(p.getProperty("command.go.user-wallets"), new GoUserWalletsCommand());
-//        commands.put(p.getProperty("command.go.wallet-details"), new GoWalletDetailsCommand());
-//        commands.put(p.getProperty("command.go.top-up-balance"), new GoTopUpBalanceCommand());
-//        commands.put(p.getProperty("command.go.wallet-requests"), new GoWalletRequestsCommand());
+        commands.put(GO_USER_WALLETS_PAGE, new GoUserWalletsCommand());
+        commands.put(GO_TOP_UP_BALANCE_PAGE, new GoTopUpBalanceCommand());
+        commands.put(GO_WALLET_DETAILS_PAGE, new GoWalletDetailsCommand());
+        commands.put(GO_CREATE_WALLET_PAGE, new GoCreateWalletCommand());
+        commands.put(GO_PREPARE_TRANSFER_PAGE, new GoPrepareTransferCommand());
+        commands.put(GO_SEND_TRANSFER_PAGE, new GoSendTransferCommand());
+        commands.put(GO_ADMIN_USERS_PAGE, new GoAdminUsersCommand());
 
         LOG.debug("Command factory was successfully initialized");
         LOG.trace("Number of commands --> " + commands.size());

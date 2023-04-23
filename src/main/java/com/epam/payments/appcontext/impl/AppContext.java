@@ -3,6 +3,10 @@ package com.epam.payments.appcontext.impl;
 import com.epam.payments.appcontext.constant.ContextConstants;
 import com.epam.payments.core.service.*;
 import com.epam.payments.core.service.exeption.UnsupportedServiceException;
+import com.epam.payments.core.service.transfer.TransferService;
+import com.epam.payments.core.service.user.UserService;
+import com.epam.payments.core.service.wallet.WalletService;
+import com.epam.payments.core.service.wallet_request.WalletRequestService;
 import com.epam.payments.exeption.InternalServerException;
 
 public abstract class AppContext implements ContextConstants {

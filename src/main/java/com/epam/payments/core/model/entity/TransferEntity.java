@@ -2,6 +2,7 @@ package com.epam.payments.core.model.entity;
 
 import com.epam.payments.core.model.enums.status.TransferStatus;
 
+import java.math.BigDecimal;
 import java.sql.Date;
 
 public class TransferEntity {
@@ -10,12 +11,12 @@ public class TransferEntity {
     private int sender_bill_number;
     private int recipient_bill_number;
     private Date date;
-    private double sum;
+    private BigDecimal sum;
 
     public TransferEntity() {
     }
 
-    public TransferEntity(Long id, TransferStatus status, int sender_bill_number, int recipient_bill_number, Date date, double sum) {
+    public TransferEntity(Long id, TransferStatus status, int sender_bill_number, int recipient_bill_number, Date date, BigDecimal sum) {
         this.id = id;
         this.status = status;
         this.sender_bill_number = sender_bill_number;
@@ -64,11 +65,11 @@ public class TransferEntity {
         this.date = date;
     }
 
-    public double getSum() {
+    public BigDecimal getSum() {
         return sum;
     }
 
-    public void setSum(double sum) {
+    public void setSum(BigDecimal sum) {
         this.sum = sum;
     }
 

@@ -1,52 +1,56 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="i18n" uri="/WEB-INF/tld/locale.tld" %>
-<%@ taglib prefix="n" uri="/WEB-INF/tld/namespace.tld" %>
-<%@ taglib prefix="load-users" uri="/WEB-INF/tld/load-users.tld" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ page import="com.epam.payments.command.constant.WebUrlConstants"%>
+<%@ page import="com.epam.payments.command.constant.ParamNames"%>
+<%@ page errorPage="/WEB-INF/jsp/error/error.jsp" %>
+
+<fmt:setLocale value="${sessionScope[ParamNames.LANGUAGE]}"/>
+<fmt:setBundle basename="locale.admin.user.transfer-prepare"/>
 
 <html class="h-100">
 
 <head>
-	<%@ include file="/WEB-INF/jspf/head.jspf" %>
+	<%@ include file="/WEB-INF/jsp/jspf/head.jspf" %>
 </head>
 
 <body class="h-100 text-white bg-dark">
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
 	<header class="mb-15">
-		<%@ include file="/WEB-INF/jspf/header.jspf" %>
+		<%@ include file="/WEB-INF/jsp/jspf/header.jspf" %>
 	</header>
 
 	<main class="px-3">
-		<%@ include file="/WEB-INF/jspf/alerts.jspf" %>
+		<%@ include file="/WEB-INF/jsp/jspf/alerts.jspf" %>
 
 		<div class="сinemas p-3">
 <%--			<h3> <my:Locale value="page.user.title"/> </h3>--%>
 			<h3> Корситувачі </h3>
-<%--			<a href="/<n:Name value="controller.name"/><n:Name value="redirect.user-wallets-create-wallet"/>"> <my:Locale value="page.user.add_new"/> </a><br>--%>
+			<a href="${WebUrlConstants.GO_ADMIN_USERS_PAGE_URL}"> <my:Locale value="page.user.add_new"/> </a><br>
 		</div>
 
 		<div class="left-block col-4">
-			<form action="<n:Namespace value="controller.name"/>" method="get">
-				<input type="hidden" name="command" value="<n:Namespace value="command.go.admin-users"/>">
-				<input type="hidden" name="userSort" value="user.id DESC">
-				<input type="hidden" name="page" value="${requestScope.page}">
+			<form action="${WebUrlConstants.COMMON_URL_PREFIX}" method="get">
+				<input type="hidden" name="${ParamNames.COMMAND}" value="${CommandNames.GO_ADMIN_USERS_PAGE}">
+				<input type="hidden" name="${ParamNames.USER_SORT}" value="user.id DESC">
+				<input type="hidden" name="${ParamNames.PAGE}" value="${requestScope.page}">
 
 				<a class="pr-2" href='#' onclick='this.parentNode.submit(); '>За Id</a>
 			</form>
 
-			<form action="<n:Namespace value="controller.name"/>" method="get">
-				<input type="hidden" name="command" value="<n:Namespace value="command.go.admin-users"/>">
-				<input type="hidden" name="userSort" value="user.username DESC">
-				<input type="hidden" name="page" value="${requestScope.page}">
+			<form action="${WebUrlConstants.COMMON_URL_PREFIX}" method="get">
+				<input type="hidden" name="${ParamNames.COMMAND}" value="${CommandNames.GO_ADMIN_USERS_PAGE}">
+				<input type="hidden" name="${ParamNames.USER_SORT}" value="user.username DESC">
+				<input type="hidden" name="${ParamNames.PAGE}" value="${requestScope.page}">
 
 				<a class="pr-2" href='#' onclick='this.parentNode.submit(); '>За юзернеймом</a>
 			</form>
 
-			<form action="<n:Namespace value="controller.name"/>" method="get">
-				<input type="hidden" name="command" value="<n:Namespace value="command.go.admin-users"/>">
-				<input type="hidden" name="userSort" value="user.state_id DESC">
-				<input type="hidden" name="page" value="${requestScope.page}">
+			<form action="${WebUrlConstants.COMMON_URL_PREFIX}" method="get">
+				<input type="hidden" name="${ParamNames.COMMAND}" value="${CommandNames.GO_ADMIN_USERS_PAGE}">
+				<input type="hidden" name="${ParamNames.USER_SORT}" value="user.state_id DESC">
+				<input type="hidden" name="${ParamNames.PAGE}" value="${requestScope.page}">
 
 
 				<a class="pr-2" href='#' onclick='this.parentNode.submit();'>За статусом</a>
@@ -71,24 +75,24 @@
 			<tr class="row ml-3" >
 				<c:forEach items="${requestScope.users}" var="user" >
 
-					<td class="col-1"> <c:out value="${user.id}"></c:out> </td>
+<%--					<td class="col-1"> <c:out value="${user.id}"></c:out> </td>--%>
 					<td class="col-3"> <c:out value="${user.username}"></c:out> </td>
 					<td class="col-2"> <c:out value="${user.getState()}"></c:out> </td>
 					<td class="pupa href-container col-3">
 						<c:choose>
 							<c:when test="${user.getState() eq 'blocked'}">
-								<form action="<n:Namespace value="controller.name"/>" method="post">
-									<input type="hidden" name="command" value="<n:Namespace value="command.unblock-user"/>">
-									<input type="hidden" name="currUserId" value="${user.id}">
+								<form action="${WebUrlConstants.COMMON_URL_PREFIX}" method="post">
+									<input type="hidden" name="${ParamNames.COMMAND}" value="${CommandNames.UNBLOCK_USER}">
+									<input type="hidden" name="${ParamNames.CURR_USER_ID}" value="${user.id}">
 
 									<a class="pr-2" href='#' onclick='this.parentNode.submit(); return false;'>Розблокувати</a>
 								</form>
 							</c:when>
 							<c:otherwise>
-								<form action="<n:Namespace value="controller.name"/>" method="post">
-									<input type="hidden" name="command" value="<n:Namespace value="command.block-user"/>">
-									<input type="hidden" name="currUserId" value="${user.id}">
-									<input type="hidden" name="currUserId" value="${requestScope[com.epam.payments.command.constant.ParameterNames.USERNAME]}">
+								<form action="${WebUrlConstants.COMMON_URL_PREFIX}" method="post">
+									<input type="hidden" name="${ParamNames.COMMAND}" value="${CommandNames.BLOCK_USER}">
+									<input type="hidden" name="${ParamNames.CURR_USER_ID}" value="${user.id}">
+<%--									<input type="hidden" name="currUserId" value="${requestScope[com.epam.payments.command.constant.ParameterNames.USERNAME]}">--%>
 
 									<a class="pr-2" href='#' onclick='this.parentNode.submit(); return false;'>Заблокувати</a>
 								</form>
@@ -96,9 +100,9 @@
 						</c:choose>
 					</td>
 					<td class="pupa href-container col-3">
-						<form style="padding: 2%" action="<n:Namespace value="controller.name"/>" method="get">
-							<input type="hidden" name="command" value="<n:Namespace value="command.go.user-wallets"/>">
-							<input type="hidden" name="selectedUserName" value="${user.getUsername()}">
+						<form style="padding: 2%" action="${WebUrlConstants.COMMON_URL_PREFIX}" method="get">
+							<input type="hidden" name="${ParamNames.COMMAND}" value="${CommandNames.GO_USER_WALLETS_PAGE}">
+							<input type="hidden" name="${ParamNames.SELECTED_USER_NAME}" value="${user.getUsername()}">
 
 							</a><a class="pr-2" href='#' onclick='this.parentNode.submit();'>Детальніше</a>
 						</form>
@@ -110,27 +114,27 @@
 
 		<table border="1" cellpadding="5" cellspacing="5">
 			<tr>
-				<c:if test="${requestScope.page != 1}">
+				<c:if test="${page != 1}">
 					<td>
-						<form action="<n:Namespace value="controller.name"/>" method="get">
-							<input type="hidden" name="command" value="<n:Namespace value="command.go.admin-users"/>">
-							<input type="hidden" name="page" value="${requestScope.page - 1}">
+						<form action="${WebUrlConstants.COMMON_URL_PREFIX}" method="get">
+							<input type="hidden" name="${ParamNames.COMMAND}" value="${CommandNames.GO_ADMIN_USERS_PAGE}">
+							<input type="hidden" name="${ParamNames.PAGE}" value="${page - 1}">
 
-							<a class="pr-2" href='#' onclick='this.parentNode.submit();'>Previous</a>
+							<a class="pr-2" href='#' onclick='this.parentNode.submit();'><fmt:message key="prev"/></a>
 						</form>
 					</td>
 				</c:if>
 
-				<c:forEach begin="1" end="${requestScope.noOfTransferPages}" var="i">
+				<c:forEach begin="1" end="${noOfTransferPages}" var="i">
 					<c:choose>
-						<c:when test="${requestScope.page eq i}">
+						<c:when test="${page eq i}">
 							<td>${i}</td>
 						</c:when>
 						<c:otherwise>
 							<td>
-								<form action="<n:Namespace value="controller.name"/>" method="get">
-									<input type="hidden" name="command" value="<n:Namespace value="command.go.admin-users"/>">
-									<input type="hidden" name="page" value="${i}">
+								<form action="${WebUrlConstants.COMMON_URL_PREFIX}" method="get">
+									<input type="hidden" name="${ParamNames.COMMAND}" value="${CommandNames.GO_ADMIN_USERS_PAGE}">
+									<input type="hidden" name="${ParamNames.PAGE}" value="${i}">
 
 									<a class="pr-2" href='#' onclick='this.parentNode.submit();'>${i}</a>
 								</form>
@@ -139,13 +143,13 @@
 					</c:choose>
 				</c:forEach>
 
-				<c:if test="${requestScope.page lt requestScope.noOfTransferPages}">
+				<c:if test="${page lt noOfTransferPages}">
 					<td>
-						<form action="<n:Namespace value="controller.name"/>" method="get">
-							<input type="hidden" name="command" value="<n:Namespace value="command.go.admin-users"/>">
-							<input type="hidden" name="page" value="${requestScope.page + 1}">
+						<form action="${WebUrlConstants.COMMON_URL_PREFIX}" method="get">
+							<input type="hidden" name="${ParamNames.COMMAND}" value="${CommandNames.GO_ADMIN_USERS_PAGE}">
+							<input type="hidden" name="${ParamNames.PAGE}" value="${page + 1}">
 
-							<a class="pr-2" href='#' onclick='this.parentNode.submit();'>Next</a>
+							<a class="pr-2" href='#' onclick='this.parentNode.submit();'><fmt:message key="next"/></a>
 						</form>
 					</td>
 				</c:if>

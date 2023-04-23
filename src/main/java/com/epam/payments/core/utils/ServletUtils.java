@@ -38,10 +38,13 @@ public class ServletUtils {
         return getParameter(request, paramName, Boolean::parseBoolean);
     }
 
-    public static <T> T getAttribute(HttpSession session, String attrName, Function<Object, T> parser) throws InternalServerException {
-        return Optional.ofNullable(session.getAttribute(attrName))
-                .map(parser)
+    public static <T> T getAttribute(HttpSession session, String attrName, Class<T> attrType) throws AttributeNotFoundException {
+        Object value = Optional.ofNullable(session.getAttribute(attrName))
                 .orElseThrow(() -> new AttributeNotFoundException(attrName));
+        if (!attrType.isInstance(value)) {
+            throw new IllegalArgumentException("Attribute " + attrName + " is not of type " + attrType.getName());
+        }
+        return (T) value;
     }
 
     public static <T> T getAttribute(ServletContext servletContext, String attributeName, Class<T> attributeClass) throws InternalServerException {

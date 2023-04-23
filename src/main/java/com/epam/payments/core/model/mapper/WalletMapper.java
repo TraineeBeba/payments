@@ -5,9 +5,11 @@ import com.epam.payments.core.model.entity.WalletEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
+import org.mapstruct.factory.Mappers;
 
 @Mapper
 public interface WalletMapper {
+    WalletMapper INSTANCE = Mappers.getMapper(WalletMapper.class);
     @Mappings({
             @Mapping(target = "id", ignore = true)
     })

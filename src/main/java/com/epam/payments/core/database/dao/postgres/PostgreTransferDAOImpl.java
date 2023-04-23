@@ -44,4 +44,9 @@ public class PostgreTransferDAOImpl implements TransferDAO, Queries {
         // Waiting for you to implement it :)
         return null;
     }
+
+    @Override
+    public int getNoOfRecords() {
+        return 0;
+    }
 }

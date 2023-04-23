@@ -14,14 +14,14 @@ import com.epam.payments.core.database.dao.WalletDAO;
 import com.epam.payments.core.database.dao.WalletRequestDAO;
 import com.epam.payments.core.database.pool.exeption.creation.ConnectionPoolCreationException;
 import com.epam.payments.core.database.pool.postgres.PostgresConnectionPool;
-import com.epam.payments.core.service.TransferService;
-import com.epam.payments.core.service.UserService;
-import com.epam.payments.core.service.WalletRequestService;
-import com.epam.payments.core.service.WalletService;
-import com.epam.payments.core.service.impl.TransferServiceImpl;
-import com.epam.payments.core.service.impl.UserServiceImpl;
-import com.epam.payments.core.service.impl.WalletRequestServiceImpl;
-import com.epam.payments.core.service.impl.WalletServiceImpl;
+import com.epam.payments.core.service.transfer.TransferService;
+import com.epam.payments.core.service.transfer.impl.TransferServiceImpl;
+import com.epam.payments.core.service.user.UserService;
+import com.epam.payments.core.service.user.impl.UserServiceImpl;
+import com.epam.payments.core.service.wallet_request.WalletRequestService;
+import com.epam.payments.core.service.wallet.WalletService;
+import com.epam.payments.core.service.wallet.impl.WalletServiceImpl;
+import com.epam.payments.core.service.wallet_request.impl.WalletRequestServiceImpl;
 
 
 public class PostgresAppContext extends AppContext {
@@ -39,7 +39,7 @@ public class PostgresAppContext extends AppContext {
 
             // Create service objects based on the DAO factory
             this.userService = new UserServiceImpl(userDAO);
-            this.walletService = new WalletServiceImpl(walletDAO);
+            this.walletService = new WalletServiceImpl(walletDAO, userDAO);
             this.transferService = new TransferServiceImpl(transferDAO);
             this.walletRequestService = new WalletRequestServiceImpl(walletRequestDAO);
 

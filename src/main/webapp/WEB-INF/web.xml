@@ -44,6 +44,16 @@
         </init-param>
     </filter>
 
+    <filter>
+        <filter-name>SessionLocaleFilter</filter-name>
+        <filter-class>com.epam.payments.filter.SessionLocaleFilter</filter-class>
+    </filter>
+
+    <filter>
+        <filter-name>GlobalExceptionHelper</filter-name>
+        <filter-class>com.epam.payments.filter.GlobalExceptionHandler</filter-class>
+    </filter>
+
 <!--    <filter>-->
 <!--        <filter-name>CommandAccessFilter</filter-name>-->
 <!--        <filter-class>com.epam.payments.filter.CommandAccessFilter</filter-class>-->
@@ -75,6 +85,18 @@
         <servlet-name>Controller</servlet-name>
     </filter-mapping>
 
+    <filter-mapping>
+        <filter-name>SessionLocaleFilter</filter-name>
+        <url-pattern>/WEB-INF/*</url-pattern>
+        <servlet-name>Controller</servlet-name>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>GlobalExceptionHelper</filter-name>
+        <url-pattern>/WEB-INF/jsp/*</url-pattern>
+        <servlet-name>Controller</servlet-name>
+    </filter-mapping>
+
 <!--    <filter-mapping>-->
 <!--        <filter-name>CommandAccessFilter</filter-name>-->
 <!--        <servlet-name>Controller</servlet-name>-->
@@ -83,9 +105,9 @@
 <!--    <welcome-file-list>-->
 <!--        <welcome-file>${WebUrlConstants.GO_LOGIN_PAGE_URL}</welcome-file>-->
 <!--    </welcome-file-list>-->
-    <welcome-file-list>
-        <welcome-file>/controller?command=login-page</welcome-file>
-    </welcome-file-list>
+<!--    <welcome-file-list>-->
+<!--        <welcome-file>/controller?command=login-page</welcome-file>-->
+<!--    </welcome-file-list>-->
 
 <!--    <error-page>-->
 <!--        <exception-type>java.lang.Throwable</exception-type>-->

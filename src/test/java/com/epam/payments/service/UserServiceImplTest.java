@@ -32,7 +32,7 @@
 //            when(userDAO.isBlocked("jane")).thenReturn(true);
 //
 //            String result = spyUserServiceImpl.isValidAuthentication("john", "P@ssword1");
-//            assertEquals("alertError.user.not_found", result); // expect "alertError.user.not_found" when user is not found
+//            assertEquals("alertError.user.bad_login", result); // expect "alertError.user.bad_login" when user is not found
 //
 //            result = spyUserServiceImpl.isValidAuthentication("jane", "P@ssword2");
 //            assertEquals("alertError.user.blocked", result); // expect "alertError.user.blocked" when user is blocked

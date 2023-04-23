@@ -15,4 +15,5 @@ public interface UserDAO extends DAO<UserEntity> {
 
     boolean isBlocked(String username);
 
+    int getNoOfRecords();
 }

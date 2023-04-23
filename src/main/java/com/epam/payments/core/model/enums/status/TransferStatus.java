@@ -9,7 +9,7 @@ public enum TransferStatus {
         this.id = id;
     }
 
-    public static TransferStatus getState(Long stateId) {
+    public static TransferStatus getStatus(Long stateId) {
         return TransferStatus.values()[stateId.intValue() - 1];
     }
 

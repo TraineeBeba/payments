@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 
 public class WalletEntity {
     private Long id;
-    private UserEntity user;
+    private Long user_id;
     private WalletState state;
     private String name;
     private int bill_number;
@@ -15,9 +15,9 @@ public class WalletEntity {
     public WalletEntity() {
     }
 
-    public WalletEntity(Long id, UserEntity user, WalletState state, String name, int bill_number, BigDecimal balance) {
+    public WalletEntity(Long id, Long user_id, WalletState state, String name, int bill_number, BigDecimal balance) {
         this.id = id;
-        this.user = user;
+        this.user_id = user_id;
         this.state = state;
         this.name = name;
         this.bill_number = bill_number;
@@ -32,12 +32,12 @@ public class WalletEntity {
         this.id = id;
     }
 
-    public UserEntity getUser() {
-        return user;
+    public Long getUser_id() {
+        return user_id;
     }
 
-    public void setUser(UserEntity user) {
-        this.user = user;
+    public void setUser_id(Long user_id) {
+        this.user_id = user_id;
     }
 
     public WalletState getState() {
@@ -76,7 +76,7 @@ public class WalletEntity {
     public String toString() {
         return "WalletEntity{" +
                 "id=" + id +
-                ", user=" + user +
+                ", user=" + user_id +
                 ", state=" + state +
                 ", name='" + name + '\'' +
                 ", bill_number=" + bill_number +

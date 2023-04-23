@@ -7,33 +7,33 @@ import java.math.BigDecimal;
 import java.util.Objects;
 
 public class WalletDTO {
-    private UserEntity user;
-    private WalletDTO state;
+    private Long user_id;
+    private WalletState state;
     private String name;
     private int bill_number;
     private BigDecimal balance;
 
-    public WalletDTO(UserEntity user, WalletDTO state, String name, int bill_number, BigDecimal balance) {
-        this.user = user;
+    public WalletDTO(Long user_id, WalletState state, String name, int bill_number, BigDecimal balance) {
+        this.user_id = user_id;
         this.state = state;
         this.name = name;
         this.bill_number = bill_number;
         this.balance = balance;
     }
 
-    public UserEntity getUser() {
-        return user;
+    public Long getUser_id() {
+        return user_id;
     }
 
-    public void setUser(UserEntity user) {
-        this.user = user;
+    public void setUser_id(Long user_id) {
+        this.user_id = user_id;
     }
 
-    public WalletDTO getState() {
+    public WalletState getState() {
         return state;
     }
 
-    public void setState(WalletDTO state) {
+    public void setState(WalletState state) {
         this.state = state;
     }
 
@@ -66,18 +66,18 @@ public class WalletDTO {
         if (this == o) return true;
         if (!(o instanceof WalletDTO)) return false;
         WalletDTO walletDTO = (WalletDTO) o;
-        return bill_number == walletDTO.bill_number && Objects.equals(user, walletDTO.user) && Objects.equals(state, walletDTO.state) && Objects.equals(name, walletDTO.name) && Objects.equals(balance, walletDTO.balance);
+        return bill_number == walletDTO.bill_number && Objects.equals(user_id, walletDTO.user_id) && state == walletDTO.state && Objects.equals(name, walletDTO.name) && Objects.equals(balance, walletDTO.balance);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(user, state, name, bill_number, balance);
+        return Objects.hash(user_id, state, name, bill_number, balance);
     }
 
     @Override
     public String toString() {
         return "WalletDTO{" +
-                "user=" + user +
+                "user_id=" + user_id +
                 ", state=" + state +
                 ", name='" + name + '\'' +
                 ", bill_number=" + bill_number +
