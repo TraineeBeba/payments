@@ -26,7 +26,6 @@ public class AppContextListener implements ServletContextListener, ContextConsta
         ServletContext servletContext = event.getServletContext();
 
         initLog4J(servletContext);
-//        initCommandContainer();
 
         try {
             AppContext appContext = AppContextManager.getAppContext(CONFIG_FILE);
@@ -35,7 +34,6 @@ public class AppContextListener implements ServletContextListener, ContextConsta
             Throwable rootCause = e.getCause();
             if (rootCause != null) {
                 LOG.error("Failed to initialize program components. Root cause: ", rootCause);
-//                LOG.error(rootCause);
             } else {
                 LOG.error("Failed to initialize program components", e);
             }

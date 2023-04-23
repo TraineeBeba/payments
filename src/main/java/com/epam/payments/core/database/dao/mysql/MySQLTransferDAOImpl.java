@@ -24,7 +24,7 @@ public class MySQLTransferDAOImpl implements TransferDAO, TransferQuery {
 
     @Override
     public List<TransferEntity> findAll() {
-        return null; //TODO
+        return null;
     }
 
     @Override
@@ -33,9 +33,7 @@ public class MySQLTransferDAOImpl implements TransferDAO, TransferQuery {
     }
 
     @Override
-    public void update(TransferEntity entity) {
-
-    }
+    public void update(TransferEntity entity) {}
 
     @Override
     public void save(TransferEntity transferDTO) {
@@ -44,17 +42,14 @@ public class MySQLTransferDAOImpl implements TransferDAO, TransferQuery {
         try (Connection connection = connectionPool.getConnection()) {
             if (connection != null) {
                 try (PreparedStatement statement = connection.prepareStatement(CREATE_TRANSFER)) {
-                    connection.setAutoCommit(false);
                     statement.setLong(1, TransferStatus.SENT.getId());
                     statement.setInt(2, transferDTO.getSender_bill_number());
                     statement.setInt(3, transferDTO.getRecipient_bill_number());
                     statement.setBigDecimal(4, transferDTO.getSum());
                     statement.setDate(5, transferDTO.getDate());
                     statement.executeUpdate();
-                    connection.commit();
                 } catch (SQLException ex) {
                     LOG.error(ex.getLocalizedMessage());
-                    connection.rollback();
                 }
             }
         } catch (SQLException ex) {
@@ -68,13 +63,6 @@ public class MySQLTransferDAOImpl implements TransferDAO, TransferQuery {
 
         List<TransferEntity> transferDTOList = new ArrayList<>();
         TransferEntity transferDTO;
-
-//        LOG.info("offset" + offset);
-//        LOG.info("noOfRecords" + noOfRecords);
-//        LOG.info("Queries " + SELECT_SORTED_TRANSFERS_BY_USER_ID
-//                .replace("<sortParam>", sortBy)
-//                .replace("<offsetParam>", String.valueOf(offset))
-//                .replace("<noOfRecordsParam>", String.valueOf(noOfRecords)));
 
         try (Connection connection = connectionPool.getConnection();
              PreparedStatement statement = connection.prepareStatement(
@@ -92,7 +80,6 @@ public class MySQLTransferDAOImpl implements TransferDAO, TransferQuery {
                 while (resultSet.next()) {
                     transferDTO = rowMapper.mapRow(resultSet);
                     transferDTOList.add(transferDTO);
-//                        LOG.info(transferDTO.toString());
                 }
 
             ResultSet countResultSet = countStatement.executeQuery();

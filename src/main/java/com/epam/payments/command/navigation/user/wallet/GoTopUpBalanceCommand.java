@@ -31,17 +31,22 @@ public class GoTopUpBalanceCommand extends Command {
         HttpSession session = request.getSession();
 
         WalletService walletService = ServletUtils.getService(request, WalletService.class);
-        String walletSort;
-        try {
-            walletSort = ServletUtils.getStringParameter(request, WALLET_SORT);
-        } catch (ParameterNotFoundException e) {
-            walletSort = DEFAULT_WALLET_SORT;
-        }
+        String walletSort = getWalletSort(request);
 
         UserDTO userDTO = ServletUtils.getAttribute(session, USER_DTO, UserDTO.class);
         List<WalletDTO> wallets = walletService.getSortedListByUserDTOAndState(userDTO, UNBLOCKED, walletSort);
 
         request.setAttribute(WALLETS, wallets);
         return new ForwardResult(USER_TOP_UP_BALANCE_PATH);
+    }
+
+    private String getWalletSort(HttpServletRequest request) {
+        String walletSort;
+        try {
+            walletSort = ServletUtils.getStringParameter(request, WALLET_SORT);
+        } catch (ParameterNotFoundException e) {
+            walletSort = DEFAULT_WALLET_SORT;
+        }
+        return walletSort;
     }
 }

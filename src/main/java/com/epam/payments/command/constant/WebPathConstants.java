@@ -8,7 +8,6 @@ public final class WebPathConstants {
     public static final String ADMIN_USERS_PATH = ADMIN_PATH_PREFIX + "user/users.jsp";
     public static final String ADMIN_USER_WALLETS_PATH = ADMIN_PATH_PREFIX + "user/wallet/wallets.jsp";
     public static final String ADMIN_USER_WALLET_DETAILS_PATH = ADMIN_PATH_PREFIX + "user/wallet/wallet-details.jsp";
-    public static final String ADMIN_WALLET_REQUESTS_PATH = ADMIN_PATH_PREFIX + "request/wallet-requests.jsp";
 
     // Authentication paths
     public static final String AUTHENTICATION_PATH_PREFIX = PATH_PREFIX + "authentication/";
@@ -29,8 +28,6 @@ public final class WebPathConstants {
 
     // Common paths
     public static final String COMMON_PATH_PREFIX = PATH_PREFIX + "jspf/";
-    public static final String ALERTS_PATH = COMMON_PATH_PREFIX + "alerts.jspf";
-    public static final String HEADER_PATH = COMMON_PATH_PREFIX + "header.jspf";
     public static final String HEAD_PATH = COMMON_PATH_PREFIX + "head.jspf";
 
     public static final String ERROR_PATH = "/WEB-INF/jsp/error/error.jsp";

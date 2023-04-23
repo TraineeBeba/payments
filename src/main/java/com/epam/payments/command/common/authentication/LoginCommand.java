@@ -38,7 +38,6 @@ public class LoginCommand extends Command {
             session.setAttribute(USER_DTO, userEntity);
 
             if (userEntity.getRole() == Role.ROLE_ADMIN) {
-//                redirectResult = new RedirectResult(ADMIN_USERS_URL);
                 return new RedirectResult(GO_ADMIN_USERS_PAGE_URL);
             } else {
                 redirectResult = new RedirectResult(GO_USER_WALLETS_PAGE_URL);

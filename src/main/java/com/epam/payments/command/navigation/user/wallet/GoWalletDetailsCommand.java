@@ -3,13 +3,11 @@ package com.epam.payments.command.navigation.user.wallet;
 import com.epam.payments.command.Command;
 import com.epam.payments.command.result.CommandResult;
 import com.epam.payments.command.result.ForwardResult;
-import com.epam.payments.command.result.RedirectResult;
 import com.epam.payments.core.model.dto.TransferDTO;
 import com.epam.payments.core.model.dto.WalletDTO;
 import com.epam.payments.core.model.mapper.WalletMapper;
 import com.epam.payments.core.service.transfer.TransferService;
-import com.epam.payments.core.service.wallet.MaxBalanceException;
-import com.epam.payments.core.service.wallet.WalletNotFoundException;
+import com.epam.payments.core.service.wallet.exception.WalletNotFoundException;
 import com.epam.payments.core.service.wallet.WalletService;
 import com.epam.payments.core.utils.ServletUtils;
 import com.epam.payments.core.utils.exeption.ParameterNotFoundException;
@@ -25,8 +23,6 @@ import static com.epam.payments.command.constant.ParamNames.*;
 import static com.epam.payments.command.constant.SortConstants.*;
 import static com.epam.payments.command.constant.WebPathConstants.USER_WALLETS_PATH;
 import static com.epam.payments.command.constant.WebPathConstants.USER_WALLET_DETAILS_PATH;
-import static com.epam.payments.command.constant.WebUrlConstants.GO_TOP_UP_BALANCE_PAGE_URL;
-import static com.epam.payments.command.constant.WebUrlConstants.GO_USER_WALLETS_PAGE_URL;
 
 
 public class GoWalletDetailsCommand extends Command {

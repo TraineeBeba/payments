@@ -7,8 +7,6 @@ public interface DAO<T> {
     T findById(Long id);
     void save(T entity);
     void update(T entity);
-
-//    void delete(T entity);
 }
 
 

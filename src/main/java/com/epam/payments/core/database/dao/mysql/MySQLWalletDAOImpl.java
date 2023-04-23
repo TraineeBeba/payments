@@ -36,28 +36,23 @@ public class MySQLWalletDAOImpl implements WalletDAO, WalletQuery {
         LOG.trace("Start tracing MySQLWalletDAOImpl#findById");
 
         WalletEntity walletEntity = null;
-//        try (Connection connection = connectionPool.getConnection()) {
-//            if (connection != null) {
-//                try (PreparedStatement statement = connection.prepareStatement(WalletRequestQuery.SELECT_WALLET_BY_ID)) {
-//                    connection.setAutoCommit(false);
-//                    statement.setLong(1, id);
-//                    statement.execute();
-//                    ResultSet resultSet = statement.getResultSet();
-//                    if (resultSet.next()) {
-//                        walletEntity = new WalletEntity(resultSet.getLong("id"), resultSet.getLong("user_id"),
-//                                resultSet.getLong("state_id"), resultSet.getString("name"),
-//                                resultSet.getInt("bill_number"), resultSet.getInt("balance"));
-//                    }
-//                    resultSet.close();
-//                    connection.commit();
-//                } catch (SQLException e) {
-//                    LOG.error(e.getLocalizedMessage());
-//                    connection.rollback();
-//                }
-//            }
-//        } catch (SQLException ex) {
-//            LOG.error(ex.getLocalizedMessage());
-//        }
+        try (Connection connection = connectionPool.getConnection()) {
+            if (connection != null) {
+                try (PreparedStatement statement = connection.prepareStatement(SELECT_WALLET_BY_ID)) {
+                    statement.setLong(1, id);
+                    statement.execute();
+                    ResultSet resultSet = statement.getResultSet();
+                    if (resultSet.next()) {
+                        walletEntity = rowMapper.mapRow(resultSet);
+                    }
+                    resultSet.close();
+                } catch (SQLException e) {
+                    LOG.error(e.getLocalizedMessage());
+                }
+            }
+        } catch (SQLException ex) {
+            LOG.error(ex.getLocalizedMessage());
+        }
         return walletEntity;
     }
 
@@ -77,7 +72,6 @@ public class MySQLWalletDAOImpl implements WalletDAO, WalletQuery {
 
                 } catch (SQLException e) {
                     LOG.error(e.getLocalizedMessage());
-                    connection.rollback();
                 }
             }
         } catch (SQLException ex) {
@@ -163,7 +157,6 @@ public class MySQLWalletDAOImpl implements WalletDAO, WalletQuery {
         try (Connection connection = connectionPool.getConnection()) {
             if (connection != null) {
                 try (PreparedStatement statement = connection.prepareStatement(CHECK_BILL_NUMBER_EXISTENCE)) {
-                    connection.setAutoCommit(false);
                     statement.setInt(1, bill_number);
                     statement.execute();
                     ResultSet resultSet = statement.getResultSet();
@@ -173,10 +166,8 @@ public class MySQLWalletDAOImpl implements WalletDAO, WalletQuery {
                         res =  i_res >= 1;
                     }
                     resultSet.close();
-                    connection.commit();
                 } catch (SQLException e) {
                     LOG.error(e.getLocalizedMessage());
-                    connection.rollback();
                 }
             }
         } catch (SQLException ex) {
@@ -205,38 +196,6 @@ public class MySQLWalletDAOImpl implements WalletDAO, WalletQuery {
         }
         return walletEntity;
     }
-
-    @Override
-    public boolean existsByNameAndUserId(Long user_id, String name) {
-        LOG.trace("Start tracing MySQLWalletDAOImpl#checkWalletExistenceByName");
-
-        boolean res = false;
-        try (Connection connection = connectionPool.getConnection()) {
-            if (connection != null) {
-                try (PreparedStatement statement = connection.prepareStatement(CHECK_WALLET_EXISTENCE_BY_NAME_AND_USER_ID)) {
-                    connection.setAutoCommit(false);
-                    statement.setLong(1, user_id);
-                    statement.setString(2, name);
-                    statement.execute();
-                    ResultSet resultSet = statement.getResultSet();
-                    if (resultSet.next()) {
-                        int i_res = resultSet.getInt("count(*)");
-                        LOG.info("RES!!!!!!!!!!!!!!!!!!!! --> " + i_res);
-                        res =  i_res >= 1;
-                    }
-                    resultSet.close();
-                    connection.commit();
-                } catch (SQLException e) {
-                    LOG.error(e.getLocalizedMessage());
-                    connection.rollback();
-                }
-            }
-        } catch (SQLException ex) {
-            LOG.error(ex.getLocalizedMessage());
-        }
-        return res;
-    }
-
 
     @Override
     public TransferEntity doTransfer(TransferDTO transferDTO) {
@@ -303,21 +262,15 @@ public class MySQLWalletDAOImpl implements WalletDAO, WalletQuery {
                 // Commit the transaction
                 connection.commit();
 
-                LOG.info("HERE");
-
                 transferDTO.setDate(new Date(System.currentTimeMillis()));
             } catch (SQLException e){
                 LOG.error(e.getMessage());
                 connection.rollback();
             }
         } catch (SQLException e) {
-            // Rollback the transaction in case of any errors
             LOG.error(e.getMessage());
         }
-
-        LOG.info(transferDTO.getSum());
         TransferEntity transferEntity = TransferMapper.INSTANCE.toEntity(transferDTO);
-        LOG.info(transferEntity.getSum());
         return transferEntity;
     }
 }

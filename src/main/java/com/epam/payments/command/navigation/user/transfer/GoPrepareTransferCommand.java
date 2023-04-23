@@ -32,17 +32,22 @@ public class GoPrepareTransferCommand extends Command {
 
         WalletService walletService = ServletUtils.getService(request, WalletService.class);
         HttpSession session = request.getSession();
-        String walletSort;
-        try {
-            walletSort = ServletUtils.getStringParameter(request, WALLET_SORT);
-        } catch (ParameterNotFoundException e) {
-            walletSort = DEFAULT_WALLET_SORT;
-        }
+        String walletSort = getWalletSort(request);
         UserDTO userDTO = ServletUtils.getAttribute(session, USER_DTO, UserDTO.class);
 
         List<WalletDTO> wallets = walletService.getSortedListByUserDTOAndState(userDTO, WalletState.UNBLOCKED, walletSort);
         request.setAttribute(WALLETS, wallets);
 
         return new ForwardResult(USER_PREPARE_TRANSFER_PATH);
+    }
+
+    private String getWalletSort(HttpServletRequest request) {
+        String walletSort;
+        try {
+            walletSort = ServletUtils.getStringParameter(request, WALLET_SORT);
+        } catch (ParameterNotFoundException e) {
+            walletSort = DEFAULT_WALLET_SORT;
+        }
+        return walletSort;
     }
 }

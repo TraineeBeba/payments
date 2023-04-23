@@ -18,7 +18,5 @@ public interface WalletDAO extends DAO<WalletEntity> {
 
     boolean existsByBill(int bill_number);
 
-    boolean existsByNameAndUserId(Long user_id, String name);
-
     TransferEntity doTransfer(TransferDTO transferDTO);
 }

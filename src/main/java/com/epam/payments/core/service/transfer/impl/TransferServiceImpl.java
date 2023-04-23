@@ -1,6 +1,5 @@
 package com.epam.payments.core.service.transfer.impl;
 
-import com.epam.payments.command.navigation.user.transfer.GoPrepareTransferCommand;
 import com.epam.payments.core.database.dao.TransferDAO;
 import com.epam.payments.core.model.dto.TransferDTO;
 import com.epam.payments.core.model.dto.WalletDTO;
@@ -8,12 +7,11 @@ import com.epam.payments.core.model.entity.TransferEntity;
 import com.epam.payments.core.model.enums.state.WalletState;
 import com.epam.payments.core.model.enums.status.TransferStatus;
 import com.epam.payments.core.model.mapper.TransferMapper;
-import com.epam.payments.core.model.mapper.UserMapper;
 import com.epam.payments.core.model.mapper.WalletMapper;
 import com.epam.payments.core.service.transfer.exception.PrepareTransferException;
 import com.epam.payments.core.service.transfer.exception.SendTransferException;
 import com.epam.payments.core.service.transfer.exception.ValidTransferException;
-import com.epam.payments.core.service.wallet.WalletNotFoundException;
+import com.epam.payments.core.service.wallet.exception.WalletNotFoundException;
 import com.epam.payments.core.service.transfer.TransferService;
 import com.epam.payments.core.service.wallet.WalletService;
 import org.apache.log4j.Logger;

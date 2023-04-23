@@ -7,6 +7,9 @@ import com.epam.payments.core.model.entity.TransferEntity;
 import com.epam.payments.core.model.entity.WalletEntity;
 import com.epam.payments.core.model.enums.state.WalletState;
 import com.epam.payments.core.service.Service;
+import com.epam.payments.core.service.wallet.exception.MaxBalanceException;
+import com.epam.payments.core.service.wallet.exception.WalletCreationException;
+import com.epam.payments.core.service.wallet.exception.WalletNotFoundException;
 
 import java.math.BigDecimal;
 import java.util.List;

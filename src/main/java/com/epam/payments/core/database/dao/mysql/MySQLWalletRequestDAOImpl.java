@@ -61,7 +61,6 @@ public class MySQLWalletRequestDAOImpl implements WalletRequestDAO {
         try (Connection connection = connectionPool.getConnection()) {
             if (connection != null) {
                 try (PreparedStatement statement = connection.prepareStatement(WalletRequestQuery.CREATE_WALLET_REQUEST)) {
-                    connection.setAutoCommit(false);
 
                     LOG.info(walletRequestEntity.toString());
                     statement.setLong(1, walletRequestEntity.getWallet_id());
@@ -69,10 +68,8 @@ public class MySQLWalletRequestDAOImpl implements WalletRequestDAO {
                     statement.setLong(3, walletRequestEntity.getType().getId());
 
                     statement.executeUpdate();
-                    connection.commit();
                 } catch (SQLException ex) {
                     LOG.error(ex.getLocalizedMessage());
-                    connection.rollback();
                 }
             }
         } catch (SQLException ex) {
@@ -86,25 +83,20 @@ public class MySQLWalletRequestDAOImpl implements WalletRequestDAO {
 
         boolean res = false;
         try (Connection connection = connectionPool.getConnection()) {
-            if (connection != null) {
-                try (PreparedStatement statement = connection.prepareStatement(WalletRequestQuery.СHECK_WALLET_REQUEST_EXISTENCE)) {
-                    connection.setAutoCommit(false);
-                    statement.setLong(1, walletId);
-                    statement.setLong(2, requestStatus.getId());
-                    statement.execute();
+            try (PreparedStatement statement = connection.prepareStatement(WalletRequestQuery.СHECK_WALLET_REQUEST_EXISTENCE)) {
+                statement.setLong(1, walletId);
+                statement.setLong(2, requestStatus.getId());
+                statement.execute();
 
-                    ResultSet resultSet = statement.getResultSet();
-                    if (resultSet.next()) {
-                        int i_res = resultSet.getInt("count(*)");
-                        LOG.info("RES!!!!!!!!!!!!!!!!!!!! --> " + i_res);
-                        res =  i_res >= 1;
-                    }
-                    resultSet.close();
-                    connection.commit();
-                } catch (SQLException e) {
-                    LOG.error(e.getLocalizedMessage());
-                    connection.rollback();
+                ResultSet resultSet = statement.getResultSet();
+                if (resultSet.next()) {
+                    int i_res = resultSet.getInt("count(*)");
+                    LOG.info("RES!!!!!!!!!!!!!!!!!!!! --> " + i_res);
+                    res =  i_res >= 1;
                 }
+                resultSet.close();
+            } catch (SQLException e) {
+                LOG.error(e.getLocalizedMessage());
             }
         } catch (SQLException ex) {
             LOG.error(ex.getLocalizedMessage());
@@ -119,14 +111,6 @@ public class MySQLWalletRequestDAOImpl implements WalletRequestDAO {
         List<WalletRequestEntity> walletRequestDTOList = new ArrayList<>();
         WalletRequestEntity walletRequestDTO;
 
-//        LOG.info("offset" + String.valueOf(offset));
-//        LOG.info("noOfRecords" + String.valueOf(noOfRecords));
-//        LOG.info("Queries " + WalletRequestQuery
-//                .SELECT_SORTED_WALLET_REQUESTS
-//                .replace("<sortParam>", walletRequestSort)
-//                .replace("<offsetParam>", String.valueOf(offset))
-//                .replace("<noOfRecordsParam>", String.valueOf(noOfRecords)));
-
         try (Connection connection = connectionPool.getConnection()) {
             if (connection != null) {
                 try (PreparedStatement statement = connection.prepareStatement(
@@ -136,7 +120,6 @@ public class MySQLWalletRequestDAOImpl implements WalletRequestDAO {
                                 .replace("<offsetParam>", String.valueOf(offset))
                                 .replace("<noOfRecordsParam>", String.valueOf(noOfRecords)))
                 ) {
-                    connection.setAutoCommit(false);
                     statement.setLong(1, status.getId());
                     statement.execute();
 
@@ -155,10 +138,8 @@ public class MySQLWalletRequestDAOImpl implements WalletRequestDAO {
                     LOG.info("FOUND_ROWS -->" + this.noOfRecords);
 
                     resultSet.close();
-                    connection.commit();
                 } catch (SQLException ex) {
                     LOG.error(ex.getLocalizedMessage());
-                    connection.rollback();
                 }
             }
         } catch (SQLException ex) {
@@ -176,7 +157,6 @@ public class MySQLWalletRequestDAOImpl implements WalletRequestDAO {
         try (Connection connection = connectionPool.getConnection()) {
             if (connection != null) {
                 try (PreparedStatement statement = connection.prepareStatement(WalletRequestQuery.SELECT_WALLET_REQUEST)) {
-                    connection.setAutoCommit(false);
                     statement.setLong(1, walletId);
                     statement.setLong(2, requestStatus.getId());
                     statement.execute();
@@ -189,10 +169,8 @@ public class MySQLWalletRequestDAOImpl implements WalletRequestDAO {
 //                        LOG.info(transferDTO.toString());
                     }
                     resultSet.close();
-                    connection.commit();
                 } catch (SQLException e) {
                     LOG.error(e.getLocalizedMessage());
-                    connection.rollback();
                 }
             }
         } catch (SQLException ex) {

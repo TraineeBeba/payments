@@ -32,10 +32,4 @@ public class Utils {
     public static int generateBill() {
         return  100000 + new Random().nextInt(900000);
     }
-
-    public static ResourceBundle getLocale(HttpSession session) {
-        String language = String.valueOf(session.getAttribute("language"));
-        Locale locale = new Locale(language);
-        return ResourceBundle.getBundle("resources", locale);
-    }
 }

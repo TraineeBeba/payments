@@ -13,9 +13,9 @@ import com.epam.payments.core.model.enums.state.WalletState;
 import com.epam.payments.core.model.mapper.WalletMapper;
 import com.epam.payments.core.service.wallet.AbstractWallet;
 import com.epam.payments.core.service.wallet.WalletService;
-import com.epam.payments.core.service.wallet.MaxBalanceException;
-import com.epam.payments.core.service.wallet.WalletCreationException;
-import com.epam.payments.core.service.wallet.WalletNotFoundException;
+import com.epam.payments.core.service.wallet.exception.MaxBalanceException;
+import com.epam.payments.core.service.wallet.exception.WalletCreationException;
+import com.epam.payments.core.service.wallet.exception.WalletNotFoundException;
 import com.epam.payments.core.utils.Utils;
 
 import java.math.BigDecimal;
@@ -141,27 +141,8 @@ public class WalletServiceImpl extends AbstractWallet implements WalletService {
         }
     }
 
-    private boolean existsByBill(int bill_number) {
-        return !walletDAO.existsByBill(bill_number);
-    }
-
-    private List<WalletEntity> findAll() {
-        return null;
-    }
-
-    private WalletEntity findById(Long id) {
-        return walletDAO.findById(id);
-    }
-
-    private void save(WalletEntity entity) {
-        walletDAO.save(entity);
-    }
-
     private void update(WalletEntity entity) {
         walletDAO.update(entity);
     }
 
-    private boolean existsByNameAndUserId(Long user_id, String name) {
-        return walletDAO.existsByNameAndUserId(user_id, name);
-    }
 }

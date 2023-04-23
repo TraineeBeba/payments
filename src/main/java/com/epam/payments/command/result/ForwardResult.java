@@ -6,6 +6,7 @@ public class ForwardResult implements CommandResult {
     public ForwardResult(String resource) {
         this.forwardResource = resource;
     }
+
     public String getResource() {
         return forwardResource;
     }

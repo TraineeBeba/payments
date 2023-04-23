@@ -124,10 +124,6 @@ public class UserServiceImpl implements UserService {
         return userDAO.findAll();
     }
 
-    public UserEntity findById(Long id) {
-        return userDAO.findById(id);
-    }
-
     public void save(UserEntity entity) {
         userDAO.save(entity);
     }
@@ -161,17 +157,5 @@ public class UserServiceImpl implements UserService {
     @Override
     public int getNoOfRecords() {
         return userDAO.getNoOfRecords();
-    }
-
-    public boolean existsByUsername(String username) {
-        return userDAO.existsByUsername(username);
-    }
-
-    public boolean existsByUsernameAndPassword(String username, String password) {
-        return userDAO.existsByUsernameAndPassword(username, password);
-    }
-
-    public boolean isBlocked(String username) {
-        return userDAO.isBlocked(username);
     }
 }

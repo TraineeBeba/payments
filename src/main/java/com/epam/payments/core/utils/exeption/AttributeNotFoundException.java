@@ -4,10 +4,10 @@ import com.epam.payments.exeption.InternalServerException;
 
 public class AttributeNotFoundException extends InternalServerException {
     public AttributeNotFoundException(String paramName) {
-        super("Parameter not found: " + paramName);
+        super("Attribute not found: " + paramName);
     }
 
     public AttributeNotFoundException(String paramName, Throwable cause) {
-        super("Parameter not found: " + paramName, cause);
+        super("Attribute not found: " + paramName, cause);
     }
 }

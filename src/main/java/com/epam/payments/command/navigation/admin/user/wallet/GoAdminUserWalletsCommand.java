@@ -11,6 +11,7 @@ import com.epam.payments.core.service.user.UserService;
 import com.epam.payments.core.service.user.exception.UserNotFoundException;
 import com.epam.payments.core.service.wallet.WalletService;
 import com.epam.payments.core.utils.ServletUtils;
+import com.epam.payments.core.utils.exeption.AttributeNotFoundException;
 import com.epam.payments.core.utils.exeption.ParameterNotFoundException;
 import com.epam.payments.exeption.InternalServerException;
 import org.apache.log4j.Logger;
@@ -38,20 +39,9 @@ public class GoAdminUserWalletsCommand extends Command {
 
         WalletService walletService = ServletUtils.getService(request, WalletService.class);
         UserService userService = ServletUtils.getService(request, UserService.class);
-        String walletSort;
-        try {
-            walletSort = ServletUtils.getStringParameter(request, WALLET_SORT);
-        } catch (ParameterNotFoundException e) {
-            walletSort = DEFAULT_WALLET_SORT;
-        }
+        String walletSort = getWalletSort(request);
 
-        String username;
-        try {
-            username = ServletUtils.getStringParameter(request, SELECTED_USER_NAME);
-        } catch (ParameterNotFoundException e) {
-            username = ServletUtils.getAttribute(session, SELECTED_USER_NAME, String.class);
-            session.removeAttribute(SELECTED_USER_NAME);
-        }
+        String username = getUsername(request, session);
         UserDTO userDTO;
         try {
             userDTO = userService.findByUsername(username);
@@ -66,5 +56,26 @@ public class GoAdminUserWalletsCommand extends Command {
         }
 
         return new ForwardResult(ADMIN_USER_WALLETS_PATH);
+    }
+
+    private String getWalletSort(HttpServletRequest request) {
+        String walletSort;
+        try {
+            walletSort = ServletUtils.getStringParameter(request, WALLET_SORT);
+        } catch (ParameterNotFoundException e) {
+            walletSort = DEFAULT_WALLET_SORT;
+        }
+        return walletSort;
+    }
+
+    private String getUsername(HttpServletRequest request, HttpSession session) throws AttributeNotFoundException {
+        String username;
+        try {
+            username = ServletUtils.getStringParameter(request, SELECTED_USER_NAME);
+        } catch (ParameterNotFoundException e) {
+            username = ServletUtils.getAttribute(session, SELECTED_USER_NAME, String.class);
+            session.removeAttribute(SELECTED_USER_NAME);
+        }
+        return username;
     }
 }

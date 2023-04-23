@@ -13,14 +13,11 @@ public final class ParamNames {
 
     public static final String USER_DTO = "userDTO";
     public static final String TRANSFER_DTO = "transferDTO";
-    public static final String WALLET_ENTITY = "walletEntity";
-    public static final String WALLET_REQUEST_ENTITY = "walletRequestEntity";
 
     public static final String SELECTED_USER_NAME = "selectedUserName";
     public static final String SELECTED_USER = "selectedUser";
 
     public static final String CURR_WALLET = "currWallet";
-    public static final String CURR_USER_ID = "currUserId";
 
     public static final String USERS = "users";
     public static final String WALLETS = "wallets";
@@ -40,7 +37,6 @@ public final class ParamNames {
     public static final String REQUEST_EXIST = "requestExist";
     public static final String REQUEST_TYPE = "requestType";
     public static final String WALLET_REQUEST_ID = "walletRequestId";
-    public static final String WALLET_ID = "walletId";
     public static final String WALLET_NAME = "walletName";
     public static final String CANCEL_TRANSFER = "cancelTransfer";
 

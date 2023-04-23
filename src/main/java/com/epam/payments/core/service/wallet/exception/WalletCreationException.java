@@ -1,4 +1,4 @@
-package com.epam.payments.core.service.wallet;
+package com.epam.payments.core.service.wallet.exception;
 
 import com.epam.payments.core.service.exeption.ServiceException;
 

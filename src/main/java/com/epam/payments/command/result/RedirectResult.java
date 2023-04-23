@@ -6,6 +6,7 @@ public class RedirectResult implements CommandResult {
     public RedirectResult(String resource) {
         this.refirectResource = resource;
     }
+
     public String getResource() {
         return refirectResource;
     }

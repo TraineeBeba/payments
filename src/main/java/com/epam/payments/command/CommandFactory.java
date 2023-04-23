@@ -23,6 +23,7 @@ import com.epam.payments.command.navigation.user.wallet.GoCreateWalletCommand;
 import com.epam.payments.command.navigation.user.wallet.GoTopUpBalanceCommand;
 import com.epam.payments.command.navigation.user.wallet.GoUserWalletsCommand;
 import com.epam.payments.command.navigation.user.wallet.GoWalletDetailsCommand;
+import com.epam.payments.exeption.InternalServerException;
 import org.apache.log4j.Logger;
 
 import java.util.Map;
@@ -73,10 +74,10 @@ public class CommandFactory {
         LOG.trace("Number of commands --> " + commands.size());
     }
 
-    public static Command get(String commandName) {
+    public static Command get(String commandName) throws InternalServerException{
         if (commandName == null || !commands.containsKey(commandName)) {
             LOG.trace("Command not found, name --> " + commandName);
-            return null;
+            throw new InternalServerException("Command not found, name --> " + commandName);
         }
         return commands.get(commandName);
     }

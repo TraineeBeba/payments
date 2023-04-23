@@ -66,7 +66,7 @@ public class Controller extends HttpServlet {
 
             CommandResult commandResult = command.execute(request, response);
             views.get(commandResult.getClass()).render(commandResult, request, response);
-        } catch (InternalServerException | NullPointerException ex) {
+        } catch (InternalServerException ex) {
             throw new ServletException(ex.getMessage(), ex);
         }
     }

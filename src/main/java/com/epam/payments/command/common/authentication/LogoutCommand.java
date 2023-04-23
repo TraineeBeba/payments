@@ -21,14 +21,8 @@ public class LogoutCommand extends Command {
     public CommandResult execute(HttpServletRequest request, HttpServletResponse response) throws InternalServerException {
         LOG.trace("Start tracing LogoutCommand");
 
-        
-        // TODO
-
         HttpSession session = request.getSession();
         session.removeAttribute(USER_DTO);
-        session.removeAttribute(WALLET_SORT);
-
-        session.removeAttribute(SELECTED_USER);
         session.setAttribute(LOGOUT, true);
 
         return new RedirectResult(GO_LOGIN_PAGE_URL);

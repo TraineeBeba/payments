@@ -3,7 +3,7 @@ package com.epam.payments.command.common.user.wallet;
 import com.epam.payments.command.Command;
 import com.epam.payments.command.result.CommandResult;
 import com.epam.payments.command.result.RedirectResult;
-import com.epam.payments.core.service.wallet.WalletNotFoundException;
+import com.epam.payments.core.service.wallet.exception.WalletNotFoundException;
 import com.epam.payments.core.service.wallet.WalletService;
 import com.epam.payments.core.utils.ServletUtils;
 import com.epam.payments.exeption.InternalServerException;

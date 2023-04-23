@@ -25,7 +25,7 @@ public class MySQLUserDAOImpl implements UserDAO, UserQuery {
 
     @Override
     public List<UserEntity> findAll() {
-        return null; //TODO
+        return null;
     }
 
     @Override
